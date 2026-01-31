@@ -27,6 +27,11 @@ build/
 .output/
 .vercel/
 
+# Hugo
+/public/
+/resources/_gen/
+.hugo_build.lock
+
 # IDE
 .idea/
 .vscode/
