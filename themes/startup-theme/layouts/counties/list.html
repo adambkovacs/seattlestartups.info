@@ -1,0 +1,157 @@
+{{ define "main" }}
+<div class="relative">
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden py-12 lg:py-20 border-b border-overcast-200 dark:border-overcast-700">
+    <div class="absolute inset-0 dots-pattern opacity-30 dark:opacity-10"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl">
+        <!-- Breadcrumb -->
+        <nav class="flex mb-6" aria-label="Breadcrumb">
+          <ol class="flex items-center space-x-2 text-sm font-mono">
+            <li><a href="{{ .Site.BaseURL }}" class="text-overcast-500 dark:text-overcast-400 hover:text-sound-600 dark:hover:text-sound-400 transition-colors">Home</a></li>
+            <li class="text-overcast-300 dark:text-overcast-600">/</li>
+            <li class="text-sound-600 dark:text-sound-400 font-medium">{{ .Title }}</li>
+          </ol>
+        </nav>
+
+        <h1 class="font-display font-black text-4xl md:text-5xl lg:text-6xl text-overcast-900 dark:text-white mb-4 tracking-tight">
+          {{ .Title }}
+        </h1>
+
+        <p class="text-lg md:text-xl text-overcast-600 dark:text-overcast-300 leading-relaxed mb-8 max-w-2xl">
+          {{ with .Description }}{{ . }}{{ else }}Find startup resources specific to your area across the Greater Seattle region.{{ end }}
+        </p>
+
+        <!-- Stats -->
+        <div class="flex flex-wrap items-center gap-6 text-sm font-mono text-overcast-500 dark:text-overcast-400">
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-fir-500 animate-pulse"></span>
+            <span class="font-bold text-overcast-900 dark:text-white">5</span>
+            <span>counties covered</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-overcast-300 dark:text-overcast-600">|</span>
+            <span class="font-bold text-overcast-900 dark:text-white">248+</span>
+            <span>total resources</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content from markdown (if any) -->
+  {{ with .Content }}
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="prose prose-lg dark:prose-invert max-w-none">
+      {{ . }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Counties Grid -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {{ range $key, $value := .Site.Params.counties }}
+      {{/* Count resources for this county */}}
+      {{ $countyResources := 0 }}
+      {{ with $.Site.Data.resources }}
+        {{ range $filename, $data := . }}
+          {{ with $data.resources }}
+            {{ range . }}
+              {{ if .counties }}
+                {{ range .counties }}
+                  {{ if eq (. | lower) $key }}
+                    {{ $countyResources = add $countyResources 1 }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      <a href="/resources/?county={{ $key }}"
+         class="group relative bg-white dark:bg-overcast-800 rounded-2xl border border-overcast-200 dark:border-overcast-700 p-8 hover:shadow-xl hover:border-sound-300 dark:hover:border-sound-600 transition-all duration-300 transform hover:-translate-y-1">
+
+        <!-- Icon -->
+        <div class="w-16 h-16 rounded-2xl sun-break flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+          </svg>
+        </div>
+
+        <!-- County Name -->
+        <h2 class="font-display font-bold text-2xl text-overcast-900 dark:text-white mb-2 group-hover:text-sound-600 dark:group-hover:text-sound-400 transition-colors">
+          {{ $value }}
+        </h2>
+
+        <!-- Description -->
+        <p class="text-overcast-600 dark:text-overcast-400 mb-4">
+          {{ if eq $key "king" }}
+            Seattle, Bellevue, Redmond, and the Eastside
+          {{ else if eq $key "snohomish" }}
+            Everett, Lynnwood, Marysville, and North Sound
+          {{ else if eq $key "pierce" }}
+            Tacoma, Lakewood, Puyallup, and South Sound
+          {{ else if eq $key "kitsap" }}
+            Bremerton, Silverdale, Poulsbo, and Bainbridge
+          {{ else if eq $key "thurston" }}
+            Olympia, Lacey, Tumwater, and the Capital region
+          {{ end }}
+        </p>
+
+        <!-- Resource Count -->
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-mono text-overcast-500 dark:text-overcast-400">
+            {{ $countyResources }} resources
+          </span>
+          <span class="inline-flex items-center text-sound-600 dark:text-sound-400 font-medium text-sm group-hover:translate-x-1 transition-transform">
+            Browse
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Explanation Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+    <div class="bg-overcast-50 dark:bg-overcast-800/50 rounded-2xl p-8 border border-overcast-200 dark:border-overcast-700">
+      <h3 class="font-display font-bold text-xl text-overcast-900 dark:text-white mb-4">
+        Why Browse by County?
+      </h3>
+      <div class="grid md:grid-cols-2 gap-6 text-overcast-600 dark:text-overcast-300">
+        <div class="flex gap-3">
+          <svg class="w-5 h-5 text-fir-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          <p><strong>Local Programs:</strong> Many resources have county-specific eligibility requirements or focus on local founders.</p>
+        </div>
+        <div class="flex gap-3">
+          <svg class="w-5 h-5 text-fir-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          <p><strong>SBDCs:</strong> Each county has dedicated Small Business Development Centers with free advising.</p>
+        </div>
+        <div class="flex gap-3">
+          <svg class="w-5 h-5 text-fir-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          <p><strong>Libraries:</strong> County library systems offer free business databases and consulting.</p>
+        </div>
+        <div class="flex gap-3">
+          <svg class="w-5 h-5 text-fir-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          <p><strong>Economic Development:</strong> Each county has unique accelerators and incentive programs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}

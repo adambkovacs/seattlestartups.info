@@ -10,9 +10,10 @@
     "prebuild": "npm run build:css"
   },
   "devDependencies": {
-    "tailwindcss": "^3.4.0",
+    "@playwright/test": "^1.58.1",
     "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.32"
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
   },
   "keywords": [
     "seattle",
