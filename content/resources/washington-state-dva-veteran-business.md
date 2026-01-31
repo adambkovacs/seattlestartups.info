@@ -2,7 +2,7 @@
 title: "Washington State DVA Veteran Business"
 description: "Veteran-owned business certification and resources"
 organization: "WA Dept of Veterans Affairs"
-website: "https://dva.wa.gov/veterans-their-families/employment/veteran-owned-businesses"
+website: "https://www.dva.wa.gov/veterans-service-members-and-their-families/veteran-owned-businesses"
 cost: "Free"
 eligibility: "Veteran-owned businesses"
 city: "Olympia"

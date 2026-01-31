@@ -2,7 +2,7 @@
 title: "Seattle Capital Access Program"
 description: "Pays down 20% of loan principal (max $30K) for Seattle businesses"
 organization: "Seattle OED + Lenders"
-website: "https://seattle.gov/economic-development/business-services/loans-and-grants"
+website: "https://www.seattle.gov/economic-development/grants-and-funding/capital-access-program"
 cost: "Free"
 eligibility: "Seattle for-profits, 12+ months operation"
 city: "Seattle"
