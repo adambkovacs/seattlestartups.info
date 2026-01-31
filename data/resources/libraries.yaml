@@ -1,9 +1,4 @@
-# Library Business Resources
-# Greater Seattle Startup Ecosystem
-# Last updated: 2026-01-30
-
 resources:
-  # Seattle Public Library
   - name: "Library to Business (L2B) Program"
     description: "1:1 business librarian appointments, premium databases, and workshops"
     organization: "Seattle Public Library"
@@ -12,12 +7,13 @@ resources:
     eligibility: "SPL cardholders"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: true
-
+    industries:
+      - "tech"
   - name: "SPL Business Databases"
     description: "ABI/INFORM, Data Axle, SimplyAnalytics, RMA eStatement Studies"
     organization: "Seattle Public Library"
@@ -26,12 +22,13 @@ resources:
     eligibility: "SPL cardholders"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "SPL PitchBook Access"
     description: "Venture capital deal flow, valuations, and investor profile database"
     organization: "Seattle Public Library"
@@ -40,12 +37,13 @@ resources:
     eligibility: "SPL cardholders"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "SPL Mergent Intellect"
     description: "Detailed data on millions of US businesses for competitor research"
     organization: "Seattle Public Library"
@@ -54,13 +52,13 @@ resources:
     eligibility: "SPL cardholders"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: false
-
-  # King County Library System
+    industries:
+      - "ai"
   - name: "KCLS Small Business Resources"
     description: "Sample business plans, counseling connections, and databases"
     organization: "King County Library System"
@@ -69,12 +67,13 @@ resources:
     eligibility: "KCLS cardholders"
     city: "Bellevue"
     counties:
-      - King
+      - "King"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "KCLS LinkedIn Learning"
     description: "16,000+ business, tech, and design courses"
     organization: "King County Library System"
@@ -83,12 +82,14 @@ resources:
     eligibility: "KCLS cardholders"
     city: "Bellevue"
     counties:
-      - King
+      - "King"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: true
-
+    industries:
+      - "tech"
+      - "creative"
   - name: "KCLS DemographicsNow"
     description: "Customer segmentation and demographic analysis for site selection"
     organization: "King County Library System"
@@ -97,12 +98,13 @@ resources:
     eligibility: "KCLS cardholders"
     city: "Bellevue"
     counties:
-      - King
+      - "King"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "KCLS FDO Professional"
     description: "Foundation and grant funding research database"
     organization: "King County Library System"
@@ -111,13 +113,13 @@ resources:
     eligibility: "KCLS cardholders"
     city: "Bellevue"
     counties:
-      - King
+      - "King"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: false
-
-  # Sno-Isle Libraries
+    industries:
+      - "general"
   - name: "Sno-Isle Business Tools"
     description: "Data Axle, ABI/INFORM, Business Plans Handbook with remote access"
     organization: "Sno-Isle Libraries"
@@ -126,12 +128,13 @@ resources:
     eligibility: "Cardholders"
     city: "Everett"
     counties:
-      - Snohomish
+      - "Snohomish"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "Sno-Isle Gale Business Entrepreneurship"
     description: "Business planning templates and entrepreneurship resources"
     organization: "Sno-Isle Libraries"
@@ -140,12 +143,13 @@ resources:
     eligibility: "Cardholders"
     city: "Everett"
     counties:
-      - Snohomish
+      - "Snohomish"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Sno-Isle SCORE Partnership"
     description: "1-hour free counseling appointments at Lynnwood Library"
     organization: "Sno-Isle Libraries"
@@ -154,14 +158,15 @@ resources:
     eligibility: "Community"
     city: "Lynnwood"
     counties:
-      - Snohomish
+      - "Snohomish"
     categories:
-      - Libraries
-      - Mentorship
+      - "Libraries"
+      - "Mentorship"
     audiences: []
     featured: false
-
-  # Pierce County Library System
+    industries:
+      - "tech"
+      - "creative"
   - name: "Pierce County Library Job+Business Center"
     description: "Technology skills, certifications (MS/Adobe/QuickBooks), and databases"
     organization: "Pierce County Library System"
@@ -170,12 +175,13 @@ resources:
     eligibility: "PCLS cardholders"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: true
-
+    industries:
+      - "tech"
   - name: "Pierce County Library Microsoft Certifications"
     description: "Free Microsoft Office Specialist (MOS) certification training"
     organization: "Pierce County Library System"
@@ -184,13 +190,13 @@ resources:
     eligibility: "PCLS cardholders"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: false
-
-  # Kitsap Regional Library
+    industries:
+      - "ai"
   - name: "Kitsap Regional Library Business Resources"
     description: "Data Axle, Business Plans Handbook, market research, and free meeting rooms at 9 locations"
     organization: "Kitsap Regional Library"
@@ -199,13 +205,13 @@ resources:
     eligibility: "KRL cardholders"
     city: "Bremerton"
     counties:
-      - Kitsap
+      - "Kitsap"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: true
-
-  # Timberland Regional Library
+    industries:
+      - "general"
   - name: "Timberland Regional Library Resources"
     description: "Gale Business, Data Axle, Legal Forms, Expanded Access Hours (7am-8pm)"
     organization: "Timberland Regional Library"
@@ -214,13 +220,13 @@ resources:
     eligibility: "TRL cardholders"
     city: "Olympia"
     counties:
-      - Thurston
+      - "Thurston"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: true
-
-  # Tacoma Public Library
+    industries:
+      - "general"
   - name: "Tacoma Public Library Business Resources"
     description: "Business databases and research assistance"
     organization: "Tacoma Public Library"
@@ -229,8 +235,10 @@ resources:
     eligibility: "TPL cardholders"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Libraries
+      - "Libraries"
     audiences: []
     featured: false
+    industries:
+      - "general"

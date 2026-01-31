@@ -193,6 +193,30 @@
           </div>
         </div>
 
+        <!-- Industry Filter -->
+        <div class="relative" data-filter-group="industry">
+          <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 dark:border-overcast-600 bg-white dark:bg-overcast-800 hover:border-sound-300 dark:hover:border-sound-600 text-sm font-medium transition-colors dark:text-overcast-200">
+            <span>Industry</span>
+            <svg class="w-4 h-4 text-overcast-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="filter-dropdown hidden absolute top-full left-0 mt-2 w-64 bg-white dark:bg-overcast-800 rounded-xl shadow-xl border border-overcast-200 dark:border-overcast-700 p-3 z-50">
+            <div class="space-y-1 max-h-64 overflow-y-auto">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
+                <input type="checkbox" value="all" class="industry-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500" checked>
+                <span class="text-sm dark:text-overcast-200">All Industries</span>
+              </label>
+              {{ range $key, $value := .Site.Params.industries }}
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
+                <input type="checkbox" value="{{ $key }}" class="industry-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500">
+                <span class="text-sm dark:text-overcast-200">{{ $value }}</span>
+              </label>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+
         <!-- Cost Filter -->
         <div class="relative" data-filter-group="cost">
           <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 dark:border-overcast-600 bg-white dark:bg-overcast-800 hover:border-sound-300 dark:hover:border-sound-600 text-sm font-medium transition-colors dark:text-overcast-200">
@@ -399,6 +423,7 @@ document.addEventListener('DOMContentLoaded', function() {
     counties: [],
     cities: [],
     audiences: [],
+    industries: [],
     stages: [],
     cost: 'all'
   };
@@ -455,6 +480,8 @@ document.addEventListener('DOMContentLoaded', function() {
     filters.cities = Array.from(document.querySelectorAll('.city-filter:checked:not([value="all"])'))
       .map(cb => cb.value);
     filters.audiences = Array.from(document.querySelectorAll('.audience-filter:checked:not([value="all"])'))
+      .map(cb => cb.value);
+    filters.industries = Array.from(document.querySelectorAll('.industry-filter:checked:not([value="all"])'))
       .map(cb => cb.value);
     filters.stages = Array.from(document.querySelectorAll('.stage-filter:checked:not([value="all"])'))
       .map(cb => cb.value);
@@ -528,6 +555,12 @@ document.addEventListener('DOMContentLoaded', function() {
         visible = filters.audiences.some(a => audiences.includes(a));
       }
 
+      // Industry filter
+      if (visible && filters.industries.length > 0) {
+        const industries = (card.dataset.industries || '').toLowerCase().split(',').filter(Boolean);
+        visible = filters.industries.some(i => industries.includes(i));
+      }
+
       // Stage filter (maps to categories)
       if (visible && filters.stages.length > 0) {
         const stageMatchCategories = filters.stages.flatMap(s => stageCategories[s] || []);
@@ -558,6 +591,7 @@ document.addEventListener('DOMContentLoaded', function() {
       filters.counties.length > 0 ||
       filters.cities.length > 0 ||
       filters.audiences.length > 0 ||
+      filters.industries.length > 0 ||
       filters.stages.length > 0 ||
       filters.cost !== 'all';
 
@@ -577,6 +611,7 @@ document.addEventListener('DOMContentLoaded', function() {
     filters.counties.forEach(c => tags.push({ type: 'county', value: c, label: c }));
     filters.cities.forEach(c => tags.push({ type: 'city', value: c, label: c }));
     filters.audiences.forEach(a => tags.push({ type: 'audience', value: a, label: a }));
+    filters.industries.forEach(i => tags.push({ type: 'industry', value: i, label: i }));
     filters.stages.forEach(s => tags.push({ type: 'stage', value: s, label: s.charAt(0).toUpperCase() + s.slice(1) }));
     if (filters.cost !== 'all') tags.push({ type: 'cost', value: filters.cost, label: 'Free Only' });
 
@@ -607,6 +642,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (filters.counties.length) params.set('county', filters.counties.join(','));
     if (filters.cities.length) params.set('city', filters.cities.join(','));
     if (filters.audiences.length) params.set('audience', filters.audiences.join(','));
+    if (filters.industries.length) params.set('industry', filters.industries.join(','));
     if (filters.stages.length) params.set('stage', filters.stages.join(','));
     if (filters.cost !== 'all') params.set('cost', filters.cost);
 
@@ -623,11 +659,12 @@ document.addEventListener('DOMContentLoaded', function() {
       if (searchInput) searchInput.value = filters.search;
     }
 
-    ['category', 'county', 'city', 'audience'].forEach(type => {
+    ['category', 'county', 'city', 'audience', 'industry', 'stage'].forEach(type => {
       const value = params.get(type);
       if (value) {
         const values = value.split(',');
-        filters[type + (type === 'category' ? 'ies' : 's')] = values;
+        const filterKey = (type === 'category' || type === 'industry') ? type.slice(0, -1) + 'ies' : type + 's';
+        filters[filterKey] = values;
         values.forEach(v => {
           const checkbox = document.querySelector(`.${type}-filter[value="${v}"]`);
           if (checkbox) checkbox.checked = true;
@@ -647,7 +684,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Clear all filters
   window.clearAllFilters = function() {
-    filters = { search: '', categories: [], counties: [], cities: [], audiences: [], stages: [], cost: 'all' };
+    filters = { search: '', categories: [], counties: [], cities: [], audiences: [], industries: [], stages: [], cost: 'all' };
 
     if (searchInput) searchInput.value = '';
     document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
@@ -664,7 +701,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Remove single filter
   window.removeFilter = function(type, value) {
-    const filterKey = type + (type === 'category' ? 'ies' : 's');
+    const filterKey = (type === 'category' || type === 'industry') ? type.slice(0, -1) + 'ies' : type + 's';
     if (type === 'cost') {
       filters.cost = 'all';
       document.querySelector('.cost-filter[value="all"]').checked = true;
@@ -679,7 +716,7 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   // Attach filter change handlers
-  document.querySelectorAll('.category-filter, .county-filter, .city-filter, .audience-filter, .stage-filter, .cost-filter').forEach(input => {
+  document.querySelectorAll('.category-filter, .county-filter, .city-filter, .audience-filter, .industry-filter, .stage-filter, .cost-filter').forEach(input => {
     input.addEventListener('change', handleFilterChange);
   });
 

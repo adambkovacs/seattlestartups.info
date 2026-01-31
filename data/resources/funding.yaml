@@ -1,9 +1,4 @@
-# Funding Programs and Financial Resources
-# Greater Seattle Startup Ecosystem
-# Last updated: 2026-01-30
-
 resources:
-  # CDFIs and Lending
   - name: "Craft3"
     description: "Small business, nonprofit, and clean energy loans from $5K to $10M+"
     organization: "Craft3"
@@ -12,19 +7,20 @@ resources:
     eligibility: "Tribal nations, BIPOC, women, veterans, immigrants"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences:
-      - bipoc
-      - women
-      - veterans
+      - "bipoc"
+      - "women"
+      - "veterans"
     featured: true
-
+    industries:
+      - "cleantech"
   - name: "Rainier Valley Community Development Fund"
     description: "Micro to commercial loans for SE Seattle businesses"
     organization: "RVCDF"
@@ -33,13 +29,14 @@ resources:
     eligibility: "Low-moderate income, BIPOC communities in SE Seattle"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Funding
+      - "Funding"
     audiences:
-      - bipoc
+      - "bipoc"
     featured: true
-
+    industries:
+      - "ai"
   - name: "Enterprise for Equity"
     description: "Microloans and training for rural and microenterprise businesses"
     organization: "Enterprise for Equity"
@@ -48,14 +45,15 @@ resources:
     eligibility: "Limited incomes, veterans, rural entrepreneurs"
     city: "Olympia"
     counties:
-      - Thurston
-      - Pierce
+      - "Thurston"
+      - "Pierce"
     categories:
-      - Funding
+      - "Funding"
     audiences:
-      - veterans
+      - "veterans"
     featured: false
-
+    industries:
+      - "ai"
   - name: "Business Impact NW"
     description: "Microloans and business support for underserved entrepreneurs"
     organization: "Business Impact NW"
@@ -64,18 +62,19 @@ resources:
     eligibility: "Underserved entrepreneurs"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences:
-      - bipoc
-      - women
+      - "bipoc"
+      - "women"
     featured: true
-
+    industries:
+      - "maritime"
   - name: "Ventures Microloans"
     description: "Microloans for low-income entrepreneurs with business training"
     organization: "Ventures (nonprofit)"
@@ -84,14 +83,14 @@ resources:
     eligibility: "Low-income entrepreneurs"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
+      - "King"
+      - "Snohomish"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: false
-
-  # Government Programs
+    industries:
+      - "ai"
   - name: "Capital Access Program"
     description: "Pays down 20% of loan principal (max $30K) for Seattle businesses"
     organization: "Seattle OED + Lenders"
@@ -100,12 +99,13 @@ resources:
     eligibility: "Seattle for-profits, 12+ months operation"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "Storefront Repair Fund"
     description: "Grants to cover costs associated with property damage"
     organization: "City of Seattle OED"
@@ -114,12 +114,13 @@ resources:
     eligibility: "Seattle businesses"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: false
-
+    industries:
+      - "ai"
   - name: "WA State SSBCI Programs"
     description: "State Small Business Credit Initiative for underserved communities"
     organization: "WA Dept. of Commerce"
@@ -128,16 +129,17 @@ resources:
     eligibility: "Underserved communities"
     city: "Online"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Export Voucher Program (STEP)"
     description: "Reimbursement for trade show fees, translation, and international marketing"
     organization: "WA Dept. of Commerce"
@@ -146,17 +148,17 @@ resources:
     eligibility: "Small businesses exporting"
     city: "Online"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: false
-
-  # Cloud Credits
+    industries:
+      - "maritime"
   - name: "Microsoft for Startups Founders Hub"
     description: "Up to $150K Azure, GitHub Enterprise, and OpenAI credits"
     organization: "Microsoft"
@@ -165,16 +167,18 @@ resources:
     eligibility: "Software-based startups"
     city: "Online"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: true
-
+    industries:
+      - "ai"
+      - "creative"
   - name: "AWS Activate"
     description: "Up to $100K AWS credits and training for startups"
     organization: "Amazon"
@@ -183,17 +187,18 @@ resources:
     eligibility: "Startups"
     city: "Online"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: true
-
-  # Competitions
+    industries:
+      - "ai"
+      - "creative"
   - name: "Seattle Angel Conference"
     description: "12-week competition with $150-200K investment to winner"
     organization: "Mossy Ventures"
@@ -202,16 +207,17 @@ resources:
     eligibility: "Concept to pre-seed"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "Dempsey Startup Competition"
     description: "Multi-stage competition with up to $25K prize, 28th year in 2025"
     organization: "UW Buerk Center"
@@ -220,16 +226,17 @@ resources:
     eligibility: "Cascadia students"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: true
-
+    industries:
+      - "creative"
   - name: "Hollomon Health Innovation Challenge"
     description: "Health prototype competition with prizes up to $15K+"
     organization: "UW Buerk Center"
@@ -238,16 +245,18 @@ resources:
     eligibility: "Cascadia students"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: false
-
+    industries:
+      - "lifesciences"
+      - "hardware"
   - name: "Alaska Airlines Environmental Challenge"
     description: "Environmental innovation prototype competition"
     organization: "UW Buerk Center"
@@ -256,16 +265,19 @@ resources:
     eligibility: "Cascadia students"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: false
-
+    industries:
+      - "ai"
+      - "cleantech"
+      - "hardware"
   - name: "SCORE Women's Pitch Contest"
     description: "Annual pitch contest with coaching and cash prizes"
     organization: "SCORE Greater Seattle"
@@ -274,15 +286,16 @@ resources:
     eligibility: "Women entrepreneurs"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Kitsap
+      - "King"
+      - "Snohomish"
+      - "Kitsap"
     categories:
-      - Funding
+      - "Funding"
     audiences:
-      - women
+      - "women"
     featured: true
-
+    industries:
+      - "general"
   - name: "Harriet Stephenson Competition"
     description: "Business plan competition with prizes"
     organization: "Seattle University"
@@ -291,12 +304,13 @@ resources:
     eligibility: "SU students/alumni"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "WSU Business Plan Competition"
     description: "Pitch competition with $10K grand prize"
     organization: "WSU Center for Entrepreneurship"
@@ -305,16 +319,17 @@ resources:
     eligibility: "WSU students"
     city: "Online"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Founders Live Seattle"
     description: "99-second pitches with audience vote and Prime Time advancement"
     organization: "Founders Live (HQ Seattle)"
@@ -323,13 +338,14 @@ resources:
     eligibility: "Early-stage startups"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Funding
-      - Events
+      - "Funding"
+      - "Events"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "Startup World Cup Seattle Regional"
     description: "Regional competition where winner advances to global finals for $1M"
     organization: "Founders Live + WTIA"
@@ -338,12 +354,13 @@ resources:
     eligibility: "Local startups"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: true
-
+    industries:
+      - "creative"
   - name: "edg3 Fund"
     description: "$20,000 small business competition prize for community impact"
     organization: "Kitsap Bank"
@@ -352,13 +369,13 @@ resources:
     eligibility: "Kitsap/regional small businesses"
     city: "Bremerton"
     counties:
-      - Kitsap
+      - "Kitsap"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: false
-
-  # Training Scholarships
+    industries:
+      - "general"
   - name: "BEST Scholarships (Lacey/Olympia/Tumwater)"
     description: "Full scholarships ($399 value) for startup training"
     organization: "Cities + Thurston EDC"
@@ -367,13 +384,14 @@ resources:
     eligibility: "Local startups in Lacey/Olympia/Tumwater"
     city: "Olympia"
     counties:
-      - Thurston
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: false
-
-  # Angel and VC Access
+    industries:
+      - "ai"
+      - "creative"
   - name: "TiE Seattle Z5 Catalyst"
     description: "Access to Z5 Catalyst funding through TiE network"
     organization: "TiE Seattle"
@@ -382,12 +400,13 @@ resources:
     eligibility: "All entrepreneurs"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Cascadia CleanTech Accelerator Prizes"
     description: "$10K+ prizes from 18-week cleantech accelerator program"
     organization: "CleanTech Alliance + VertueLab"
@@ -396,15 +415,15 @@ resources:
     eligibility: "PNW cleantech, <$1M raised"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Funding
+      - "Funding"
     audiences: []
     featured: false
-
-# Note on SBIR/STTR:
-# Congressional authorization expired September 30, 2025 - status uncertain
+    industries:
+      - "tech"
+      - "cleantech"
