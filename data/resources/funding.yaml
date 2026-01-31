@@ -1,0 +1,223 @@
+# Funding Programs and Financial Resources
+# Extracted from ecosystem-master-inventory.md
+# Last updated: 2026-01-30
+
+resources:
+  - name: "SBA Seattle District Office"
+    organization: "U.S. SBA"
+    type: "Advising/Certifications"
+    description: "Funding guidance, counseling, federal contracting certifications (8(a), HUBZone)"
+    eligibility: "Small businesses"
+    access: "Contact office; Wednesday Webinars"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://sba.gov/district/seattle"
+    free_status: true
+    audiences: []
+
+  - name: "SBA THRIVE Program"
+    organization: "U.S. SBA"
+    type: "Executive Training"
+    description: "Free executive-level strategic growth planning for established small businesses"
+    eligibility: "Established small businesses"
+    access: "Apply via SBA Seattle"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://sba.gov/district/seattle"
+    free_status: true
+    audiences: []
+
+  - name: "Capital Access Program"
+    organization: "Seattle OED + Lenders"
+    type: "Loan Support"
+    description: "Pays down 20% of loan principal (max $30K) for Seattle for-profits with 12+ months operation"
+    eligibility: "Seattle for-profits, 12+ months"
+    access: "Via community lenders"
+    counties:
+      - King
+    url: "https://seattle.gov/economic-development"
+    free_status: true
+    audiences: []
+
+  - name: "Washington APEX Accelerator"
+    organization: "Thurston EDC (statewide)"
+    type: "Contracting Assistance"
+    description: "Free counseling for government contracts and certifications"
+    eligibility: "All WA businesses"
+    access: "Contact"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://washingtonapex.org"
+    free_status: true
+    audiences: []
+
+  - name: "Microsoft for Startups Founders Hub"
+    organization: "Microsoft"
+    type: "Cloud Credits"
+    description: "Up to $150K Azure, GitHub Enterprise, OpenAI credits for software-based startups"
+    eligibility: "Software-based startups"
+    access: "Sign up"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://startups.microsoft.com"
+    free_status: true
+    audiences: []
+
+  - name: "AWS Activate"
+    organization: "Amazon"
+    type: "Cloud Credits"
+    description: "Up to $100K AWS credits and training for startups"
+    eligibility: "Startups"
+    access: "Sign up"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://aws.amazon.com/activate"
+    free_status: true
+    audiences: []
+
+  - name: "SCORE Women's Pitch Contest"
+    organization: "SCORE Greater Seattle"
+    type: "Competition"
+    description: "Annual pitch contest with coaching and cash prizes for women entrepreneurs"
+    eligibility: "Women entrepreneurs"
+    access: "Apply via SCORE"
+    counties:
+      - King
+      - Snohomish
+      - Kitsap
+    url: "https://score.org/seattle"
+    free_status: true
+    audiences:
+      - women
+
+  - name: "Dempsey Startup Competition"
+    organization: "UW Buerk Center"
+    type: "Competition"
+    description: "Multi-stage competition with up to $25K prize for Cascadia students. 28th year in 2025."
+    eligibility: "Cascadia students"
+    access: "Register annually"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://foster.uw.edu"
+    free_status: true
+    audiences: []
+
+  - name: "Hollomon Health Innovation Challenge"
+    organization: "UW Buerk Center"
+    type: "Competition"
+    description: "Health prototype competition with prizes up to $15K+ for Cascadia students"
+    eligibility: "Cascadia students"
+    access: "Apply March"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://foster.uw.edu"
+    free_status: true
+    audiences: []
+
+  - name: "Alaska Airlines Environmental Challenge"
+    organization: "UW Buerk Center"
+    type: "Competition"
+    description: "Environmental innovation prototype competition for Cascadia students"
+    eligibility: "Cascadia students"
+    access: "Apply April"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://foster.uw.edu"
+    free_status: true
+    audiences: []
+
+  - name: "Harriet Stephenson Competition"
+    organization: "Seattle University"
+    type: "Competition"
+    description: "Business plan competition with prizes for SU students and alumni"
+    eligibility: "SU students/alumni"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://seattleu.edu"
+    free_status: true
+    audiences: []
+
+  - name: "WSU Business Plan Competition"
+    organization: "WSU Center for Entrepreneurship"
+    type: "Competition"
+    description: "Pitch competition with $10K grand prize for WSU students"
+    eligibility: "WSU students"
+    access: "Register by March 13"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://entrepreneurship.wsu.edu"
+    free_status: true
+    audiences: []
+
+  - name: "Founders Live Seattle"
+    organization: "Founders Live (HQ Seattle)"
+    type: "Pitch Competition"
+    description: "99-second pitches with audience vote and Prime Time advancement for early-stage startups"
+    eligibility: "Early-stage startups"
+    access: "Apply at founderslive.com"
+    counties:
+      - King
+    url: "https://founderslive.com"
+    free_status: true
+    audiences: []
+
+  - name: "Startup World Cup Seattle Regional"
+    organization: "Founders Live + WTIA"
+    type: "Competition"
+    description: "Regional competition where winner advances to global finals for $1M"
+    eligibility: "Local startups"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://lu.ma"
+    free_status: true
+    audiences: []
+
+  - name: "BEST Scholarships (Lacey/Olympia/Tumwater)"
+    organization: "Cities + Thurston EDC"
+    type: "Training Scholarships"
+    description: "Full scholarships ($399 value) for startup training"
+    eligibility: "Local startups"
+    access: "Apply via Typeform"
+    counties:
+      - Thurston
+    url: "https://businessresources.thurstonedc.com"
+    free_status: true
+    audiences: []

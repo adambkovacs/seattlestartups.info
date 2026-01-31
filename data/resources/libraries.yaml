@@ -1,0 +1,100 @@
+# Library Business Resources
+# Extracted from ecosystem-master-inventory.md
+# Last updated: 2026-01-30
+
+resources:
+  - name: "Library to Business (L2B) Program"
+    organization: "Seattle Public Library"
+    type: "Advising/Research"
+    description: "1:1 business librarian appointments, premium databases, workshops"
+    eligibility: "SPL cardholders"
+    access: "Book at L2B@spl.org"
+    counties:
+      - King
+    url: "https://spl.org"
+    free_status: true
+    audiences: []
+
+  - name: "SPL Business Databases"
+    organization: "Seattle Public Library"
+    type: "Research"
+    description: "ABI/INFORM, Data Axle, SimplyAnalytics, RMA eStatement Studies"
+    eligibility: "SPL cardholders"
+    access: "Online with card"
+    counties:
+      - King
+    url: "https://spl.org"
+    free_status: true
+    audiences: []
+
+  - name: "KCLS Small Business Resources"
+    organization: "King County Library"
+    type: "Research/Training"
+    description: "Sample business plans, counseling connections, databases"
+    eligibility: "KCLS cardholders"
+    access: "Online/in-library"
+    counties:
+      - King
+    url: "https://kcls.org"
+    free_status: true
+    audiences: []
+
+  - name: "KCLS LinkedIn Learning"
+    organization: "King County Library"
+    type: "Training"
+    description: "16,000+ business/tech/design courses"
+    eligibility: "KCLS cardholders"
+    access: "Online"
+    counties:
+      - King
+    url: "https://kcls.org"
+    free_status: true
+    audiences: []
+
+  - name: "Sno-Isle Business Tools"
+    organization: "Sno-Isle Libraries"
+    type: "Research"
+    description: "Data Axle, ABI/INFORM, Business Plans Handbook"
+    eligibility: "Cardholders"
+    access: "Online with card"
+    counties:
+      - Snohomish
+    url: "https://sno-isle.org"
+    free_status: true
+    audiences: []
+
+  - name: "Pierce County Library Job+Business Center"
+    organization: "Pierce County Library"
+    type: "Training/Research"
+    description: "Technology skills, certifications (MS/Adobe/QuickBooks), databases"
+    eligibility: "PCLS cardholders"
+    access: "Online/in-library"
+    counties:
+      - Pierce
+    url: "https://mypcls.org"
+    free_status: true
+    audiences: []
+
+  - name: "Kitsap Regional Library Business Resources"
+    organization: "Kitsap Regional Library"
+    type: "Research"
+    description: "Data Axle, Business Plans Handbook, market research, free meeting rooms at 9 locations"
+    eligibility: "KRL cardholders"
+    access: "Online/in-library"
+    counties:
+      - Kitsap
+    url: "https://krl.org"
+    free_status: true
+    audiences: []
+
+  - name: "Timberland Regional Library Resources"
+    organization: "Timberland Regional Library"
+    type: "Research/Space"
+    description: "Gale Business, Data Axle, Legal Forms, Expanded Access Hours (7am-8pm)"
+    eligibility: "TRL cardholders"
+    access: "Online/in-library"
+    counties:
+      - Thurston
+    url: "https://trl.org"
+    free_status: true
+    audiences: []

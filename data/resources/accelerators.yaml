@@ -1,0 +1,256 @@
+# Accelerators and Incubator Programs
+# Extracted from ecosystem-master-inventory.md
+# Last updated: 2026-01-30
+
+resources:
+  - name: "WTIA Founder Cohort"
+    organization: "WTIA"
+    type: "Pre-accelerator"
+    description: "6-month curriculum, mentorship, investor connections for seed-stage WA tech startups with less than $1M revenue"
+    eligibility: "Seed-stage WA tech startups, <$1M revenue"
+    access: "Apply"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://washingtontechnology.org"
+    free_status: true
+    audiences: []
+
+  - name: "Foundations Founder-in-Residence"
+    organization: "Foundations"
+    type: "Accelerator"
+    description: "Mentorship, founder circles, pitch clinics, office space for early-stage founders"
+    eligibility: "Early-stage founders (invite)"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://seattlefoundations.org"
+    free_status: true
+    audiences: []
+
+  - name: "Cascadia CleanTech Accelerator"
+    organization: "CleanTech Alliance + VertueLab"
+    type: "Accelerator"
+    description: "18-week program with $10K+ prizes and mentorship for PNW cleantech startups that have raised less than $1M"
+    eligibility: "PNW cleantech, <$1M raised"
+    access: "Apply ($500 fee)"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://cascadiacleantech.org"
+    free_status: false
+    audiences: []
+
+  - name: "Washington Maritime Blue Accelerator"
+    organization: "Maritime Blue"
+    type: "Accelerator"
+    description: "4-month mentor program with global network for North American maritime startups"
+    eligibility: "North American maritime startups"
+    access: "Apply"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://maritimeblue.org"
+    free_status: true
+    audiences: []
+
+  - name: "SEA619"
+    organization: "PACE"
+    type: "Multi-stage"
+    description: "Association to Incubator to Accelerator pathway for Black founders"
+    eligibility: "Black founders"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://pace.org"
+    free_status: true
+    audiences:
+      - bipoc
+
+  - name: "Plug and Play Seattle"
+    organization: "Plug and Play"
+    type: "Accelerator"
+    description: "12-week virtual accelerator with free Everett office space for enterprise, energy, health, cloud startups"
+    eligibility: "Enterprise, energy, health, cloud startups"
+    access: "Apply"
+    counties:
+      - Snohomish
+    url: "https://plugandplaytechcenter.com"
+    free_status: true
+    audiences: []
+
+  - name: "Seattle Angel Conference"
+    organization: "Mossy Ventures"
+    type: "Competition"
+    description: "12-week competition with $150-200K investment to winner for concept to pre-seed stage startups"
+    eligibility: "Concept to pre-seed"
+    access: "Apply (symbolic fee)"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://seattleangelconference.com"
+    free_status: true
+    audiences: []
+
+  - name: "Port of Seattle Port Gen Accelerator"
+    organization: "Port of Seattle"
+    type: "Accelerator"
+    description: "Innovation accelerator for WMBE businesses with mentoring"
+    eligibility: "Minority/women-owned businesses"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://portseattle.org"
+    free_status: true
+    audiences:
+      - bipoc
+      - women
+
+  - name: "Startup425 Accelerator"
+    organization: "Startup425 + Founder Institute"
+    type: "Accelerator"
+    description: "15-week program with mentorship, no equity taken. 39 graduates to date."
+    eligibility: "Eastside entrepreneurs"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://startup425.org"
+    free_status: true
+    audiences: []
+
+  - name: "Bellevue College Innovation Lab"
+    organization: "Bellevue College + Startup425"
+    type: "Accelerator"
+    description: "Business-ready and banking-ready preparation with $300K revenue target for underserved entrepreneurs"
+    eligibility: "Underserved entrepreneurs"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://bellevuecollege.edu"
+    free_status: true
+    audiences: []
+
+  - name: "Matchstick Lab Accelerator"
+    organization: "KEDA (WSMA grant)"
+    type: "Accelerator"
+    description: "Mentorship, education, networking for 24 early-stage businesses in Kitsap County"
+    eligibility: "Early-stage Kitsap business owners"
+    access: "Apply"
+    counties:
+      - Kitsap
+    url: "https://kitsapeda.org"
+    free_status: true
+    audiences: []
+
+  - name: "Spaceworks Black Business Accelerator"
+    organization: "Spaceworks"
+    type: "Accelerator"
+    description: "Business plan development and networking for Black-owned businesses"
+    eligibility: "Black entrepreneurs"
+    access: "Apply"
+    counties:
+      - Pierce
+    url: "https://spaceworkstacoma.com"
+    free_status: true
+    audiences:
+      - bipoc
+
+  - name: "Tacoma Maritime Blue Incubator"
+    organization: "Maritime Blue"
+    type: "Incubator"
+    description: "Free rent incubator for maritime and clean energy startups with mentorship"
+    eligibility: "Maritime startups"
+    access: "Apply"
+    counties:
+      - Pierce
+    url: "https://maritimeblue.org/tacoma"
+    free_status: true
+    audiences: []
+
+  - name: "William Factory Incubator"
+    organization: "William Factory (nonprofit)"
+    type: "Incubator"
+    description: "Workshops, mentors, coaches, networking, capital access. Operating since 1986."
+    eligibility: "Startups"
+    access: "Apply"
+    counties:
+      - Pierce
+    url: "https://williamfactory.com"
+    free_status: true
+    audiences: []
+
+  - name: "Jones + Foster Accelerator"
+    organization: "UW Buerk Center"
+    type: "Accelerator"
+    description: "6-month mentoring, workshops, up to $25K funding for WA student-led companies (Note: paused 2025-26)"
+    eligibility: "WA student-led companies"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://foster.uw.edu"
+    free_status: true
+    audiences: []
+
+  - name: "WSU Jones Milestone Accelerator"
+    organization: "WSU"
+    type: "Accelerator"
+    description: "6-month program with stipends, legal credit, coworking for student-led ventures"
+    eligibility: "Student-led ventures"
+    access: "Apply"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://entrepreneurship.wsu.edu"
+    free_status: true
+    audiences: []
+
+  - name: "UW Climate Tech Incubator"
+    organization: "UW CoMotion + Partners"
+    type: "Incubator"
+    description: "8-month cohort with mentorship and investor network for early-stage climate tech startups"
+    eligibility: "Early-stage climate tech"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://comotion.uw.edu"
+    free_status: true
+    audiences: []
+
+  - name: "Seattle Climate Innovation Hub"
+    organization: "Seattle OED + CoMotion + 9Zero"
+    type: "Incubator/Hub"
+    description: "Climate tech incubation and networking events for climate and cleantech startups"
+    eligibility: "Climate/cleantech startups"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://comotion.uw.edu"
+    free_status: true
+    audiences: []
+
+  - name: "CoMotion Labs"
+    organization: "University of Washington"
+    type: "Incubator"
+    description: "Life sciences, hardware, tech lab space with free lectures for pre-Series A startups. Hosts 60-90 startups."
+    eligibility: "Pre-Series A startups"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://comotion.uw.edu"
+    free_status: true
+    audiences: []

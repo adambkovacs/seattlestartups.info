@@ -1,0 +1,262 @@
+# Community Events and Networking
+# Extracted from ecosystem-master-inventory.md
+# Last updated: 2026-01-30
+
+resources:
+  - name: "1 Million Cups Seattle"
+    organization: "Kauffman Foundation"
+    type: "Weekly Pitch"
+    description: "6-min pitches + Q&A + networking every Wednesday 9am"
+    eligibility: "All entrepreneurs"
+    access: "Join via linktr.ee/1mcseattle"
+    counties:
+      - King
+    url: "https://1millioncups.com/seattle"
+    free_status: true
+    audiences: []
+
+  - name: "Startup Grind Seattle"
+    organization: "Startup Grind/Google"
+    type: "Monthly Events"
+    description: "Fireside chats with founders/investors, networking. 5,255 members."
+    eligibility: "All entrepreneurs"
+    access: "Meetup/startupgrind.com"
+    counties:
+      - King
+    url: "https://startupgrind.com/seattle"
+    free_status: true
+    audiences: []
+
+  - name: "Seattle Startup Friends"
+    organization: "Community"
+    type: "Networking"
+    description: "Founder-to-founder networking and mentorship at Fremont Brewing"
+    eligibility: "Startup founders"
+    access: "Meetup"
+    counties:
+      - King
+    url: "https://meetup.com/startupfriends"
+    free_status: true
+    audiences: []
+
+  - name: "Seattle Startup Founder 101"
+    organization: "Community"
+    type: "Workshops"
+    description: "Best practices, AI governance, feedback sessions for tech entrepreneurs"
+    eligibility: "Tech entrepreneurs"
+    access: "Meetup"
+    counties:
+      - King
+    url: "https://meetup.com/seattle-startup-founder-101"
+    free_status: true
+    audiences: []
+
+  - name: "SURF Incubator Events"
+    organization: "SURF Incubator"
+    type: "Community Hub"
+    description: "300+ events annually, Startups in Action weekly networking. 15+ years."
+    eligibility: "All entrepreneurs"
+    access: "Register"
+    counties:
+      - King
+    url: "https://surfincubator.com"
+    free_status: true
+    audiences: []
+
+  - name: "Foundations Seattle"
+    organization: "Graham & Walker + Community"
+    type: "Community Space"
+    description: "Weekly events, mentor office hours, pitch clinics, show & tell for early founders"
+    eligibility: "Early founders (invite-only)"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://seattlefoundations.org"
+    free_status: true
+    audiences: []
+
+  - name: "Startup425"
+    organization: "Eastside Cities Coalition"
+    type: "Ecosystem Hub"
+    description: "Free coworking sessions, accelerator, workshops for Eastside entrepreneurs"
+    eligibility: "Eastside entrepreneurs"
+    access: "Join"
+    counties:
+      - King
+    url: "https://startup425.org"
+    free_status: true
+    audiences: []
+
+  - name: "Venture Mechanics Events"
+    organization: "Venture Mechanics"
+    type: "Event Space"
+    description: "Venture Saturday, pitch practice, Scalathon, diversity groups"
+    eligibility: "All founders"
+    access: "Register"
+    counties:
+      - King
+    url: "https://venturemechanics.com"
+    free_status: true
+    audiences: []
+
+  - name: "Black Founders & Funders"
+    organization: "Venture Mechanics"
+    type: "Community"
+    description: "Quarterly meetups, mentors, accelerator access, funding. 150+ members."
+    eligibility: "Black founders"
+    access: "Register"
+    counties:
+      - King
+    url: "https://venturemechanics.com"
+    free_status: true
+    audiences:
+      - bipoc
+
+  - name: "Filipino Founders & Funders"
+    organization: "Venture Mechanics"
+    type: "Community"
+    description: "Networking for Filipino founders"
+    eligibility: "Filipino founders"
+    access: "Register"
+    counties:
+      - King
+    url: "https://venturemechanics.com"
+    free_status: true
+    audiences: []
+
+  - name: "Korean Founders & Funders"
+    organization: "Venture Mechanics"
+    type: "Community"
+    description: "Networking for Korean founders"
+    eligibility: "Korean founders"
+    access: "Register"
+    counties:
+      - King
+    url: "https://venturemechanics.com"
+    free_status: true
+    audiences: []
+
+  - name: "LGBTQ+ Founders & Funders"
+    organization: "Venture Mechanics"
+    type: "Community"
+    description: "Networking for LGBTQ+ founders"
+    eligibility: "LGBTQ+ founders"
+    access: "Register"
+    counties:
+      - King
+    url: "https://venturemechanics.com"
+    free_status: true
+    audiences:
+      - lgbtq
+
+  - name: "Veteran Founders & Funders"
+    organization: "Venture Mechanics"
+    type: "Community"
+    description: "Networking for veteran founders"
+    eligibility: "Veteran founders"
+    access: "Register"
+    counties:
+      - King
+    url: "https://venturemechanics.com"
+    free_status: true
+    audiences:
+      - veterans
+
+  - name: "Startup253"
+    organization: "Community"
+    type: "Hub"
+    description: "Tacoma startup community and networking"
+    eligibility: "All entrepreneurs"
+    access: "Join"
+    counties:
+      - Pierce
+    url: "https://startup253.com"
+    free_status: true
+    audiences: []
+
+  - name: "Pierce County Business Accelerator"
+    organization: "PCBA"
+    type: "Workshops"
+    description: "Spring workshop series on growth, social media, mindset"
+    eligibility: "All businesses"
+    access: "Register"
+    counties:
+      - Pierce
+    url: "https://pcba.biz"
+    free_status: true
+    audiences: []
+
+  - name: "South Sound Entrepreneurship Week"
+    organization: "buildJUSTLY + Partners"
+    type: "Event Week"
+    description: "Five-day panels, workshops, networking. 1,000+ attendees."
+    eligibility: "All entrepreneurs"
+    access: "Attend"
+    counties:
+      - Pierce
+    url: "https://choosetacomapierce.org"
+    free_status: true
+    audiences: []
+
+  - name: "TiE Seattle"
+    organization: "TiE (global nonprofit)"
+    type: "Community"
+    description: "Mentoring, networking, Z5 Catalyst funding access"
+    eligibility: "All entrepreneurs"
+    access: "Join events"
+    counties:
+      - King
+    url: "https://seattle.tie.org"
+    free_status: true
+    audiences: []
+
+  - name: "Women Who Code Seattle"
+    organization: "Women Who Code"
+    type: "Community"
+    description: "Networking, mentorship, career advice for women in tech (Note: transitioning)"
+    eligibility: "Women in tech"
+    access: "Join"
+    counties:
+      - King
+    url: "https://womenwhocode.com"
+    free_status: true
+    audiences:
+      - women
+
+  - name: "She's Coding Seattle"
+    organization: "She's Coding"
+    type: "Community"
+    description: "Monthly meetups, codeathons, interview prep for women and non-binary"
+    eligibility: "Women/non-binary"
+    access: "Meetup"
+    counties:
+      - King
+    url: "https://meetup.com/shescoding-seattle"
+    free_status: true
+    audiences:
+      - women
+
+  - name: "Seattle Tech Week"
+    organization: "Community"
+    type: "Annual Week"
+    description: "100+ community events and networking. July 27-31, 2026."
+    eligibility: "All"
+    access: "Register"
+    counties:
+      - King
+    url: "https://seattletechweek.com"
+    free_status: true
+    audiences: []
+
+  - name: "BIPOC Business Forum"
+    organization: "KEDA + Partners"
+    type: "Networking"
+    description: "Business lending panels, expert speakers for BIPOC entrepreneurs"
+    eligibility: "BIPOC entrepreneurs"
+    access: "Attend"
+    counties:
+      - Kitsap
+    url: "https://kitsapeda.org"
+    free_status: true
+    audiences:
+      - bipoc

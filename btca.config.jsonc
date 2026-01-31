@@ -1,0 +1,20 @@
+{
+  // Better-Context configuration for seattlestartups.info
+  // Searches source code directly for up-to-date implementation details
+  "resources": {
+    "hugo": {
+      "repo": "gohugoio/hugo",
+      "description": "Hugo static site generator - templates, shortcodes, data files",
+      "paths": ["tpl/", "hugolib/", "resources/"]
+    },
+    "tailwindcss": {
+      "repo": "tailwindlabs/tailwindcss",
+      "description": "Tailwind CSS utility framework - config, plugins, components",
+      "paths": ["src/", "packages/"]
+    }
+  },
+  "model": {
+    "provider": "opencode",
+    "model": "claude-haiku-4-5"
+  }
+}

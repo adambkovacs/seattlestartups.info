@@ -1,0 +1,295 @@
+# Mentorship and Advising Programs
+# Extracted from ecosystem-master-inventory.md
+# Last updated: 2026-01-30
+
+resources:
+  - name: "SCORE Greater Seattle"
+    organization: "SCORE (501c3)"
+    type: "Mentoring"
+    description: "Confidential 1:1 counseling with 160+ mentors across 62 industries"
+    eligibility: "All entrepreneurs"
+    access: "Request mentor at score.org/seattle"
+    counties:
+      - King
+      - Snohomish
+      - Kitsap
+    url: "https://score.org/seattle"
+    free_status: true
+    audiences: []
+
+  - name: "SCORE Local Workshops"
+    organization: "SCORE Greater Seattle"
+    type: "Training"
+    description: "Workshops on AI, taxes, pricing, marketing, grant writing"
+    eligibility: "Open to all"
+    access: "Register online"
+    counties:
+      - King
+      - Snohomish
+      - Kitsap
+    url: "https://score.org/seattle/local-workshops"
+    free_status: true
+    audiences: []
+
+  - name: "Washington SBDC Network"
+    organization: "WSU + SBA"
+    type: "Advising"
+    description: "No-cost 1:1 advising on all business phases, training, market research"
+    eligibility: "All entrepreneurs"
+    access: "Contact local center"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://wsbdc.org"
+    free_status: true
+    audiences: []
+
+  - name: "Auburn SBDC"
+    organization: "WA SBDC Network"
+    type: "Advising"
+    description: "Business counseling services"
+    eligibility: "Community"
+    access: "Schedule appointment"
+    counties:
+      - King
+    url: "https://wsbdc.org"
+    free_status: true
+    audiences: []
+
+  - name: "Bellevue SBDC"
+    organization: "WA SBDC Network"
+    type: "Advising"
+    description: "Business counseling services"
+    eligibility: "Community"
+    access: "Schedule appointment"
+    counties:
+      - King
+    url: "https://wsbdc.org"
+    free_status: true
+    audiences: []
+
+  - name: "Des Moines SBDC (Highline)"
+    organization: "WA SBDC/Highline College"
+    type: "Advising"
+    description: "Business counseling for South King County"
+    eligibility: "Community"
+    access: "Contact"
+    counties:
+      - King
+    url: "https://sbdc.highline.edu"
+    free_status: true
+    audiences: []
+
+  - name: "Everett SBDC"
+    organization: "WA SBDC Network"
+    type: "Advising"
+    description: "Business counseling services"
+    eligibility: "Community"
+    access: "Schedule appointment"
+    counties:
+      - Snohomish
+    url: "https://wsbdc.org"
+    free_status: true
+    audiences: []
+
+  - name: "Tacoma SBDC (Bates)"
+    organization: "WA SBDC/Bates Technical"
+    type: "Advising"
+    description: "Business counseling, orientation sessions"
+    eligibility: "Existing businesses"
+    access: "Call (253) 268-3339"
+    counties:
+      - Pierce
+    url: "https://wsbdc.org"
+    free_status: true
+    audiences: []
+
+  - name: "Lacey/Olympia SBDC"
+    organization: "WA SBDC/Thurston EDC"
+    type: "Advising"
+    description: "Business counseling and video series"
+    eligibility: "Community"
+    access: "Visit CB&I"
+    counties:
+      - Thurston
+    url: "https://businessresources.thurstonedc.com"
+    free_status: true
+    audiences: []
+
+  - name: "Kitsap SBDC"
+    organization: "WA SBDC/KEDA"
+    type: "Advising"
+    description: "Business counseling services"
+    eligibility: "Community"
+    access: "Via KEDA"
+    counties:
+      - Kitsap
+    url: "https://kitsapeda.org"
+    free_status: true
+    audiences: []
+
+  - name: "Seattle OED Small Business Consulting"
+    organization: "City of Seattle OED"
+    type: "Advising"
+    description: "Up to 10 free hours covering accounting, commercial space, legal, permit coaching"
+    eligibility: "Seattle businesses"
+    access: "Contact (206) 684-8090"
+    counties:
+      - King
+    url: "https://seattle.gov/economic-development"
+    free_status: true
+    audiences: []
+
+  - name: "Seattle OED Legal Assistance"
+    organization: "City of Seattle OED"
+    type: "Legal Clinic"
+    description: "Free counseling on corporate/IP, commercial leasing, operations"
+    eligibility: "Seattle businesses"
+    access: "Contact OED"
+    counties:
+      - King
+    url: "https://seattle.gov/economic-development"
+    free_status: true
+    audiences: []
+
+  - name: "CoMotion Advisory Network"
+    organization: "UW CoMotion"
+    type: "Mentoring"
+    description: "Access to mentor community for UW and incubator members"
+    eligibility: "UW/incubator members"
+    access: "Via programs"
+    counties:
+      - King
+    url: "https://comotion.uw.edu"
+    free_status: true
+    audiences: []
+
+  - name: "WE Lead Mentoring Program"
+    organization: "UW Buerk Center"
+    type: "Mentoring"
+    description: "1:1 mentoring for women entrepreneurs in the UW community"
+    eligibility: "UW community"
+    access: "Apply November"
+    counties:
+      - King
+    url: "https://foster.uw.edu"
+    free_status: true
+    audiences:
+      - women
+
+  - name: "Seattle U IEC Coaching"
+    organization: "Seattle University"
+    type: "Advising"
+    description: "Connections to startup community, experiential learning. Operating since 1990."
+    eligibility: "SU students/regional"
+    access: "Contact ecenter@seattleu.edu"
+    counties:
+      - King
+    url: "https://seattleu.edu"
+    free_status: true
+    audiences: []
+
+  - name: "UW Tacoma Free Consultations"
+    organization: "UW Tacoma Milgard School"
+    type: "Advising"
+    description: "Expert consultations via PLU, Asia Pacific Center, BINW, Mi Centro"
+    eligibility: "Community"
+    access: "Contact Kirsten Kreis"
+    counties:
+      - Pierce
+    url: "https://tacoma.uw.edu"
+    free_status: true
+    audiences: []
+
+  - name: "WA Center for Women in Business"
+    organization: "Thurston EDC"
+    type: "Training/Coaching"
+    description: "Free coaching, Let's Talk Business webinars with women focus"
+    eligibility: "All owners (women focus)"
+    access: "Contact"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    url: "https://wcwb.org"
+    free_status: true
+    audiences:
+      - women
+
+  - name: "Graham & Walker Catalyst"
+    organization: "Graham & Walker"
+    type: "Fundraising Prep"
+    description: "Fundraising-readiness program for female founders. 638 founders served."
+    eligibility: "Female founders"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://grahamwalker.com"
+    free_status: true
+    audiences:
+      - women
+
+  - name: "Sno-Isle SCORE Partnership"
+    organization: "Sno-Isle Libraries"
+    type: "Advising"
+    description: "1-hour free counseling appointments at the library"
+    eligibility: "Community"
+    access: "Book at Lynnwood Library"
+    counties:
+      - Snohomish
+    url: "https://sno-isle.org"
+    free_status: true
+    audiences: []
+
+  - name: "TheLab@Everett"
+    organization: "NWIRC (nonprofit)"
+    type: "Incubator"
+    description: "FREE advisory services, 3D printers, workspaces for entrepreneurs and inventors"
+    eligibility: "Entrepreneurs/inventors"
+    access: "Contact"
+    counties:
+      - Snohomish
+    url: "https://nwirc.com"
+    free_status: true
+    audiences: []
+
+  - name: "Contractor Coffee Hour"
+    organization: "KEDA"
+    type: "Training"
+    description: "Drop-in Zoom help with government contracting"
+    eligibility: "Small businesses"
+    access: "Attend"
+    counties:
+      - Kitsap
+    url: "https://kitsapeda.org"
+    free_status: true
+    audiences: []
+
+  - name: "Green River College SBDC"
+    organization: "Green River College"
+    type: "Advising"
+    description: "No-cost 1:1 counseling and market research"
+    eligibility: "Community"
+    access: "Call (253) 520-6260"
+    counties:
+      - King
+    url: "https://greenriver.edu"
+    free_status: true
+    audiences: []
+
+  - name: "Edmonds College SBDC Partnership"
+    organization: "Edmonds College"
+    type: "Advising"
+    description: "On-site no-cost advising"
+    eligibility: "Community"
+    access: "Schedule"
+    counties:
+      - Snohomish
+    url: "https://edmonds.edu"
+    free_status: true
+    audiences: []

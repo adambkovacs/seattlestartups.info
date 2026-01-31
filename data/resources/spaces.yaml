@@ -1,0 +1,271 @@
+# Physical Spaces - Makerspaces, Coworking, Labs
+# Extracted from ecosystem-master-inventory.md
+# Last updated: 2026-01-30
+
+resources:
+  - name: "KCLS Makerspaces"
+    organization: "King County Library"
+    type: "Makerspace"
+    description: "3D printers, laser cutters, sewing, vinyl cutters, recording - no reservation needed"
+    eligibility: "Public"
+    access: "Drop-in (no reservation)"
+    counties:
+      - King
+    url: "https://kcls.org/makerspaces"
+    free_status: true
+    audiences: []
+
+  - name: "Seattle Makers Maketeer Program"
+    organization: "Community Makers NW"
+    type: "Makerspace"
+    description: "4 hrs/week volunteering = free membership + $120 credits"
+    eligibility: "Public"
+    access: "Apply to volunteer"
+    counties:
+      - King
+    url: "https://seattlemakers.org"
+    free_status: true
+    audiences: []
+
+  - name: "Seattle Makers Scholarship"
+    organization: "Community Makers NW"
+    type: "Makerspace"
+    description: "Full membership for economically disadvantaged individuals"
+    eligibility: "Students, low-income, retirees"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://seattlemakers.org"
+    free_status: true
+    audiences: []
+
+  - name: "Capitol Hill Tool Library"
+    organization: "Sustainable Capitol Hill"
+    type: "Tool Library"
+    description: "Tools, kitchen appliances, sewing, gardening, outdoor gear"
+    eligibility: "Public"
+    access: "Free/pay-what-you-can"
+    counties:
+      - King
+    url: "https://sustainablecapitolhill.org"
+    free_status: true
+    audiences: []
+
+  - name: "West Seattle Tool Library"
+    organization: "Nonprofit"
+    type: "Tool Library"
+    description: "3,300+ tools, Fix-It Night Wednesdays, classes. 1,500+ members."
+    eligibility: "Public"
+    access: "Free membership"
+    counties:
+      - King
+    url: "https://wstools.org"
+    free_status: true
+    audiences: []
+
+  - name: "South King Tool Library"
+    organization: "Nonprofit"
+    type: "Tool Library"
+    description: "Tools, sewing, pressure washers, composting workshops"
+    eligibility: "Public"
+    access: "Free"
+    counties:
+      - King
+      - Pierce
+    url: "https://southkingtools.org"
+    free_status: true
+    audiences: []
+
+  - name: "SURF Incubator Free Wednesdays"
+    organization: "SURF Incubator"
+    type: "Coworking"
+    description: "Full coworking 9am-5pm every Wednesday + networking"
+    eligibility: "All"
+    access: "Register (limited)"
+    counties:
+      - King
+    url: "https://surfincubator.com"
+    free_status: true
+    audiences: []
+
+  - name: "Hing Hay Coworks"
+    organization: "SCIDpda (nonprofit)"
+    type: "Coworking"
+    description: "Conference rooms, fiber internet, print center"
+    eligibility: "Entrepreneurs"
+    access: "$40 trial"
+    counties:
+      - King
+    url: "https://hhcoworks.org"
+    free_status: false
+    audiences: []
+
+  - name: "SnoCo Makerspace"
+    organization: "Nonprofit"
+    type: "Makerspace"
+    description: "3D printers, laser, woodshop, electronics. Free Maker Tuesday tours."
+    eligibility: "Public"
+    access: "Membership; free tours"
+    counties:
+      - Snohomish
+    url: "https://snocomakers.wildapricot.org"
+    free_status: true
+    audiences: []
+
+  - name: "The Facility (Edmonds College)"
+    organization: "Edmonds College"
+    type: "Makerspace"
+    description: "Laser, 3D printers, CNC, metal/wood shop"
+    eligibility: "Public"
+    access: "Pay-per-use"
+    counties:
+      - Snohomish
+    url: "https://edmonds.edu"
+    free_status: false
+    audiences: []
+
+  - name: "Creator Zone"
+    organization: "Nonprofit"
+    type: "Makerspace"
+    description: "Creative makerspace for families"
+    eligibility: "Community"
+    access: "Visit"
+    counties:
+      - Snohomish
+    url: "https://creatorzone.org"
+    free_status: false
+    audiences: []
+
+  - name: "BARN"
+    organization: "Nonprofit"
+    type: "Multi-studio"
+    description: "25K sq ft, 11 studios (wood, glass, metal, tech, culinary), free tours, Teen Nights. 1,164+ members."
+    eligibility: "Public"
+    access: "$35/mo; $20 day visit"
+    counties:
+      - Kitsap
+    url: "https://bainbridgebarn.org"
+    free_status: false
+    audiences: []
+
+  - name: "Tacoma Public Library Maker Labs"
+    organization: "Tacoma Public Library"
+    type: "Makerspace"
+    description: "Memory Lab, 3D printers, LEGOs, Raspberry Pi"
+    eligibility: "Public"
+    access: "Free; ages 8+ with caregiver"
+    counties:
+      - Pierce
+    url: "https://tacomalibrary.org"
+    free_status: true
+    audiences: []
+
+  - name: "FabLab Tacoma"
+    organization: "Community"
+    type: "Fab Lab"
+    description: "3D printers/scanners, laser, CNC, plasma, metal/wood shop"
+    eligibility: "Public"
+    access: "Visit"
+    counties:
+      - Pierce
+    url: "https://fablabs.io"
+    free_status: true
+    audiences: []
+
+  - name: "Tinkertopia TinkerSpace"
+    organization: "Tinkertopia"
+    type: "Creative Workshop"
+    description: "Upcycling, sculpture, STEAM activities"
+    eligibility: "Public"
+    access: "$10/90-min session"
+    counties:
+      - Pierce
+    url: "https://tinkertopia.com"
+    free_status: false
+    audiences: []
+
+  - name: "Lacey MakerSpace"
+    organization: "City + St. Martin's + Thurston EDC"
+    type: "Makerspace"
+    description: "Water jets, 3D printers, laser, embroidery, welding, sewing. FREE via library."
+    eligibility: "Public"
+    access: "$50/mo; FREE via library"
+    counties:
+      - Thurston
+    url: "https://laceymakerspace.org"
+    free_status: true
+    audiences: []
+
+  - name: "OlyMEGA"
+    organization: "Nonprofit"
+    type: "Makerspace"
+    description: "3D printing, laser, sewing, woodworking. Free Thursday Open House."
+    eligibility: "Public"
+    access: "Free open house Thursdays"
+    counties:
+      - Thurston
+    url: "https://olymega.org"
+    free_status: true
+    audiences: []
+
+  - name: "Spice Bridge/FIN Kitchen"
+    organization: "Food Innovation Network"
+    type: "Kitchen Incubator"
+    description: "Commercial kitchen, coaching, permits/licensing, marketing for BIPOC/immigrant/women entrepreneurs"
+    eligibility: "South King BIPOC/immigrant/women"
+    access: "Apply (waitlist)"
+    counties:
+      - King
+    url: "https://spicebridge.org"
+    free_status: true
+    audiences:
+      - bipoc
+      - women
+
+  - name: "Ventures Kitchen Incubator"
+    organization: "Ventures (nonprofit)"
+    type: "Kitchen"
+    description: "Sub-market rate kitchen, coaching, storage for low-income entrepreneurs"
+    eligibility: "Low-income entrepreneurs"
+    access: "Apply"
+    counties:
+      - King
+    url: "https://venturesnonprofit.org"
+    free_status: false
+    audiences: []
+
+  - name: "AI House Seattle"
+    organization: "AI2 Incubator + City"
+    type: "Community Hub"
+    description: "108K sq ft coworking, events for 400+, AI community hub at Pier 70"
+    eligibility: "AI founders/practitioners"
+    access: "Inquire"
+    counties:
+      - King
+    url: "https://ai2incubator.com"
+    free_status: true
+    audiences: []
+
+  - name: "Seattle Restored"
+    organization: "City of Seattle OED"
+    type: "Space Access"
+    description: "Pairs businesses with vacant storefronts for pop-ups"
+    eligibility: "Small businesses/creatives"
+    access: "Via OED"
+    counties:
+      - King
+    url: "https://seattle.gov/economic-development"
+    free_status: true
+    audiences: []
+
+  - name: "Invest Northwest SnoCo"
+    organization: "Snohomish County + Partners"
+    type: "Soft Landing"
+    description: "4 months free desk space, networking for international businesses"
+    eligibility: "International SMBs"
+    access: "Apply"
+    counties:
+      - Snohomish
+    url: "https://snohomishcountywa.gov"
+    free_status: true
+    audiences: []
