@@ -611,6 +611,7 @@ document.addEventListener('DOMContentLoaded', function() {
     filters.counties.forEach(c => tags.push({ type: 'county', value: c, label: c }));
     filters.cities.forEach(c => tags.push({ type: 'city', value: c, label: c }));
     filters.audiences.forEach(a => tags.push({ type: 'audience', value: a, label: a }));
+    filters.industries.forEach(i => tags.push({ type: 'industry', value: i, label: i }));
     filters.stages.forEach(s => tags.push({ type: 'stage', value: s, label: s.charAt(0).toUpperCase() + s.slice(1) }));
     if (filters.cost !== 'all') tags.push({ type: 'cost', value: filters.cost, label: 'Free Only' });
 
@@ -641,6 +642,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (filters.counties.length) params.set('county', filters.counties.join(','));
     if (filters.cities.length) params.set('city', filters.cities.join(','));
     if (filters.audiences.length) params.set('audience', filters.audiences.join(','));
+    if (filters.industries.length) params.set('industry', filters.industries.join(','));
     if (filters.stages.length) params.set('stage', filters.stages.join(','));
     if (filters.cost !== 'all') params.set('cost', filters.cost);
 
@@ -657,11 +659,12 @@ document.addEventListener('DOMContentLoaded', function() {
       if (searchInput) searchInput.value = filters.search;
     }
 
-    ['category', 'county', 'city', 'audience'].forEach(type => {
+    ['category', 'county', 'city', 'audience', 'industry', 'stage'].forEach(type => {
       const value = params.get(type);
       if (value) {
         const values = value.split(',');
-        filters[type + (type === 'category' ? 'ies' : 's')] = values;
+        const filterKey = (type === 'category' || type === 'industry') ? type.slice(0, -1) + 'ies' : type + 's';
+        filters[filterKey] = values;
         values.forEach(v => {
           const checkbox = document.querySelector(`.${type}-filter[value="${v}"]`);
           if (checkbox) checkbox.checked = true;
@@ -698,7 +701,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Remove single filter
   window.removeFilter = function(type, value) {
-    const filterKey = type + (type === 'category' ? 'ies' : 's');
+    const filterKey = (type === 'category' || type === 'industry') ? type.slice(0, -1) + 'ies' : type + 's';
     if (type === 'cost') {
       filters.cost = 'all';
       document.querySelector('.cost-filter[value="all"]').checked = true;
