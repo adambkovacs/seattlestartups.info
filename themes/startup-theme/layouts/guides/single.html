@@ -1,0 +1,197 @@
+{{ define "main" }}
+<article class="relative">
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden py-12 lg:py-16 border-b border-overcast-200 dark:border-overcast-700">
+    <div class="absolute inset-0 dots-pattern opacity-30 dark:opacity-10"></div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="flex mb-6" aria-label="Breadcrumb">
+        <ol class="flex items-center space-x-2 text-sm font-mono">
+          <li><a href="{{ .Site.BaseURL }}" class="text-overcast-500 dark:text-overcast-400 hover:text-sound-600 dark:hover:text-sound-400 transition-colors">Home</a></li>
+          <li class="text-overcast-300 dark:text-overcast-600">/</li>
+          <li><a href="/guides/" class="text-overcast-500 dark:text-overcast-400 hover:text-sound-600 dark:hover:text-sound-400 transition-colors">Guides</a></li>
+          <li class="text-overcast-300 dark:text-overcast-600">/</li>
+          <li class="text-sound-600 dark:text-sound-400 font-medium truncate max-w-[200px]">{{ .Title }}</li>
+        </ol>
+      </nav>
+
+      <!-- Tags -->
+      {{ with .Params.tags }}
+      <div class="flex flex-wrap gap-2 mb-4">
+        {{ range first 3 . }}
+        <span class="inline-flex items-center px-3 py-1 rounded-lg text-xs font-semibold bg-sound-50 dark:bg-sound-900/50 text-sound-700 dark:text-sound-300">
+          {{ . | humanize }}
+        </span>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      <!-- Title -->
+      <h1 class="font-display font-black text-3xl md:text-4xl lg:text-5xl text-overcast-900 dark:text-white mb-6 tracking-tight leading-tight">
+        {{ .Title }}
+      </h1>
+
+      <!-- Description -->
+      {{ with .Description }}
+      <p class="text-lg md:text-xl text-overcast-600 dark:text-overcast-300 leading-relaxed mb-6">
+        {{ . }}
+      </p>
+      {{ end }}
+
+      <!-- Meta -->
+      <div class="flex flex-wrap items-center gap-4 text-sm text-overcast-500 dark:text-overcast-400">
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          {{ .Date.Format "January 2, 2006" }}
+        </span>
+        {{ if ne .Date .Lastmod }}
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+          </svg>
+          Updated {{ .Lastmod.Format "Jan 2, 2006" }}
+        </span>
+        {{ end }}
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          {{ .ReadingTime }} min read
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Table of Contents (if enabled) -->
+  {{ if .Params.toc }}
+  <aside class="hidden lg:block fixed left-8 top-32 w-64 max-h-[calc(100vh-10rem)] overflow-y-auto">
+    <nav class="bg-overcast-50 dark:bg-overcast-800/50 rounded-xl p-4 border border-overcast-200 dark:border-overcast-700">
+      <h4 class="font-display font-bold text-sm text-overcast-700 dark:text-overcast-300 mb-3 uppercase tracking-wider">Contents</h4>
+      <div class="space-y-2 text-sm">
+        {{ .TableOfContents }}
+      </div>
+    </nav>
+  </aside>
+  {{ end }}
+
+  <!-- Content -->
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="prose prose-lg dark:prose-invert max-w-none
+                prose-headings:font-display prose-headings:font-bold prose-headings:tracking-tight
+                prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-b prose-h2:border-overcast-200 prose-h2:pb-3
+                prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4
+                prose-p:text-overcast-600 dark:prose-p:text-overcast-300
+                prose-a:text-sound-600 dark:prose-a:text-sound-400 prose-a:no-underline hover:prose-a:underline
+                prose-strong:text-overcast-900 dark:prose-strong:text-white
+                prose-ul:my-4 prose-ol:my-4
+                prose-li:text-overcast-600 dark:prose-li:text-overcast-300
+                prose-table:my-8
+                prose-th:bg-overcast-100 dark:prose-th:bg-overcast-800 prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold
+                prose-td:px-4 prose-td:py-3 prose-td:border-t prose-td:border-overcast-200 dark:prose-td:border-overcast-700
+                prose-code:bg-overcast-100 dark:prose-code:bg-overcast-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono
+                prose-hr:border-overcast-200 dark:prose-hr:border-overcast-700">
+      {{ .Content }}
+    </div>
+  </section>
+
+  <!-- Related Guides -->
+  {{ $related := .Site.RegularPages.Related . | first 3 }}
+  {{ with $related }}
+  <section class="border-t border-overcast-200 dark:border-overcast-700 bg-overcast-50 dark:bg-overcast-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <h2 class="font-display font-bold text-2xl text-overcast-900 dark:text-white mb-8">Related Guides</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {{ range . }}
+        <a href="{{ .Permalink }}" class="group bg-white dark:bg-overcast-800 rounded-xl border border-overcast-200 dark:border-overcast-700 p-6 hover:border-sound-400 hover:shadow-lg transition-all duration-300">
+          <h3 class="font-display font-bold text-lg text-overcast-900 dark:text-white mb-2 group-hover:text-sound-600 dark:group-hover:text-sound-400 transition-colors line-clamp-2">
+            {{ .Title }}
+          </h3>
+          <p class="text-sm text-overcast-500 dark:text-overcast-400 line-clamp-2">
+            {{ .Description }}
+          </p>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- CTA -->
+  <section class="border-t border-overcast-200 dark:border-overcast-700">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 text-center">
+      <h2 class="font-display font-bold text-xl text-overcast-900 dark:text-white mb-4">
+        Found this guide helpful?
+      </h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/resources/" class="inline-flex items-center px-6 py-3 sun-break text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
+          Browse All Resources
+        </a>
+        <a href="/guides/" class="inline-flex items-center px-6 py-3 bg-white dark:bg-overcast-800 border-2 border-overcast-200 dark:border-overcast-600 text-overcast-700 dark:text-overcast-200 rounded-xl font-semibold hover:border-sound-400 transition-all duration-200">
+          More Guides
+        </a>
+      </div>
+    </div>
+  </section>
+</article>
+
+<!-- Structured Data for Article -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ .Title }}",
+  "description": "{{ .Description }}",
+  "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+  "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "author": {
+    "@type": "Organization",
+    "name": "Seattle Startups"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Seattle Startups",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ "images/logo.png" | absURL }}"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ .Permalink }}"
+  }
+}
+</script>
+
+<style>
+/* TOC styles */
+#TableOfContents ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#TableOfContents li {
+  margin-bottom: 0.5rem;
+}
+#TableOfContents a {
+  color: rgb(113 113 122);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+#TableOfContents a:hover {
+  color: rgb(12 140 230);
+}
+.dark #TableOfContents a {
+  color: rgb(161 161 170);
+}
+.dark #TableOfContents a:hover {
+  color: rgb(54 170 245);
+}
+#TableOfContents ul ul {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+</style>
+{{ end }}

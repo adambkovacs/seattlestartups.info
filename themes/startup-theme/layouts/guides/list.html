@@ -1,0 +1,116 @@
+{{ define "main" }}
+<div class="relative">
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden py-12 lg:py-20 border-b border-overcast-200 dark:border-overcast-700">
+    <div class="absolute inset-0 dots-pattern opacity-30 dark:opacity-10"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl">
+        <!-- Breadcrumb -->
+        <nav class="flex mb-6" aria-label="Breadcrumb">
+          <ol class="flex items-center space-x-2 text-sm font-mono">
+            <li><a href="{{ .Site.BaseURL }}" class="text-overcast-500 dark:text-overcast-400 hover:text-sound-600 dark:hover:text-sound-400 transition-colors">Home</a></li>
+            <li class="text-overcast-300 dark:text-overcast-600">/</li>
+            <li class="text-sound-600 dark:text-sound-400 font-medium">{{ .Title }}</li>
+          </ol>
+        </nav>
+
+        <h1 class="font-display font-black text-4xl md:text-5xl lg:text-6xl text-overcast-900 dark:text-white mb-4 tracking-tight">
+          {{ .Title }}
+        </h1>
+
+        <p class="text-lg md:text-xl text-overcast-600 dark:text-overcast-300 leading-relaxed mb-8 max-w-2xl">
+          {{ with .Description }}{{ . }}{{ else }}Practical, actionable guides for founders at every stage of the startup journey.{{ end }}
+        </p>
+
+        <!-- Stats -->
+        <div class="flex flex-wrap items-center gap-6 text-sm font-mono text-overcast-500 dark:text-overcast-400">
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-fir-500 animate-pulse"></span>
+            <span class="font-bold text-overcast-900 dark:text-white">{{ len .Pages }}</span>
+            <span>guides</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-overcast-300 dark:text-overcast-600">|</span>
+            <span>Updated {{ now.Format "January 2006" }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guides Grid -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    {{ if .Pages }}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {{ range .Pages.ByDate.Reverse }}
+      <article class="group bg-white dark:bg-overcast-800 rounded-2xl border border-overcast-200 dark:border-overcast-700 overflow-hidden transition-all duration-300 hover:border-sound-400 hover:shadow-xl hover:shadow-sound-500/10 hover:-translate-y-1">
+        <a href="{{ .Permalink }}" class="block p-6">
+          <!-- Category Tag -->
+          {{ with .Params.tags }}
+          <div class="flex flex-wrap gap-2 mb-4">
+            {{ range first 2 . }}
+            <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-medium bg-sound-50 dark:bg-sound-900/50 text-sound-700 dark:text-sound-300">
+              {{ . | humanize }}
+            </span>
+            {{ end }}
+          </div>
+          {{ end }}
+
+          <!-- Title -->
+          <h2 class="font-display font-bold text-xl text-overcast-900 dark:text-white mb-3 group-hover:text-sound-600 dark:group-hover:text-sound-400 transition-colors line-clamp-2">
+            {{ .Title }}
+          </h2>
+
+          <!-- Description -->
+          <p class="text-overcast-600 dark:text-overcast-300 text-sm leading-relaxed mb-4 line-clamp-3">
+            {{ .Description }}
+          </p>
+
+          <!-- Meta -->
+          <div class="flex items-center justify-between text-xs text-overcast-500 dark:text-overcast-400">
+            <span>{{ .Date.Format "Jan 2, 2006" }}</span>
+            <span class="flex items-center gap-1 group-hover:text-sound-600 dark:group-hover:text-sound-400 transition-colors">
+              Read guide
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+      </article>
+      {{ end }}
+    </div>
+    {{ else }}
+    <!-- Empty State -->
+    <div class="text-center py-20">
+      <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-overcast-100 dark:bg-overcast-800 flex items-center justify-center">
+        <svg class="w-10 h-10 text-overcast-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+        </svg>
+      </div>
+      <h3 class="font-display font-bold text-xl text-overcast-700 dark:text-overcast-200 mb-2">Guides coming soon</h3>
+      <p class="text-overcast-500 dark:text-overcast-400">We're working on comprehensive guides for Seattle founders.</p>
+    </div>
+    {{ end }}
+  </section>
+
+  <!-- CTA Section -->
+  <section class="border-t border-overcast-200 dark:border-overcast-700 bg-overcast-50 dark:bg-overcast-800/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+      <h2 class="font-display font-bold text-2xl md:text-3xl text-overcast-900 dark:text-white mb-4">
+        Looking for specific resources?
+      </h2>
+      <p class="text-lg text-overcast-600 dark:text-overcast-300 mb-8 max-w-xl mx-auto">
+        Browse our directory of 248+ free startup resources across Greater Seattle.
+      </p>
+      <a href="/resources/" class="inline-flex items-center px-8 py-4 sun-break text-white rounded-xl font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-200">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+        </svg>
+        Browse Resources
+      </a>
+    </div>
+  </section>
+</div>
+{{ end }}
