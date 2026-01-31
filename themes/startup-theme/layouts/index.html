@@ -1,4 +1,162 @@
 {{ define "main" }}
+<!-- Structured Data: FAQ Schema for AI Answer Engines (AEO) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What startup resources are available in Seattle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Seattle offers over 248 free startup resources including accelerators (Techstars Seattle, WTIA Founder Cohort, Cascadia CleanTech), incubators (CoMotion Labs, AI House Seattle), funding programs (Seattle Angel Conference, AWS Impact Accelerator), coworking spaces, mentorship programs (SCORE Seattle, FoundersLink), and government resources. These resources span 5 counties: King County (Seattle, Bellevue), Snohomish County (Everett), Pierce County (Tacoma), Kitsap County (Bremerton), and Thurston County (Olympia)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are these Seattle startup resources free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, all resources listed on Seattle Startups are verified as free for early-stage founders. Our directory specifically curates no-cost programs, mentorship opportunities, and services available to entrepreneurs in the Greater Seattle area. We exclude programs that take equity or charge significant fees."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What counties does the Seattle startup ecosystem cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Greater Seattle startup ecosystem spans 5 counties: King County (including Seattle, Bellevue, Kirkland, Redmond), Snohomish County (including Everett), Pierce County (including Tacoma), Kitsap County (including Bremerton), and Thurston County (including Olympia, the state capital). Each county has unique resources and programs tailored to local entrepreneurs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the best accelerators for Seattle startups?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top free or low-cost accelerators in Seattle include: WTIA Founder Cohort (6-month tech startup program), Seattle Angel Conference (12-week competition with $150-200K investment), Cascadia CleanTech Accelerator (18-week cleantech program), AWS Impact Accelerator (for underrepresented founders with $125K credits), Graham & Walker Catalyst (for female founders), SEA619 (for Black founders), and Startup425 Accelerator (for Eastside entrepreneurs)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I find resources for BIPOC, women, or veteran founders in Seattle?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Seattle has dedicated programs for underrepresented founders: SEA619 and PACE for Black founders, Spaceworks Black Business Accelerator in Tacoma, Graham & Walker Catalyst for women, AWS Impact Accelerator for Black/Women/LatinX founders, WA Center for Women in Business, and veteran-specific SBDC programs. Use our 'For Founders' filter on the resources page to find programs matching your background."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What coworking spaces are available for Seattle startups?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Seattle offers various coworking options: CoMotion Labs at UW (for life sciences and tech), AI House Seattle at Pier 70 (for AI startups), TheLab@Everett (free workspace with 3D printers), Seattle Public Libraries with meeting rooms and business resources, and community centers offering entrepreneurship programs. Many accelerators also provide free workspace to participants."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- Structured Data: HowTo Schema for AI Answer Engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "How to Find Startup Resources in Seattle",
+  "description": "A step-by-step guide to finding free startup resources in the Greater Seattle area using the Seattle Startups directory.",
+  "totalTime": "PT5M",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "position": 1,
+      "name": "Browse by Category",
+      "text": "Visit the Resources page and filter by category such as Accelerators, Funding, Mentorship, Education, or Coworking Spaces to find relevant programs for your startup stage.",
+      "url": "{{ .Site.BaseURL }}resources/"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 2,
+      "name": "Filter by Location",
+      "text": "Use the County or City filter to narrow results to your specific area: Seattle, Bellevue, Tacoma, Everett, Bremerton, Olympia, or other cities in King, Snohomish, Pierce, Kitsap, or Thurston counties.",
+      "url": "{{ .Site.BaseURL }}counties/"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 3,
+      "name": "Filter by Founder Type",
+      "text": "If applicable, use the 'For Founders' filter to find resources specifically designed for BIPOC founders, women founders, veteran founders, LGBTQ+ founders, or immigrant entrepreneurs.",
+      "url": "{{ .Site.BaseURL }}audiences/"
+    },
+    {
+      "@type": "HowToStep",
+      "position": 4,
+      "name": "Filter by Your Stage",
+      "text": "Select your startup stage (Ideation, Starting, Funding, Growing, or Workspace) to see resources most relevant to where you are in your entrepreneurial journey."
+    },
+    {
+      "@type": "HowToStep",
+      "position": 5,
+      "name": "Review and Apply",
+      "text": "Click on any resource card to view detailed information including eligibility requirements, benefits, and application process. Then click 'Visit' to go directly to the resource's official website."
+    }
+  ]
+}
+</script>
+
+<!-- Structured Data: ItemList for Featured Resources -->
+{{/* Collect all resources */}}
+{{ $allResourcesSchema := slice }}
+{{ with $.Site.Data.resources }}
+  {{ range $filename, $data := . }}
+    {{ with $data.resources }}
+      {{ range . }}
+        {{ $allResourcesSchema = $allResourcesSchema | append . }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $featuredSchema := where $allResourcesSchema "featured" true | first 10 }}
+{{ if $featuredSchema }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Featured Seattle Startup Resources",
+  "description": "Top-rated free startup resources in the Greater Seattle area, hand-picked for early-stage founders.",
+  "numberOfItems": {{ len $featuredSchema }},
+  "itemListElement": [
+    {{ range $index, $resource := $featuredSchema }}
+    {{ if $index }},{{ end }}
+    {
+      "@type": "ListItem",
+      "position": {{ add $index 1 }},
+      "item": {
+        "@type": "Service",
+        "name": "{{ $resource.name }}",
+        "description": "{{ $resource.description }}",
+        "url": "{{ $resource.website }}",
+        {{ with $resource.organization }}"provider": {
+          "@type": "Organization",
+          "name": "{{ . }}"
+        },{{ end }}
+        "areaServed": {
+          "@type": "City",
+          "name": "Seattle, Washington"
+        },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}
+
 <div class="relative mountain-bg">
   <!-- Hero Section - Authentic Seattle -->
   <section class="relative min-h-[75vh] flex items-center">

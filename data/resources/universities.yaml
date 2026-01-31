@@ -10,6 +10,7 @@ resources:
     website: "https://comotion.uw.edu"
     cost: "Free (core programs)"
     eligibility: "UW faculty, students, staff, alumni"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -23,6 +24,7 @@ resources:
     website: "https://comotion.uw.edu"
     cost: "Free"
     eligibility: "Anyone"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -36,6 +38,7 @@ resources:
     website: "https://foster.uw.edu/centers/buerk-ctr-entrepreneurship"
     cost: "Free"
     eligibility: "UW students"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -49,6 +52,7 @@ resources:
     website: "https://gix.uw.edu"
     cost: "Tuition"
     eligibility: "Graduate students"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -63,6 +67,7 @@ resources:
     website: "https://tacoma.uw.edu"
     cost: "Free"
     eligibility: "Military veterans"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -77,6 +82,7 @@ resources:
     website: "https://tacoma.uw.edu/business"
     cost: "Free"
     eligibility: "Regional businesses"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -90,6 +96,7 @@ resources:
     website: "https://tacoma.uw.edu/business/entrepreneurship/community-resources"
     cost: "Free"
     eligibility: "Community"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -104,6 +111,7 @@ resources:
     website: "https://seattleu.edu/business/student-life/iec"
     cost: "Free"
     eligibility: "SU students/alumni, regional entrepreneurs"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -117,6 +125,7 @@ resources:
     website: "https://seattleu.edu/business/student-life/iec/fbx"
     cost: "Free"
     eligibility: "Family-owned businesses"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -131,6 +140,7 @@ resources:
     website: "https://entrepreneurship.wsu.edu"
     cost: "Free"
     eligibility: "WSU students"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -149,6 +159,7 @@ resources:
     website: "https://northseattle.edu/programs/entrepreneurship"
     cost: "Tuition"
     eligibility: "Students"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -162,6 +173,7 @@ resources:
     website: "https://bellevuecollege.edu/academics/undergraduate-programs/entrepreneurship-certificate-of-accomplishment"
     cost: "Tuition"
     eligibility: "Students"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -175,6 +187,7 @@ resources:
     website: "https://batestech.edu/programs/applied-business-management"
     cost: "Tuition"
     eligibility: "Students"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -188,6 +201,7 @@ resources:
     website: "https://ce.seattlecentral.edu/category/business"
     cost: "Course fees"
     eligibility: "Community"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -201,6 +215,7 @@ resources:
     website: "https://spscc.edu"
     cost: "Free"
     eligibility: "2nd-year SPSCC students"
+    city: "Olympia"
     counties:
       - Thurston
     categories:
@@ -214,6 +229,7 @@ resources:
     website: "https://greenriver.edu"
     cost: "Free"
     eligibility: "Community"
+    city: "Auburn"
     counties:
       - King
     categories:
@@ -228,6 +244,7 @@ resources:
     website: "https://edmonds.edu"
     cost: "Free (advising)"
     eligibility: "Community"
+    city: "Lynnwood"
     counties:
       - Snohomish
     categories:
@@ -241,6 +258,7 @@ resources:
     website: "https://sbdc.highline.edu"
     cost: "Free"
     eligibility: "Community"
+    city: "Des Moines"
     counties:
       - King
     categories:
@@ -256,6 +274,7 @@ resources:
     website: "https://startup.choosewashingtonstate.com"
     cost: "Free"
     eligibility: "All WA entrepreneurs"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -273,6 +292,7 @@ resources:
     website: "https://business.wa.gov"
     cost: "Free"
     eligibility: "All WA businesses"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -290,6 +310,7 @@ resources:
     website: "https://mystartup365.com"
     cost: "Free"
     eligibility: "WA entrepreneurs"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -307,6 +328,7 @@ resources:
     website: "https://commerce.wa.gov"
     cost: "Free"
     eligibility: "Creative entrepreneurs"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -324,6 +346,7 @@ resources:
     website: "https://commerce.wa.gov"
     cost: "Free"
     eligibility: "Established businesses"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -341,6 +364,7 @@ resources:
     website: "https://commerce.wa.gov"
     cost: "Free"
     eligibility: "Business rebuilders"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -358,6 +382,7 @@ resources:
     website: "https://business.wa.gov"
     cost: "Free"
     eligibility: "All WA businesses"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -376,6 +401,7 @@ resources:
     website: "https://businessresources.thurstonedc.com"
     cost: "Free"
     eligibility: "Community"
+    city: "Olympia"
     counties:
       - Thurston
     categories:
@@ -389,6 +415,7 @@ resources:
     website: "https://seattle.gov/economic-development"
     cost: "Free"
     eligibility: "Small/medium businesses"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -404,6 +431,7 @@ resources:
     website: "https://nwirc.com"
     cost: "Free"
     eligibility: "Snohomish County entrepreneurs"
+    city: "Everett"
     counties:
       - Snohomish
     categories:
@@ -417,6 +445,7 @@ resources:
     website: "https://startupkitsap.com/ecosystem"
     cost: "Free"
     eligibility: "Youth and adults"
+    city: "Bremerton"
     counties:
       - Kitsap
     categories:
@@ -430,6 +459,7 @@ resources:
     website: "https://wcwb.org"
     cost: "Free"
     eligibility: "Women entrepreneurs"
+    city: "Olympia"
     counties:
       - King
       - Snohomish

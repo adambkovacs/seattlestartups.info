@@ -10,6 +10,7 @@ resources:
     website: "https://craft3.org"
     cost: "Lending terms apply"
     eligibility: "Tribal nations, BIPOC, women, veterans, immigrants"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -30,6 +31,7 @@ resources:
     website: "https://rvcdf.org"
     cost: "Lending terms apply"
     eligibility: "Low-moderate income, BIPOC communities in SE Seattle"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -44,6 +46,7 @@ resources:
     website: "https://experienceolympia.com/directory/enterprise-for-equity"
     cost: "Lending terms apply"
     eligibility: "Limited incomes, veterans, rural entrepreneurs"
+    city: "Olympia"
     counties:
       - Thurston
       - Pierce
@@ -59,6 +62,7 @@ resources:
     website: "https://businessimpactnw.org"
     cost: "Lending terms apply"
     eligibility: "Underserved entrepreneurs"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -78,6 +82,7 @@ resources:
     website: "https://venturesnonprofit.org"
     cost: "Lending terms apply"
     eligibility: "Low-income entrepreneurs"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -93,6 +98,7 @@ resources:
     website: "https://seattle.gov/economic-development"
     cost: "Free"
     eligibility: "Seattle for-profits, 12+ months operation"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -106,6 +112,7 @@ resources:
     website: "https://seattle.gov/economic-development"
     cost: "Free"
     eligibility: "Seattle businesses"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -119,6 +126,7 @@ resources:
     website: "https://choosewashingtonstate.com/i-need-help-with/financing"
     cost: "Various"
     eligibility: "Underserved communities"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -136,6 +144,7 @@ resources:
     website: "https://commerce.wa.gov"
     cost: "Free (reimbursement)"
     eligibility: "Small businesses exporting"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -154,6 +163,7 @@ resources:
     website: "https://startups.microsoft.com"
     cost: "Free"
     eligibility: "Software-based startups"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -171,6 +181,7 @@ resources:
     website: "https://aws.amazon.com/activate"
     cost: "Free"
     eligibility: "Startups"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -189,6 +200,7 @@ resources:
     website: "https://seattleangelconference.com"
     cost: "Symbolic fee"
     eligibility: "Concept to pre-seed"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -206,6 +218,7 @@ resources:
     website: "https://foster.uw.edu"
     cost: "Free"
     eligibility: "Cascadia students"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -223,6 +236,7 @@ resources:
     website: "https://foster.uw.edu"
     cost: "Free"
     eligibility: "Cascadia students"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -240,6 +254,7 @@ resources:
     website: "https://foster.uw.edu"
     cost: "Free"
     eligibility: "Cascadia students"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -257,6 +272,7 @@ resources:
     website: "https://score.org/seattle"
     cost: "Free"
     eligibility: "Women entrepreneurs"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -273,6 +289,7 @@ resources:
     website: "https://seattleu.edu"
     cost: "Free"
     eligibility: "SU students/alumni"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -286,6 +303,7 @@ resources:
     website: "https://entrepreneurship.wsu.edu"
     cost: "Free"
     eligibility: "WSU students"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -303,6 +321,7 @@ resources:
     website: "https://founderslive.com"
     cost: "Free"
     eligibility: "Early-stage startups"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -317,6 +336,7 @@ resources:
     website: "https://lu.ma"
     cost: "Free"
     eligibility: "Local startups"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -330,6 +350,7 @@ resources:
     website: "https://kitsapbank.com"
     cost: "Free"
     eligibility: "Kitsap/regional small businesses"
+    city: "Bremerton"
     counties:
       - Kitsap
     categories:
@@ -344,6 +365,7 @@ resources:
     website: "https://businessresources.thurstonedc.com"
     cost: "Free"
     eligibility: "Local startups in Lacey/Olympia/Tumwater"
+    city: "Olympia"
     counties:
       - Thurston
     categories:
@@ -358,6 +380,7 @@ resources:
     website: "https://seattle.tie.org"
     cost: "Free events"
     eligibility: "All entrepreneurs"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -371,6 +394,7 @@ resources:
     website: "https://cascadiacleantech.org"
     cost: "$500 application fee"
     eligibility: "PNW cleantech, <$1M raised"
+    city: "Seattle"
     counties:
       - King
       - Snohomish

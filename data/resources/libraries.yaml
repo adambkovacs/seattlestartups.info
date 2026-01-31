@@ -10,6 +10,7 @@ resources:
     website: "https://spl.org"
     cost: "Free"
     eligibility: "SPL cardholders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -23,6 +24,7 @@ resources:
     website: "https://spl.org"
     cost: "Free"
     eligibility: "SPL cardholders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -36,6 +38,7 @@ resources:
     website: "https://spl.org"
     cost: "Free"
     eligibility: "SPL cardholders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -49,6 +52,7 @@ resources:
     website: "https://spl.org"
     cost: "Free"
     eligibility: "SPL cardholders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -63,6 +67,7 @@ resources:
     website: "https://kcls.org"
     cost: "Free"
     eligibility: "KCLS cardholders"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -76,6 +81,7 @@ resources:
     website: "https://kcls.org"
     cost: "Free"
     eligibility: "KCLS cardholders"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -89,6 +95,7 @@ resources:
     website: "https://kcls.org"
     cost: "Free"
     eligibility: "KCLS cardholders"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -102,6 +109,7 @@ resources:
     website: "https://kcls.org"
     cost: "Free"
     eligibility: "KCLS cardholders"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -116,6 +124,7 @@ resources:
     website: "https://sno-isle.org/resources/business-finance"
     cost: "Free"
     eligibility: "Cardholders"
+    city: "Everett"
     counties:
       - Snohomish
     categories:
@@ -129,6 +138,7 @@ resources:
     website: "https://sno-isle.org"
     cost: "Free"
     eligibility: "Cardholders"
+    city: "Everett"
     counties:
       - Snohomish
     categories:
@@ -142,6 +152,7 @@ resources:
     website: "https://sno-isle.org"
     cost: "Free"
     eligibility: "Community"
+    city: "Lynnwood"
     counties:
       - Snohomish
     categories:
@@ -157,6 +168,7 @@ resources:
     website: "https://mypcls.org/learn-explore/job-business"
     cost: "Free"
     eligibility: "PCLS cardholders"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -170,6 +182,7 @@ resources:
     website: "https://mypcls.org"
     cost: "Free"
     eligibility: "PCLS cardholders"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -184,6 +197,7 @@ resources:
     website: "https://krl.org"
     cost: "Free"
     eligibility: "KRL cardholders"
+    city: "Bremerton"
     counties:
       - Kitsap
     categories:
@@ -198,6 +212,7 @@ resources:
     website: "https://trl.org"
     cost: "Free"
     eligibility: "TRL cardholders"
+    city: "Olympia"
     counties:
       - Thurston
     categories:
@@ -212,6 +227,7 @@ resources:
     website: "https://tacomalibrary.org"
     cost: "Free"
     eligibility: "TPL cardholders"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:

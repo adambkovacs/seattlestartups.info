@@ -9,6 +9,7 @@ resources:
     website: "https://washingtontechnology.org"
     cost: "Free"
     eligibility: "Seed-stage WA tech startups, <$1M revenue"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -26,6 +27,7 @@ resources:
     website: "https://seattlefoundations.org"
     cost: "Free"
     eligibility: "Early-stage founders (invite-only, 200 members)"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -39,6 +41,7 @@ resources:
     website: "https://cascadiacleantech.org"
     cost: "$500 application fee"
     eligibility: "PNW cleantech startups, <$1M raised"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -56,6 +59,7 @@ resources:
     website: "https://maritimeblue.org"
     cost: "Free"
     eligibility: "North American maritime startups"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -73,6 +77,7 @@ resources:
     website: "https://pacesea619.org"
     cost: "Free (year 1)"
     eligibility: "Black founders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -87,6 +92,7 @@ resources:
     website: "https://plugandplaytechcenter.com"
     cost: "Free"
     eligibility: "Enterprise, energy, health, cloud startups"
+    city: "Everett"
     counties:
       - Snohomish
     categories:
@@ -100,6 +106,7 @@ resources:
     website: "https://seattleangelconference.com"
     cost: "Symbolic fee"
     eligibility: "Concept to pre-seed stage startups"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -118,6 +125,7 @@ resources:
     website: "https://portseattle.org"
     cost: "Free"
     eligibility: "Minority/women-owned businesses"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -133,6 +141,7 @@ resources:
     website: "https://startup425.org"
     cost: "Free"
     eligibility: "Eastside entrepreneurs"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -146,6 +155,7 @@ resources:
     website: "https://bellevuecollege.edu"
     cost: "Free"
     eligibility: "Underserved entrepreneurs"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -159,6 +169,7 @@ resources:
     website: "https://kitsapeda.org"
     cost: "Free"
     eligibility: "Early-stage Kitsap business owners"
+    city: "Bremerton"
     counties:
       - Kitsap
     categories:
@@ -172,6 +183,7 @@ resources:
     website: "https://spaceworkstacoma.com"
     cost: "Free"
     eligibility: "Black entrepreneurs"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -186,6 +198,7 @@ resources:
     website: "https://maritimeblue.org/tacoma"
     cost: "Free"
     eligibility: "Maritime startups"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -199,6 +212,7 @@ resources:
     website: "https://williamfactory.com"
     cost: "Free"
     eligibility: "Startups"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -212,6 +226,7 @@ resources:
     website: "https://foster.uw.edu"
     cost: "Free"
     eligibility: "WA student-led companies"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -225,6 +240,7 @@ resources:
     website: "https://entrepreneurship.wsu.edu"
     cost: "Free"
     eligibility: "Student-led ventures"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -242,6 +258,7 @@ resources:
     website: "https://comotion.uw.edu"
     cost: "Free"
     eligibility: "Early-stage climate tech"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -255,6 +272,7 @@ resources:
     website: "https://comotion.uw.edu"
     cost: "Free"
     eligibility: "Climate/cleantech startups"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -268,6 +286,7 @@ resources:
     website: "https://comotion.uw.edu"
     cost: "Free lectures; space by application"
     eligibility: "Pre-Series A startups"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -281,6 +300,7 @@ resources:
     website: "https://ai2incubator.com"
     cost: "Events free"
     eligibility: "AI founders/practitioners"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -295,6 +315,7 @@ resources:
     website: "https://aws.amazon.com/impact-accelerator"
     cost: "Free"
     eligibility: "Black, Women, LatinX founders"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -314,6 +335,7 @@ resources:
     website: "https://lswinstitute.org"
     cost: "Free"
     eligibility: "Biotech, medtech, digital health startups"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -328,6 +350,7 @@ resources:
     website: "https://grahamwalker.com"
     cost: "Free"
     eligibility: "Female founders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -342,6 +365,7 @@ resources:
     website: "https://pcba.biz"
     cost: "Free"
     eligibility: "Pierce County businesses, BIPOC focus"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -356,6 +380,7 @@ resources:
     website: "https://snohomishcountywa.gov"
     cost: "Free"
     eligibility: "Snohomish County entrepreneurs"
+    city: "Everett"
     counties:
       - Snohomish
     categories:
@@ -369,6 +394,7 @@ resources:
     website: "https://nwirc.com"
     cost: "Free"
     eligibility: "Entrepreneurs/inventors in Snohomish County"
+    city: "Everett"
     counties:
       - Snohomish
     categories:
@@ -383,6 +409,7 @@ resources:
     website: "https://wecan.cleantechalliance.org"
     cost: "Free"
     eligibility: "Clean energy, carbon tech startups"
+    city: "Seattle"
     counties:
       - King
       - Snohomish

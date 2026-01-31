@@ -10,6 +10,7 @@ resources:
     website: "https://seattle.gov/economic-development"
     cost: "Free"
     eligibility: "Seattle businesses"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -24,6 +25,7 @@ resources:
     website: "https://cityoftacoma.org/government/city_departments/community_and_economic_development"
     cost: "Free"
     eligibility: "Tacoma businesses"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -37,6 +39,7 @@ resources:
     website: "https://everettwa.gov"
     cost: "Free"
     eligibility: "Everett businesses"
+    city: "Everett"
     counties:
       - Snohomish
     categories:
@@ -50,6 +53,7 @@ resources:
     website: "https://olympiawa.gov"
     cost: "Free"
     eligibility: "Olympia businesses"
+    city: "Olympia"
     counties:
       - Thurston
     categories:
@@ -63,6 +67,7 @@ resources:
     website: "https://bremertonwa.gov"
     cost: "Free"
     eligibility: "Bremerton businesses"
+    city: "Bremerton"
     counties:
       - Kitsap
     categories:
@@ -76,6 +81,7 @@ resources:
     website: "https://bellevuewa.gov/city-government/departments/community-development/economic-development"
     cost: "Free"
     eligibility: "Bellevue businesses"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -89,6 +95,7 @@ resources:
     website: "https://redmond.gov"
     cost: "Free"
     eligibility: "Redmond businesses"
+    city: "Redmond"
     counties:
       - King
     categories:
@@ -102,6 +109,7 @@ resources:
     website: "https://kentwa.gov"
     cost: "Free"
     eligibility: "Kent businesses"
+    city: "Kent"
     counties:
       - King
     categories:
@@ -115,6 +123,7 @@ resources:
     website: "https://rentonwa.gov"
     cost: "Free"
     eligibility: "Renton businesses"
+    city: "Renton"
     counties:
       - King
     categories:
@@ -128,6 +137,7 @@ resources:
     website: "https://cityoffederalway.com"
     cost: "Free"
     eligibility: "Federal Way businesses"
+    city: "Federal Way"
     counties:
       - King
     categories:
@@ -142,6 +152,7 @@ resources:
     website: "https://kingcounty.gov/depts/executive/economic-development.aspx"
     cost: "Free"
     eligibility: "King County businesses"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -155,6 +166,7 @@ resources:
     website: "https://choosetacomapierce.org"
     cost: "Free"
     eligibility: "Pierce County businesses"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -169,6 +181,7 @@ resources:
     website: "https://piercecountywa.gov"
     cost: "Free"
     eligibility: "Pierce County businesses outside Tacoma"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -182,6 +195,7 @@ resources:
     website: "https://economicalliancesc.org"
     cost: "Free"
     eligibility: "Snohomish County businesses"
+    city: "Everett"
     counties:
       - Snohomish
     categories:
@@ -198,6 +212,7 @@ resources:
     website: "https://kitsapeda.org"
     cost: "Free"
     eligibility: "Kitsap County businesses"
+    city: "Bremerton"
     counties:
       - Kitsap
     categories:
@@ -211,6 +226,7 @@ resources:
     website: "https://thurstonedc.com"
     cost: "Free"
     eligibility: "Thurston County businesses"
+    city: "Olympia"
     counties:
       - Thurston
     categories:
@@ -225,6 +241,7 @@ resources:
     website: "https://commerce.wa.gov"
     cost: "Free"
     eligibility: "Washington businesses"
+    city: "Olympia"
     counties:
       - King
       - Snohomish
@@ -243,6 +260,7 @@ resources:
     website: "https://choosewashingtonstate.com"
     cost: "Free"
     eligibility: "Businesses considering Washington"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -260,6 +278,7 @@ resources:
     website: "https://choosewashingtonstate.com/i-need-help-with/financing"
     cost: "Free"
     eligibility: "Underserved small businesses"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -280,6 +299,7 @@ resources:
     website: "https://commerce.wa.gov/growing-the-economy/export-assistance"
     cost: "Free (reimbursement)"
     eligibility: "Small businesses exporting"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -298,6 +318,7 @@ resources:
     website: "https://mystartup365.com"
     cost: "Free"
     eligibility: "Washington entrepreneurs"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -316,6 +337,7 @@ resources:
     website: "https://commerce.wa.gov/growing-the-economy/creative-industries"
     cost: "Free"
     eligibility: "Creative entrepreneurs"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -335,6 +357,7 @@ resources:
     website: "https://sba.gov/district/seattle"
     cost: "Free"
     eligibility: "Small businesses"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -354,6 +377,7 @@ resources:
     website: "https://sba.gov/thrive"
     cost: "Free"
     eligibility: "Established small businesses"
+    city: "Online"
     counties:
       - King
       - Snohomish
@@ -372,6 +396,7 @@ resources:
     website: "https://sba.gov/local-assistance/community-navigators"
     cost: "Free"
     eligibility: "Underserved entrepreneurs"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -392,6 +417,7 @@ resources:
     website: "https://washingtonapex.org"
     cost: "Free"
     eligibility: "All WA businesses"
+    city: "Olympia"
     counties:
       - King
       - Snohomish
@@ -411,6 +437,7 @@ resources:
     website: "https://seattle.gov/economic-development/business-services/loans-and-grants"
     cost: "Free"
     eligibility: "Seattle for-profits, 12+ months operation"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -425,6 +452,7 @@ resources:
     website: "https://seattle.gov/economic-development"
     cost: "Free grant"
     eligibility: "Seattle businesses with property damage"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -439,6 +467,7 @@ resources:
     website: "https://seattle.gov/economic-development"
     cost: "Free"
     eligibility: "Small Seattle businesses"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -452,6 +481,7 @@ resources:
     website: "https://worksourceskc.org"
     cost: "Free"
     eligibility: "Job seekers and employers"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -465,6 +495,7 @@ resources:
     website: "https://worksourcesnohomish.com"
     cost: "Free"
     eligibility: "Snohomish County"
+    city: "Everett"
     counties:
       - Snohomish
     categories:
@@ -478,6 +509,7 @@ resources:
     website: "https://worksourcepierce.org"
     cost: "Free"
     eligibility: "Pierce County"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -491,6 +523,7 @@ resources:
     website: "https://businessresources.thurstonedc.com"
     cost: "Free"
     eligibility: "Thurston County"
+    city: "Olympia"
     counties:
       - Thurston
     categories:
@@ -505,6 +538,7 @@ resources:
     website: "https://businessresources.thurstonedc.com"
     cost: "Free"
     eligibility: "Lacey/Olympia/Tumwater startups"
+    city: "Olympia"
     counties:
       - Thurston
     categories:
@@ -519,6 +553,7 @@ resources:
     website: "https://kitsapeda.org"
     cost: "Free"
     eligibility: "Small businesses interested in contracting"
+    city: "Bremerton"
     counties:
       - Kitsap
     categories:
@@ -534,6 +569,7 @@ resources:
     website: "https://seattle.gov/license-and-tax"
     cost: "Varies"
     eligibility: "Seattle businesses"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -547,6 +583,7 @@ resources:
     website: "https://kingcounty.gov/depts/local-services/permits.aspx"
     cost: "Varies"
     eligibility: "Unincorporated King County"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -560,6 +597,7 @@ resources:
     website: "https://piercecountywa.gov/157/Permits"
     cost: "Varies"
     eligibility: "Pierce County"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -573,6 +611,7 @@ resources:
     website: "https://snohomishcountywa.gov/195/Planning-Development-Services"
     cost: "Varies"
     eligibility: "Snohomish County"
+    city: "Everett"
     counties:
       - Snohomish
     categories:
@@ -587,6 +626,7 @@ resources:
     website: "https://maritimeblue.org"
     cost: "Free"
     eligibility: "Maritime/blue economy startups"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -604,6 +644,7 @@ resources:
     website: "https://cleantechalliance.org"
     cost: "Free/membership"
     eligibility: "Clean tech companies"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -621,6 +662,7 @@ resources:
     website: "https://lifesciencewa.org"
     cost: "Free/membership"
     eligibility: "Life science companies"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -636,6 +678,7 @@ resources:
     website: "https://technology-alliance.com"
     cost: "Membership"
     eligibility: "Tech companies"
+    city: "Seattle"
     counties:
       - King
       - Snohomish
@@ -654,6 +697,7 @@ resources:
     website: "https://omwbe.wa.gov"
     cost: "Free"
     eligibility: "Minority and women-owned businesses"
+    city: "Olympia"
     counties:
       - King
       - Snohomish
@@ -673,6 +717,7 @@ resources:
     website: "https://dva.wa.gov/veterans-their-families/employment/veteran-owned-businesses"
     cost: "Free"
     eligibility: "Veteran-owned businesses"
+    city: "Olympia"
     counties:
       - King
       - Snohomish
@@ -691,6 +736,7 @@ resources:
     website: "https://kingcounty.gov/elected/executive/equity-social-justice.aspx"
     cost: "Free"
     eligibility: "BIPOC-owned businesses in King County"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -705,6 +751,7 @@ resources:
     website: "https://seattle.gov/purchasing-and-contracting/social-equity"
     cost: "Free"
     eligibility: "WMBE certified businesses"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -720,6 +767,7 @@ resources:
     website: "https://cityoftacoma.org/government/city_departments/finance/small_business_enterprise"
     cost: "Free"
     eligibility: "Small businesses in Tacoma"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -735,6 +783,7 @@ resources:
     website: "https://psrc.org"
     cost: "Free resources"
     eligibility: "Regional businesses"
+    city: "Seattle"
     counties:
       - King
       - Snohomish

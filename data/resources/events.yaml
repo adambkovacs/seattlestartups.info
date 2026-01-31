@@ -10,6 +10,7 @@ resources:
     website: "https://1millioncups.com/seattle"
     cost: "Free"
     eligibility: "All entrepreneurs"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -23,6 +24,7 @@ resources:
     website: "https://surfincubator.com"
     cost: "Free"
     eligibility: "All entrepreneurs"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -36,6 +38,7 @@ resources:
     website: "https://meetup.com/seattle-startups-open-coffee"
     cost: "Free"
     eligibility: "Entrepreneurs, investors"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -50,6 +53,7 @@ resources:
     website: "https://startupgrind.com/seattle"
     cost: "Free"
     eligibility: "All entrepreneurs"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -63,6 +67,7 @@ resources:
     website: "https://meetup.com/newtechseattle"
     cost: "$20-27"
     eligibility: "Tech community"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -76,6 +81,7 @@ resources:
     website: "https://newtechnorthwest.com"
     cost: "$20-27"
     eligibility: "Tech community"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -89,6 +95,7 @@ resources:
     website: "https://newtechnorthwest.com"
     cost: "$20-27"
     eligibility: "Tech community"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -102,6 +109,7 @@ resources:
     website: "https://meetup.com/startupfriends"
     cost: "Free"
     eligibility: "Startup founders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -115,6 +123,7 @@ resources:
     website: "https://meetup.com/seattle-startup-founder-101"
     cost: "Free"
     eligibility: "Tech entrepreneurs"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -128,6 +137,7 @@ resources:
     website: "https://meetup.com/eastside-entrepreneurs"
     cost: "Free"
     eligibility: "Eastside business owners"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -142,6 +152,7 @@ resources:
     website: "https://founderslive.com"
     cost: "Free"
     eligibility: "Early-stage startups"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -156,6 +167,7 @@ resources:
     website: "https://venturemechanics.com"
     cost: "Free"
     eligibility: "Black founders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -170,6 +182,7 @@ resources:
     website: "https://venturemechanics.com"
     cost: "Free"
     eligibility: "All founders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -184,6 +197,7 @@ resources:
     website: "https://venturemechanics.com"
     cost: "Free"
     eligibility: "Filipino founders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -197,6 +211,7 @@ resources:
     website: "https://venturemechanics.com"
     cost: "Free"
     eligibility: "Korean founders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -210,6 +225,7 @@ resources:
     website: "https://venturemechanics.com"
     cost: "Free"
     eligibility: "LGBTQ+ founders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -224,6 +240,7 @@ resources:
     website: "https://venturemechanics.com"
     cost: "Free"
     eligibility: "Veteran founders"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -238,6 +255,7 @@ resources:
     website: "https://womenwhocode.com"
     cost: "Free"
     eligibility: "Women in tech"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -252,6 +270,7 @@ resources:
     website: "https://meetup.com/shescoding-seattle"
     cost: "Free"
     eligibility: "Women/non-binary"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -267,6 +286,7 @@ resources:
     website: "https://seattletechweek.com"
     cost: "Free (most)"
     eligibility: "All"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -280,6 +300,7 @@ resources:
     website: "https://washingtontechnology.org/events/techstars_startup-week-tacoma"
     cost: "Free"
     eligibility: "All entrepreneurs"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -293,6 +314,7 @@ resources:
     website: "https://choosetacomapierce.org"
     cost: "Free"
     eligibility: "All entrepreneurs"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -307,6 +329,7 @@ resources:
     website: "https://seattlefoundations.org"
     cost: "Free"
     eligibility: "Early founders (invite-only, 200 members)"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -320,6 +343,7 @@ resources:
     website: "https://startup425.org"
     cost: "Free"
     eligibility: "Eastside entrepreneurs"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -333,6 +357,7 @@ resources:
     website: "https://startup253.com"
     cost: "Free"
     eligibility: "All entrepreneurs"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -346,6 +371,7 @@ resources:
     website: "https://startupkitsap.com"
     cost: "Free"
     eligibility: "Kitsap entrepreneurs"
+    city: "Bremerton"
     counties:
       - Kitsap
     categories:
@@ -359,6 +385,7 @@ resources:
     website: "https://seattle.tie.org"
     cost: "Events free"
     eligibility: "All entrepreneurs"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -372,6 +399,7 @@ resources:
     website: "https://pcba.biz"
     cost: "Free"
     eligibility: "All businesses"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -385,6 +413,7 @@ resources:
     website: "https://kitsapeda.org"
     cost: "Free"
     eligibility: "BIPOC entrepreneurs"
+    city: "Bremerton"
     counties:
       - Kitsap
     categories:
@@ -399,6 +428,7 @@ resources:
     website: "https://innov8social.com/category/impactathon"
     cost: "Free"
     eligibility: "Community"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -412,6 +442,7 @@ resources:
     website: "https://olymega.org"
     cost: "Free"
     eligibility: "Public"
+    city: "Olympia"
     counties:
       - Thurston
     categories:
@@ -425,6 +456,7 @@ resources:
     website: "https://wstools.org"
     cost: "Free"
     eligibility: "Public"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -438,6 +470,7 @@ resources:
     website: "https://bainbridgebarn.org"
     cost: "Free"
     eligibility: "Teens"
+    city: "Bainbridge Island"
     counties:
       - Kitsap
     categories:
@@ -451,6 +484,7 @@ resources:
     website: "https://seattleu.edu/business/student-life/iec/founder-fridays"
     cost: "Free"
     eligibility: "Public"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -464,6 +498,7 @@ resources:
     website: "https://mypcls.org"
     cost: "Free"
     eligibility: "Small businesses"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
