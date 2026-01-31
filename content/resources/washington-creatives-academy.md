@@ -2,7 +2,7 @@
 title: "Washington Creatives Academy"
 description: "Free business training for creative entrepreneurs"
 organization: "WA Dept of Commerce"
-website: "https://commerce.wa.gov/growing-the-economy/creative-industries"
+website: "https://choosewashingtonstate.com/why-washington/our-key-sectors/creative-economy/"
 cost: "Free"
 eligibility: "Creative entrepreneurs"
 city: "Online"

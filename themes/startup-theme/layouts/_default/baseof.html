@@ -49,417 +49,45 @@
 
   <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            // Seattle-authentic palette - embrace the gray
-            'overcast': {
-              50: '#fafafa',
-              100: '#f4f4f5',
-              200: '#e4e4e7',
-              300: '#d4d4d8',
-              400: '#a1a1aa',
-              500: '#71717a',
-              600: '#52525b',
-              700: '#3f3f46',
-              800: '#27272a',
-              900: '#18181b',
-            },
-            // Deep Sound blue - Elliott Bay at dusk
-            'sound': {
-              50: '#f0f7ff',
-              100: '#e0effe',
-              200: '#bae0fd',
-              300: '#7cc8fb',
-              400: '#36aaf5',
-              500: '#0c8ce6',
-              600: '#006fc4',
-              700: '#01599f',
-              800: '#064b83',
-              900: '#0b3f6c',
-            },
-            // Evergreen - real Douglas fir, not mint
-            'fir': {
-              50: '#f0fdf4',
-              100: '#dcfce7',
-              200: '#bbf7d0',
-              300: '#86efac',
-              400: '#4ade80',
-              500: '#22543d',
-              600: '#1a4330',
-              700: '#15372a',
-              800: '#0f2920',
-              900: '#0a1f17',
-            },
-            // Rainier - snow cap whites and rock grays
-            'rainier': {
-              snow: '#f8fafc',
-              cloud: '#e2e8f0',
-              rock: '#64748b',
-              shadow: '#334155',
-            },
-            // Coffee - Pike Place roast undertones
-            'roast': {
-              light: '#d2b48c',
-              medium: '#8b6914',
-              dark: '#3d2314',
-              espresso: '#1a0f0a',
-            },
-          },
-          fontFamily: {
-            // Bold display - Montserrat for headlines
-            'display': ['Montserrat', 'system-ui', 'sans-serif'],
-            // Friendly body - Poppins for everything else
-            'body': ['Poppins', 'system-ui', 'sans-serif'],
-            // Monospace for that dev/tech vibe
-            'mono': ['JetBrains Mono', 'Consolas', 'monospace'],
-          },
-          animation: {
-            'bounce-in': 'bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-            'wiggle': 'wiggle 0.5s ease-in-out',
-            'pop': 'pop 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55)',
-            'float': 'float 3s ease-in-out infinite',
-            'slide-up': 'slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1)',
-            'jelly': 'jelly 0.5s',
-          },
-          keyframes: {
-            bounceIn: {
-              '0%': { transform: 'scale(0.3)', opacity: '0' },
-              '50%': { transform: 'scale(1.05)' },
-              '70%': { transform: 'scale(0.9)' },
-              '100%': { transform: 'scale(1)', opacity: '1' },
-            },
-            wiggle: {
-              '0%, 100%': { transform: 'rotate(-3deg)' },
-              '50%': { transform: 'rotate(3deg)' },
-            },
-            pop: {
-              '0%': { transform: 'scale(1)' },
-              '50%': { transform: 'scale(1.1)' },
-              '100%': { transform: 'scale(1)' },
-            },
-            float: {
-              '0%, 100%': { transform: 'translateY(0px)' },
-              '50%': { transform: 'translateY(-8px)' },
-            },
-            slideUp: {
-              '0%': { transform: 'translateY(20px)', opacity: '0' },
-              '100%': { transform: 'translateY(0)', opacity: '1' },
-            },
-            jelly: {
-              '0%': { transform: 'scale(1, 1)' },
-              '25%': { transform: 'scale(0.9, 1.1)' },
-              '50%': { transform: 'scale(1.1, 0.9)' },
-              '75%': { transform: 'scale(0.95, 1.05)' },
-              '100%': { transform: 'scale(1, 1)' },
-            },
-          },
-        },
-      },
-    }
-  </script>
+  <!-- Preconnect to external resources for faster loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Compiled Tailwind CSS - No render-blocking CDN -->
+  <link rel="stylesheet" href="/css/main.css">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
-  <!-- Google Fonts - Optimized Loading -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <!-- Google Fonts - Async Loading with font-display: swap -->
+  <!-- Preload the most critical font weights for LCP -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@700;800&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@700;800&display=swap" media="print" onload="this.media='all'">
   <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Montserrat:wght@700;800&display=swap">
   </noscript>
 
-  <!-- Custom Styles - Bold, Playful, Seattle -->
-  <style>
-    body {
-      font-family: 'Poppins', system-ui, sans-serif;
+  <!-- Load additional font weights asynchronously after page load -->
+  <script>
+    // Load additional font weights after initial render
+    if ('requestIdleCallback' in window) {
+      requestIdleCallback(function() {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@500;800;900&family=Montserrat:wght@400;500;600;900&family=JetBrains+Mono:wght@400;500&display=swap';
+        document.head.appendChild(link);
+      });
+    } else {
+      setTimeout(function() {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://fonts.googleapis.com/css2?family=Poppins:wght@500;800;900&family=Montserrat:wght@400;500;600;900&family=JetBrains+Mono:wght@400;500&display=swap';
+        document.head.appendChild(link);
+      }, 100);
     }
-
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Montserrat', system-ui, sans-serif;
-      letter-spacing: -0.03em;
-      font-weight: 800;
-    }
-
-    /* MASSIVE display text - be bold! */
-    .text-massive {
-      font-size: clamp(3rem, 8vw, 6rem);
-      line-height: 0.95;
-      font-weight: 900;
-    }
-
-    /* Mountain silhouette - Rainier backdrop */
-    .mountain-bg {
-      position: relative;
-      overflow: hidden;
-    }
-
-    .mountain-bg::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 200px;
-      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 200'%3E%3Cpath fill='%2322543d' fill-opacity='0.06' d='M0,200 L0,120 L120,80 L240,100 L360,40 L480,90 L600,60 L720,30 L840,70 L960,50 L1080,80 L1200,60 L1320,90 L1440,70 L1440,200 Z'/%3E%3C/svg%3E") no-repeat bottom center;
-      background-size: 100% auto;
-      pointer-events: none;
-    }
-
-    /* Seattle sky gradient */
-    .seattle-sky {
-      background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
-    }
-
-    .dark .seattle-sky {
-      background: linear-gradient(180deg, #18181b 0%, #09090b 100%);
-    }
-
-    /* Sun break accent - the moment of joy */
-    .sun-break {
-      background: linear-gradient(135deg, #0891b2 0%, #0d9488 50%, #059669 100%);
-    }
-
-    .text-sun-break {
-      background: linear-gradient(135deg, #0891b2 0%, #059669 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    /* Bouncy card - sticky, playful */
-    .card-bouncy {
-      background: #fff;
-      border: 2px solid #e2e8f0;
-      border-radius: 20px;
-      transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .dark .card-bouncy {
-      background: #27272a;
-      border-color: #3f3f46;
-    }
-
-    .card-bouncy:hover {
-      border-color: #0891b2;
-      transform: translateY(-8px) scale(1.02);
-      box-shadow:
-        0 20px 40px -12px rgba(8, 145, 178, 0.2),
-        0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    }
-
-    .dark .card-bouncy:hover {
-      border-color: #36aaf5;
-      box-shadow:
-        0 20px 40px -12px rgba(8, 145, 178, 0.4),
-        0 4px 6px -2px rgba(0, 0, 0, 0.3);
-    }
-
-    .card-bouncy:active {
-      transform: translateY(-2px) scale(0.98);
-    }
-
-    /* Jelly button - squish! */
-    .btn-jelly {
-      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .btn-jelly:hover {
-      transform: scale(1.05);
-    }
-
-    .btn-jelly:active {
-      transform: scale(0.95);
-      animation: jelly 0.5s;
-    }
-
-    /* Sticky hover effect */
-    .sticky-hover {
-      transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .sticky-hover:hover {
-      transform: rotate(-2deg) scale(1.03);
-    }
-
-    /* Frosted glass - morning fog */
-    .fog {
-      background: rgba(255, 255, 255, 0.9);
-      backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
-    }
-
-    .dark .fog {
-      background: rgba(24, 24, 27, 0.95);
-    }
-
-    /* Playful underline */
-    .underline-playful {
-      position: relative;
-      display: inline-block;
-    }
-
-    .underline-playful::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background: linear-gradient(135deg, #0891b2, #059669);
-      border-radius: 2px;
-      transform: scaleX(0) rotate(-1deg);
-      transform-origin: left;
-      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .underline-playful:hover::after {
-      transform: scaleX(1) rotate(-1deg);
-    }
-
-    /* Tilted cards - cheeky angle */
-    .tilt-left {
-      transform: rotate(-2deg);
-      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .tilt-left:hover {
-      transform: rotate(0deg) scale(1.02);
-    }
-
-    .tilt-right {
-      transform: rotate(2deg);
-      transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .tilt-right:hover {
-      transform: rotate(0deg) scale(1.02);
-    }
-
-    /* Badge - fun pill shape */
-    .badge-fun {
-      padding: 6px 16px;
-      border-radius: 100px;
-      font-weight: 600;
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .badge-fun:hover {
-      transform: scale(1.1) rotate(-3deg);
-    }
-
-    /* Dotted pattern - subtle texture */
-    .dots-pattern {
-      background-image: radial-gradient(#94a3b8 1px, transparent 1px);
-      background-size: 24px 24px;
-    }
-
-    /* Custom scrollbar - chunky & fun */
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #f1f5f9;
-      border-radius: 5px;
-    }
-
-    .dark ::-webkit-scrollbar-track {
-      background: #27272a;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: linear-gradient(135deg, #0891b2, #059669);
-      border-radius: 5px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: linear-gradient(135deg, #0e7490, #047857);
-    }
-
-    /* Selection color - on brand */
-    ::selection {
-      background: rgba(8, 145, 178, 0.3);
-    }
-
-    /* MISSING: Gradient background - sun break accent */
-    .gradient-bg {
-      background: linear-gradient(135deg, #0891b2 0%, #0d9488 50%, #059669 100%);
-    }
-
-    /* MISSING: Gradient text */
-    .gradient-text {
-      background: linear-gradient(135deg, #0891b2 0%, #059669 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    /* MISSING: Animated gradient background */
-    .gradient-bg-animated {
-      background: linear-gradient(135deg, #0891b2 0%, #0d9488 50%, #059669 100%);
-      background-size: 200% 200%;
-      animation: gradientShift 3s ease infinite;
-    }
-
-    @keyframes gradientShift {
-      0%, 100% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-    }
-
-    /* MISSING: Rain pattern - subtle diagonal lines */
-    .rain-pattern {
-      background-image: repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 4px,
-        rgba(148, 163, 184, 0.03) 4px,
-        rgba(148, 163, 184, 0.03) 5px
-      );
-    }
-
-    .dark .rain-pattern {
-      background-image: repeating-linear-gradient(
-        -45deg,
-        transparent,
-        transparent 4px,
-        rgba(148, 163, 184, 0.02) 4px,
-        rgba(148, 163, 184, 0.02) 5px
-      );
-    }
-
-    /* Number counter style */
-    .counter {
-      font-family: 'Montserrat', system-ui, sans-serif;
-      font-weight: 900;
-      font-size: 2.5rem;
-      line-height: 1;
-    }
-
-    /* Stagger children animation */
-    .stagger-children > * {
-      animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) backwards;
-    }
-
-    .stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
-    .stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
-    .stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
-    .stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
-    .stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
-    .stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
-  </style>
+  </script>
 
   {{ block "head" . }}{{ end }}
 

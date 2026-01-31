@@ -312,7 +312,7 @@ resources:
   - name: "AWS Impact Accelerator"
     description: "10-week virtual program with $125K AWS credits for underrepresented founders"
     organization: "Amazon Web Services"
-    website: "https://aws.amazon.com/impact-accelerator"
+    website: "https://aws.amazon.com/startups"
     cost: "Free"
     eligibility: "Black, Women, LatinX founders"
     city: "Online"

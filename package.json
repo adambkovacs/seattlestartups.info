@@ -1,0 +1,24 @@
+{
+  "name": "seattlestartups-info",
+  "version": "1.0.0",
+  "description": "Seattle Startups Resource Directory",
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./static/css/main.css --minify",
+    "watch:css": "tailwindcss -i ./assets/css/main.css -o ./static/css/main.css --watch",
+    "dev": "npm run watch:css & hugo server",
+    "build": "npm run build:css && hugo --minify",
+    "prebuild": "npm run build:css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32"
+  },
+  "keywords": [
+    "seattle",
+    "startups",
+    "resources",
+    "hugo"
+  ],
+  "license": "MIT"
+}
