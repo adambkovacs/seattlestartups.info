@@ -1,0 +1,83 @@
+name: CI - Build & Validate
+
+on:
+  push:
+    branches: ["dev", "feature/**"]
+  pull_request:
+    branches: ["main", "dev"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.140.0
+    steps:
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Build with Hugo (test build)
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: development
+          TZ: America/Los_Angeles
+        run: |
+          hugo \
+            --gc \
+            --minify \
+            --baseURL "https://seattlestartups.info/"
+
+      - name: Check for build errors
+        run: |
+          echo "✅ Hugo build successful"
+          echo "📁 Generated files:"
+          ls -la public/
+          echo ""
+          echo "📊 Build stats:"
+          find public -type f | wc -l | xargs -I {} echo "  {} files generated"
+          du -sh public/ | xargs -I {} echo "  {} total size"
+
+      - name: Validate HTML (basic)
+        run: |
+          # Check that index.html exists and has content
+          if [ -f "public/index.html" ]; then
+            echo "✅ index.html exists"
+            head -20 public/index.html
+          else
+            echo "❌ index.html not found"
+            exit 1
+          fi
+
+      - name: Check for banned color classes
+        run: |
+          echo "Checking for banned color classes..."
+          if grep -rn "seattle-blue\|seattle-teal\|seattle-green" themes/; then
+            echo "❌ Found banned seattle-* color classes"
+            exit 1
+          fi
+          if grep -rn "bg-slate-\|text-slate-\|border-slate-" themes/; then
+            echo "❌ Found banned slate-* color classes"
+            exit 1
+          fi
+          echo "✅ No banned color classes found"
+
+      - name: Validate YAML data files
+        run: |
+          echo "Validating YAML files..."
+          for f in data/resources/*.yaml; do
+            echo "Checking $f..."
+            python3 -c "import yaml; yaml.safe_load(open('$f'))" || exit 1
+          done
+          echo "✅ All YAML files valid"
+          echo "📊 Resource counts:"
+          for f in data/resources/*.yaml; do
+            count=$(grep -c "^  - name:" "$f" 2>/dev/null || echo "0")
+            echo "  $(basename $f): $count resources"
+          done
