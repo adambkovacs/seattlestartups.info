@@ -68,7 +68,7 @@
         </div>
 
         <!-- Filter Toggle Button (Mobile) -->
-        <button id="filter-toggle" class="lg:hidden flex items-center gap-2 px-4 py-3 rounded-xl border-2 border-overcast-200 bg-white hover:border-sound-300 transition-colors">
+        <button id="filter-toggle" class="lg:hidden flex items-center gap-2 px-4 py-3 rounded-xl border-2 border-overcast-200 dark:border-overcast-600 bg-white dark:bg-overcast-800 hover:border-sound-300 dark:hover:border-sound-600 transition-colors text-overcast-700 dark:text-overcast-200">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
           </svg>
@@ -716,7 +716,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (type === 'cost') {
       filters.cost = 'all';
-      document.querySelector('.cost-filter[value="all"]').checked = true;
+      const allRadio = document.querySelector('.cost-filter[value="all"]');
+      if (allRadio) allRadio.checked = true;
     } else {
       const filterKey = filterKeyMap[type];
       filters[filterKey] = filters[filterKey].filter(v => v !== value);

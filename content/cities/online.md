@@ -34,4 +34,4 @@ Virtual programs, state agencies, and online communities connect founders across
 
 ## Browse Statewide Resources
 
-Filter by category, industry, or stage below.
+[Browse All Online Resources →](/resources/?city=online)

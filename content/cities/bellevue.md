@@ -39,4 +39,4 @@ Bellevue founders operate in one of the highest-income zip codes in the country 
 
 ## Browse Bellevue Resources
 
-Filter by category, industry, or stage below.
+[Browse All Bellevue Resources →](/resources/?city=bellevue)

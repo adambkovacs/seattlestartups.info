@@ -28,4 +28,4 @@ Redmond founders operate in the shadow of tech giants with access to experienced
 
 ## Browse Redmond Resources
 
-Filter by category, industry, or stage below.
+[Browse All Redmond Resources →](/resources/?city=redmond)

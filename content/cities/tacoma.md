@@ -39,4 +39,4 @@ Tacoma offers founders lower overhead, a tight-knit community, and direct access
 
 ## Browse Tacoma Resources
 
-Filter by category, industry, or stage below.
+[Browse All Tacoma Resources →](/resources/?city=tacoma)

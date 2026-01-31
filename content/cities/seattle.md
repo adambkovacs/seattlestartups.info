@@ -40,4 +40,4 @@ Seattle founders have access to 100+ free resources. No excuses.
 
 ## Browse Seattle Resources
 
-Filter by category, industry, or stage below.
+[Browse All Seattle Resources →](/resources/?city=seattle)

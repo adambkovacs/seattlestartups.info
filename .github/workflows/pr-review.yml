@@ -1,0 +1,158 @@
+name: PR Review - Claude Quality Check
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  validate-resources:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate YAML syntax
+        run: |
+          echo "🔍 Validating YAML files..."
+          for f in data/resources/*.yaml; do
+            echo "  Checking $f..."
+            python3 -c "import yaml; yaml.safe_load(open('$f'))" || exit 1
+          done
+          echo "✅ All YAML files valid"
+
+      - name: Check required fields
+        run: |
+          echo "🔍 Checking required fields in resources..."
+          python3 << 'EOF'
+          import yaml
+          import sys
+          import glob
+
+          required_fields = ['name', 'description', 'website', 'cost', 'counties', 'categories']
+          errors = []
+
+          for filepath in glob.glob('data/resources/*.yaml'):
+              with open(filepath) as f:
+                  data = yaml.safe_load(f)
+                  if not data or 'resources' not in data:
+                      continue
+                  for i, resource in enumerate(data['resources']):
+                      for field in required_fields:
+                          if field not in resource or not resource[field]:
+                              errors.append(f"{filepath}: Resource {i+1} ({resource.get('name', 'unnamed')}) missing {field}")
+
+          if errors:
+              print("❌ Missing required fields:")
+              for e in errors:
+                  print(f"  {e}")
+              sys.exit(1)
+          else:
+              print("✅ All resources have required fields")
+          EOF
+
+      - name: Validate URLs
+        run: |
+          echo "🔍 Checking URLs are valid format..."
+          python3 << 'EOF'
+          import yaml
+          import re
+          import glob
+
+          url_pattern = re.compile(r'^https?://[^\s]+$')
+          errors = []
+
+          for filepath in glob.glob('data/resources/*.yaml'):
+              with open(filepath) as f:
+                  data = yaml.safe_load(f)
+                  if not data or 'resources' not in data:
+                      continue
+                  for resource in data['resources']:
+                      url = resource.get('website', '')
+                      if url and not url_pattern.match(url):
+                          errors.append(f"{resource.get('name')}: Invalid URL format: {url}")
+
+          if errors:
+              print("❌ Invalid URLs found:")
+              for e in errors:
+                  print(f"  {e}")
+          else:
+              print("✅ All URLs valid format")
+          EOF
+
+      - name: Check for duplicates
+        run: |
+          echo "🔍 Checking for duplicate resources..."
+          python3 << 'EOF'
+          import yaml
+          import glob
+          from collections import Counter
+
+          all_names = []
+          all_urls = []
+
+          for filepath in glob.glob('data/resources/*.yaml'):
+              with open(filepath) as f:
+                  data = yaml.safe_load(f)
+                  if not data or 'resources' not in data:
+                      continue
+                  for resource in data['resources']:
+                      all_names.append(resource.get('name', '').lower().strip())
+                      all_urls.append(resource.get('website', '').lower().strip())
+
+          name_dupes = [name for name, count in Counter(all_names).items() if count > 1 and name]
+          url_dupes = [url for url, count in Counter(all_urls).items() if count > 1 and url]
+
+          if name_dupes:
+              print(f"⚠️ Duplicate names: {name_dupes}")
+          if url_dupes:
+              print(f"⚠️ Duplicate URLs: {url_dupes}")
+          if not name_dupes and not url_dupes:
+              print("✅ No duplicates found")
+          EOF
+
+  build-test:
+    runs-on: ubuntu-latest
+    env:
+      HUGO_VERSION: 0.145.0
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          fetch-depth: 0
+
+      - name: Install Hugo CLI
+        run: |
+          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+      - name: Build with Hugo
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: production
+          TZ: America/Los_Angeles
+        run: |
+          hugo --gc --minify --baseURL "https://seattlestartups.info/"
+
+      - name: Report build stats
+        run: |
+          echo "## 📊 Build Report" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Metric | Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Pages generated | $(find public -name '*.html' | wc -l | tr -d ' ') |" >> $GITHUB_STEP_SUMMARY
+          echo "| Total files | $(find public -type f | wc -l | tr -d ' ') |" >> $GITHUB_STEP_SUMMARY
+          echo "| Build size | $(du -sh public/ | cut -f1) |" >> $GITHUB_STEP_SUMMARY
+
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Resource Counts" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          for f in data/resources/*.yaml; do
+            count=$(grep -c "^  - name:" "$f" 2>/dev/null || echo "0")
+            echo "- **$(basename $f .yaml)**: $count" >> $GITHUB_STEP_SUMMARY
+          done

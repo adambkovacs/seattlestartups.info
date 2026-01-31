@@ -27,4 +27,4 @@ Lynnwood founders benefit from Snohomish County resources while staying connecte
 
 ## Browse Lynnwood Resources
 
-Filter by category, industry, or stage below.
+[Browse All Lynnwood Resources →](/resources/?city=lynnwood)

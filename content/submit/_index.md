@@ -10,7 +10,7 @@ Seattle Startups is a community-curated directory. Every resource was added by f
 
 ### Option 1: GitHub Pull Request (Recommended)
 
-1. **Fork the repository** on [GitHub](https://github.com/your-org/seattlestartups.info)
+1. **Fork the repository** on [GitHub](https://github.com/adambkovacs/seattlestartups.info)
 2. **Add your resource** to the appropriate YAML file in `data/resources/`
 3. **Submit a Pull Request** with your changes
 
@@ -51,7 +51,7 @@ Add your resource to the relevant category file (e.g., `accelerators.yaml`, `men
 
 ### Option 2: GitHub Issue
 
-Don't want to deal with YAML? [Open a GitHub Issue](https://github.com/your-org/seattlestartups.info/issues/new) with:
+Don't want to deal with YAML? [Open a GitHub Issue](https://github.com/adambkovacs/seattlestartups.info/issues/new) with:
 
 - Resource name and organization
 - Website URL
@@ -77,4 +77,4 @@ We'll add it for you!
 
 ### Questions?
 
-[Open an issue](https://github.com/your-org/seattlestartups.info/issues) or reach out through the repository.
+[Open an issue](https://github.com/adambkovacs/seattlestartups.info/issues) or reach out through the repository.

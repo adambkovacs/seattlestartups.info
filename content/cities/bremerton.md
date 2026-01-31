@@ -36,4 +36,4 @@ Bremerton founders can tap into defense contracts, maritime expertise, and a rev
 
 ## Browse Bremerton Resources
 
-Filter by category, industry, or stage below.
+[Browse All Bremerton Resources →](/resources/?city=bremerton)

@@ -39,4 +39,4 @@ Olympia founders have unique access to state procurement, policy influence, and 
 
 ## Browse Olympia Resources
 
-Filter by category, industry, or stage below.
+[Browse All Olympia Resources →](/resources/?city=olympia)

@@ -3,7 +3,7 @@
 {{ $index := .index }}
 {{ $category := index $resource.categories 0 | default "General" }}
 {{ $county := index $resource.counties 0 | default "" }}
-{{ $city := $resource.city | default "Online" }}
+{{ $city := $resource.city }}
 {{ $audiences := delimit $resource.audiences "," }}
 {{ $industries := delimit $resource.industries "," }}
 
@@ -14,7 +14,7 @@
          data-description="{{ $resource.description }}"
          data-category="{{ $category | urlize }}"
          data-county="{{ $county | urlize }}"
-         data-city="{{ $city }}"
+         data-city="{{ with $city }}{{ . | lower }}{{ else }}online{{ end }}"
          data-audiences="{{ $audiences }}"
          data-industries="{{ $industries }}"
          data-cost="{{ $resource.cost | urlize }}"
@@ -34,20 +34,22 @@
       </div>
 
       <div class="flex flex-col items-end gap-1">
-        {{ if and $city (ne $city "Online") }}
-        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-fir-50 text-fir-700 border border-fir-200">
-          <svg class="w-3 h-3 mr-1 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-          </svg>
-          {{ $city }}
-        </span>
-        {{ else if $city }}
-        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-sound-50 text-sound-700 border border-sound-200">
-          <svg class="w-3 h-3 mr-1 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
-          </svg>
-          Online
-        </span>
+        {{ if $city }}
+          {{ if ne $city "Online" }}
+          <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-fir-50 text-fir-700 border border-fir-200 dark:bg-fir-900/50 dark:text-fir-300 dark:border-fir-700">
+            <svg class="w-3 h-3 mr-1 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+            </svg>
+            {{ $city }}
+          </span>
+          {{ else }}
+          <span class="inline-flex items-center px-2 py-0.5 rounded-full text-xs font-medium bg-sound-50 text-sound-700 border border-sound-200 dark:bg-sound-900/50 dark:text-sound-300 dark:border-sound-700">
+            <svg class="w-3 h-3 mr-1 opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/>
+            </svg>
+            Online
+          </span>
+          {{ end }}
         {{ end }}
       </div>
     </div>

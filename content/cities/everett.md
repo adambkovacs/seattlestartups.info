@@ -36,4 +36,4 @@ Everett founders benefit from aerospace talent, lower costs than Seattle, and st
 
 ## Browse Everett Resources
 
-Filter by category, industry, or stage below.
+[Browse All Everett Resources →](/resources/?city=everett)
