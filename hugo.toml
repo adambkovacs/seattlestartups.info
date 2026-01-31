@@ -16,6 +16,17 @@ theme = 'startup-theme'
   kitsap = "Kitsap County"
   thurston = "Thurston County (Olympia)"
 
+[params.cities]
+  seattle = "Seattle"
+  tacoma = "Tacoma"
+  bellevue = "Bellevue"
+  everett = "Everett"
+  olympia = "Olympia"
+  bremerton = "Bremerton"
+  lynnwood = "Lynnwood"
+  redmond = "Redmond"
+  online = "Online / Statewide"
+
 [taxonomies]
   category = "categories"
   county = "counties"
@@ -28,8 +39,8 @@ theme = 'startup-theme'
     url = "/resources/"
     weight = 1
   [[menu.main]]
-    name = "By County"
-    url = "/counties/"
+    name = "By City"
+    url = "/cities/"
     weight = 2
   [[menu.main]]
     name = "For Founders"

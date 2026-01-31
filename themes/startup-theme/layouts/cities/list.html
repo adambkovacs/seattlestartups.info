@@ -1,0 +1,198 @@
+{{ define "main" }}
+<div class="relative">
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden py-12 lg:py-20 border-b border-overcast-200 dark:border-overcast-700">
+    <div class="absolute inset-0 dots-pattern opacity-30 dark:opacity-10"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-4xl">
+        <!-- Breadcrumb -->
+        <nav class="flex mb-6" aria-label="Breadcrumb">
+          <ol class="flex items-center space-x-2 text-sm font-mono">
+            <li><a href="{{ .Site.BaseURL }}" class="text-overcast-500 dark:text-overcast-400 hover:text-sound-600 dark:hover:text-sound-400 transition-colors">Home</a></li>
+            <li class="text-overcast-300 dark:text-overcast-600">/</li>
+            <li class="text-sound-600 dark:text-sound-400 font-medium">By City</li>
+          </ol>
+        </nav>
+
+        <h1 class="font-display font-black text-4xl md:text-5xl lg:text-6xl text-overcast-900 dark:text-white mb-4 tracking-tight">
+          Resources by City
+        </h1>
+
+        <p class="text-lg md:text-xl text-overcast-600 dark:text-overcast-300 leading-relaxed mb-8 max-w-2xl">
+          {{ with .Description }}{{ . }}{{ else }}Find startup resources in your city. From Seattle to Tacoma to Olympia, discover local support for founders.{{ end }}
+        </p>
+
+        <!-- Stats -->
+        <div class="flex flex-wrap items-center gap-6 text-sm font-mono text-overcast-500 dark:text-overcast-400">
+          <div class="flex items-center gap-2">
+            <span class="inline-block w-2 h-2 rounded-full bg-fir-500 animate-pulse"></span>
+            <span class="font-bold text-overcast-900 dark:text-white">20+</span>
+            <span>cities covered</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-overcast-300 dark:text-overcast-600">|</span>
+            <span class="font-bold text-overcast-900 dark:text-white">248+</span>
+            <span>total resources</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Major Cities Grid -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <h2 class="font-display font-bold text-2xl text-overcast-900 dark:text-white mb-8">
+      Major Cities
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {{ $cities := dict
+        "seattle" (dict "name" "Seattle" "county" "King County" "desc" "The heart of the PNW startup ecosystem with 100+ resources" "gradient" "from-sound-500 to-sound-600")
+        "tacoma" (dict "name" "Tacoma" "county" "Pierce County" "desc" "South Sound's growing startup hub with co-working and accelerators" "gradient" "from-fir-500 to-fir-600")
+        "bellevue" (dict "name" "Bellevue" "county" "King County" "desc" "Eastside tech corridor with major corporate partnerships" "gradient" "from-cyan-500 to-cyan-600")
+        "everett" (dict "name" "Everett" "county" "Snohomish County" "desc" "North Sound innovation center with aerospace focus" "gradient" "from-indigo-500 to-indigo-600")
+        "olympia" (dict "name" "Olympia" "county" "Thurston County" "desc" "State capital with government and policy resources" "gradient" "from-emerald-500 to-emerald-600")
+        "bremerton" (dict "name" "Bremerton" "county" "Kitsap County" "desc" "Maritime and defense tech hub across the Sound" "gradient" "from-blue-500 to-blue-600")
+      }}
+
+      {{ range $key, $city := $cities }}
+      {{/* Count resources for this city */}}
+      {{ $cityResources := 0 }}
+      {{ with $.Site.Data.resources }}
+        {{ range $filename, $data := . }}
+          {{ with $data.resources }}
+            {{ range . }}
+              {{ if .city }}
+                {{ if eq (.city | lower) $key }}
+                  {{ $cityResources = add $cityResources 1 }}
+                {{ end }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+
+      <a href="/resources/?city={{ $key }}"
+         class="group relative bg-white dark:bg-overcast-800 rounded-2xl border border-overcast-200 dark:border-overcast-700 p-8 hover:shadow-xl hover:border-sound-300 dark:hover:border-sound-600 transition-all duration-300 transform hover:-translate-y-1">
+
+        <!-- Icon with gradient -->
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br {{ $city.gradient }} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+          </svg>
+        </div>
+
+        <!-- City Name -->
+        <h3 class="font-display font-bold text-2xl text-overcast-900 dark:text-white mb-1 group-hover:text-sound-600 dark:group-hover:text-sound-400 transition-colors">
+          {{ $city.name }}
+        </h3>
+
+        <!-- County Badge -->
+        <span class="inline-block text-xs font-mono text-overcast-500 dark:text-overcast-400 mb-3">
+          {{ $city.county }}
+        </span>
+
+        <!-- Description -->
+        <p class="text-overcast-600 dark:text-overcast-400 mb-4 text-sm">
+          {{ $city.desc }}
+        </p>
+
+        <!-- Resource Count -->
+        <div class="flex items-center justify-between">
+          <span class="text-sm font-mono text-overcast-500 dark:text-overcast-400">
+            {{ $cityResources }} resources
+          </span>
+          <span class="inline-flex items-center text-sound-600 dark:text-sound-400 font-medium text-sm group-hover:translate-x-1 transition-transform">
+            Browse
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Other Cities Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+    <h2 class="font-display font-bold text-2xl text-overcast-900 dark:text-white mb-6">
+      More Cities & Online Resources
+    </h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      {{ $otherCities := slice "lynnwood" "auburn" "redmond" "renton" "kent" "federal-way" "des-moines" "bainbridge-island" "poulsbo" "lacey" }}
+
+      {{ range $otherCities }}
+      {{ $cityName := . | humanize | title }}
+      <a href="/resources/?city={{ . }}"
+         class="group bg-overcast-50 dark:bg-overcast-800/50 rounded-xl p-4 text-center hover:bg-white dark:hover:bg-overcast-800 border border-transparent hover:border-overcast-200 dark:hover:border-overcast-700 transition-all">
+        <span class="text-sm font-medium text-overcast-700 dark:text-overcast-300 group-hover:text-sound-600 dark:group-hover:text-sound-400">
+          {{ $cityName }}
+        </span>
+      </a>
+      {{ end }}
+
+      <!-- Online/Statewide -->
+      <a href="/resources/?city=online"
+         class="group bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-purple-900/20 dark:to-indigo-900/20 rounded-xl p-4 text-center hover:shadow-md border border-purple-200 dark:border-purple-800 transition-all">
+        <span class="text-sm font-medium text-purple-700 dark:text-purple-300 group-hover:text-purple-600">
+          Online / Statewide
+        </span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Explanation Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+    <div class="bg-overcast-50 dark:bg-overcast-800/50 rounded-2xl p-8 border border-overcast-200 dark:border-overcast-700">
+      <h3 class="font-display font-bold text-xl text-overcast-900 dark:text-white mb-4">
+        Why Browse by City?
+      </h3>
+      <div class="grid md:grid-cols-2 gap-6 text-overcast-600 dark:text-overcast-300">
+        <div class="flex gap-3">
+          <svg class="w-5 h-5 text-fir-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          <p><strong>Local Meetups:</strong> Find in-person networking events, pitch nights, and founder gatherings in your city.</p>
+        </div>
+        <div class="flex gap-3">
+          <svg class="w-5 h-5 text-fir-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          <p><strong>Coworking Spaces:</strong> Discover free desk days, makerspaces, and innovation hubs near you.</p>
+        </div>
+        <div class="flex gap-3">
+          <svg class="w-5 h-5 text-fir-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          <p><strong>Local SBDC:</strong> Each city area has dedicated Small Business Development advisors.</p>
+        </div>
+        <div class="flex gap-3">
+          <svg class="w-5 h-5 text-fir-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+          <p><strong>City Programs:</strong> Many cities have their own economic development initiatives and grants.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quick Links to Counties -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
+    <div class="flex flex-wrap items-center justify-center gap-4 text-sm">
+      <span class="text-overcast-500 dark:text-overcast-400">Or browse by county:</span>
+      <a href="/counties/" class="text-sound-600 dark:text-sound-400 hover:underline">King</a>
+      <span class="text-overcast-300 dark:text-overcast-600">|</span>
+      <a href="/resources/?county=pierce" class="text-sound-600 dark:text-sound-400 hover:underline">Pierce</a>
+      <span class="text-overcast-300 dark:text-overcast-600">|</span>
+      <a href="/resources/?county=snohomish" class="text-sound-600 dark:text-sound-400 hover:underline">Snohomish</a>
+      <span class="text-overcast-300 dark:text-overcast-600">|</span>
+      <a href="/resources/?county=kitsap" class="text-sound-600 dark:text-sound-400 hover:underline">Kitsap</a>
+      <span class="text-overcast-300 dark:text-overcast-600">|</span>
+      <a href="/resources/?county=thurston" class="text-sound-600 dark:text-sound-400 hover:underline">Thurston</a>
+    </div>
+  </section>
+</div>
+{{ end }}
