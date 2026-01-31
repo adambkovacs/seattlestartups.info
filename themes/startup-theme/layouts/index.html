@@ -133,7 +133,18 @@
   </section>
 
   <!-- Featured Resources -->
-  {{ $featured := where .Site.RegularPages "Params.featured" true | first 6 }}
+  {{/* Collect featured resources from YAML data */}}
+  {{ $allResources := slice }}
+  {{ with $.Site.Data.resources }}
+    {{ range $filename, $data := . }}
+      {{ with $data.resources }}
+        {{ range . }}
+          {{ $allResources = $allResources | append . }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  {{ end }}
+  {{ $featured := where $allResources "featured" true | first 6 }}
   {{ with $featured }}
   <section class="py-20 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -148,7 +159,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         {{ range . }}
-          {{ partial "resource-card.html" . }}
+          {{ partial "resource-card-data.html" . }}
         {{ end }}
       </div>
 
@@ -166,7 +177,8 @@
   {{ end }}
 
   <!-- Latest Resources -->
-  {{ $latest := .Site.RegularPages | first 6 }}
+  {{/* Use first 6 from allResources (already collected above) */}}
+  {{ $latest := $allResources | first 6 }}
   {{ with $latest }}
   <section class="py-20 bg-gradient-to-b from-overcast-50 to-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -190,7 +202,7 @@
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         {{ range . }}
-          {{ partial "resource-card.html" . }}
+          {{ partial "resource-card-data.html" . }}
         {{ end }}
       </div>
     </div>
