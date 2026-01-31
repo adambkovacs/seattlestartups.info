@@ -87,10 +87,22 @@
 
   <!-- Resources Grid -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-    {{ if .Pages }}
+    {{/* Collect all resources from YAML data files */}}
+    {{ $allResources := slice }}
+    {{ with $.Site.Data.resources }}
+      {{ range $filename, $data := . }}
+        {{ with $data.resources }}
+          {{ range . }}
+            {{ $allResources = $allResources | append . }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ if $allResources }}
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-      {{ range .Pages }}
-        {{ partial "resource-card.html" . }}
+      {{ range $allResources }}
+        {{ partial "resource-card-data.html" . }}
       {{ end }}
     </div>
     {{ else }}
