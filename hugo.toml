@@ -4,7 +4,7 @@ title = 'Seattle Startups - Free Resources for Founders'
 theme = 'startup-theme'
 
 [params]
-  description = "170+ verified free resources for early-stage founders in Greater Seattle"
+  description = "248+ verified free resources for early-stage founders in Greater Seattle"
   author = "Seattle Startup Community"
   github = "https://github.com/adambkovacs/seattlestartups.info"
   tagline = "Your launchpad to the Seattle startup ecosystem"
@@ -47,7 +47,7 @@ theme = 'startup-theme'
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true
+      unsafe = false
   [markup.highlight]
     style = "github"
 
