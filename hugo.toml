@@ -53,6 +53,10 @@ theme = 'startup-theme'
     url = "/resources/"
     weight = 1
   [[menu.main]]
+    name = "Guides"
+    url = "/guides/"
+    weight = 1.5
+  [[menu.main]]
     name = "By City"
     url = "/cities/"
     weight = 2
