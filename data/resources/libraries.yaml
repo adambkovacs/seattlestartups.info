@@ -1,100 +1,220 @@
 # Library Business Resources
-# Extracted from ecosystem-master-inventory.md
+# Greater Seattle Startup Ecosystem
 # Last updated: 2026-01-30
 
 resources:
+  # Seattle Public Library
   - name: "Library to Business (L2B) Program"
+    description: "1:1 business librarian appointments, premium databases, and workshops"
     organization: "Seattle Public Library"
-    type: "Advising/Research"
-    description: "1:1 business librarian appointments, premium databases, workshops"
+    website: "https://spl.org"
+    cost: "Free"
     eligibility: "SPL cardholders"
-    access: "Book at L2B@spl.org"
     counties:
       - King
-    url: "https://spl.org"
-    free_status: true
+    categories:
+      - Libraries
     audiences: []
+    featured: true
 
   - name: "SPL Business Databases"
-    organization: "Seattle Public Library"
-    type: "Research"
     description: "ABI/INFORM, Data Axle, SimplyAnalytics, RMA eStatement Studies"
+    organization: "Seattle Public Library"
+    website: "https://spl.org"
+    cost: "Free"
     eligibility: "SPL cardholders"
-    access: "Online with card"
     counties:
       - King
-    url: "https://spl.org"
-    free_status: true
+    categories:
+      - Libraries
     audiences: []
+    featured: false
 
-  - name: "KCLS Small Business Resources"
-    organization: "King County Library"
-    type: "Research/Training"
-    description: "Sample business plans, counseling connections, databases"
-    eligibility: "KCLS cardholders"
-    access: "Online/in-library"
+  - name: "SPL PitchBook Access"
+    description: "Venture capital deal flow, valuations, and investor profile database"
+    organization: "Seattle Public Library"
+    website: "https://spl.org"
+    cost: "Free"
+    eligibility: "SPL cardholders"
     counties:
       - King
-    url: "https://kcls.org"
-    free_status: true
+    categories:
+      - Libraries
     audiences: []
+    featured: true
+
+  - name: "SPL Mergent Intellect"
+    description: "Detailed data on millions of US businesses for competitor research"
+    organization: "Seattle Public Library"
+    website: "https://spl.org"
+    cost: "Free"
+    eligibility: "SPL cardholders"
+    counties:
+      - King
+    categories:
+      - Libraries
+    audiences: []
+    featured: false
+
+  # King County Library System
+  - name: "KCLS Small Business Resources"
+    description: "Sample business plans, counseling connections, and databases"
+    organization: "King County Library System"
+    website: "https://kcls.org"
+    cost: "Free"
+    eligibility: "KCLS cardholders"
+    counties:
+      - King
+    categories:
+      - Libraries
+    audiences: []
+    featured: true
 
   - name: "KCLS LinkedIn Learning"
-    organization: "King County Library"
-    type: "Training"
-    description: "16,000+ business/tech/design courses"
+    description: "16,000+ business, tech, and design courses"
+    organization: "King County Library System"
+    website: "https://kcls.org"
+    cost: "Free"
     eligibility: "KCLS cardholders"
-    access: "Online"
     counties:
       - King
-    url: "https://kcls.org"
-    free_status: true
+    categories:
+      - Libraries
     audiences: []
+    featured: true
 
+  - name: "KCLS DemographicsNow"
+    description: "Customer segmentation and demographic analysis for site selection"
+    organization: "King County Library System"
+    website: "https://kcls.org"
+    cost: "Free"
+    eligibility: "KCLS cardholders"
+    counties:
+      - King
+    categories:
+      - Libraries
+    audiences: []
+    featured: false
+
+  - name: "KCLS FDO Professional"
+    description: "Foundation and grant funding research database"
+    organization: "King County Library System"
+    website: "https://kcls.org"
+    cost: "Free"
+    eligibility: "KCLS cardholders"
+    counties:
+      - King
+    categories:
+      - Libraries
+    audiences: []
+    featured: false
+
+  # Sno-Isle Libraries
   - name: "Sno-Isle Business Tools"
+    description: "Data Axle, ABI/INFORM, Business Plans Handbook with remote access"
     organization: "Sno-Isle Libraries"
-    type: "Research"
-    description: "Data Axle, ABI/INFORM, Business Plans Handbook"
+    website: "https://sno-isle.org/resources/business-finance"
+    cost: "Free"
     eligibility: "Cardholders"
-    access: "Online with card"
     counties:
       - Snohomish
-    url: "https://sno-isle.org"
-    free_status: true
+    categories:
+      - Libraries
     audiences: []
+    featured: true
 
+  - name: "Sno-Isle Gale Business Entrepreneurship"
+    description: "Business planning templates and entrepreneurship resources"
+    organization: "Sno-Isle Libraries"
+    website: "https://sno-isle.org"
+    cost: "Free"
+    eligibility: "Cardholders"
+    counties:
+      - Snohomish
+    categories:
+      - Libraries
+    audiences: []
+    featured: false
+
+  - name: "Sno-Isle SCORE Partnership"
+    description: "1-hour free counseling appointments at Lynnwood Library"
+    organization: "Sno-Isle Libraries"
+    website: "https://sno-isle.org"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - Snohomish
+    categories:
+      - Libraries
+      - Mentorship
+    audiences: []
+    featured: false
+
+  # Pierce County Library System
   - name: "Pierce County Library Job+Business Center"
-    organization: "Pierce County Library"
-    type: "Training/Research"
-    description: "Technology skills, certifications (MS/Adobe/QuickBooks), databases"
+    description: "Technology skills, certifications (MS/Adobe/QuickBooks), and databases"
+    organization: "Pierce County Library System"
+    website: "https://mypcls.org/learn-explore/job-business"
+    cost: "Free"
     eligibility: "PCLS cardholders"
-    access: "Online/in-library"
     counties:
       - Pierce
-    url: "https://mypcls.org"
-    free_status: true
+    categories:
+      - Libraries
     audiences: []
+    featured: true
 
+  - name: "Pierce County Library Microsoft Certifications"
+    description: "Free Microsoft Office Specialist (MOS) certification training"
+    organization: "Pierce County Library System"
+    website: "https://mypcls.org"
+    cost: "Free"
+    eligibility: "PCLS cardholders"
+    counties:
+      - Pierce
+    categories:
+      - Libraries
+    audiences: []
+    featured: false
+
+  # Kitsap Regional Library
   - name: "Kitsap Regional Library Business Resources"
+    description: "Data Axle, Business Plans Handbook, market research, and free meeting rooms at 9 locations"
     organization: "Kitsap Regional Library"
-    type: "Research"
-    description: "Data Axle, Business Plans Handbook, market research, free meeting rooms at 9 locations"
+    website: "https://krl.org"
+    cost: "Free"
     eligibility: "KRL cardholders"
-    access: "Online/in-library"
     counties:
       - Kitsap
-    url: "https://krl.org"
-    free_status: true
+    categories:
+      - Libraries
     audiences: []
+    featured: true
 
+  # Timberland Regional Library
   - name: "Timberland Regional Library Resources"
-    organization: "Timberland Regional Library"
-    type: "Research/Space"
     description: "Gale Business, Data Axle, Legal Forms, Expanded Access Hours (7am-8pm)"
+    organization: "Timberland Regional Library"
+    website: "https://trl.org"
+    cost: "Free"
     eligibility: "TRL cardholders"
-    access: "Online/in-library"
     counties:
       - Thurston
-    url: "https://trl.org"
-    free_status: true
+    categories:
+      - Libraries
     audiences: []
+    featured: true
+
+  # Tacoma Public Library
+  - name: "Tacoma Public Library Business Resources"
+    description: "Business databases and research assistance"
+    organization: "Tacoma Public Library"
+    website: "https://tacomalibrary.org"
+    cost: "Free"
+    eligibility: "TPL cardholders"
+    counties:
+      - Pierce
+    categories:
+      - Libraries
+    audiences: []
+    featured: false

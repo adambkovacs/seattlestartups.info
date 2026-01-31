@@ -3,25 +3,25 @@
   <!-- Hero Section -->
   <section class="relative overflow-hidden py-12 lg:py-20">
     <!-- Background decoration -->
-    <div class="absolute inset-0 pattern-dots opacity-5"></div>
-    <div class="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-seattle-teal-100/50 to-transparent rounded-full blur-3xl"></div>
-    <div class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-seattle-blue-100/50 to-transparent rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 dots-pattern opacity-5"></div>
+    <div class="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-sound-100/50 to-transparent rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-fir-100/50 to-transparent rounded-full blur-3xl"></div>
 
     <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Breadcrumb -->
       <nav class="flex mb-8" aria-label="Breadcrumb">
         <ol class="flex items-center space-x-2 text-sm">
           <li>
-            <a href="{{ .Site.BaseURL }}" class="text-slate-500 hover:text-seattle-blue-500 transition-colors">Home</a>
+            <a href="{{ .Site.BaseURL }}" class="text-overcast-500 hover:text-sound-500 transition-colors">Home</a>
           </li>
           {{ if .Parent }}
-          <li class="text-slate-300">/</li>
+          <li class="text-overcast-300">/</li>
           <li>
-            <a href="{{ .Parent.Permalink }}" class="text-slate-500 hover:text-seattle-blue-500 transition-colors">{{ .Parent.Title }}</a>
+            <a href="{{ .Parent.Permalink }}" class="text-overcast-500 hover:text-sound-500 transition-colors">{{ .Parent.Title }}</a>
           </li>
           {{ end }}
-          <li class="text-slate-300">/</li>
-          <li class="text-seattle-blue-500 font-medium truncate max-w-[200px]">{{ .Title }}</li>
+          <li class="text-overcast-300">/</li>
+          <li class="text-sound-500 font-medium truncate max-w-[200px]">{{ .Title }}</li>
         </ol>
       </nav>
 
@@ -30,7 +30,7 @@
         {{ with .Params.categories }}
         {{ range . }}
         <a href="{{ "categories" | absURL }}/{{ . | urlize }}/"
-           class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium gradient-bg text-white shadow-md shadow-seattle-blue-500/20">
+           class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium sun-break text-white shadow-md shadow-sound-500/20">
           {{ partial "category-icon.html" . }}
           <span class="ml-1.5">{{ . }}</span>
         </a>
@@ -40,7 +40,7 @@
         {{ with .Params.counties }}
         {{ range . }}
         <a href="{{ "counties" | absURL }}/{{ . | urlize }}/"
-           class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-seattle-green-100 text-seattle-green-700 hover:bg-seattle-green-200 transition-colors">
+           class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-fir-100 text-fir-600 hover:bg-fir-200 transition-colors">
           <svg class="w-3.5 h-3.5 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -52,13 +52,13 @@
       </div>
 
       <!-- Title -->
-      <h1 class="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-slate-900 mb-6 leading-tight">
+      <h1 class="font-display font-bold text-3xl md:text-4xl lg:text-5xl text-overcast-900 mb-6 leading-tight">
         {{ .Title }}
       </h1>
 
       <!-- Description -->
       {{ with .Params.description }}
-      <p class="text-xl text-slate-600 leading-relaxed mb-8">{{ . }}</p>
+      <p class="text-xl text-overcast-600 leading-relaxed mb-8">{{ . }}</p>
       {{ end }}
 
       <!-- Action Buttons -->
@@ -67,7 +67,7 @@
         <a href="{{ . }}"
            target="_blank"
            rel="noopener noreferrer"
-           class="inline-flex items-center px-6 py-3 gradient-bg text-white rounded-xl font-semibold shadow-lg shadow-seattle-blue-500/25 hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
+           class="inline-flex items-center px-6 py-3 sun-break text-white rounded-xl font-semibold shadow-lg shadow-sound-500/25 hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
           <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
           </svg>
@@ -79,7 +79,7 @@
         <a href="{{ . }}"
            target="_blank"
            rel="noopener noreferrer"
-           class="inline-flex items-center px-6 py-3 bg-white border-2 border-seattle-teal-500 text-seattle-teal-600 rounded-xl font-semibold hover:bg-seattle-teal-50 transition-all duration-200">
+           class="inline-flex items-center px-6 py-3 bg-white border-2 border-sound-500 text-sound-600 rounded-xl font-semibold hover:bg-sound-50 transition-all duration-200">
           <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
           </svg>
@@ -89,10 +89,10 @@
       </div>
 
       <!-- Meta Info -->
-      <div class="flex flex-wrap items-center gap-6 text-sm text-slate-500 border-t border-slate-200 pt-6">
+      <div class="flex flex-wrap items-center gap-6 text-sm text-overcast-500 border-t border-overcast-200 pt-6">
         {{ with .Params.organization }}
         <div class="flex items-center">
-          <svg class="w-4 h-4 mr-2 text-seattle-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-4 h-4 mr-2 text-sound-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
           </svg>
           <span>{{ . }}</span>
@@ -101,20 +101,20 @@
 
         {{ with .Params.cost }}
         <div class="flex items-center">
-          <svg class="w-4 h-4 mr-2 text-seattle-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-4 h-4 mr-2 text-fir-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
           </svg>
-          <span class="font-medium text-seattle-green-600">{{ . }}</span>
+          <span class="font-medium text-fir-600">{{ . }}</span>
         </div>
         {{ end }}
 
         {{ with .Params.audiences }}
         <div class="flex items-center flex-wrap gap-2">
-          <svg class="w-4 h-4 text-seattle-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-4 h-4 text-sound-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
           </svg>
           {{ range . }}
-          <span class="px-2 py-0.5 bg-slate-100 rounded text-xs">{{ . }}</span>
+          <span class="px-2 py-0.5 bg-overcast-100 rounded text-xs">{{ . }}</span>
           {{ end }}
         </div>
         {{ end }}
@@ -124,13 +124,13 @@
 
   <!-- Content Section -->
   <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-    <div class="bg-white rounded-2xl shadow-xl shadow-slate-200/50 border border-slate-100 overflow-hidden">
+    <div class="bg-white rounded-2xl shadow-xl shadow-overcast-200/50 border border-overcast-100 overflow-hidden">
       <!-- Main Content -->
       <div class="p-8 lg:p-12">
-        <div class="prose prose-lg prose-slate max-w-none
+        <div class="prose prose-lg prose-overcast max-w-none
                     prose-headings:font-display prose-headings:font-semibold
-                    prose-a:text-seattle-blue-500 prose-a:no-underline hover:prose-a:underline
-                    prose-strong:text-slate-900
+                    prose-a:text-sound-500 prose-a:no-underline hover:prose-a:underline
+                    prose-strong:text-overcast-900
                     prose-ul:list-disc prose-ol:list-decimal
                     prose-img:rounded-xl prose-img:shadow-lg">
           {{ .Content }}
@@ -139,44 +139,44 @@
 
       <!-- Resource Details Card -->
       {{ if or .Params.eligibility .Params.benefits .Params.deadline .Params.location }}
-      <div class="border-t border-slate-100 bg-slate-50 p-8 lg:p-12">
-        <h2 class="font-display font-semibold text-xl text-slate-900 mb-6">Resource Details</h2>
+      <div class="border-t border-overcast-100 bg-overcast-50 p-8 lg:p-12">
+        <h2 class="font-display font-semibold text-xl text-overcast-900 mb-6">Resource Details</h2>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           {{ with .Params.eligibility }}
-          <div class="bg-white rounded-xl p-5 border border-slate-200">
+          <div class="bg-white rounded-xl p-5 border border-overcast-200">
             <div class="flex items-start">
-              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-seattle-blue-100 flex items-center justify-center">
-                <svg class="w-5 h-5 text-seattle-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-sound-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-sound-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                 </svg>
               </div>
               <div class="ml-4">
-                <h3 class="font-semibold text-slate-900">Eligibility</h3>
-                <p class="mt-1 text-sm text-slate-600">{{ . }}</p>
+                <h3 class="font-semibold text-overcast-900">Eligibility</h3>
+                <p class="mt-1 text-sm text-overcast-600">{{ . }}</p>
               </div>
             </div>
           </div>
           {{ end }}
 
           {{ with .Params.benefits }}
-          <div class="bg-white rounded-xl p-5 border border-slate-200">
+          <div class="bg-white rounded-xl p-5 border border-overcast-200">
             <div class="flex items-start">
-              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-seattle-teal-100 flex items-center justify-center">
-                <svg class="w-5 h-5 text-seattle-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-sound-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-sound-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/>
                 </svg>
               </div>
               <div class="ml-4">
-                <h3 class="font-semibold text-slate-900">What You Get</h3>
-                <p class="mt-1 text-sm text-slate-600">{{ . }}</p>
+                <h3 class="font-semibold text-overcast-900">What You Get</h3>
+                <p class="mt-1 text-sm text-overcast-600">{{ . }}</p>
               </div>
             </div>
           </div>
           {{ end }}
 
           {{ with .Params.deadline }}
-          <div class="bg-white rounded-xl p-5 border border-slate-200">
+          <div class="bg-white rounded-xl p-5 border border-overcast-200">
             <div class="flex items-start">
               <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-amber-100 flex items-center justify-center">
                 <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -184,25 +184,25 @@
                 </svg>
               </div>
               <div class="ml-4">
-                <h3 class="font-semibold text-slate-900">Deadline</h3>
-                <p class="mt-1 text-sm text-slate-600">{{ . }}</p>
+                <h3 class="font-semibold text-overcast-900">Deadline</h3>
+                <p class="mt-1 text-sm text-overcast-600">{{ . }}</p>
               </div>
             </div>
           </div>
           {{ end }}
 
           {{ with .Params.location }}
-          <div class="bg-white rounded-xl p-5 border border-slate-200">
+          <div class="bg-white rounded-xl p-5 border border-overcast-200">
             <div class="flex items-start">
-              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-seattle-green-100 flex items-center justify-center">
-                <svg class="w-5 h-5 text-seattle-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div class="flex-shrink-0 w-10 h-10 rounded-lg bg-fir-100 flex items-center justify-center">
+                <svg class="w-5 h-5 text-fir-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                 </svg>
               </div>
               <div class="ml-4">
-                <h3 class="font-semibold text-slate-900">Location</h3>
-                <p class="mt-1 text-sm text-slate-600">{{ . }}</p>
+                <h3 class="font-semibold text-overcast-900">Location</h3>
+                <p class="mt-1 text-sm text-overcast-600">{{ . }}</p>
               </div>
             </div>
           </div>
@@ -215,10 +215,10 @@
     <!-- Tags -->
     {{ with .Params.tags }}
     <div class="mt-8 flex flex-wrap items-center gap-2">
-      <span class="text-sm text-slate-500 mr-2">Tags:</span>
+      <span class="text-sm text-overcast-500 mr-2">Tags:</span>
       {{ range . }}
       <a href="{{ "tags" | absURL }}/{{ . | urlize }}/"
-         class="px-3 py-1 bg-slate-100 hover:bg-slate-200 text-slate-600 text-sm rounded-full transition-colors duration-200">
+         class="px-3 py-1 bg-overcast-100 hover:bg-overcast-200 text-overcast-600 text-sm rounded-full transition-colors duration-200">
         #{{ . }}
       </a>
       {{ end }}
@@ -226,9 +226,9 @@
     {{ end }}
 
     <!-- Navigation -->
-    <nav class="mt-12 flex items-center justify-between border-t border-slate-200 pt-8">
+    <nav class="mt-12 flex items-center justify-between border-t border-overcast-200 pt-8">
       {{ with .PrevInSection }}
-      <a href="{{ .Permalink }}" class="group flex items-center text-slate-600 hover:text-seattle-blue-500 transition-colors">
+      <a href="{{ .Permalink }}" class="group flex items-center text-overcast-600 hover:text-sound-500 transition-colors">
         <svg class="w-5 h-5 mr-2 transform group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
         </svg>
@@ -239,7 +239,7 @@
       {{ end }}
 
       {{ with .NextInSection }}
-      <a href="{{ .Permalink }}" class="group flex items-center text-slate-600 hover:text-seattle-blue-500 transition-colors">
+      <a href="{{ .Permalink }}" class="group flex items-center text-overcast-600 hover:text-sound-500 transition-colors">
         <span class="text-sm font-medium">{{ .Title | truncate 30 }}</span>
         <svg class="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
@@ -254,9 +254,9 @@
   <!-- Related Resources -->
   {{ $related := .Site.RegularPages.Related . | first 3 }}
   {{ with $related }}
-  <section class="bg-slate-50 py-16">
+  <section class="bg-overcast-50 py-16">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="font-display font-bold text-2xl text-slate-900 mb-8 text-center">Related Resources</h2>
+      <h2 class="font-display font-bold text-2xl text-overcast-900 mb-8 text-center">Related Resources</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         {{ range . }}
           {{ partial "resource-card.html" . }}

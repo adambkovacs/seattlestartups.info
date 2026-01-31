@@ -330,6 +330,42 @@
       background: rgba(8, 145, 178, 0.3);
     }
 
+    /* MISSING: Gradient background - sun break accent */
+    .gradient-bg {
+      background: linear-gradient(135deg, #0891b2 0%, #0d9488 50%, #059669 100%);
+    }
+
+    /* MISSING: Gradient text */
+    .gradient-text {
+      background: linear-gradient(135deg, #0891b2 0%, #059669 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* MISSING: Animated gradient background */
+    .gradient-bg-animated {
+      background: linear-gradient(135deg, #0891b2 0%, #0d9488 50%, #059669 100%);
+      background-size: 200% 200%;
+      animation: gradientShift 3s ease infinite;
+    }
+
+    @keyframes gradientShift {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+
+    /* MISSING: Rain pattern - subtle diagonal lines */
+    .rain-pattern {
+      background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 4px,
+        rgba(148, 163, 184, 0.03) 4px,
+        rgba(148, 163, 184, 0.03) 5px
+      );
+    }
+
     /* Number counter style */
     .counter {
       font-family: 'Montserrat', system-ui, sans-serif;
@@ -355,7 +391,7 @@
 </head>
 <body class="font-body antialiased seattle-sky rain-pattern min-h-screen text-overcast-800">
   <!-- Skip to content link -->
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-seattle-blue-500 text-white px-4 py-2 rounded-lg z-50">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-sound-500 text-white px-4 py-2 rounded-lg z-50">
     Skip to content
   </a>
 

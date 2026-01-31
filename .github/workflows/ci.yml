@@ -54,3 +54,30 @@ jobs:
             echo "❌ index.html not found"
             exit 1
           fi
+
+      - name: Check for banned color classes
+        run: |
+          echo "Checking for banned color classes..."
+          if grep -rn "seattle-blue\|seattle-teal\|seattle-green" themes/; then
+            echo "❌ Found banned seattle-* color classes"
+            exit 1
+          fi
+          if grep -rn "bg-slate-\|text-slate-\|border-slate-" themes/; then
+            echo "❌ Found banned slate-* color classes"
+            exit 1
+          fi
+          echo "✅ No banned color classes found"
+
+      - name: Validate YAML data files
+        run: |
+          echo "Validating YAML files..."
+          for f in data/resources/*.yaml; do
+            echo "Checking $f..."
+            python3 -c "import yaml; yaml.safe_load(open('$f'))" || exit 1
+          done
+          echo "✅ All YAML files valid"
+          echo "📊 Resource counts:"
+          for f in data/resources/*.yaml; do
+            count=$(grep -c "^  - name:" "$f" 2>/dev/null || echo "0")
+            echo "  $(basename $f): $count resources"
+          done
