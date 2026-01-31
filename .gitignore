@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Environment files - NEVER COMMIT
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+*.env
+
+# Secrets and credentials
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+credentials/
+.secrets
+
+# Build outputs
+dist/
+build/
+.next/
+.nuxt/
+.output/
+.vercel/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary
+tmp/
+temp/
+.tmp/
+.cache/
+
+# OS files
+Thumbs.db
+.DS_Store
