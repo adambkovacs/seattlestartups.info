@@ -1,0 +1,519 @@
+# Mentorship and Advising Programs
+# Greater Seattle Startup Ecosystem
+# Last updated: 2026-01-30
+
+resources:
+  - name: "SCORE Greater Seattle"
+    description: "Confidential 1:1 counseling with 160+ mentors across 62 industries"
+    organization: "SCORE (501c3)"
+    website: "https://score.org/seattle"
+    cost: "Free"
+    eligibility: "All entrepreneurs"
+    counties:
+      - King
+      - Snohomish
+      - Kitsap
+    categories:
+      - Mentorship
+    audiences: []
+    featured: true
+
+  - name: "SCORE Local Workshops"
+    description: "Workshops on AI, taxes, pricing, marketing, and grant writing"
+    organization: "SCORE Greater Seattle"
+    website: "https://score.org/seattle/local-workshops"
+    cost: "Free (most)"
+    eligibility: "Open to all"
+    counties:
+      - King
+      - Snohomish
+      - Kitsap
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Washington SBDC Network"
+    description: "No-cost 1:1 advising on all business phases, training, and market research"
+    organization: "WSU + SBA"
+    website: "https://wsbdc.org"
+    cost: "Free"
+    eligibility: "All entrepreneurs"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Mentorship
+    audiences: []
+    featured: true
+
+  - name: "Auburn SBDC"
+    description: "Business counseling services in Auburn"
+    organization: "WA SBDC Network"
+    website: "https://wsbdc.org"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Bellevue SBDC"
+    description: "Business counseling services on the Eastside"
+    organization: "WA SBDC Network"
+    website: "https://wsbdc.org"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Des Moines SBDC (Highline)"
+    description: "Business counseling for South King County at Highline College"
+    organization: "WA SBDC/Highline College"
+    website: "https://sbdc.highline.edu"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Everett SBDC"
+    description: "Business counseling services in Snohomish County"
+    organization: "WA SBDC Network"
+    website: "https://wsbdc.org"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - Snohomish
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Tacoma SBDC (Bates)"
+    description: "Business counseling and orientation sessions at Bates Technical College"
+    organization: "WA SBDC/Bates Technical"
+    website: "https://wsbdc.org"
+    cost: "Free"
+    eligibility: "Existing businesses"
+    counties:
+      - Pierce
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Lacey/Olympia SBDC"
+    description: "Business counseling and video series at Thurston EDC"
+    organization: "WA SBDC/Thurston EDC"
+    website: "https://businessresources.thurstonedc.com"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - Thurston
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Kitsap SBDC"
+    description: "Business counseling services via KEDA"
+    organization: "WA SBDC/KEDA"
+    website: "https://kitsapeda.org"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - Kitsap
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Seattle OED Small Business Consulting"
+    description: "Up to 10 free hours covering accounting, commercial space, legal, and permit coaching"
+    organization: "City of Seattle OED"
+    website: "https://seattle.gov/economic-development"
+    cost: "Free"
+    eligibility: "Seattle businesses"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences: []
+    featured: true
+
+  - name: "Seattle OED Legal Assistance"
+    description: "Free counseling on corporate/IP, commercial leasing, and operations"
+    organization: "City of Seattle OED"
+    website: "https://seattle.gov/economic-development"
+    cost: "Free"
+    eligibility: "Seattle businesses"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Seattle Permit Coaching"
+    description: "Research support, permit strategy, and expedited review assistance"
+    organization: "Seattle OED + SDCI"
+    website: "https://seattle.gov/economic-development"
+    cost: "Free"
+    eligibility: "Seattle businesses"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "CoMotion Advisory Network"
+    description: "Access to mentor community for UW affiliates and incubator members"
+    organization: "UW CoMotion"
+    website: "https://comotion.uw.edu"
+    cost: "Free"
+    eligibility: "UW/incubator members"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "WE Lead Mentoring Program"
+    description: "1:1 mentoring for women entrepreneurs in the UW community"
+    organization: "UW Buerk Center"
+    website: "https://foster.uw.edu"
+    cost: "Free"
+    eligibility: "UW community"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences:
+      - women
+    featured: false
+
+  - name: "Seattle U IEC Coaching"
+    description: "Connections to startup community and experiential learning since 1990"
+    organization: "Seattle University"
+    website: "https://seattleu.edu/business/student-life/iec"
+    cost: "Free"
+    eligibility: "SU students/regional entrepreneurs"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "UW Tacoma Free Consultations"
+    description: "Expert consultations via PLU, Asia Pacific Center, BINW, Mi Centro"
+    organization: "UW Tacoma Milgard School"
+    website: "https://tacoma.uw.edu"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - Pierce
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "WA Center for Women in Business"
+    description: "Free coaching, Let's Talk Business webinars with focus on women entrepreneurs"
+    organization: "Thurston EDC"
+    website: "https://wcwb.org"
+    cost: "Free"
+    eligibility: "All owners (women focus)"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Mentorship
+    audiences:
+      - women
+    featured: true
+
+  - name: "Sno-Isle SCORE Partnership"
+    description: "1-hour free counseling appointments at Lynnwood Library"
+    organization: "Sno-Isle Libraries"
+    website: "https://sno-isle.org"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - Snohomish
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Contractor Coffee Hour"
+    description: "Drop-in Zoom help with government contracting"
+    organization: "KEDA"
+    website: "https://kitsapeda.org"
+    cost: "Free"
+    eligibility: "Small businesses"
+    counties:
+      - Kitsap
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Green River College SBDC"
+    description: "No-cost 1:1 counseling and market research in Auburn/Enumclaw"
+    organization: "Green River College"
+    website: "https://greenriver.edu"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Edmonds College SBDC Partnership"
+    description: "On-site no-cost advising in Lynnwood"
+    organization: "Edmonds College"
+    website: "https://edmonds.edu"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - Snohomish
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Washington APEX Accelerator"
+    description: "Free counseling for government contracts and certifications statewide"
+    organization: "Thurston EDC (statewide)"
+    website: "https://washingtonapex.org"
+    cost: "Free"
+    eligibility: "All WA businesses"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Mentorship
+      - Funding
+    audiences: []
+    featured: true
+
+  - name: "SBA Seattle District Office"
+    description: "Funding guidance, counseling, federal contracting certifications (8(a), HUBZone)"
+    organization: "U.S. SBA"
+    website: "https://sba.gov/district/seattle"
+    cost: "Free"
+    eligibility: "Small businesses"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Mentorship
+      - Funding
+    audiences: []
+    featured: true
+
+  - name: "SBA THRIVE Program"
+    description: "Free executive-level strategic growth planning for established small businesses"
+    organization: "U.S. SBA"
+    website: "https://sba.gov/district/seattle"
+    cost: "Free"
+    eligibility: "Established small businesses"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Urban League of Metropolitan Seattle - Entrepreneurship"
+    description: "Intake program, technical assistance, and business directory for Black entrepreneurs"
+    organization: "Urban League of Metropolitan Seattle"
+    website: "https://urbanleague.org/entrepreneurship"
+    cost: "Free"
+    eligibility: "Black entrepreneurs"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences:
+      - bipoc
+    featured: true
+
+  - name: "Tacoma Urban League - Small Business Navigator"
+    description: "Coaching, workshops, networking, and credit support for Black entrepreneurs"
+    organization: "Tacoma Urban League"
+    website: "https://thetacomaurbanleague.org/economic-empowerment"
+    cost: "Free"
+    eligibility: "Black entrepreneurs in Pierce County"
+    counties:
+      - Pierce
+    categories:
+      - Mentorship
+    audiences:
+      - bipoc
+    featured: true
+
+  - name: "NW Innovation Resource Center"
+    description: "Support for innovators and inventors with The Lab Network and Project Reinvent"
+    organization: "NWIRC"
+    website: "https://nwirc.com"
+    cost: "Free"
+    eligibility: "Snohomish County entrepreneurs"
+    counties:
+      - Snohomish
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Family Business Exchange (FBX)"
+    description: "Education on succession planning, governance, and generational transitions"
+    organization: "Seattle University IEC"
+    website: "https://seattleu.edu/business/student-life/iec/fbx"
+    cost: "Free"
+    eligibility: "Family-owned businesses"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "King County OEOCE"
+    description: "Business attraction, retention, and Small Business Awards program"
+    organization: "King County Executive"
+    website: "https://kingcounty.gov"
+    cost: "Free"
+    eligibility: "King County businesses"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Kitsap EDA Business Services"
+    description: "Statistical data, market research, site location, and permitting introductions"
+    organization: "KEDA (nonprofit)"
+    website: "https://kitsapeda.org"
+    cost: "Free"
+    eligibility: "All businesses"
+    counties:
+      - Kitsap
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "EDB for Tacoma-Pierce County"
+    description: "Business recruitment, retention, and diverse/veteran business support"
+    organization: "EDB (501c6)"
+    website: "https://choosetacomapierce.org"
+    cost: "Free"
+    eligibility: "Pierce County businesses"
+    counties:
+      - Pierce
+    categories:
+      - Mentorship
+    audiences:
+      - veterans
+    featured: false
+
+  - name: "Pierce County Economic Development"
+    description: "Site planning, financing guidance, and permit assistance"
+    organization: "Pierce County Government"
+    website: "https://piercecountywa.gov"
+    cost: "Free"
+    eligibility: "Businesses outside Tacoma"
+    counties:
+      - Pierce
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Economic Alliance Snohomish County"
+    description: "Business attraction, retention, minority/women/veteran support, and export assistance"
+    organization: "EASC (nonprofit ADO)"
+    website: "https://economicalliancesc.org"
+    cost: "Free"
+    eligibility: "All businesses"
+    counties:
+      - Snohomish
+    categories:
+      - Mentorship
+    audiences:
+      - bipoc
+      - women
+      - veterans
+    featured: false
+
+  - name: "Thurston EDC"
+    description: "Business retention, expansion, startup programs, and regional data"
+    organization: "Thurston EDC (nonprofit)"
+    website: "https://thurstonedc.com"
+    cost: "Free"
+    eligibility: "All businesses"
+    counties:
+      - Thurston
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Center for Business & Innovation"
+    description: "Intro to Business Startup course and Resource Hotline (M-F 9:30-3:30)"
+    organization: "Thurston EDC"
+    website: "https://businessresources.thurstonedc.com"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - Thurston
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "WorkSource Seattle-King County"
+    description: "Small business resource directory and SEAP program"
+    organization: "WorkSource"
+    website: "https://worksourceskc.org"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - King
+    categories:
+      - Mentorship
+    audiences: []
+    featured: false

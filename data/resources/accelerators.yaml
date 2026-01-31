@@ -1,0 +1,408 @@
+# Accelerators and Incubator Programs
+# Greater Seattle Startup Ecosystem
+# Last updated: 2026-01-30
+
+resources:
+  - name: "WTIA Founder Cohort"
+    description: "6-month curriculum, mentorship, and investor connections for seed-stage WA tech startups"
+    organization: "WTIA"
+    website: "https://washingtontechnology.org"
+    cost: "Free"
+    eligibility: "Seed-stage WA tech startups, <$1M revenue"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Accelerators
+    audiences: []
+    featured: true
+
+  - name: "Foundations Founder-in-Residence"
+    description: "Mentorship, founder circles, pitch clinics, and office space for early-stage founders"
+    organization: "Foundations Seattle"
+    website: "https://seattlefoundations.org"
+    cost: "Free"
+    eligibility: "Early-stage founders (invite-only, 200 members)"
+    counties:
+      - King
+    categories:
+      - Accelerators
+    audiences: []
+    featured: true
+
+  - name: "Cascadia CleanTech Accelerator"
+    description: "18-week program with $10K+ prizes and mentorship for PNW cleantech startups"
+    organization: "CleanTech Alliance + VertueLab"
+    website: "https://cascadiacleantech.org"
+    cost: "$500 application fee"
+    eligibility: "PNW cleantech startups, <$1M raised"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Accelerators
+    audiences: []
+    featured: false
+
+  - name: "Washington Maritime Blue Accelerator"
+    description: "4-month mentor program with global network for maritime startups, 30+ graduates"
+    organization: "Maritime Blue"
+    website: "https://maritimeblue.org"
+    cost: "Free"
+    eligibility: "North American maritime startups"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Accelerators
+    audiences: []
+    featured: false
+
+  - name: "SEA619"
+    description: "Multi-stage pathway from Association to Incubator to Accelerator for Black founders"
+    organization: "PACE"
+    website: "https://pacesea619.org"
+    cost: "Free (year 1)"
+    eligibility: "Black founders"
+    counties:
+      - King
+    categories:
+      - Accelerators
+    audiences:
+      - bipoc
+    featured: true
+
+  - name: "Plug and Play Seattle"
+    description: "12-week virtual accelerator with free Everett office space"
+    organization: "Plug and Play"
+    website: "https://plugandplaytechcenter.com"
+    cost: "Free"
+    eligibility: "Enterprise, energy, health, cloud startups"
+    counties:
+      - Snohomish
+    categories:
+      - Accelerators
+    audiences: []
+    featured: false
+
+  - name: "Seattle Angel Conference"
+    description: "12-week competition with $150-200K investment to winner, SAC 25 active"
+    organization: "Mossy Ventures"
+    website: "https://seattleangelconference.com"
+    cost: "Symbolic fee"
+    eligibility: "Concept to pre-seed stage startups"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Accelerators
+      - Funding
+    audiences: []
+    featured: true
+
+  - name: "Port of Seattle Port Gen Accelerator"
+    description: "Innovation accelerator for WMBE businesses with mentoring and port resources"
+    organization: "Port of Seattle"
+    website: "https://portseattle.org"
+    cost: "Free"
+    eligibility: "Minority/women-owned businesses"
+    counties:
+      - King
+    categories:
+      - Accelerators
+    audiences:
+      - bipoc
+      - women
+    featured: false
+
+  - name: "Startup425 Accelerator"
+    description: "15-week program with mentorship, no equity taken, 39 graduates to date"
+    organization: "Startup425 + Founder Institute"
+    website: "https://startup425.org"
+    cost: "Free"
+    eligibility: "Eastside entrepreneurs"
+    counties:
+      - King
+    categories:
+      - Accelerators
+    audiences: []
+    featured: true
+
+  - name: "Bellevue College Innovation Lab"
+    description: "Business-ready and banking-ready preparation targeting $300K revenue"
+    organization: "Bellevue College + Startup425"
+    website: "https://bellevuecollege.edu"
+    cost: "Free"
+    eligibility: "Underserved entrepreneurs"
+    counties:
+      - King
+    categories:
+      - Accelerators
+    audiences: []
+    featured: false
+
+  - name: "Matchstick Lab Accelerator"
+    description: "Mentorship, education, networking for 24 early-stage businesses per cohort"
+    organization: "KEDA (WSMA grant)"
+    website: "https://kitsapeda.org"
+    cost: "Free"
+    eligibility: "Early-stage Kitsap business owners"
+    counties:
+      - Kitsap
+    categories:
+      - Accelerators
+    audiences: []
+    featured: false
+
+  - name: "Spaceworks Black Business Accelerator"
+    description: "Business plan development and networking for Black-owned businesses"
+    organization: "Spaceworks Tacoma"
+    website: "https://spaceworkstacoma.com"
+    cost: "Free"
+    eligibility: "Black entrepreneurs"
+    counties:
+      - Pierce
+    categories:
+      - Accelerators
+    audiences:
+      - bipoc
+    featured: true
+
+  - name: "Tacoma Maritime Blue Incubator"
+    description: "Free rent incubator for maritime and clean energy startups with mentorship"
+    organization: "Maritime Blue"
+    website: "https://maritimeblue.org/tacoma"
+    cost: "Free"
+    eligibility: "Maritime startups"
+    counties:
+      - Pierce
+    categories:
+      - Accelerators
+    audiences: []
+    featured: false
+
+  - name: "William Factory Incubator"
+    description: "Workshops, mentors, coaches, networking, and capital access since 1986"
+    organization: "William Factory (nonprofit)"
+    website: "https://williamfactory.com"
+    cost: "Free"
+    eligibility: "Startups"
+    counties:
+      - Pierce
+    categories:
+      - Accelerators
+    audiences: []
+    featured: false
+
+  - name: "Jones + Foster Accelerator"
+    description: "6-month mentoring and workshops with up to $25K funding (Note: seed funding paused 2025-26)"
+    organization: "UW Buerk Center"
+    website: "https://foster.uw.edu"
+    cost: "Free"
+    eligibility: "WA student-led companies"
+    counties:
+      - King
+    categories:
+      - Accelerators
+    audiences: []
+    featured: false
+
+  - name: "WSU Jones Milestone Accelerator"
+    description: "6-month program with stipends, legal credit, and coworking for student ventures"
+    organization: "WSU"
+    website: "https://entrepreneurship.wsu.edu"
+    cost: "Free"
+    eligibility: "Student-led ventures"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Accelerators
+    audiences: []
+    featured: false
+
+  - name: "UW Climate Tech Incubator"
+    description: "8-month cohort with mentorship and investor network for climate tech startups"
+    organization: "UW CoMotion + Partners"
+    website: "https://comotion.uw.edu"
+    cost: "Free"
+    eligibility: "Early-stage climate tech"
+    counties:
+      - King
+    categories:
+      - Accelerators
+    audiences: []
+    featured: false
+
+  - name: "Seattle Climate Innovation Hub"
+    description: "Climate tech incubation and networking events launched January 2025"
+    organization: "Seattle OED + CoMotion + 9Zero"
+    website: "https://comotion.uw.edu"
+    cost: "Free"
+    eligibility: "Climate/cleantech startups"
+    counties:
+      - King
+    categories:
+      - Accelerators
+    audiences: []
+    featured: true
+
+  - name: "CoMotion Labs"
+    description: "Life sciences, hardware, tech lab space hosting 60-90 startups with free lectures"
+    organization: "University of Washington"
+    website: "https://comotion.uw.edu"
+    cost: "Free lectures; space by application"
+    eligibility: "Pre-Series A startups"
+    counties:
+      - King
+    categories:
+      - Accelerators
+    audiences: []
+    featured: true
+
+  - name: "AI House Seattle"
+    description: "108K sq ft AI community hub at Pier 70 with coworking and events for 400+ attendees"
+    organization: "AI2 Incubator + City of Seattle"
+    website: "https://ai2incubator.com"
+    cost: "Events free"
+    eligibility: "AI founders/practitioners"
+    counties:
+      - King
+    categories:
+      - Accelerators
+      - Spaces
+    audiences: []
+    featured: true
+
+  - name: "AWS Impact Accelerator"
+    description: "10-week virtual program with $125K AWS credits for underrepresented founders"
+    organization: "Amazon Web Services"
+    website: "https://aws.amazon.com/impact-accelerator"
+    cost: "Free"
+    eligibility: "Black, Women, LatinX founders"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Accelerators
+    audiences:
+      - bipoc
+      - women
+    featured: true
+
+  - name: "Life Science WA Institute (WIN Mentoring)"
+    description: "Milestone-based mentoring and pro-bono consulting for biotech and medtech startups"
+    organization: "Life Science Washington"
+    website: "https://lswinstitute.org"
+    cost: "Free"
+    eligibility: "Biotech, medtech, digital health startups"
+    counties:
+      - King
+    categories:
+      - Accelerators
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Graham & Walker Catalyst"
+    description: "Fundraising-readiness program for female founders, 638 founders served"
+    organization: "Graham & Walker"
+    website: "https://grahamwalker.com"
+    cost: "Free"
+    eligibility: "Female founders"
+    counties:
+      - King
+    categories:
+      - Accelerators
+    audiences:
+      - women
+    featured: true
+
+  - name: "Pierce County Business Accelerator (PCBA)"
+    description: "6-week training cohort with grants for graduates, BIPOC focus"
+    organization: "Pierce County EDD"
+    website: "https://pcba.biz"
+    cost: "Free"
+    eligibility: "Pierce County businesses, BIPOC focus"
+    counties:
+      - Pierce
+    categories:
+      - Accelerators
+    audiences:
+      - bipoc
+    featured: false
+
+  - name: "Snohomish County SBIA Program"
+    description: "8-week Business Basics course with microloans and food/childcare incubation"
+    organization: "Snohomish County + Ventures"
+    website: "https://snohomishcountywa.gov"
+    cost: "Free"
+    eligibility: "Snohomish County entrepreneurs"
+    counties:
+      - Snohomish
+    categories:
+      - Accelerators
+    audiences: []
+    featured: false
+
+  - name: "TheLab@Everett"
+    description: "FREE advisory services, 3D printers, and workspaces for inventors and entrepreneurs"
+    organization: "NWIRC (nonprofit)"
+    website: "https://nwirc.com"
+    cost: "Free"
+    eligibility: "Entrepreneurs/inventors in Snohomish County"
+    counties:
+      - Snohomish
+    categories:
+      - Accelerators
+      - Spaces
+    audiences: []
+    featured: false
+
+  - name: "CleanTech Alliance WECAN"
+    description: "Washington Entrepreneur Carbon Advancement Network for clean energy entrepreneurs"
+    organization: "CleanTech Alliance"
+    website: "https://wecan.cleantechalliance.org"
+    cost: "Free"
+    eligibility: "Clean energy, carbon tech startups"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Accelerators
+    audiences: []
+    featured: false
+
+# Note: Paid/equity programs NOT included per policy:
+# - Techstars Seattle ($220K for 5%+ equity)
+# - Founder Institute Seattle (4% equity)
+# - Fledge ($15-20K for 6% equity)
+# - 9Mile Labs (equity for investment)
+# - Startup Haven ($150K for 5-8% + tuition)
+# - Pioneer Square Labs (venture studio model)
+# - Madrona Venture Labs (venture studio model)
+# - AI2 Incubator investment track
+
+# Closed/Inactive:
+# - Impact Hub Seattle - PERMANENTLY CLOSED mid-2020 due to COVID-19

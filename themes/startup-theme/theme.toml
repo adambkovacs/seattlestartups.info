@@ -1,0 +1,13 @@
+# Theme metadata
+name = "Startup Theme"
+license = "MIT"
+licenselink = "https://github.com/adambkovacs/seattlestartups.info/blob/main/LICENSE"
+description = "A beautiful, modern theme for Seattle Startups resource directory"
+homepage = "https://seattlestartups.info"
+tags = ["startup", "directory", "resources", "tailwind", "modern"]
+features = ["responsive", "tailwind", "seo", "accessibility"]
+min_version = "0.80.0"
+
+[author]
+  name = "Seattle Startup Community"
+  homepage = "https://seattlestartups.info"

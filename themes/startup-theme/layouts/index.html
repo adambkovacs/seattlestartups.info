@@ -1,0 +1,238 @@
+{{ define "main" }}
+<div class="relative mountain-bg">
+  <!-- Hero Section - Authentic Seattle -->
+  <section class="relative min-h-[75vh] flex items-center">
+    <!-- Rainier silhouette backdrop -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <svg class="absolute bottom-0 w-full h-64 text-fir-500/5" viewBox="0 0 1440 320" preserveAspectRatio="none">
+        <path fill="currentColor" d="M0,320 L0,200 L200,160 L400,180 L600,120 L720,80 L840,100 L900,60 L960,90 L1100,70 L1200,100 L1300,80 L1440,120 L1440,320 Z"/>
+      </svg>
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <div class="max-w-4xl">
+        <!-- No cute badges - straight to the point -->
+        <p class="font-mono text-sm text-overcast-500 mb-4 tracking-wide">
+          <span class="text-fir-500">$</span> 248+ free resources. 5 counties. Open source.
+        </p>
+
+        <!-- Bold, honest headline -->
+        <h1 class="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-overcast-900 mb-6 leading-[1.1] tracking-tight">
+          Build something<br/>
+          <span class="text-sun-break">in Seattle.</span>
+        </h1>
+
+        <!-- Real talk, not marketing fluff -->
+        <p class="text-lg sm:text-xl text-overcast-600 leading-relaxed mb-8 max-w-2xl">
+          The Pacific Northwest startup ecosystem, mapped. Accelerators, funding, workspaces, mentorship—every free resource founders actually use.
+        </p>
+
+        <!-- CTA - Simple, direct -->
+        <div class="flex flex-wrap gap-3 mb-16">
+          <a href="/resources/"
+             class="inline-flex items-center px-6 py-3 sun-break text-white rounded-lg font-semibold text-sm hover:opacity-90 transition-opacity">
+            Browse Resources
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </a>
+          <a href="{{ .Site.Params.github }}"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="inline-flex items-center px-6 py-3 bg-overcast-100 text-overcast-700 rounded-lg font-medium text-sm hover:bg-overcast-200 transition-colors">
+            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/>
+            </svg>
+            View Source
+          </a>
+        </div>
+
+        <!-- Stats - Minimal, data-forward -->
+        <div class="flex flex-wrap gap-8 text-sm font-mono text-overcast-500 border-t border-overcast-200 pt-8">
+          <div>
+            <span class="text-2xl font-display font-bold text-overcast-900 block">248+</span>
+            resources
+          </div>
+          <div>
+            <span class="text-2xl font-display font-bold text-overcast-900 block">5</span>
+            counties
+          </div>
+          <div>
+            <span class="text-2xl font-display font-bold text-fir-500 block">$0</span>
+            cost to access
+          </div>
+          <div>
+            <span class="text-2xl font-display font-bold text-overcast-900 block">MIT</span>
+            license
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <span class="badge-fun bg-sound-100 text-sound-700 mb-4 inline-block">Categories</span>
+        <h2 class="font-display text-3xl md:text-4xl text-overcast-900 mb-3">
+          What do you need?
+        </h2>
+        <p class="text-lg text-overcast-500 max-w-xl">
+          170+ resources sorted by what they actually help with.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 stagger-children">
+        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <a href="{{ "categories" | absURL }}/{{ $name | urlize }}/"
+           class="card-bouncy p-5 group">
+          <div class="w-11 h-11 rounded-xl sun-break flex items-center justify-center mb-3 group-hover:animate-wiggle">
+            {{ partial "category-icon.html" $name }}
+          </div>
+          <h3 class="font-display font-bold text-base text-overcast-900 mb-1 group-hover:text-sound-600 transition-colors">
+            {{ $name | title }}
+          </h3>
+          <p class="text-sm text-overcast-400 font-mono">{{ len $taxonomy.Pages }} resources</p>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Counties Section -->
+  <section class="py-20 dots-pattern">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-12">
+        <span class="badge-fun bg-fir-500/10 text-fir-500 mb-4 inline-block">Regions</span>
+        <h2 class="font-display text-3xl md:text-4xl text-overcast-900 mb-3">
+          Five counties. One ecosystem.
+        </h2>
+        <p class="text-lg text-overcast-500 max-w-xl">
+          From Olympia to Everett: local programs, regional networks.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+        {{ range $key, $value := .Site.Params.counties }}
+        <a href="/counties/{{ $key }}/"
+           class="card-bouncy p-5 group text-center {{ if eq $key "king" }}lg:col-span-1 tilt-left{{ end }}{{ if eq $key "pierce" }}tilt-right{{ end }}">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-fir-500/10 flex items-center justify-center mb-3 group-hover:bg-fir-500 group-hover:animate-pop transition-colors">
+            <svg class="w-7 h-7 text-fir-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-overcast-900 group-hover:text-fir-600 transition-colors">
+            {{ $value }}
+          </h3>
+        </a>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Resources -->
+  {{ $featured := where .Site.RegularPages "Params.featured" true | first 6 }}
+  {{ with $featured }}
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-overcast-900 mb-4">
+          Featured Resources
+        </h2>
+        <p class="text-lg text-overcast-600 max-w-2xl mx-auto">
+          Hand-picked resources to kickstart your journey
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {{ range . }}
+          {{ partial "resource-card.html" . }}
+        {{ end }}
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="/resources/"
+           class="inline-flex items-center px-8 py-4 sun-break text-white rounded-xl font-semibold shadow-lg shadow-sound-500/25 hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
+          View All Resources
+          <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Latest Resources -->
+  {{ $latest := .Site.RegularPages | first 6 }}
+  {{ with $latest }}
+  <section class="py-20 bg-gradient-to-b from-overcast-50 to-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between mb-12">
+        <div>
+          <h2 class="font-display font-bold text-3xl md:text-4xl text-overcast-900 mb-2">
+            Recently Added
+          </h2>
+          <p class="text-lg text-overcast-600">
+            Fresh resources from the community
+          </p>
+        </div>
+        <a href="/resources/"
+           class="hidden md:inline-flex items-center text-sound-500 hover:text-sound-600 font-medium transition-colors">
+          View all
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        {{ range . }}
+          {{ partial "resource-card.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- CTA Section -->
+  <section class="relative py-20 overflow-hidden">
+    <!-- Background -->
+    <div class="absolute inset-0 sun-break"></div>
+
+    <!-- Content -->
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/20">
+        <div class="text-center">
+          <h2 class="font-display text-3xl md:text-4xl text-white mb-4">
+            Missing something?
+          </h2>
+          <p class="text-lg text-white/80 mb-8 max-w-xl mx-auto">
+            This list grows through contributions. If you know a free resource that helped you, add it. Takes 2 minutes.
+          </p>
+          <div class="flex flex-wrap justify-center gap-3">
+            <a href="/submit/"
+               class="btn-jelly inline-flex items-center px-6 py-3 bg-white text-overcast-800 rounded-xl font-semibold shadow-lg">
+              <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+              </svg>
+              Add a Resource
+            </a>
+            <a href="{{ .Site.Params.github }}"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="btn-jelly inline-flex items-center px-6 py-3 bg-white/10 text-white rounded-xl font-medium border border-white/20 hover:bg-white/20">
+              <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/>
+              </svg>
+              GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}

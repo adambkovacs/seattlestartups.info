@@ -1,0 +1,195 @@
+{{ define "main" }}
+<div class="relative">
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden py-16 lg:py-24">
+    <!-- Background decoration -->
+    <div class="absolute inset-0 dots-pattern"></div>
+    <div class="absolute top-0 right-0 w-1/2 h-1/2 bg-gradient-to-bl from-sound-100/50 to-transparent rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-1/3 h-1/3 bg-gradient-to-tr from-fir-100/50 to-transparent rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <!-- Breadcrumb -->
+        {{ if .Parent }}
+        <nav class="flex justify-center mb-6" aria-label="Breadcrumb">
+          <ol class="flex items-center space-x-2 text-sm">
+            <li>
+              <a href="{{ .Site.BaseURL }}" class="text-overcast-500 hover:text-sound-500 transition-colors">Home</a>
+            </li>
+            <li class="text-overcast-300">/</li>
+            <li class="text-sound-500 font-medium">{{ .Title }}</li>
+          </ol>
+        </nav>
+        {{ end }}
+
+        <h1 class="font-display font-bold text-4xl md:text-5xl lg:text-6xl text-overcast-900 mb-6">
+          {{ if .IsHome }}
+          <span class="gradient-text">{{ .Site.Title }}</span>
+          {{ else }}
+          {{ .Title }}
+          {{ end }}
+        </h1>
+
+        <p class="text-lg md:text-xl text-overcast-600 leading-relaxed mb-8">
+          {{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}
+        </p>
+
+        <!-- Stats Bar -->
+        {{ if .IsHome }}
+        <div class="flex flex-wrap justify-center gap-8 mt-8">
+          <div class="text-center">
+            <div class="font-display font-bold text-3xl md:text-4xl gradient-text">248+</div>
+            <div class="text-sm text-overcast-500 mt-1">Free Resources</div>
+          </div>
+          <div class="text-center">
+            <div class="font-display font-bold text-3xl md:text-4xl gradient-text">5</div>
+            <div class="text-sm text-overcast-500 mt-1">Counties</div>
+          </div>
+          <div class="text-center">
+            <div class="font-display font-bold text-3xl md:text-4xl gradient-text">100%</div>
+            <div class="text-sm text-overcast-500 mt-1">Free</div>
+          </div>
+        </div>
+        {{ end }}
+
+        <!-- Search/Filter -->
+        <div class="mt-10 max-w-xl mx-auto">
+          <div class="relative">
+            <input type="search"
+                   id="resource-search"
+                   placeholder="Search resources..."
+                   class="w-full px-5 py-4 pl-12 rounded-2xl border border-overcast-200 bg-white shadow-lg shadow-overcast-200/50 focus:outline-none focus:ring-2 focus:ring-sound-500 focus:border-transparent transition-all duration-200">
+            <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 w-5 h-5 text-overcast-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Filters -->
+  {{ if .IsHome }}
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+    <div class="flex flex-wrap justify-center gap-3">
+      <button class="filter-btn active px-4 py-2 rounded-full text-sm font-medium sun-break text-white shadow-lg shadow-sound-500/25 transition-all duration-200" data-category="all">
+        All Resources
+      </button>
+      {{ range .Site.Taxonomies.categories }}
+      <button class="filter-btn px-4 py-2 rounded-full text-sm font-medium bg-white text-overcast-600 border border-overcast-200 hover:border-sound-300 hover:text-sound-500 transition-all duration-200" data-category="{{ .Page.Title | urlize }}">
+        {{ .Page.Title }}
+        <span class="ml-1 text-xs text-overcast-400">({{ len .Pages }})</span>
+      </button>
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+
+  <!-- Resources Grid -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+    {{ if .Pages }}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      {{ range .Pages }}
+        {{ partial "resource-card.html" . }}
+      {{ end }}
+    </div>
+    {{ else }}
+    <!-- Empty State -->
+    <div class="text-center py-20">
+      <div class="w-20 h-20 mx-auto mb-6 rounded-full bg-overcast-100 flex items-center justify-center">
+        <svg class="w-10 h-10 text-overcast-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+        </svg>
+      </div>
+      <h3 class="font-display font-semibold text-xl text-overcast-700 mb-2">No resources yet</h3>
+      <p class="text-overcast-500 mb-6">Be the first to contribute to this section!</p>
+      <a href="/submit/" class="inline-flex items-center px-6 py-3 sun-break text-white rounded-xl font-semibold shadow-lg shadow-sound-500/25 hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
+        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+        </svg>
+        Submit a Resource
+      </a>
+    </div>
+    {{ end }}
+  </section>
+
+  <!-- CTA Section -->
+  {{ if .IsHome }}
+  <section class="relative overflow-hidden py-20">
+    <div class="absolute inset-0 gradient-bg-animated opacity-10"></div>
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display font-bold text-3xl md:text-4xl text-overcast-900 mb-4">
+        Know a great resource?
+      </h2>
+      <p class="text-lg text-overcast-600 mb-8 max-w-2xl mx-auto">
+        Help fellow founders by sharing free resources that helped you. Every contribution makes the Seattle startup ecosystem stronger.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="/submit/" class="inline-flex items-center px-8 py-4 sun-break text-white rounded-xl font-semibold text-lg shadow-xl shadow-sound-500/25 hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-200">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+          </svg>
+          Submit a Resource
+        </a>
+        <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-8 py-4 bg-white border-2 border-overcast-200 text-overcast-700 rounded-xl font-semibold text-lg hover:border-sound-300 hover:text-sound-600 transition-all duration-200">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/>
+          </svg>
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+  {{ end }}
+</div>
+
+<!-- Search Script -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const searchInput = document.getElementById('resource-search');
+  const cards = document.querySelectorAll('[data-resource-card]');
+
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      const query = this.value.toLowerCase();
+
+      cards.forEach(card => {
+        const title = card.getAttribute('data-title')?.toLowerCase() || '';
+        const description = card.getAttribute('data-description')?.toLowerCase() || '';
+        const category = card.getAttribute('data-category')?.toLowerCase() || '';
+
+        if (title.includes(query) || description.includes(query) || category.includes(query)) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  }
+
+  // Category filter
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const category = this.getAttribute('data-category');
+
+      filterBtns.forEach(b => {
+        b.classList.remove('active', 'sun-break', 'text-white', 'shadow-lg', 'shadow-sound-500/25');
+        b.classList.add('bg-white', 'text-overcast-600', 'border', 'border-overcast-200');
+      });
+
+      this.classList.add('active', 'sun-break', 'text-white', 'shadow-lg', 'shadow-sound-500/25');
+      this.classList.remove('bg-white', 'text-overcast-600', 'border', 'border-overcast-200');
+
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = '';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
+{{ end }}

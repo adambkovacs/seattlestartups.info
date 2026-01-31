@@ -1,0 +1,472 @@
+# Community Events and Networking
+# Greater Seattle Startup Ecosystem
+# Last updated: 2026-01-30
+
+resources:
+  # Weekly Events
+  - name: "1 Million Cups Seattle"
+    description: "6-min pitches + Q&A + networking every Wednesday 9am"
+    organization: "Kauffman Foundation"
+    website: "https://1millioncups.com/seattle"
+    cost: "Free"
+    eligibility: "All entrepreneurs"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: true
+
+  - name: "SURF Startups in Action"
+    description: "Weekly networking at SURF Incubator with 300+ annual events"
+    organization: "SURF Incubator"
+    website: "https://surfincubator.com"
+    cost: "Free"
+    eligibility: "All entrepreneurs"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: true
+
+  - name: "Seattle Startups Open Coffee"
+    description: "Weekly virtual/hybrid networking with 5,000+ members"
+    organization: "Community"
+    website: "https://meetup.com/seattle-startups-open-coffee"
+    cost: "Free"
+    eligibility: "Entrepreneurs, investors"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  # Monthly Events
+  - name: "Startup Grind Seattle"
+    description: "Monthly fireside chats with founders and investors, 5,255 members"
+    organization: "Startup Grind/Google"
+    website: "https://startupgrind.com/seattle"
+    cost: "Free"
+    eligibility: "All entrepreneurs"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: true
+
+  - name: "New Tech Seattle"
+    description: "Monthly tech community events with networking"
+    organization: "New Tech Northwest"
+    website: "https://meetup.com/newtechseattle"
+    cost: "$20-27"
+    eligibility: "Tech community"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "New Tech Eastside"
+    description: "Monthly tech community events on the Eastside"
+    organization: "New Tech Northwest"
+    website: "https://newtechnorthwest.com"
+    cost: "$20-27"
+    eligibility: "Tech community"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "New Tech Tacoma"
+    description: "Monthly tech community events in Tacoma"
+    organization: "New Tech Northwest"
+    website: "https://newtechnorthwest.com"
+    cost: "$20-27"
+    eligibility: "Tech community"
+    counties:
+      - Pierce
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "Seattle Startup Friends"
+    description: "Founder-to-founder networking and mentorship at Fremont Brewing"
+    organization: "Community"
+    website: "https://meetup.com/startupfriends"
+    cost: "Free"
+    eligibility: "Startup founders"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "Seattle Startup Founder 101"
+    description: "Best practices, AI governance, and feedback sessions"
+    organization: "Community"
+    website: "https://meetup.com/seattle-startup-founder-101"
+    cost: "Free"
+    eligibility: "Tech entrepreneurs"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "Eastside Entrepreneurs"
+    description: "Networking and story sharing for Eastside business owners, 820 members"
+    organization: "Community"
+    website: "https://meetup.com/eastside-entrepreneurs"
+    cost: "Free"
+    eligibility: "Eastside business owners"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  # Quarterly Events
+  - name: "Founders Live Seattle"
+    description: "99-second pitch competitions with audience vote"
+    organization: "Founders Live (HQ Seattle)"
+    website: "https://founderslive.com"
+    cost: "Free"
+    eligibility: "Early-stage startups"
+    counties:
+      - King
+    categories:
+      - Events
+      - Funding
+    audiences: []
+    featured: true
+
+  - name: "Black Founders & Funders"
+    description: "Quarterly meetups, mentors, accelerator access, and funding with 150+ members"
+    organization: "Venture Mechanics"
+    website: "https://venturemechanics.com"
+    cost: "Free"
+    eligibility: "Black founders"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences:
+      - bipoc
+    featured: true
+
+  - name: "Venture Mechanics Events"
+    description: "Venture Saturday, pitch practice, Scalathon, and diversity groups"
+    organization: "Venture Mechanics"
+    website: "https://venturemechanics.com"
+    cost: "Free"
+    eligibility: "All founders"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  # Diversity-Focused Communities
+  - name: "Filipino Founders & Funders"
+    description: "Networking community for Filipino founders"
+    organization: "Venture Mechanics"
+    website: "https://venturemechanics.com"
+    cost: "Free"
+    eligibility: "Filipino founders"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "Korean Founders & Funders"
+    description: "Networking community for Korean founders"
+    organization: "Venture Mechanics"
+    website: "https://venturemechanics.com"
+    cost: "Free"
+    eligibility: "Korean founders"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "LGBTQ+ Founders & Funders"
+    description: "Networking community for LGBTQ+ founders"
+    organization: "Venture Mechanics"
+    website: "https://venturemechanics.com"
+    cost: "Free"
+    eligibility: "LGBTQ+ founders"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences:
+      - lgbtq
+    featured: false
+
+  - name: "Veteran Founders & Funders"
+    description: "Networking community for veteran founders"
+    organization: "Venture Mechanics"
+    website: "https://venturemechanics.com"
+    cost: "Free"
+    eligibility: "Veteran founders"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences:
+      - veterans
+    featured: false
+
+  - name: "Women Who Code Seattle"
+    description: "Networking, mentorship, and career advice for women in tech (Note: organization transitioning)"
+    organization: "Women Who Code"
+    website: "https://womenwhocode.com"
+    cost: "Free"
+    eligibility: "Women in tech"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences:
+      - women
+    featured: false
+
+  - name: "She's Coding Seattle"
+    description: "Monthly meetups, codeathons, and interview prep"
+    organization: "She's Coding"
+    website: "https://meetup.com/shescoding-seattle"
+    cost: "Free"
+    eligibility: "Women/non-binary"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences:
+      - women
+    featured: true
+
+  # Annual Events
+  - name: "Seattle Tech Week"
+    description: "100+ community events and networking, July 27-31, 2026"
+    organization: "Community"
+    website: "https://seattletechweek.com"
+    cost: "Free (most)"
+    eligibility: "All"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: true
+
+  - name: "Techstars Startup Week Tacoma"
+    description: "Annual startup week with panels, workshops, and networking"
+    organization: "Techstars + Partners"
+    website: "https://washingtontechnology.org/events/techstars_startup-week-tacoma"
+    cost: "Free"
+    eligibility: "All entrepreneurs"
+    counties:
+      - Pierce
+    categories:
+      - Events
+    audiences: []
+    featured: true
+
+  - name: "South Sound Entrepreneurship Week"
+    description: "Five-day panels, workshops, and networking with 1,000+ attendees"
+    organization: "buildJUSTLY + Partners"
+    website: "https://choosetacomapierce.org"
+    cost: "Free"
+    eligibility: "All entrepreneurs"
+    counties:
+      - Pierce
+    categories:
+      - Events
+    audiences: []
+    featured: true
+
+  # Community Hubs
+  - name: "Foundations Seattle"
+    description: "Weekly events, mentor office hours, pitch clinics, and show & tell in Capitol Hill"
+    organization: "Graham & Walker + Community"
+    website: "https://seattlefoundations.org"
+    cost: "Free"
+    eligibility: "Early founders (invite-only, 200 members)"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: true
+
+  - name: "Startup425"
+    description: "Free coworking sessions, accelerator, and workshops for Eastside entrepreneurs"
+    organization: "Eastside Cities Coalition"
+    website: "https://startup425.org"
+    cost: "Free"
+    eligibility: "Eastside entrepreneurs"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: true
+
+  - name: "Startup253"
+    description: "Tacoma startup community hub and networking"
+    organization: "Community"
+    website: "https://startup253.com"
+    cost: "Free"
+    eligibility: "All entrepreneurs"
+    counties:
+      - Pierce
+    categories:
+      - Events
+    audiences: []
+    featured: true
+
+  - name: "Startup Kitsap"
+    description: "Tech on Tap, Female Founders Power Hour, and startup community on the peninsula"
+    organization: "Community"
+    website: "https://startupkitsap.com"
+    cost: "Free"
+    eligibility: "Kitsap entrepreneurs"
+    counties:
+      - Kitsap
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "TiE Seattle"
+    description: "Mentoring, networking, and Investment Outlook Panels"
+    organization: "TiE (global nonprofit)"
+    website: "https://seattle.tie.org"
+    cost: "Events free"
+    eligibility: "All entrepreneurs"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "Pierce County Business Accelerator Workshops"
+    description: "Spring workshop series on growth, social media, and mindset"
+    organization: "PCBA"
+    website: "https://pcba.biz"
+    cost: "Free"
+    eligibility: "All businesses"
+    counties:
+      - Pierce
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "BIPOC Business Forum"
+    description: "Business lending panels and expert speakers for BIPOC entrepreneurs"
+    organization: "KEDA + Partners"
+    website: "https://kitsapeda.org"
+    cost: "Free"
+    eligibility: "BIPOC entrepreneurs"
+    counties:
+      - Kitsap
+    categories:
+      - Events
+    audiences:
+      - bipoc
+    featured: false
+
+  - name: "Impactathon Tacoma"
+    description: "Community brainstorming events for local challenges"
+    organization: "Innov8Social"
+    website: "https://innov8social.com/category/impactathon"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - Pierce
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "OlyMEGA Thursday Open House"
+    description: "Free open house every Thursday at Olympia makerspace"
+    organization: "OlyMEGA"
+    website: "https://olymega.org"
+    cost: "Free"
+    eligibility: "Public"
+    counties:
+      - Thurston
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "West Seattle Tool Library Fix-It Night"
+    description: "Repair clinics every Wednesday evening"
+    organization: "West Seattle Tool Library"
+    website: "https://wstools.org"
+    cost: "Free"
+    eligibility: "Public"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "BARN Teen Nights"
+    description: "Monthly events for teens at Bainbridge makerspace"
+    organization: "BARN"
+    website: "https://bainbridgebarn.org"
+    cost: "Free"
+    eligibility: "Teens"
+    counties:
+      - Kitsap
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "Founder Fridays (Seattle U)"
+    description: "Public fireside chats with alumni entrepreneurs"
+    organization: "Seattle University IEC"
+    website: "https://seattleu.edu/business/student-life/iec/founder-fridays"
+    cost: "Free"
+    eligibility: "Public"
+    counties:
+      - King
+    categories:
+      - Events
+    audiences: []
+    featured: false
+
+  - name: "253 Connections Workshops"
+    description: "B2B networking workshops across Pierce County"
+    organization: "Pierce County Library System"
+    website: "https://mypcls.org"
+    cost: "Free"
+    eligibility: "Small businesses"
+    counties:
+      - Pierce
+    categories:
+      - Events
+    audiences: []
+    featured: false

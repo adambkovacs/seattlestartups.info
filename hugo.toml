@@ -1,0 +1,61 @@
+baseURL = 'https://seattlestartups.info/'
+languageCode = 'en-us'
+title = 'Seattle Startups - Free Resources for Founders'
+theme = 'startup-theme'
+
+[params]
+  description = "170+ verified free resources for early-stage founders in Greater Seattle"
+  author = "Seattle Startup Community"
+  github = "https://github.com/adambkovacs/seattlestartups.info"
+  tagline = "Your launchpad to the Seattle startup ecosystem"
+
+[params.counties]
+  king = "King County (Seattle, Eastside)"
+  snohomish = "Snohomish County"
+  pierce = "Pierce County (Tacoma)"
+  kitsap = "Kitsap County"
+  thurston = "Thurston County (Olympia)"
+
+[taxonomies]
+  category = "categories"
+  county = "counties"
+  audience = "audiences"
+  tag = "tags"
+
+[menu]
+  [[menu.main]]
+    name = "Resources"
+    url = "/resources/"
+    weight = 1
+  [[menu.main]]
+    name = "By County"
+    url = "/counties/"
+    weight = 2
+  [[menu.main]]
+    name = "For Founders"
+    url = "/audiences/"
+    weight = 3
+  [[menu.main]]
+    name = "Submit"
+    url = "/submit/"
+    weight = 4
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    style = "github"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  section = ["HTML", "RSS", "JSON"]
+
+[outputFormats.JSON]
+  mediaType = "application/json"
+  baseName = "index"
+  isPlainText = true

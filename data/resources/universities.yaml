@@ -1,0 +1,443 @@
+# University and Education Resources
+# Greater Seattle Startup Ecosystem
+# Last updated: 2026-01-30
+
+resources:
+  # University of Washington
+  - name: "UW CoMotion"
+    description: "IP licensing, venture creation, and innovation hub bridging research to commercialization"
+    organization: "University of Washington"
+    website: "https://comotion.uw.edu"
+    cost: "Free (core programs)"
+    eligibility: "UW faculty, students, staff, alumni"
+    counties:
+      - King
+    categories:
+      - Education
+    audiences: []
+    featured: true
+
+  - name: "UW CoMotion Fundamentals for Startups"
+    description: "Free lecture series on customer development, financing, and startup knowledge every Friday"
+    organization: "UW CoMotion"
+    website: "https://comotion.uw.edu"
+    cost: "Free"
+    eligibility: "Anyone"
+    counties:
+      - King
+    categories:
+      - Education
+    audiences: []
+    featured: true
+
+  - name: "UW Buerk Center for Entrepreneurship"
+    description: "Business plan competitions, mentor network, and entrepreneurship courses"
+    organization: "UW Foster School"
+    website: "https://foster.uw.edu/centers/buerk-ctr-entrepreneurship"
+    cost: "Free"
+    eligibility: "UW students"
+    counties:
+      - King
+    categories:
+      - Education
+    audiences: []
+    featured: true
+
+  - name: "Global Innovation Exchange (GIX)"
+    description: "Tech innovation graduate programs at the UW+Tsinghua Bellevue campus"
+    organization: "UW + Tsinghua University"
+    website: "https://gix.uw.edu"
+    cost: "Tuition"
+    eligibility: "Graduate students"
+    counties:
+      - King
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  # UW Tacoma
+  - name: "VIBE (Veterans Incubator for Better Entrepreneurship)"
+    description: "Applied training and incubation for veteran entrepreneurs"
+    organization: "UW Tacoma"
+    website: "https://tacoma.uw.edu"
+    cost: "Free"
+    eligibility: "Military veterans"
+    counties:
+      - Pierce
+    categories:
+      - Education
+    audiences:
+      - veterans
+    featured: true
+
+  - name: "UW Tacoma Milgard Center for Business"
+    description: "Business advising and student consulting for regional businesses"
+    organization: "UW Tacoma"
+    website: "https://tacoma.uw.edu/business"
+    cost: "Free"
+    eligibility: "Regional businesses"
+    counties:
+      - Pierce
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "UW Tacoma Entrepreneurship Center"
+    description: "Community resources and entrepreneurship support"
+    organization: "UW Tacoma"
+    website: "https://tacoma.uw.edu/business/entrepreneurship/community-resources"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - Pierce
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  # Seattle University
+  - name: "Seattle U Innovation & Entrepreneurship Center (IEC)"
+    description: "Venture support, student consulting, and micro-enterprise support since 1990"
+    organization: "Seattle University"
+    website: "https://seattleu.edu/business/student-life/iec"
+    cost: "Free"
+    eligibility: "SU students/alumni, regional entrepreneurs"
+    counties:
+      - King
+    categories:
+      - Education
+    audiences: []
+    featured: true
+
+  - name: "Seattle U Family Business Exchange (FBX)"
+    description: "Education on succession planning, governance, and generational transitions"
+    organization: "Seattle University IEC"
+    website: "https://seattleu.edu/business/student-life/iec/fbx"
+    cost: "Free"
+    eligibility: "Family-owned businesses"
+    counties:
+      - King
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  # WSU
+  - name: "WSU Center for Entrepreneurship"
+    description: "Business plan competition and entrepreneurship programs"
+    organization: "Washington State University"
+    website: "https://entrepreneurship.wsu.edu"
+    cost: "Free"
+    eligibility: "WSU students"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  # Community Colleges
+  - name: "North Seattle College Entrepreneurship Certificate"
+    description: "3-quarter certificate program covering business planning, marketing, and financing"
+    organization: "North Seattle College"
+    website: "https://northseattle.edu/programs/entrepreneurship"
+    cost: "Tuition"
+    eligibility: "Students"
+    counties:
+      - King
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "Bellevue College Entrepreneurship Certificate"
+    description: "30-credit Certificate of Accomplishment in startup business and innovation"
+    organization: "Bellevue College"
+    website: "https://bellevuecollege.edu/academics/undergraduate-programs/entrepreneurship-certificate-of-accomplishment"
+    cost: "Tuition"
+    eligibility: "Students"
+    counties:
+      - King
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "Bates Technical College Applied Business Management"
+    description: "6-quarter AAS-T degree with entrepreneurship track including QuickBooks and small business planning"
+    organization: "Bates Technical College"
+    website: "https://batestech.edu/programs/applied-business-management"
+    cost: "Tuition"
+    eligibility: "Students"
+    counties:
+      - Pierce
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "Seattle Central College Continuing Ed - Entrepreneurship"
+    description: "Non-credit online courses on small business start and social media in business"
+    organization: "Seattle Central College"
+    website: "https://ce.seattlecentral.edu/category/business"
+    cost: "Course fees"
+    eligibility: "Community"
+    counties:
+      - King
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "SPSCC Entrepreneur Academy"
+    description: "Tuition-free year-long program with diverse mentor network"
+    organization: "South Puget Sound CC"
+    website: "https://spscc.edu"
+    cost: "Free"
+    eligibility: "2nd-year SPSCC students"
+    counties:
+      - Thurston
+    categories:
+      - Education
+    audiences: []
+    featured: true
+
+  - name: "Green River College SBDC"
+    description: "No-cost 1:1 counseling and market research in Auburn/Enumclaw"
+    organization: "Green River College"
+    website: "https://greenriver.edu"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - King
+    categories:
+      - Education
+      - Mentorship
+    audiences: []
+    featured: false
+
+  - name: "Edmonds College SBDC Partnership"
+    description: "On-site no-cost advising and The Facility Makerspace access"
+    organization: "Edmonds College"
+    website: "https://edmonds.edu"
+    cost: "Free (advising)"
+    eligibility: "Community"
+    counties:
+      - Snohomish
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "Highline College SBDC"
+    description: "Business counseling for South King County entrepreneurs"
+    organization: "Highline College"
+    website: "https://sbdc.highline.edu"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - King
+    categories:
+      - Education
+      - Mentorship
+    audiences: []
+    featured: false
+
+  # State Government Programs
+  - name: "StartUp Washington Portal"
+    description: "Clearinghouse for funding, training, technical assistance, mentorship, and SizeUp tool"
+    organization: "WA Dept. of Commerce"
+    website: "https://startup.choosewashingtonstate.com"
+    cost: "Free"
+    eligibility: "All WA entrepreneurs"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Education
+    audiences: []
+    featured: true
+
+  - name: "Business.wa.gov"
+    description: "Free workshops, Small Business Guide (10 languages), Information Center (M-F 8am-4:30pm)"
+    organization: "Governor's Office (ORIA)"
+    website: "https://business.wa.gov"
+    cost: "Free"
+    eligibility: "All WA businesses"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Education
+    audiences: []
+    featured: true
+
+  - name: "MyStartup365"
+    description: "Online business school alternative with tools, resources, and the Entrepreneur Academy"
+    organization: "WA Dept. of Commerce"
+    website: "https://mystartup365.com"
+    cost: "Free"
+    eligibility: "WA entrepreneurs"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Education
+    audiences: []
+    featured: true
+
+  - name: "Creatives Academy"
+    description: "12 free online lessons for creative professionals on IP, negotiation, and global expansion"
+    organization: "WA Dept. of Commerce"
+    website: "https://commerce.wa.gov"
+    cost: "Free"
+    eligibility: "Creative entrepreneurs"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "ScaleUp Washington"
+    description: "35-hour intensive training curriculum for established businesses targeting seven-figure revenue"
+    organization: "WA Dept. of Commerce"
+    website: "https://commerce.wa.gov"
+    cost: "Free"
+    eligibility: "Established businesses"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "Restart Academy"
+    description: "Training for rebuilding or pivoting a business, including fresh start modules"
+    organization: "WA Dept. of Commerce"
+    website: "https://commerce.wa.gov"
+    cost: "Free"
+    eligibility: "Business rebuilders"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "Business License Wizard"
+    description: "Interactive platform generating customized checklist of all required licenses"
+    organization: "Governor's Office (ORIA)"
+    website: "https://business.wa.gov"
+    cost: "Free"
+    eligibility: "All WA businesses"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  # Economic Development Organizations
+  - name: "Thurston EDC Center for Business & Innovation"
+    description: "Intro to Business Startup course and Resource Hotline (M-F 9:30-3:30)"
+    organization: "Thurston EDC"
+    website: "https://businessresources.thurstonedc.com"
+    cost: "Free"
+    eligibility: "Community"
+    counties:
+      - Thurston
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "Greater Seattle Export Accelerator"
+    description: "Fully sponsored export training for STEM/R&D businesses"
+    organization: "Seattle OED + Partners"
+    website: "https://seattle.gov/economic-development"
+    cost: "Free"
+    eligibility: "Small/medium businesses"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "NW Innovation Resource Center - The Lab Network"
+    description: "Cohort programs in BlueTech/CleanTech and Agricultural Tech for Snohomish County"
+    organization: "NWIRC"
+    website: "https://nwirc.com"
+    cost: "Free"
+    eligibility: "Snohomish County entrepreneurs"
+    counties:
+      - Snohomish
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "West Sound CoderDojo"
+    description: "Free open-source coding education for youth (ages 7-18) and adults"
+    organization: "West Sound CoderDojo"
+    website: "https://startupkitsap.com/ecosystem"
+    cost: "Free"
+    eligibility: "Youth and adults"
+    counties:
+      - Kitsap
+    categories:
+      - Education
+    audiences: []
+    featured: false
+
+  - name: "WA Center for Women in Business - HER-Commerce Edition"
+    description: "Quick Startup training to help women launch online stores"
+    organization: "WCWB/Thurston EDC"
+    website: "https://wcwb.org"
+    cost: "Free"
+    eligibility: "Women entrepreneurs"
+    counties:
+      - King
+      - Snohomish
+      - Pierce
+      - Kitsap
+      - Thurston
+    categories:
+      - Education
+    audiences:
+      - women
+    featured: false
