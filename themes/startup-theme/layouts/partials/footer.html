@@ -4,9 +4,9 @@
   <div class="absolute top-0 left-0 right-0 h-1 sun-break"></div>
 
   <!-- Background pattern -->
-  <div class="absolute inset-0 dots-pattern"></div>
+  <div class="absolute inset-0 dots-pattern opacity-20"></div>
 
-  <div class="relative bg-overcast-900 text-white">
+  <div class="relative bg-overcast-900 dark:bg-overcast-950 text-white">
     <!-- Wave decoration -->
     <div class="absolute top-0 left-0 right-0 transform -translate-y-full">
       <svg class="w-full h-12 text-overcast-900" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -40,7 +40,7 @@
 
         <!-- Quick Links -->
         <div>
-          <h4 class="font-display font-semibold text-white mb-4">Quick Links</h4>
+          <h2 class="font-display font-semibold text-white mb-4 text-base">Quick Links</h4>
           <ul class="space-y-3">
             {{ range .Site.Menus.main }}
             <li>
@@ -55,7 +55,7 @@
 
         <!-- Counties -->
         <div>
-          <h4 class="font-display font-semibold text-white mb-4">By Region</h4>
+          <h2 class="font-display font-semibold text-white mb-4 text-base">By Region</h4>
           <ul class="space-y-3">
             {{ range $key, $value := .Site.Params.counties }}
             <li>
@@ -70,7 +70,7 @@
 
         <!-- Contribute -->
         <div>
-          <h4 class="font-display font-semibold text-white mb-4">Contribute</h4>
+          <h2 class="font-display font-semibold text-white mb-4 text-base">Contribute</h4>
           <ul class="space-y-3">
             <li>
               <a href="/submit/" class="text-overcast-400 hover:text-sound-400 transition-colors duration-200 text-sm flex items-center group">
@@ -101,7 +101,7 @@
       </div>
 
       <!-- Bottom Bar -->
-      <div class="mt-12 pt-8 border-t border-overcast-800">
+      <div class="mt-12 pt-8 border-t border-overcast-800 dark:border-overcast-700">
         <div class="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <p class="text-overcast-500 text-sm">
             Made with

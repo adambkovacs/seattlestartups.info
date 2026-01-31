@@ -10,6 +10,7 @@ resources:
     website: "https://surfincubator.com"
     cost: "$99-$1,700/mo"
     eligibility: "Tech startups"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -23,6 +24,7 @@ resources:
     website: "https://surfincubator.com"
     cost: "Free"
     eligibility: "All (limited spots)"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -36,6 +38,7 @@ resources:
     website: "https://ai2incubator.com"
     cost: "Events free"
     eligibility: "AI founders/practitioners"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -49,6 +52,7 @@ resources:
     website: "https://hhcoworks.org"
     cost: "$40 trial"
     eligibility: "Entrepreneurs"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -62,6 +66,7 @@ resources:
     website: "https://snoworkspace.com"
     cost: "Membership/Drop-in"
     eligibility: "Community"
+    city: "Arlington"
     counties:
       - Snohomish
     categories:
@@ -75,6 +80,7 @@ resources:
     website: "https://vibecoworks.com"
     cost: "Membership/Day Pass"
     eligibility: "Community"
+    city: "Poulsbo"
     counties:
       - Kitsap
     categories:
@@ -88,6 +94,7 @@ resources:
     website: "https://surgecoworking.com/surge-south-tacoma"
     cost: "$199/mo"
     eligibility: "Community"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -101,6 +108,7 @@ resources:
     website: "https://snohomishcountywa.gov"
     cost: "Free"
     eligibility: "International SMBs"
+    city: "Everett"
     counties:
       - Snohomish
     categories:
@@ -114,6 +122,7 @@ resources:
     website: "https://seattlerestored.org"
     cost: "Free"
     eligibility: "Small businesses/creatives"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -128,6 +137,7 @@ resources:
     website: "https://kcls.org/makerspaces"
     cost: "Free"
     eligibility: "Public"
+    city: "Bellevue"
     counties:
       - King
     categories:
@@ -141,6 +151,7 @@ resources:
     website: "https://tacomalibrary.org"
     cost: "Free"
     eligibility: "Public (ages 8+ with caregiver)"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -155,6 +166,7 @@ resources:
     website: "https://seattlemakers.org"
     cost: "Free (volunteer)"
     eligibility: "Public"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -168,6 +180,7 @@ resources:
     website: "https://seattlemakers.org"
     cost: "Free"
     eligibility: "Students, low-income, retirees"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -181,6 +194,7 @@ resources:
     website: "https://seattlemakers.org"
     cost: "$125-$245/mo"
     eligibility: "Public"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -194,6 +208,7 @@ resources:
     website: "https://snocomakers.wildapricot.org"
     cost: "Membership; free tours"
     eligibility: "Public"
+    city: "Everett"
     counties:
       - Snohomish
     categories:
@@ -207,6 +222,7 @@ resources:
     website: "https://edmonds.edu"
     cost: "Pay-per-use"
     eligibility: "Public"
+    city: "Lynnwood"
     counties:
       - Snohomish
     categories:
@@ -220,6 +236,7 @@ resources:
     website: "https://creatorzone.org"
     cost: "Varies"
     eligibility: "Community"
+    city: "Lake Stevens"
     counties:
       - Snohomish
     categories:
@@ -233,6 +250,7 @@ resources:
     website: "https://bainbridgebarn.org"
     cost: "$35/mo; $20 day visit"
     eligibility: "Public"
+    city: "Bainbridge Island"
     counties:
       - Kitsap
     categories:
@@ -246,6 +264,7 @@ resources:
     website: "https://fablabs.io"
     cost: "Public access"
     eligibility: "Public"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -259,6 +278,7 @@ resources:
     website: "https://tinkertopia.com/tinkerspace"
     cost: "$10/90-min session"
     eligibility: "Public"
+    city: "Tacoma"
     counties:
       - Pierce
     categories:
@@ -272,6 +292,7 @@ resources:
     website: "https://laceymakerspace.org"
     cost: "$50/mo; FREE via library"
     eligibility: "Public"
+    city: "Lacey"
     counties:
       - Thurston
     categories:
@@ -285,6 +306,7 @@ resources:
     website: "https://olymega.org"
     cost: "Free open house Thursdays"
     eligibility: "Public"
+    city: "Olympia"
     counties:
       - Thurston
     categories:
@@ -299,6 +321,7 @@ resources:
     website: "https://sustainablecapitolhill.org"
     cost: "Free/pay-what-you-can"
     eligibility: "Public"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -312,6 +335,7 @@ resources:
     website: "https://wstools.org"
     cost: "Free membership"
     eligibility: "Public"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -325,6 +349,7 @@ resources:
     website: "https://southkingtools.org"
     cost: "Free"
     eligibility: "Public"
+    city: "Federal Way"
     counties:
       - King
       - Pierce
@@ -340,6 +365,7 @@ resources:
     website: "https://spicebridge.org"
     cost: "Free"
     eligibility: "South King BIPOC/immigrant/women"
+    city: "Tukwila"
     counties:
       - King
     categories:
@@ -355,6 +381,7 @@ resources:
     website: "https://venturesnonprofit.org"
     cost: "Below-market"
     eligibility: "Low-income entrepreneurs"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -368,6 +395,7 @@ resources:
     website: "https://jassw.org/small-business/jassw-kitchen-nvc-en"
     cost: "Permit-based"
     eligibility: "Food businesses"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -382,6 +410,7 @@ resources:
     website: "https://comotion.uw.edu"
     cost: "Membership by application"
     eligibility: "Pre-Series A startups"
+    city: "Seattle"
     counties:
       - King
     categories:
@@ -395,6 +424,7 @@ resources:
     website: "https://nwirc.com"
     cost: "Free"
     eligibility: "Entrepreneurs/inventors"
+    city: "Everett"
     counties:
       - Snohomish
     categories:

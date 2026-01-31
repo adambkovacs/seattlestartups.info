@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="sunbreak" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0891b2"/>
+      <stop offset="50%" style="stop-color:#0d9488"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="url(#sunbreak)"/>
+  <!-- Space Needle inspired icon -->
+  <g fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Needle top -->
+    <path d="M16 6L16 9M16 9L13 10.5L19 10.5L16 9"/>
+    <!-- Observation deck -->
+    <path d="M14 10.5L14 13.5L18 13.5L18 10.5"/>
+    <!-- Shaft -->
+    <path d="M15 13.5L15 24M17 13.5L17 24"/>
+    <!-- Base -->
+    <path d="M12 24L20 24"/>
+    <!-- Mountain (subtle) -->
+    <path d="M4 26L9 20L13 23L19 17L23 21L28 26" opacity="0.5"/>
+  </g>
+</svg>
