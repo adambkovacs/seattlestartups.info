@@ -112,7 +112,31 @@
           </div>
         </div>
 
-        <!-- County Filter -->
+        <!-- City Filter (Primary - City-focused navigation) -->
+        <div class="relative" data-filter-group="city">
+          <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 bg-white hover:border-sound-300 text-sm font-medium transition-colors">
+            <span>City</span>
+            <svg class="w-4 h-4 text-overcast-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="filter-dropdown hidden absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-overcast-200 p-3 z-50">
+            <div class="space-y-1 max-h-64 overflow-y-auto" id="city-filter-list">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+                <input type="checkbox" value="all" class="city-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500" checked>
+                <span class="text-sm">All Cities</span>
+              </label>
+              {{ range $key, $value := .Site.Params.cities }}
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+                <input type="checkbox" value="{{ $key }}" class="city-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500">
+                <span class="text-sm">{{ $value }}</span>
+              </label>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+
+        <!-- County Filter (Secondary) -->
         <div class="relative" data-filter-group="county">
           <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 bg-white hover:border-sound-300 text-sm font-medium transition-colors">
             <span>County</span>
@@ -136,26 +160,7 @@
           </div>
         </div>
 
-        <!-- City Filter -->
-        <div class="relative" data-filter-group="city">
-          <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 bg-white hover:border-sound-300 text-sm font-medium transition-colors">
-            <span>City</span>
-            <svg class="w-4 h-4 text-overcast-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
-            </svg>
-          </button>
-          <div class="filter-dropdown hidden absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-overcast-200 p-3 z-50">
-            <div class="space-y-1 max-h-64 overflow-y-auto" id="city-filter-list">
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
-                <input type="checkbox" value="all" class="city-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500" checked>
-                <span class="text-sm">All Cities</span>
-              </label>
-              <!-- Cities populated by JS -->
-            </div>
-          </div>
-        </div>
-
-        <!-- Audience Filter -->
+        <!-- Audience Filter (For Founders) -->
         <div class="relative" data-filter-group="audience">
           <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 bg-white hover:border-sound-300 text-sm font-medium transition-colors">
             <span>For Founders</span>
@@ -395,26 +400,8 @@ document.addEventListener('DOMContentLoaded', function() {
   if (resourceCount) resourceCount.textContent = cards.length;
   if (filteredCount) filteredCount.textContent = cards.length;
 
-  // Collect unique cities from cards
-  const cities = new Set();
-  cards.forEach(card => {
-    const city = card.dataset.city;
-    if (city && city !== 'Online') cities.add(city);
-  });
-
-  // Populate city filter
-  const cityFilterList = document.getElementById('city-filter-list');
-  if (cityFilterList) {
-    Array.from(cities).sort().forEach(city => {
-      const label = document.createElement('label');
-      label.className = 'flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors';
-      label.innerHTML = `
-        <input type="checkbox" value="${city.toLowerCase().replace(/\s+/g, '-')}" class="city-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500">
-        <span class="text-sm">${city}</span>
-      `;
-      cityFilterList.appendChild(label);
-    });
-  }
+  // City filters are populated from Hugo params in the template
+  // No need to dynamically populate them here
 
   // Filter state
   let filters = {
@@ -654,6 +641,16 @@ document.addEventListener('DOMContentLoaded', function() {
   function loadFiltersFromURL() {
     const params = new URLSearchParams(window.location.search);
 
+    // Proper mapping of URL param names to filter object keys
+    const filterKeyMap = {
+      'category': 'categories',
+      'county': 'counties',
+      'city': 'cities',
+      'audience': 'audiences',
+      'industry': 'industries',
+      'stage': 'stages'
+    };
+
     if (params.get('q')) {
       filters.search = params.get('q');
       if (searchInput) searchInput.value = filters.search;
@@ -663,8 +660,14 @@ document.addEventListener('DOMContentLoaded', function() {
       const value = params.get(type);
       if (value) {
         const values = value.split(',');
-        const filterKey = (type === 'category' || type === 'industry') ? type.slice(0, -1) + 'ies' : type + 's';
+        const filterKey = filterKeyMap[type];
         filters[filterKey] = values;
+
+        // Uncheck "All" checkbox when specific filters are selected
+        const allCheckbox = document.querySelector(`.${type}-filter[value="all"]`);
+        if (allCheckbox) allCheckbox.checked = false;
+
+        // Check the specific filter checkboxes
         values.forEach(v => {
           const checkbox = document.querySelector(`.${type}-filter[value="${v}"]`);
           if (checkbox) checkbox.checked = true;
@@ -701,14 +704,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Remove single filter
   window.removeFilter = function(type, value) {
-    const filterKey = (type === 'category' || type === 'industry') ? type.slice(0, -1) + 'ies' : type + 's';
+    // Proper mapping of URL param names to filter object keys
+    const filterKeyMap = {
+      'category': 'categories',
+      'county': 'counties',
+      'city': 'cities',
+      'audience': 'audiences',
+      'industry': 'industries',
+      'stage': 'stages'
+    };
+
     if (type === 'cost') {
       filters.cost = 'all';
       document.querySelector('.cost-filter[value="all"]').checked = true;
     } else {
+      const filterKey = filterKeyMap[type];
       filters[filterKey] = filters[filterKey].filter(v => v !== value);
       const checkbox = document.querySelector(`.${type}-filter[value="${value}"]`);
       if (checkbox) checkbox.checked = false;
+
+      // Re-check "All" if no specific filters remain
+      if (filters[filterKey].length === 0) {
+        const allCheckbox = document.querySelector(`.${type}-filter[value="all"]`);
+        if (allCheckbox) allCheckbox.checked = true;
+      }
     }
     applyFilters();
     updateActiveFiltersDisplay();

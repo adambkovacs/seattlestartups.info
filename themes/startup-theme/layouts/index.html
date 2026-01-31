@@ -171,7 +171,7 @@
       <div class="max-w-4xl">
         <!-- No cute badges - straight to the point -->
         <p class="font-mono text-sm text-overcast-500 mb-4 tracking-wide">
-          <span class="text-fir-500">$</span> 248+ free resources. 5 counties. Open source.
+          <span class="text-fir-500">$</span> 248+ free resources. 6 cities. Open source.
         </p>
 
         <!-- Bold, honest headline -->
@@ -212,8 +212,8 @@
             resources
           </div>
           <div>
-            <span class="text-2xl font-display font-bold text-overcast-900 block">5</span>
-            counties
+            <span class="text-2xl font-display font-bold text-overcast-900 block">6</span>
+            cities
           </div>
           <div>
             <span class="text-2xl font-display font-bold text-fir-500 block">$0</span>
@@ -258,33 +258,34 @@
     </div>
   </section>
 
-  <!-- Counties Section -->
+  <!-- Cities Section - City-focused navigation -->
   <section class="py-20 dots-pattern">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-12">
-        <span class="badge-fun bg-fir-500/10 text-fir-500 mb-4 inline-block">Regions</span>
+        <span class="badge-fun bg-fir-500/10 text-fir-500 mb-4 inline-block">Locations</span>
         <h2 class="font-display text-3xl md:text-4xl text-overcast-900 mb-3">
-          Five counties. One ecosystem.
+          Six cities. One ecosystem.
         </h2>
         <p class="text-lg text-overcast-500 max-w-xl">
           From Olympia to Everett: local programs, regional networks.
         </p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-        {{ range $key, $value := .Site.Params.counties }}
-        <a href="/counties/{{ $key }}/"
-           class="card-bouncy p-5 group text-center {{ if eq $key "king" }}lg:col-span-1 tilt-left{{ end }}{{ if eq $key "pierce" }}tilt-right{{ end }}">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {{ range $key, $value := .Site.Params.cities }}
+        {{ if ne $key "online" }}
+        <a href="/resources/?city={{ $key }}"
+           class="card-bouncy p-5 group text-center">
           <div class="w-14 h-14 mx-auto rounded-2xl bg-fir-500/10 flex items-center justify-center mb-3 group-hover:bg-fir-500 group-hover:animate-pop transition-colors">
             <svg class="w-7 h-7 text-fir-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
             </svg>
           </div>
           <h3 class="font-display font-bold text-lg text-overcast-900 group-hover:text-fir-600 transition-colors">
             {{ $value }}
           </h3>
         </a>
+        {{ end }}
         {{ end }}
       </div>
     </div>
@@ -334,38 +335,7 @@
   </section>
   {{ end }}
 
-  <!-- Latest Resources -->
-  {{/* Use first 6 from allResources (already collected above) */}}
-  {{ $latest := $allResources | first 6 }}
-  {{ with $latest }}
-  <section class="py-20 bg-gradient-to-b from-overcast-50 to-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between mb-12">
-        <div>
-          <h2 class="font-display font-bold text-3xl md:text-4xl text-overcast-900 mb-2">
-            Recently Added
-          </h2>
-          <p class="text-lg text-overcast-600">
-            Fresh resources from the community
-          </p>
-        </div>
-        <a href="/resources/"
-           class="hidden md:inline-flex items-center text-sound-500 hover:text-sound-600 font-medium transition-colors">
-          View all
-          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-          </svg>
-        </a>
-      </div>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-        {{ range . }}
-          {{ partial "resource-card-data.html" . }}
-        {{ end }}
-      </div>
-    </div>
-  </section>
-  {{ end }}
+  <!-- Recently Added section removed per user request -->
 
   <!-- CTA Section -->
   <section class="relative py-20 overflow-hidden">
