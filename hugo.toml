@@ -44,6 +44,14 @@ theme = 'startup-theme'
     url = "/about/"
     weight = 5
 
+# Build optimization for Tailwind CSS (Hugo best practice)
+[build]
+  [build.buildStats]
+    enable = true
+  [[build.cachebusters]]
+    source = "(postcss|tailwind)\\.config\\.js"
+    target = "css"
+
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
