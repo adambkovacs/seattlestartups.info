@@ -5,6 +5,7 @@
 {{ $county := index $resource.counties 0 | default "" }}
 {{ $city := $resource.city | default "Online" }}
 {{ $audiences := delimit $resource.audiences "," }}
+{{ $industries := delimit $resource.industries "," }}
 
 <article class="resource-card group relative bg-white rounded-2xl border border-overcast-200 overflow-hidden transition-all duration-300 hover:border-sound-400 hover:shadow-xl hover:shadow-sound-500/10 hover:-translate-y-1"
          style="animation-delay: {{ mul $index 50 }}ms"
@@ -15,6 +16,7 @@
          data-county="{{ $county | urlize }}"
          data-city="{{ $city }}"
          data-audiences="{{ $audiences }}"
+         data-industries="{{ $industries }}"
          data-cost="{{ $resource.cost | urlize }}"
          data-organization="{{ $resource.organization }}">
 

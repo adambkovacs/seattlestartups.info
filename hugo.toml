@@ -27,10 +27,24 @@ theme = 'startup-theme'
   redmond = "Redmond"
   online = "Online / Statewide"
 
+[params.industries]
+  tech = "Tech & Software"
+  ai = "AI & Machine Learning"
+  cleantech = "CleanTech & Sustainability"
+  lifesciences = "Life Sciences & Biotech"
+  maritime = "Maritime & Blue Economy"
+  aerospace = "Aerospace & Defense"
+  food = "Food & Agriculture"
+  creative = "Creative & Media"
+  hardware = "Hardware & Manufacturing"
+  fintech = "FinTech & Financial Services"
+  general = "General / All Industries"
+
 [taxonomies]
   category = "categories"
   county = "counties"
   audience = "audiences"
+  industry = "industries"
   tag = "tags"
 
 [menu]

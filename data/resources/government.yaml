@@ -1,9 +1,4 @@
-# Government and Economic Development Resources
-# Greater Seattle Startup Ecosystem
-# Last updated: 2026-01-30
-
 resources:
-  # City Economic Development Offices
   - name: "Seattle Office of Economic Development"
     description: "Business support, capital access programs, storefront repair fund, and entrepreneur resources"
     organization: "City of Seattle"
@@ -12,13 +7,15 @@ resources:
     eligibility: "Seattle businesses"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
-      - Funding
+      - "Government"
+      - "Funding"
     audiences: []
     featured: true
-
+    industries:
+      - "ai"
+      - "maritime"
   - name: "Tacoma Community & Economic Development"
     description: "Business licensing, permitting, and small business development resources"
     organization: "City of Tacoma"
@@ -27,12 +24,13 @@ resources:
     eligibility: "Tacoma businesses"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Everett Economic Development"
     description: "Business retention, expansion, and attraction programs"
     organization: "City of Everett"
@@ -41,12 +39,13 @@ resources:
     eligibility: "Everett businesses"
     city: "Everett"
     counties:
-      - Snohomish
+      - "Snohomish"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "City of Olympia Economic Development"
     description: "Business resources, permitting assistance, and downtown development"
     organization: "City of Olympia"
@@ -55,12 +54,13 @@ resources:
     eligibility: "Olympia businesses"
     city: "Olympia"
     counties:
-      - Thurston
+      - "Thurston"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Bremerton Economic Development"
     description: "Business support and waterfront development initiatives"
     organization: "City of Bremerton"
@@ -69,12 +69,13 @@ resources:
     eligibility: "Bremerton businesses"
     city: "Bremerton"
     counties:
-      - Kitsap
+      - "Kitsap"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "maritime"
   - name: "Bellevue Economic Development"
     description: "Business services, startup resources, and tech sector support"
     organization: "City of Bellevue"
@@ -83,12 +84,15 @@ resources:
     eligibility: "Bellevue businesses"
     city: "Bellevue"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "tech"
+      - "maritime"
+      - "creative"
   - name: "Redmond Economic Development"
     description: "Tech corridor support and business assistance"
     organization: "City of Redmond"
@@ -97,12 +101,14 @@ resources:
     eligibility: "Redmond businesses"
     city: "Redmond"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "tech"
+      - "maritime"
   - name: "Kent Economic Development"
     description: "Manufacturing and logistics business support"
     organization: "City of Kent"
@@ -111,12 +117,14 @@ resources:
     eligibility: "Kent businesses"
     city: "Kent"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "maritime"
+      - "hardware"
   - name: "Renton Economic Development"
     description: "Business licensing and development assistance"
     organization: "City of Renton"
@@ -125,12 +133,13 @@ resources:
     eligibility: "Renton businesses"
     city: "Renton"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Federal Way Economic Development"
     description: "Business attraction and retention programs"
     organization: "City of Federal Way"
@@ -139,13 +148,13 @@ resources:
     eligibility: "Federal Way businesses"
     city: "Federal Way"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
-  # County Economic Development
+    industries:
+      - "general"
   - name: "King County Office of Economic Development"
     description: "Business attraction, retention, Small Business Awards program"
     organization: "King County"
@@ -154,12 +163,13 @@ resources:
     eligibility: "King County businesses"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "Economic Development Board for Tacoma-Pierce County"
     description: "Business recruitment, retention, diverse and veteran business support"
     organization: "EDB Tacoma-Pierce"
@@ -168,13 +178,14 @@ resources:
     eligibility: "Pierce County businesses"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Government
+      - "Government"
     audiences:
-      - veterans
+      - "veterans"
     featured: true
-
+    industries:
+      - "maritime"
   - name: "Pierce County Economic Development"
     description: "Site planning, financing guidance, and permit assistance"
     organization: "Pierce County"
@@ -183,12 +194,13 @@ resources:
     eligibility: "Pierce County businesses outside Tacoma"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Economic Alliance Snohomish County"
     description: "Business attraction, retention, minority/women/veteran support, export assistance"
     organization: "EASC"
@@ -197,15 +209,16 @@ resources:
     eligibility: "Snohomish County businesses"
     city: "Everett"
     counties:
-      - Snohomish
+      - "Snohomish"
     categories:
-      - Government
+      - "Government"
     audiences:
-      - bipoc
-      - women
-      - veterans
+      - "bipoc"
+      - "women"
+      - "veterans"
     featured: true
-
+    industries:
+      - "maritime"
   - name: "Kitsap Economic Development Alliance"
     description: "Statistical data, market research, site location, permitting introductions"
     organization: "KEDA"
@@ -214,12 +227,13 @@ resources:
     eligibility: "Kitsap County businesses"
     city: "Bremerton"
     counties:
-      - Kitsap
+      - "Kitsap"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "Thurston Economic Development Council"
     description: "Business retention, expansion, startup programs, regional data"
     organization: "Thurston EDC"
@@ -228,13 +242,13 @@ resources:
     eligibility: "Thurston County businesses"
     city: "Olympia"
     counties:
-      - Thurston
+      - "Thurston"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: true
-
-  # State Programs
+    industries:
+      - "creative"
   - name: "Washington State Department of Commerce"
     description: "Statewide business assistance, financing programs, export support"
     organization: "WA Dept of Commerce"
@@ -243,17 +257,19 @@ resources:
     eligibility: "Washington businesses"
     city: "Olympia"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
-      - Funding
+      - "Government"
+      - "Funding"
     audiences: []
     featured: true
-
+    industries:
+      - "maritime"
+      - "creative"
   - name: "Choose Washington"
     description: "Business relocation assistance and Washington state advantages"
     organization: "WA Dept of Commerce"
@@ -262,16 +278,17 @@ resources:
     eligibility: "Businesses considering Washington"
     city: "Online"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "WA SSBCI Programs"
     description: "State Small Business Credit Initiative for underserved communities"
     organization: "WA Dept of Commerce"
@@ -280,19 +297,20 @@ resources:
     eligibility: "Underserved small businesses"
     city: "Online"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
-      - Funding
+      - "Government"
+      - "Funding"
     audiences:
-      - bipoc
-      - women
+      - "bipoc"
+      - "women"
     featured: false
-
+    industries:
+      - "general"
   - name: "Export Voucher Program (STEP)"
     description: "Reimbursement for trade shows, translation, international marketing"
     organization: "WA Dept of Commerce"
@@ -301,17 +319,18 @@ resources:
     eligibility: "Small businesses exporting"
     city: "Online"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
-      - Funding
+      - "Government"
+      - "Funding"
     audiences: []
     featured: false
-
+    industries:
+      - "maritime"
   - name: "MyStartup365"
     description: "Free startup resources and government pathways for Washington entrepreneurs"
     organization: "WA Dept of Commerce"
@@ -320,17 +339,18 @@ resources:
     eligibility: "Washington entrepreneurs"
     city: "Online"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
-      - Education
+      - "Government"
+      - "Education"
     audiences: []
     featured: true
-
+    industries:
+      - "creative"
   - name: "Washington Creatives Academy"
     description: "Free business training for creative entrepreneurs"
     organization: "WA Dept of Commerce"
@@ -339,18 +359,19 @@ resources:
     eligibility: "Creative entrepreneurs"
     city: "Online"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
-      - Education
+      - "Government"
+      - "Education"
     audiences: []
     featured: false
-
-  # Federal Programs - Local Offices
+    industries:
+      - "ai"
+      - "creative"
   - name: "SBA Seattle District Office"
     description: "Funding guidance, counseling, federal contracting certifications (8(a), HUBZone)"
     organization: "U.S. Small Business Administration"
@@ -359,18 +380,19 @@ resources:
     eligibility: "Small businesses"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
-      - Funding
-      - Mentorship
+      - "Government"
+      - "Funding"
+      - "Mentorship"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "SBA THRIVE Program"
     description: "Free executive-level strategic growth planning for established small businesses"
     organization: "U.S. Small Business Administration"
@@ -379,17 +401,18 @@ resources:
     eligibility: "Established small businesses"
     city: "Online"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
-      - Mentorship
+      - "Government"
+      - "Mentorship"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "SBA Community Navigator Program"
     description: "Reach underserved entrepreneurs with federal resources"
     organization: "U.S. Small Business Administration"
@@ -398,19 +421,20 @@ resources:
     eligibility: "Underserved entrepreneurs"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
+      - "Government"
     audiences:
-      - bipoc
-      - women
-      - veterans
+      - "bipoc"
+      - "women"
+      - "veterans"
     featured: false
-
+    industries:
+      - "general"
   - name: "Washington APEX Accelerator"
     description: "Free counseling for government contracts and certifications statewide"
     organization: "Thurston EDC (statewide)"
@@ -419,18 +443,18 @@ resources:
     eligibility: "All WA businesses"
     city: "Olympia"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
-      - Mentorship
+      - "Government"
+      - "Mentorship"
     audiences: []
     featured: true
-
-  # Specialized Government Programs
+    industries:
+      - "general"
   - name: "Seattle Capital Access Program"
     description: "Pays down 20% of loan principal (max $30K) for Seattle businesses"
     organization: "Seattle OED + Lenders"
@@ -439,13 +463,14 @@ resources:
     eligibility: "Seattle for-profits, 12+ months operation"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
-      - Funding
+      - "Government"
+      - "Funding"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "Seattle Storefront Repair Fund"
     description: "Grants to cover costs associated with property damage"
     organization: "City of Seattle OED"
@@ -454,13 +479,14 @@ resources:
     eligibility: "Seattle businesses with property damage"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
-      - Funding
+      - "Government"
+      - "Funding"
     audiences: []
     featured: false
-
+    industries:
+      - "ai"
   - name: "Seattle Commercial Affordability Program"
     description: "Assistance for small businesses facing rent increases"
     organization: "City of Seattle OED"
@@ -469,12 +495,13 @@ resources:
     eligibility: "Small Seattle businesses"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "WorkSource Seattle-King County"
     description: "Small business resource directory and SEAP program"
     organization: "WorkSource"
@@ -483,12 +510,13 @@ resources:
     eligibility: "Job seekers and employers"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "WorkSource Snohomish County"
     description: "Employment and training resources for businesses"
     organization: "WorkSource"
@@ -497,12 +525,13 @@ resources:
     eligibility: "Snohomish County"
     city: "Everett"
     counties:
-      - Snohomish
+      - "Snohomish"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "ai"
   - name: "WorkSource Pierce County"
     description: "Workforce development and business services"
     organization: "WorkSource"
@@ -511,12 +540,13 @@ resources:
     eligibility: "Pierce County"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Center for Business & Innovation (Thurston)"
     description: "Intro to Business Startup course and Resource Hotline (M-F 9:30-3:30)"
     organization: "Thurston EDC"
@@ -525,13 +555,14 @@ resources:
     eligibility: "Thurston County"
     city: "Olympia"
     counties:
-      - Thurston
+      - "Thurston"
     categories:
-      - Government
-      - Education
+      - "Government"
+      - "Education"
     audiences: []
     featured: false
-
+    industries:
+      - "creative"
   - name: "BEST Scholarships (Lacey/Olympia/Tumwater)"
     description: "Full scholarships ($399 value) for startup training"
     organization: "Cities + Thurston EDC"
@@ -540,13 +571,15 @@ resources:
     eligibility: "Lacey/Olympia/Tumwater startups"
     city: "Olympia"
     counties:
-      - Thurston
+      - "Thurston"
     categories:
-      - Government
-      - Funding
+      - "Government"
+      - "Funding"
     audiences: []
     featured: false
-
+    industries:
+      - "ai"
+      - "creative"
   - name: "Contractor Coffee Hour (Kitsap)"
     description: "Drop-in Zoom help with government contracting"
     organization: "KEDA"
@@ -555,14 +588,14 @@ resources:
     eligibility: "Small businesses interested in contracting"
     city: "Bremerton"
     counties:
-      - Kitsap
+      - "Kitsap"
     categories:
-      - Government
-      - Mentorship
+      - "Government"
+      - "Mentorship"
     audiences: []
     featured: false
-
-  # Permit and Regulatory Assistance
+    industries:
+      - "general"
   - name: "Seattle Business Licensing"
     description: "Business license assistance and compliance resources"
     organization: "City of Seattle"
@@ -571,12 +604,13 @@ resources:
     eligibility: "Seattle businesses"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "King County Permits"
     description: "Building permits and land use assistance"
     organization: "King County"
@@ -585,12 +619,13 @@ resources:
     eligibility: "Unincorporated King County"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Pierce County Permits"
     description: "Permitting and land use services"
     organization: "Pierce County"
@@ -599,12 +634,13 @@ resources:
     eligibility: "Pierce County"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Snohomish County Planning"
     description: "Development permits and planning services"
     organization: "Snohomish County"
@@ -613,13 +649,13 @@ resources:
     eligibility: "Snohomish County"
     city: "Everett"
     counties:
-      - Snohomish
+      - "Snohomish"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
-  # Industry-Specific Government Programs
+    industries:
+      - "general"
   - name: "WA Maritime Blue"
     description: "Maritime sector support, innovation accelerator, blue economy resources"
     organization: "WA Maritime Blue"
@@ -628,16 +664,17 @@ resources:
     eligibility: "Maritime/blue economy startups"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
     categories:
-      - Government
-      - Accelerators
+      - "Government"
+      - "Accelerators"
     audiences: []
     featured: true
-
+    industries:
+      - "maritime"
   - name: "WA Clean Technology Alliance"
     description: "Clean tech industry resources and networking"
     organization: "CleanTech Alliance"
@@ -646,16 +683,18 @@ resources:
     eligibility: "Clean tech companies"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "tech"
+      - "cleantech"
   - name: "Life Science Washington"
     description: "Life sciences industry support and advocacy"
     organization: "Life Science Washington"
@@ -664,14 +703,16 @@ resources:
     eligibility: "Life science companies"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
+      - "King"
+      - "Snohomish"
+      - "Pierce"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
+    industries:
+      - "lifesciences"
+      - "maritime"
   - name: "Technology Alliance"
     description: "Tech industry advocacy and policy support"
     organization: "Technology Alliance"
@@ -680,17 +721,18 @@ resources:
     eligibility: "Tech companies"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
-
-  # Diversity-Focused Government Programs
+    industries:
+      - "tech"
+      - "maritime"
   - name: "Office of Minority and Women's Business Enterprises (OMWBE)"
     description: "State certification for minority and women-owned businesses"
     organization: "WA State OMWBE"
@@ -699,18 +741,19 @@ resources:
     eligibility: "Minority and women-owned businesses"
     city: "Olympia"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
+      - "Government"
     audiences:
-      - bipoc
-      - women
+      - "bipoc"
+      - "women"
     featured: true
-
+    industries:
+      - "general"
   - name: "Washington State DVA Veteran Business"
     description: "Veteran-owned business certification and resources"
     organization: "WA Dept of Veterans Affairs"
@@ -719,17 +762,18 @@ resources:
     eligibility: "Veteran-owned businesses"
     city: "Olympia"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
-      - Thurston
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
+      - "Thurston"
     categories:
-      - Government
+      - "Government"
     audiences:
-      - veterans
+      - "veterans"
     featured: true
-
+    industries:
+      - "ai"
   - name: "King County Equity Now"
     description: "Programs supporting BIPOC-owned businesses"
     organization: "King County"
@@ -738,13 +782,14 @@ resources:
     eligibility: "BIPOC-owned businesses in King County"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
+      - "Government"
     audiences:
-      - bipoc
+      - "bipoc"
     featured: false
-
+    industries:
+      - "maritime"
   - name: "Seattle WMBE Priority Program"
     description: "Priority contracting for women and minority-owned businesses"
     organization: "City of Seattle"
@@ -753,14 +798,15 @@ resources:
     eligibility: "WMBE certified businesses"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Government
+      - "Government"
     audiences:
-      - bipoc
-      - women
+      - "bipoc"
+      - "women"
     featured: false
-
+    industries:
+      - "general"
   - name: "Tacoma Small Business Enterprise Program"
     description: "Small and disadvantaged business support"
     organization: "City of Tacoma"
@@ -769,14 +815,14 @@ resources:
     eligibility: "Small businesses in Tacoma"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Government
+      - "Government"
     audiences:
-      - bipoc
+      - "bipoc"
     featured: false
-
-  # Economic Development Districts
+    industries:
+      - "maritime"
   - name: "Puget Sound Regional Council"
     description: "Regional planning and economic development coordination"
     organization: "PSRC"
@@ -785,11 +831,13 @@ resources:
     eligibility: "Regional businesses"
     city: "Seattle"
     counties:
-      - King
-      - Snohomish
-      - Pierce
-      - Kitsap
+      - "King"
+      - "Snohomish"
+      - "Pierce"
+      - "Kitsap"
     categories:
-      - Government
+      - "Government"
     audiences: []
     featured: false
+    industries:
+      - "general"

@@ -1,9 +1,4 @@
-# Community Events and Networking
-# Greater Seattle Startup Ecosystem
-# Last updated: 2026-01-30
-
 resources:
-  # Weekly Events
   - name: "1 Million Cups Seattle"
     description: "6-min pitches + Q&A + networking every Wednesday 9am"
     organization: "Kauffman Foundation"
@@ -12,12 +7,13 @@ resources:
     eligibility: "All entrepreneurs"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "SURF Startups in Action"
     description: "Weekly networking at SURF Incubator with 300+ annual events"
     organization: "SURF Incubator"
@@ -26,12 +22,13 @@ resources:
     eligibility: "All entrepreneurs"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: true
-
+    industries:
+      - "creative"
   - name: "Seattle Startups Open Coffee"
     description: "Weekly virtual/hybrid networking with 5,000+ members"
     organization: "Community"
@@ -40,13 +37,13 @@ resources:
     eligibility: "Entrepreneurs, investors"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
-  # Monthly Events
+    industries:
+      - "creative"
   - name: "Startup Grind Seattle"
     description: "Monthly fireside chats with founders and investors, 5,255 members"
     organization: "Startup Grind/Google"
@@ -55,12 +52,13 @@ resources:
     eligibility: "All entrepreneurs"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: true
-
+    industries:
+      - "creative"
   - name: "New Tech Seattle"
     description: "Monthly tech community events with networking"
     organization: "New Tech Northwest"
@@ -69,12 +67,13 @@ resources:
     eligibility: "Tech community"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "tech"
   - name: "New Tech Eastside"
     description: "Monthly tech community events on the Eastside"
     organization: "New Tech Northwest"
@@ -83,12 +82,13 @@ resources:
     eligibility: "Tech community"
     city: "Bellevue"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "tech"
   - name: "New Tech Tacoma"
     description: "Monthly tech community events in Tacoma"
     organization: "New Tech Northwest"
@@ -97,12 +97,13 @@ resources:
     eligibility: "Tech community"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "tech"
   - name: "Seattle Startup Friends"
     description: "Founder-to-founder networking and mentorship at Fremont Brewing"
     organization: "Community"
@@ -111,12 +112,13 @@ resources:
     eligibility: "Startup founders"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "creative"
   - name: "Seattle Startup Founder 101"
     description: "Best practices, AI governance, and feedback sessions"
     organization: "Community"
@@ -125,12 +127,14 @@ resources:
     eligibility: "Tech entrepreneurs"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "ai"
+      - "creative"
   - name: "Eastside Entrepreneurs"
     description: "Networking and story sharing for Eastside business owners, 820 members"
     organization: "Community"
@@ -139,13 +143,13 @@ resources:
     eligibility: "Eastside business owners"
     city: "Bellevue"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
-  # Quarterly Events
+    industries:
+      - "general"
   - name: "Founders Live Seattle"
     description: "99-second pitch competitions with audience vote"
     organization: "Founders Live (HQ Seattle)"
@@ -154,13 +158,14 @@ resources:
     eligibility: "Early-stage startups"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
-      - Funding
+      - "Events"
+      - "Funding"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "Black Founders & Funders"
     description: "Quarterly meetups, mentors, accelerator access, and funding with 150+ members"
     organization: "Venture Mechanics"
@@ -169,13 +174,14 @@ resources:
     eligibility: "Black founders"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences:
-      - bipoc
+      - "bipoc"
     featured: true
-
+    industries:
+      - "creative"
   - name: "Venture Mechanics Events"
     description: "Venture Saturday, pitch practice, Scalathon, and diversity groups"
     organization: "Venture Mechanics"
@@ -184,13 +190,13 @@ resources:
     eligibility: "All founders"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
-  # Diversity-Focused Communities
+    industries:
+      - "general"
   - name: "Filipino Founders & Funders"
     description: "Networking community for Filipino founders"
     organization: "Venture Mechanics"
@@ -199,12 +205,13 @@ resources:
     eligibility: "Filipino founders"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Korean Founders & Funders"
     description: "Networking community for Korean founders"
     organization: "Venture Mechanics"
@@ -213,12 +220,13 @@ resources:
     eligibility: "Korean founders"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "LGBTQ+ Founders & Funders"
     description: "Networking community for LGBTQ+ founders"
     organization: "Venture Mechanics"
@@ -227,13 +235,14 @@ resources:
     eligibility: "LGBTQ+ founders"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences:
-      - lgbtq
+      - "lgbtq"
     featured: false
-
+    industries:
+      - "general"
   - name: "Veteran Founders & Funders"
     description: "Networking community for veteran founders"
     organization: "Venture Mechanics"
@@ -242,13 +251,14 @@ resources:
     eligibility: "Veteran founders"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences:
-      - veterans
+      - "veterans"
     featured: false
-
+    industries:
+      - "general"
   - name: "Women Who Code Seattle"
     description: "Networking, mentorship, and career advice for women in tech (Note: organization transitioning)"
     organization: "Women Who Code"
@@ -257,13 +267,14 @@ resources:
     eligibility: "Women in tech"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences:
-      - women
+      - "women"
     featured: false
-
+    industries:
+      - "tech"
   - name: "She's Coding Seattle"
     description: "Monthly meetups, codeathons, and interview prep"
     organization: "She's Coding"
@@ -272,14 +283,14 @@ resources:
     eligibility: "Women/non-binary"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences:
-      - women
+      - "women"
     featured: true
-
-  # Annual Events
+    industries:
+      - "tech"
   - name: "Seattle Tech Week"
     description: "100+ community events and networking, July 27-31, 2026"
     organization: "Community"
@@ -288,12 +299,13 @@ resources:
     eligibility: "All"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: true
-
+    industries:
+      - "tech"
   - name: "Techstars Startup Week Tacoma"
     description: "Annual startup week with panels, workshops, and networking"
     organization: "Techstars + Partners"
@@ -302,12 +314,14 @@ resources:
     eligibility: "All entrepreneurs"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: true
-
+    industries:
+      - "tech"
+      - "creative"
   - name: "South Sound Entrepreneurship Week"
     description: "Five-day panels, workshops, and networking with 1,000+ attendees"
     organization: "buildJUSTLY + Partners"
@@ -316,13 +330,13 @@ resources:
     eligibility: "All entrepreneurs"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: true
-
-  # Community Hubs
+    industries:
+      - "creative"
   - name: "Foundations Seattle"
     description: "Weekly events, mentor office hours, pitch clinics, and show & tell in Capitol Hill"
     organization: "Graham & Walker + Community"
@@ -331,12 +345,13 @@ resources:
     eligibility: "Early founders (invite-only, 200 members)"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: true
-
+    industries:
+      - "general"
   - name: "Startup425"
     description: "Free coworking sessions, accelerator, and workshops for Eastside entrepreneurs"
     organization: "Eastside Cities Coalition"
@@ -345,12 +360,13 @@ resources:
     eligibility: "Eastside entrepreneurs"
     city: "Bellevue"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: true
-
+    industries:
+      - "creative"
   - name: "Startup253"
     description: "Tacoma startup community hub and networking"
     organization: "Community"
@@ -359,12 +375,13 @@ resources:
     eligibility: "All entrepreneurs"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: true
-
+    industries:
+      - "creative"
   - name: "Startup Kitsap"
     description: "Tech on Tap, Female Founders Power Hour, and startup community on the peninsula"
     organization: "Community"
@@ -373,12 +390,14 @@ resources:
     eligibility: "Kitsap entrepreneurs"
     city: "Bremerton"
     counties:
-      - Kitsap
+      - "Kitsap"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "tech"
+      - "creative"
   - name: "TiE Seattle"
     description: "Mentoring, networking, and Investment Outlook Panels"
     organization: "TiE (global nonprofit)"
@@ -387,12 +406,13 @@ resources:
     eligibility: "All entrepreneurs"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "Pierce County Business Accelerator Workshops"
     description: "Spring workshop series on growth, social media, and mindset"
     organization: "PCBA"
@@ -401,12 +421,13 @@ resources:
     eligibility: "All businesses"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "creative"
   - name: "BIPOC Business Forum"
     description: "Business lending panels and expert speakers for BIPOC entrepreneurs"
     organization: "KEDA + Partners"
@@ -415,13 +436,14 @@ resources:
     eligibility: "BIPOC entrepreneurs"
     city: "Bremerton"
     counties:
-      - Kitsap
+      - "Kitsap"
     categories:
-      - Events
+      - "Events"
     audiences:
-      - bipoc
+      - "bipoc"
     featured: false
-
+    industries:
+      - "creative"
   - name: "Impactathon Tacoma"
     description: "Community brainstorming events for local challenges"
     organization: "Innov8Social"
@@ -430,12 +452,13 @@ resources:
     eligibility: "Community"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "ai"
   - name: "OlyMEGA Thursday Open House"
     description: "Free open house every Thursday at Olympia makerspace"
     organization: "OlyMEGA"
@@ -444,12 +467,14 @@ resources:
     eligibility: "Public"
     city: "Olympia"
     counties:
-      - Thurston
+      - "Thurston"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "aerospace"
+      - "hardware"
   - name: "West Seattle Tool Library Fix-It Night"
     description: "Repair clinics every Wednesday evening"
     organization: "West Seattle Tool Library"
@@ -458,12 +483,13 @@ resources:
     eligibility: "Public"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "ai"
   - name: "BARN Teen Nights"
     description: "Monthly events for teens at Bainbridge makerspace"
     organization: "BARN"
@@ -472,12 +498,15 @@ resources:
     eligibility: "Teens"
     city: "Bainbridge Island"
     counties:
-      - Kitsap
+      - "Kitsap"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "ai"
+      - "aerospace"
+      - "hardware"
   - name: "Founder Fridays (Seattle U)"
     description: "Public fireside chats with alumni entrepreneurs"
     organization: "Seattle University IEC"
@@ -486,12 +515,13 @@ resources:
     eligibility: "Public"
     city: "Seattle"
     counties:
-      - King
+      - "King"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
-
+    industries:
+      - "general"
   - name: "253 Connections Workshops"
     description: "B2B networking workshops across Pierce County"
     organization: "Pierce County Library System"
@@ -500,8 +530,10 @@ resources:
     eligibility: "Small businesses"
     city: "Tacoma"
     counties:
-      - Pierce
+      - "Pierce"
     categories:
-      - Events
+      - "Events"
     audiences: []
     featured: false
+    industries:
+      - "general"
