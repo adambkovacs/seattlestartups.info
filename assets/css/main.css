@@ -1276,3 +1276,501 @@ nav[aria-label="Breadcrumb"] {
 .dark .internal-link:hover {
   color: #7cc8fb;
 }
+
+/* ============================================
+   EDITORIAL READING EXPERIENCE
+   Pacific Northwest Magazine Style
+   Bold, Beautiful, Memorable
+   Wrapped in @layer to survive Tailwind purging
+   ============================================ */
+
+@layer utilities {
+
+/* Override ALL prose tables with premium magazine styling */
+article .prose table,
+section .prose table,
+.prose-lg table,
+div[class*="prose"] table {
+  width: 100% !important;
+  margin: 2.5rem 0 !important;
+  border-collapse: separate !important;
+  border-spacing: 0 !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  border: 3px solid #0891b2 !important;
+  box-shadow:
+    0 0 0 1px rgba(8, 145, 178, 0.1),
+    0 12px 40px -12px rgba(8, 145, 178, 0.25),
+    0 8px 20px -8px rgba(0, 0, 0, 0.1) !important;
+  font-size: 0.95rem !important;
+  background: white !important;
+}
+
+.dark article .prose table,
+.dark section .prose table,
+.dark .prose-lg table,
+.dark div[class*="prose"] table {
+  border-color: #0d9488 !important;
+  background: #1f1f23 !important;
+  box-shadow:
+    0 0 0 1px rgba(13, 148, 136, 0.2),
+    0 12px 40px -12px rgba(13, 148, 136, 0.3),
+    0 8px 20px -8px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Table header - bold gradient */
+article .prose thead,
+section .prose thead,
+.prose-lg thead,
+div[class*="prose"] thead {
+  background: linear-gradient(135deg, #0891b2 0%, #0d9488 50%, #059669 100%) !important;
+}
+
+article .prose th,
+section .prose th,
+.prose-lg th,
+div[class*="prose"] th {
+  padding: 1.25rem 1.5rem !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.1em !important;
+  text-transform: uppercase !important;
+  color: white !important;
+  text-align: left !important;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.25) !important;
+  border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15) !important;
+}
+
+article .prose th:last-child,
+section .prose th:last-child,
+.prose-lg th:last-child,
+div[class*="prose"] th:last-child {
+  border-right: none !important;
+}
+
+/* Table cells with visible borders */
+article .prose td,
+section .prose td,
+.prose-lg td,
+div[class*="prose"] td {
+  padding: 1.125rem 1.5rem !important;
+  border-top: 2px solid #e4e4e7 !important;
+  border-right: 1px solid #e4e4e7 !important;
+  color: #3f3f46 !important;
+  line-height: 1.65 !important;
+  vertical-align: top !important;
+  background: inherit !important;
+}
+
+article .prose td:last-child,
+section .prose td:last-child,
+.prose-lg td:last-child,
+div[class*="prose"] td:last-child {
+  border-right: none !important;
+}
+
+.dark article .prose td,
+.dark section .prose td,
+.dark .prose-lg td,
+.dark div[class*="prose"] td {
+  border-top-color: #3f3f46 !important;
+  border-right-color: #3f3f46 !important;
+  color: #d4d4d8 !important;
+}
+
+/* First column emphasis */
+article .prose td:first-child,
+section .prose td:first-child,
+.prose-lg td:first-child,
+div[class*="prose"] td:first-child {
+  font-weight: 700 !important;
+  color: #0e7490 !important;
+  background: rgba(8, 145, 178, 0.06) !important;
+}
+
+.dark article .prose td:first-child,
+.dark section .prose td:first-child,
+.dark .prose-lg td:first-child,
+.dark div[class*="prose"] td:first-child {
+  color: #22d3ee !important;
+  background: rgba(8, 145, 178, 0.12) !important;
+}
+
+/* Zebra striping */
+article .prose tbody tr:nth-child(even),
+section .prose tbody tr:nth-child(even),
+.prose-lg tbody tr:nth-child(even),
+div[class*="prose"] tbody tr:nth-child(even) {
+  background: #f8fdfe !important;
+}
+
+.dark article .prose tbody tr:nth-child(even),
+.dark section .prose tbody tr:nth-child(even),
+.dark .prose-lg tbody tr:nth-child(even),
+.dark div[class*="prose"] tbody tr:nth-child(even) {
+  background: #252529 !important;
+}
+
+/* Row hover */
+article .prose tbody tr:hover,
+section .prose tbody tr:hover,
+.prose-lg tbody tr:hover,
+div[class*="prose"] tbody tr:hover {
+  background: linear-gradient(135deg, #ecfeff 0%, #f0fdfa 100%) !important;
+}
+
+.dark article .prose tbody tr:hover,
+.dark section .prose tbody tr:hover,
+.dark .prose-lg tbody tr:hover,
+.dark div[class*="prose"] tbody tr:hover {
+  background: linear-gradient(135deg, #1a3d3d 0%, #1a3530 100%) !important;
+}
+
+/* ============================================
+   BULLET LISTS - Bold, Visible, Playful
+   ============================================ */
+
+article .prose ul,
+section .prose ul,
+.prose-lg ul,
+div[class*="prose"] ul {
+  margin: 2rem 0 !important;
+  padding-left: 0 !important;
+  list-style: none !important;
+}
+
+article .prose ul li,
+section .prose ul li,
+.prose-lg ul li,
+div[class*="prose"] ul li {
+  position: relative !important;
+  padding-left: 2.25rem !important;
+  margin-bottom: 1rem !important;
+  line-height: 1.8 !important;
+  font-size: 1.0625rem !important;
+}
+
+article .prose ul li::before,
+section .prose ul li::before,
+.prose-lg ul li::before,
+div[class*="prose"] ul li::before {
+  content: '' !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0.55em !important;
+  width: 12px !important;
+  height: 12px !important;
+  background: linear-gradient(135deg, #0891b2 0%, #059669 100%) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 3px 8px rgba(8, 145, 178, 0.35) !important;
+}
+
+/* Nested list bullets - smaller, different style */
+article .prose ul ul li::before,
+section .prose ul ul li::before,
+.prose-lg ul ul li::before,
+div[class*="prose"] ul ul li::before {
+  width: 8px !important;
+  height: 8px !important;
+  background: #0891b2 !important;
+  box-shadow: 0 2px 4px rgba(8, 145, 178, 0.25) !important;
+}
+
+article .prose ul ul ul li::before,
+section .prose ul ul ul li::before,
+.prose-lg ul ul ul li::before,
+div[class*="prose"] ul ul ul li::before {
+  width: 6px !important;
+  height: 6px !important;
+  background: #71717a !important;
+  border-radius: 0 !important;
+  transform: rotate(45deg) !important;
+  box-shadow: none !important;
+}
+
+/* ============================================
+   NUMBERED LISTS - Magazine Editorial Style
+   ============================================ */
+
+article .prose ol,
+section .prose ol,
+.prose-lg ol,
+div[class*="prose"] ol {
+  margin: 2rem 0 !important;
+  padding-left: 0 !important;
+  list-style: none !important;
+  counter-reset: editorial-counter !important;
+}
+
+article .prose ol li,
+section .prose ol li,
+.prose-lg ol li,
+div[class*="prose"] ol li {
+  position: relative !important;
+  padding-left: 3.5rem !important;
+  margin-bottom: 1.25rem !important;
+  line-height: 1.8 !important;
+  font-size: 1.0625rem !important;
+  counter-increment: editorial-counter !important;
+}
+
+article .prose ol li::before,
+section .prose ol li::before,
+.prose-lg ol li::before,
+div[class*="prose"] ol li::before {
+  content: counter(editorial-counter) !important;
+  position: absolute !important;
+  left: 0 !important;
+  top: 0 !important;
+  width: 2.25rem !important;
+  height: 2.25rem !important;
+  background: linear-gradient(135deg, #0891b2 0%, #059669 100%) !important;
+  color: white !important;
+  font-weight: 800 !important;
+  font-size: 0.95rem !important;
+  border-radius: 50% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 12px rgba(8, 145, 178, 0.35) !important;
+  font-family: 'Montserrat', system-ui, sans-serif !important;
+}
+
+/* ============================================
+   HEADINGS - Bold Editorial Typography
+   ============================================ */
+
+article .prose h2,
+section .prose h2,
+.prose-lg h2,
+div[class*="prose"] h2 {
+  margin-top: 3.5rem !important;
+  margin-bottom: 1.5rem !important;
+  font-size: 2rem !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  color: #18181b !important;
+  position: relative !important;
+  padding-bottom: 1rem !important;
+}
+
+article .prose h2::after,
+section .prose h2::after,
+.prose-lg h2::after,
+div[class*="prose"] h2::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  width: 100px !important;
+  height: 5px !important;
+  background: linear-gradient(90deg, #0891b2, #059669) !important;
+  border-radius: 3px !important;
+}
+
+.dark article .prose h2,
+.dark section .prose h2,
+.dark .prose-lg h2,
+.dark div[class*="prose"] h2 {
+  color: #fafafa !important;
+}
+
+article .prose h3,
+section .prose h3,
+.prose-lg h3,
+div[class*="prose"] h3 {
+  margin-top: 2.5rem !important;
+  margin-bottom: 1rem !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  color: #27272a !important;
+  letter-spacing: -0.02em !important;
+}
+
+.dark article .prose h3,
+.dark section .prose h3,
+.dark .prose-lg h3,
+.dark div[class*="prose"] h3 {
+  color: #e4e4e7 !important;
+}
+
+/* ============================================
+   PARAGRAPHS - Optimal Reading Experience
+   ============================================ */
+
+article .prose p,
+section .prose p,
+.prose-lg p,
+div[class*="prose"] p {
+  margin-bottom: 1.75rem !important;
+  line-height: 1.9 !important;
+  font-size: 1.1rem !important;
+  color: #3f3f46 !important;
+}
+
+.dark article .prose p,
+.dark section .prose p,
+.dark .prose-lg p,
+.dark div[class*="prose"] p {
+  color: #d4d4d8 !important;
+}
+
+/* ============================================
+   BLOCKQUOTES - Editorial Callouts
+   ============================================ */
+
+article .prose blockquote,
+section .prose blockquote,
+.prose-lg blockquote,
+div[class*="prose"] blockquote {
+  margin: 2.5rem 0 !important;
+  padding: 2rem 2.5rem !important;
+  background: linear-gradient(135deg, #ecfeff 0%, #f0fdfa 100%) !important;
+  border-left: 6px solid #0891b2 !important;
+  border-radius: 0 16px 16px 0 !important;
+  font-style: italic !important;
+  font-size: 1.125rem !important;
+  color: #0e7490 !important;
+  position: relative !important;
+  box-shadow: 0 4px 16px -4px rgba(8, 145, 178, 0.15) !important;
+}
+
+.dark article .prose blockquote,
+.dark section .prose blockquote,
+.dark .prose-lg blockquote,
+.dark div[class*="prose"] blockquote {
+  background: linear-gradient(135deg, rgba(8, 145, 178, 0.15), rgba(13, 148, 136, 0.15)) !important;
+  color: #67e8f9 !important;
+}
+
+article .prose blockquote::before,
+section .prose blockquote::before,
+.prose-lg blockquote::before,
+div[class*="prose"] blockquote::before {
+  content: '"' !important;
+  position: absolute !important;
+  top: -0.5rem !important;
+  left: 1.5rem !important;
+  font-size: 4rem !important;
+  font-family: Georgia, serif !important;
+  color: #0891b2 !important;
+  opacity: 0.25 !important;
+  line-height: 1 !important;
+}
+
+/* ============================================
+   LINKS - Elegant with Underline Animation
+   ============================================ */
+
+article .prose a,
+section .prose a,
+.prose-lg a,
+div[class*="prose"] a {
+  color: #0891b2 !important;
+  text-decoration: none !important;
+  border-bottom: 2px solid transparent !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  font-weight: 500 !important;
+}
+
+article .prose a:hover,
+section .prose a:hover,
+.prose-lg a:hover,
+div[class*="prose"] a:hover {
+  color: #0e7490 !important;
+  border-bottom-color: #0891b2 !important;
+}
+
+.dark article .prose a,
+.dark section .prose a,
+.dark .prose-lg a,
+.dark div[class*="prose"] a {
+  color: #22d3ee !important;
+}
+
+.dark article .prose a:hover,
+.dark section .prose a:hover,
+.dark .prose-lg a:hover,
+.dark div[class*="prose"] a:hover {
+  color: #67e8f9 !important;
+  border-bottom-color: #22d3ee !important;
+}
+
+/* ============================================
+   CODE - Refined Inline Styling
+   ============================================ */
+
+article .prose code:not(pre code),
+section .prose code:not(pre code),
+.prose-lg code:not(pre code),
+div[class*="prose"] code:not(pre code) {
+  padding: 0.25rem 0.6rem !important;
+  background: linear-gradient(135deg, #f4f4f5, #e4e4e7) !important;
+  border-radius: 6px !important;
+  font-size: 0.875em !important;
+  color: #0e7490 !important;
+  font-family: 'JetBrains Mono', ui-monospace, monospace !important;
+  font-weight: 500 !important;
+  border: 1px solid #d4d4d8 !important;
+}
+
+.dark article .prose code:not(pre code),
+.dark section .prose code:not(pre code),
+.dark .prose-lg code:not(pre code),
+.dark div[class*="prose"] code:not(pre code) {
+  background: linear-gradient(135deg, #3f3f46, #52525b) !important;
+  color: #67e8f9 !important;
+  border-color: #52525b !important;
+}
+
+/* ============================================
+   HORIZONTAL RULES - Elegant Dividers
+   ============================================ */
+
+article .prose hr,
+section .prose hr,
+.prose-lg hr,
+div[class*="prose"] hr {
+  margin: 4rem 0 !important;
+  border: none !important;
+  height: 3px !important;
+  background: linear-gradient(90deg, transparent 0%, #0891b2 20%, #059669 50%, #0891b2 80%, transparent 100%) !important;
+  border-radius: 2px !important;
+}
+
+/* ============================================
+   STRONG/EMPHASIS - Refined Typography
+   ============================================ */
+
+article .prose strong,
+section .prose strong,
+.prose-lg strong,
+div[class*="prose"] strong {
+  font-weight: 700 !important;
+  color: #18181b !important;
+}
+
+.dark article .prose strong,
+.dark section .prose strong,
+.dark .prose-lg strong,
+.dark div[class*="prose"] strong {
+  color: #fafafa !important;
+}
+
+article .prose em,
+section .prose em,
+.prose-lg em,
+div[class*="prose"] em {
+  font-style: italic !important;
+  color: #0e7490 !important;
+}
+
+.dark article .prose em,
+.dark section .prose em,
+.dark .prose-lg em,
+.dark div[class*="prose"] em {
+  color: #67e8f9 !important;
+}
+
+} /* End @layer utilities for editorial styles */
