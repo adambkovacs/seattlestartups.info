@@ -131,7 +131,7 @@ B2B and enterprise software specialist with AI applications.
 | AWS GenAI | - | $1M | $1M |
 | Techstars | $220K | - | $220K |
 
-### VC Landscape
+### Seattle AI Investors
 
 Seattle has multiple VCs actively investing in AI:
 
@@ -242,7 +242,7 @@ Seattle's talent advantages:
 ### Idea Stage (No Product)
 
 1. **Join AI Tinkerers** for community and learning
-2. **Attend meetups** to understand the landscape
+2. **Attend meetups** to understand the ecosystem
 3. **Apply to AI2 Incubator** for 12-month support
 4. **Schedule SCORE mentorship** (free)
 

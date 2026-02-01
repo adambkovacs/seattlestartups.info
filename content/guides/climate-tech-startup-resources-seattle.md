@@ -266,7 +266,7 @@ Seattle has the highest concentration of fusion energy companies in the U.S., ma
 ### Idea Stage (Pre-Revenue)
 
 1. **Join CleanTech Alliance** for industry connections
-2. **Attend CleanTech Innovation Showcase** to understand the landscape
+2. **Attend CleanTech Innovation Showcase** to understand the ecosystem
 3. **Apply to Cascadia CleanTech Accelerator** ($500 fee, no equity)
 4. **Schedule SCORE mentorship** (free, request cleantech expertise)
 
@@ -282,7 +282,7 @@ Seattle has the highest concentration of fusion energy companies in the U.S., ma
 1. **Pitch to E8 Angels** for $250K-$2M seed funding
 2. **Apply to VertueLab Climate Impact Fund** for strategic investment
 3. **Join CleanTech Alliance** as a member for visibility
-4. **Attend CleanTech Advocacy Day** to understand policy landscape
+4. **Attend CleanTech Advocacy Day** to understand policy environment
 
 ### Growth Stage
 
