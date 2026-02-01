@@ -2,10 +2,10 @@
 <header class="sticky top-0 z-50 fog dark:bg-overcast-900/95 border-b border-overcast-200 dark:border-overcast-700 transition-colors duration-300">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
     <div class="flex items-center justify-between h-16">
-      <!-- Logo + Site Name - Inline horizontal layout -->
-      <a href="{{ .Site.BaseURL }}" class="inline-flex items-center gap-2 flex-shrink-0 group" style="flex-direction: row !important;" aria-label="{{ .Site.Title }} - Home">
-        <div class="w-9 h-9 sun-break rounded-lg flex items-center justify-center transform group-hover:scale-105 transition-all duration-300 shadow-md shadow-sound-500/25" style="flex-shrink: 0;">
-          <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+      <!-- Logo + Site Name -->
+      <a href="{{ .Site.BaseURL }}" aria-label="{{ .Site.Title }} - Home" style="display: inline-flex !important; flex-direction: row !important; align-items: center !important; gap: 8px !important; text-decoration: none !important;">
+        <div style="width: 36px; height: 36px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; border-radius: 8px;" class="sun-break shadow-md shadow-sound-500/25">
+          <svg style="width: 20px; height: 20px; color: white;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
             <path d="M12 2L12 6M12 6L8 8L16 8L12 6" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M10 8L10 12L14 12L14 8" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M11 12L11 20M13 12L13 20" stroke-linecap="round" stroke-linejoin="round"/>
@@ -13,7 +13,7 @@
             <path d="M2 22L6 16L10 19L14 14L18 18L22 22" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
           </svg>
         </div>
-        <span class="font-display font-bold text-base text-overcast-800 dark:text-white" style="white-space: nowrap; flex-shrink: 0;">Seattle Startups Info</span>
+        <span style="white-space: nowrap !important; font-weight: 700; font-size: 1rem;" class="font-display text-overcast-800 dark:text-white">Seattle Startups Info</span>
       </a>
 
       <!-- Desktop Navigation - Simplified with Dropdowns -->
