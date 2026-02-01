@@ -14,11 +14,11 @@
       </svg>
     </div>
 
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
-      <!-- Main Footer Grid - 5 columns on large screens for better spacing -->
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-8">
-        <!-- Brand Column - spans 2 on large -->
-        <div class="col-span-2 md:col-span-3 lg:col-span-2">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8">
+      <!-- Main Footer Grid - compact 6-column layout for single row -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 md:gap-6">
+        <!-- Brand Column -->
+        <div class="col-span-2 sm:col-span-3 md:col-span-2">
           <a href="{{ .Site.BaseURL }}" class="flex items-center space-x-3 group">
             <div class="w-10 h-10 sun-break rounded-xl flex items-center justify-center shadow-lg shadow-sound-500/25">
               <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -85,14 +85,14 @@
         </div>
 
         <!-- Industries -->
-        <div>
-          <h2 class="font-display font-semibold text-white mb-4 text-base">Industries</h2>
+        <div class="min-w-0">
+          <h2 class="font-display font-semibold text-white mb-4 text-base whitespace-nowrap">Industries</h2>
           <ul class="space-y-2.5">
             {{ range $key, $value := .Site.Params.industries }}
             {{ if and (ne $key "general") (ne $key "hardware") (ne $key "food") (ne $key "creative") }}
             <li>
-              <a href="/resources/?industry={{ $key }}" class="text-overcast-400 hover:text-sound-400 transition-colors duration-200 text-sm flex items-center group">
-                <span class="w-1.5 h-1.5 rounded-full bg-violet-500 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
+              <a href="/resources/?industry={{ $key }}" class="text-overcast-400 hover:text-sound-400 transition-colors duration-200 text-sm flex items-center group whitespace-nowrap">
+                <span class="w-1.5 h-1.5 rounded-full bg-violet-500 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex-shrink-0"></span>
                 {{ $value }}
               </a>
             </li>
