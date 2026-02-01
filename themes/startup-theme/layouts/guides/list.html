@@ -39,12 +39,84 @@
     </div>
   </section>
 
+  <!-- Playful Filter Section -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex flex-wrap items-center gap-3">
+      <span class="text-sm font-medium text-overcast-500 dark:text-overcast-400 mr-2">Filter by:</span>
+
+      <!-- Filter Pills - Playful but elegant -->
+      <button data-filter="all" class="guide-filter active inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-sound-100 dark:bg-sound-900/50 text-sound-700 dark:text-sound-300 hover:scale-105 hover:shadow-md border-2 border-transparent hover:border-sound-300 dark:hover:border-sound-600">
+        <span class="text-base">✨</span> All Guides
+      </button>
+
+      <button data-filter="getting-started" class="guide-filter inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-emerald-50 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 hover:scale-105 hover:shadow-md border-2 border-transparent hover:border-emerald-300 dark:hover:border-emerald-600">
+        <span class="text-base">🚀</span> Getting Started
+      </button>
+
+      <button data-filter="funding" class="guide-filter inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-amber-50 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 hover:scale-105 hover:shadow-md border-2 border-transparent hover:border-amber-300 dark:hover:border-amber-600">
+        <span class="text-base">💰</span> Funding
+      </button>
+
+      <button data-filter="accelerators" class="guide-filter inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-violet-50 dark:bg-violet-900/30 text-violet-700 dark:text-violet-300 hover:scale-105 hover:shadow-md border-2 border-transparent hover:border-violet-300 dark:hover:border-violet-600">
+        <span class="text-base">⚡</span> Accelerators
+      </button>
+
+      <button data-filter="location" class="guide-filter inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-sky-50 dark:bg-sky-900/30 text-sky-700 dark:text-sky-300 hover:scale-105 hover:shadow-md border-2 border-transparent hover:border-sky-300 dark:hover:border-sky-600">
+        <span class="text-base">📍</span> By Location
+      </button>
+
+      <button data-filter="founders" class="guide-filter inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-rose-50 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 hover:scale-105 hover:shadow-md border-2 border-transparent hover:border-rose-300 dark:hover:border-rose-600">
+        <span class="text-base">👥</span> For Founders
+      </button>
+
+      <button data-filter="industry" class="guide-filter inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 bg-teal-50 dark:bg-teal-900/30 text-teal-700 dark:text-teal-300 hover:scale-105 hover:shadow-md border-2 border-transparent hover:border-teal-300 dark:hover:border-teal-600">
+        <span class="text-base">🏭</span> Industry
+      </button>
+    </div>
+  </section>
+
   <!-- Guides Grid -->
-  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
     {{ if .Pages }}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div id="guides-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {{ range .Pages.ByDate.Reverse }}
-      <article class="group bg-white dark:bg-overcast-800 rounded-2xl border border-overcast-200 dark:border-overcast-700 overflow-hidden transition-all duration-300 hover:border-sound-400 dark:hover:border-sound-500 hover:shadow-xl hover:shadow-sound-500/10 dark:hover:shadow-sound-500/20 hover:-translate-y-1">
+      {{/* Determine filter categories based on tags/title */}}
+      {{ $categories := slice "all" }}
+      {{ $title := .Title | lower }}
+      {{ $tags := .Params.tags | default slice }}
+
+      {{/* Getting Started */}}
+      {{ if or (in $title "first") (in $title "getting started") (in $title "top 3") (in $title "checklist") }}
+        {{ $categories = $categories | append "getting-started" }}
+      {{ end }}
+
+      {{/* Funding */}}
+      {{ if or (in $title "funding") (in $title "fund") (in $tags "funding") }}
+        {{ $categories = $categories | append "funding" }}
+      {{ end }}
+
+      {{/* Accelerators */}}
+      {{ if or (in $title "accelerator") (in $title "incubator") (in $tags "accelerators") }}
+        {{ $categories = $categories | append "accelerators" }}
+      {{ end }}
+
+      {{/* Location-based */}}
+      {{ if or (in $title "king county") (in $title "pierce county") (in $title "snohomish") (in $title "regional") (in $tags "king county") (in $tags "pierce county") }}
+        {{ $categories = $categories | append "location" }}
+      {{ end }}
+
+      {{/* For Founders (identity-based) */}}
+      {{ if or (in $title "women") (in $title "bipoc") (in $title "veteran") (in $tags "women founders") (in $tags "bipoc founders") (in $tags "veteran founders") }}
+        {{ $categories = $categories | append "founders" }}
+      {{ end }}
+
+      {{/* Industry */}}
+      {{ if or (in $title "climate") (in $title "ai") (in $title "tech") (in $tags "climate tech") (in $tags "ai") }}
+        {{ $categories = $categories | append "industry" }}
+      {{ end }}
+
+      <article class="guide-card group bg-white dark:bg-overcast-800 rounded-2xl border border-overcast-200 dark:border-overcast-700 overflow-hidden transition-all duration-300 hover:border-sound-400 dark:hover:border-sound-500 hover:shadow-xl hover:shadow-sound-500/10 dark:hover:shadow-sound-500/20 hover:-translate-y-1"
+               data-categories="{{ delimit $categories " " }}">
         <a href="{{ .Permalink }}" class="block p-6">
           <!-- Category Tag -->
           {{ with .Params.tags }}
@@ -81,6 +153,18 @@
       </article>
       {{ end }}
     </div>
+
+    <!-- No Results Message (hidden by default) -->
+    <div id="no-results" class="hidden text-center py-20">
+      <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-overcast-100 dark:bg-overcast-800 flex items-center justify-center">
+        <span class="text-4xl">🔍</span>
+      </div>
+      <h3 class="font-display font-bold text-xl text-overcast-700 dark:text-overcast-200 mb-2">No guides match this filter</h3>
+      <p class="text-overcast-500 dark:text-overcast-400 mb-4">Try selecting a different category or browse all guides.</p>
+      <button onclick="document.querySelector('[data-filter=all]').click()" class="text-sound-600 dark:text-sound-400 font-medium hover:underline">
+        Show all guides →
+      </button>
+    </div>
     {{ else }}
     <!-- Empty State -->
     <div class="text-center py-20">
@@ -113,4 +197,53 @@
     </div>
   </section>
 </div>
+
+<!-- Filter JavaScript -->
+<script>
+(function() {
+  const filters = document.querySelectorAll('.guide-filter');
+  const cards = document.querySelectorAll('.guide-card');
+  const noResults = document.getElementById('no-results');
+
+  filters.forEach(filter => {
+    filter.addEventListener('click', function() {
+      const category = this.dataset.filter;
+
+      // Update active state
+      filters.forEach(f => {
+        f.classList.remove('active', 'ring-2', 'ring-offset-2', 'ring-sound-500', 'dark:ring-offset-overcast-900');
+      });
+      this.classList.add('active', 'ring-2', 'ring-offset-2', 'ring-sound-500', 'dark:ring-offset-overcast-900');
+
+      // Filter cards
+      let visibleCount = 0;
+      cards.forEach(card => {
+        const cardCategories = card.dataset.categories.split(' ');
+        if (category === 'all' || cardCategories.includes(category)) {
+          card.style.display = '';
+          card.style.opacity = '1';
+          card.style.transform = 'scale(1)';
+          visibleCount++;
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'scale(0.95)';
+          setTimeout(() => {
+            if (!cardCategories.includes(document.querySelector('.guide-filter.active').dataset.filter) &&
+                document.querySelector('.guide-filter.active').dataset.filter !== 'all') {
+              card.style.display = 'none';
+            }
+          }, 200);
+        }
+      });
+
+      // Show/hide no results message
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
+    });
+  });
+})();
+</script>
 {{ end }}
