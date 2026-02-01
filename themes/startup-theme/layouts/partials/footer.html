@@ -94,7 +94,7 @@
             {{ range $key, $value := .Site.Params.industries }}
             {{ if and (ne $key "general") (ne $key "hardware") (ne $key "food") (ne $key "creative") }}
             <li>
-              <a href="/industries/{{ $key }}/" class="text-overcast-400 hover:text-sound-400 transition-colors duration-200 text-sm flex items-center group">
+              <a href="/resources/?industry={{ $key }}" class="text-overcast-400 hover:text-sound-400 transition-colors duration-200 text-sm flex items-center group">
                 <span class="w-1.5 h-1.5 rounded-full bg-violet-500 mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200"></span>
                 {{ $value }}
               </a>
