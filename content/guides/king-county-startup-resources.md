@@ -96,7 +96,7 @@ Seattle's physical spaces range from traditional coworking to specialized fabric
 
 ## Eastside Resources (55 Programs)
 
-The Eastside corridor—Bellevue, Redmond, Kirkland, Issaquah, and Renton—has built its own thriving ecosystem, often with less competition for resources than Seattle proper.
+The Eastside corridor (Bellevue, Redmond, Kirkland, Issaquah, and Renton) has built its own thriving ecosystem, often with less competition for resources than Seattle proper.
 
 ### Startup425 Alliance
 
@@ -141,7 +141,7 @@ King County Library System (KCLS) provides business resources that would cost $1
 
 ## South King County Resources
 
-South King County cities—Renton, Kent, Federal Way, Auburn, Des Moines—often have programs specifically designed for Main Street businesses and diverse founders.
+South King County cities (Renton, Kent, Federal Way, Auburn, Des Moines) often have programs specifically designed for Main Street businesses and diverse founders.
 
 ### Economic Development Offices
 

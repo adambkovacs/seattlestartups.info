@@ -12,7 +12,7 @@ audiences: ["bipoc"]
 
 Greater Seattle has **34 verified programs** specifically designed for BIPOC founders. This guide covers accelerators, funding, mentorship, and community organizations that prioritize Black, Indigenous, Latino/a, Asian, and Pacific Islander entrepreneurs.
 
-## The BIPOC Startup Landscape in Seattle
+## BIPOC Startup Resources in Seattle
 
 Seattle's tech ecosystem has historically underrepresented BIPOC founders. These programs exist to change that reality:
 
@@ -246,7 +246,7 @@ With 34+ programs specifically for BIPOC founders, here's how to prioritize base
 
 ## Success Stories
 
-These Greater Seattle BIPOC founders have leveraged local resources:
+These Greater Seattle BIPOC founders have used local resources:
 
 | Founder | Company | Resources Used | Outcome |
 |---------|---------|----------------|---------|
