@@ -96,3 +96,16 @@ theme = 'startup-theme'
   mediaType = "application/json"
   baseName = "index"
   isPlainText = true
+
+# Sitemap configuration
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Page-specific sitemap priorities
+[params.sitemap]
+  home_priority = 1.0
+  guides_priority = 0.9
+  resources_priority = 0.8
+  cities_priority = 0.7

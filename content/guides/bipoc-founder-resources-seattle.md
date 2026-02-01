@@ -54,7 +54,7 @@ SEA619 offers a multi-stage pathway from Association to Incubator to Accelerator
 
 ### AWS Impact Accelerator
 
-Amazon's 10-week virtual program provides $125,000 in AWS credits specifically for underrepresented founders.
+Amazon's 8-week virtual program provides up to $225,000 in total value for underrepresented founders.
 
 **Eligibility:**
 - Black, Women, or LatinX founders
@@ -62,7 +62,8 @@ Amazon's 10-week virtual program provides $125,000 in AWS credits specifically f
 - Building on or planning to use AWS
 
 **What You Get:**
-- $125,000 AWS credits
+- $125,000 cash
+- Up to $100,000 AWS credits
 - Technical architecture support
 - Go-to-market mentorship
 - Demo day with investors

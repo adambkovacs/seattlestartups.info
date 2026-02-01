@@ -26,7 +26,7 @@ Greater Seattle hosts **28 accelerators and incubators** accepting applications 
 | Maritime Blue Accelerator | 4 months | Free | 0% | Maritime startups |
 | Plug and Play Seattle | 12 weeks | Free | 0% | Enterprise tech |
 | Graham & Walker Catalyst | Varies | Free | 0% | Female founders |
-| AWS Impact Accelerator | 10 weeks | Free | 0% | Underrepresented |
+| AWS Impact Accelerator | 8 weeks | Free | 0% | Underrepresented |
 | UW Climate Tech Incubator | 8 months | Free | 0% | Climate tech |
 | Seattle Climate Innovation Hub | Ongoing | Free | 0% | Clean energy |
 | Jones + Foster Accelerator | 6 months | Free | 0% | WA students** |
@@ -189,18 +189,17 @@ The Eastside's primary accelerator runs dual tracks for VC-backed and Main Stree
 
 ### 6. AWS Impact Accelerator
 
-Amazon's virtual program specifically for underrepresented founders offers exceptional resources.
+Amazon's 8-week virtual program provides up to $225,000 total value for underrepresented founders.
 
-**What $125K in AWS Credits Actually Means:**
-- Covers compute, storage, AI/ML services
-- Enables startups to scale without infrastructure cost
-- Equivalent to 18-24 months of typical cloud spend
-
-**Program Benefits Beyond Credits:**
+**What You Get:**
+- $125,000 cash investment
+- Up to $100,000 AWS credits (covers compute, storage, AI/ML services)
 - Technical architecture reviews
 - Go-to-market mentorship
 - AWS partner network introductions
 - Demo day with VC audience
+
+**Note:** The AWS credits alone enable startups to scale without infrastructure cost for 18-24 months.
 
 ### 7. Cascadia CleanTech Accelerator
 

@@ -1,0 +1,19 @@
+# Seattle Startups robots.txt
+# https://seattlestartups.info
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://seattlestartups.info/sitemap.xml
+
+# Allow all search engines to crawl the site
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block crawling of admin/dev paths (if any)
+Disallow: /admin/
+Disallow: /.git/
