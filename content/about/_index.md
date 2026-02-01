@@ -3,7 +3,7 @@ title: "About Seattle Startups"
 description: "The story behind Greater Seattle's community-maintained startup resource directory"
 ---
 
-## Our Origin Story
+## Origin Story
 
 I spent six weeks hunting for startup resources when I first landed in Seattle. Six. Weeks.
 
@@ -13,14 +13,14 @@ So I built what I needed: **one place with everything**.
 
 ---
 
-## What We Actually Do
+## What This Directory Does
 
-We maintain a verified directory of **248+ free resources** across the Greater Seattle metro area. Every listing meets strict criteria before publication.
+I maintain a verified directory of **248+ free resources** across the Greater Seattle metro area.
 
-### Our Verification Standards
+### How Resources Get Listed
 
-| Requirement | What We Check |
-|-------------|---------------|
+| Requirement | What I Check |
+|-------------|--------------|
 | **Official URL** | Links to resource owner or authoritative host |
 | **Clear Owner** | Identifiable organization stands behind the offer |
 | **Specific Offer** | Concrete description—not vague "support for founders" language |
@@ -28,35 +28,27 @@ We maintain a verified directory of **248+ free resources** across the Greater S
 | **Geographic Proof** | Confirmed service area within Greater Seattle |
 | **Active Status** | Verified within the last 12 months |
 
-### How We Classify Resources
-
-Resources get one of three proof-of-life ratings:
-
-1. **Government Evergreen** — Stable public services with persistent budget allocations (SBDC offices, library programs, state agencies)
-2. **Active Program** — Current cohort deadlines, scheduled events, or open applications visible on the site
-3. **Recent Activity** — Official site shows updates within the past 12 months
-
 ---
 
-## What We Won't List
+## What's Not Listed
 
-We have a simple filter: **if founders have to pay, it's not here**.
+Simple filter: **if founders have to pay, it's not here**.
 
-This means we exclude:
+This means I exclude:
 
 - Programs with tuition, fees, or subscription costs
 - Accelerators that take equity (that's payment)
 - Pay-to-play directories and sponsored listings
 - Affiliate or referral-driven content
-- Anything we can't independently verify
+- Anything I can't independently verify
 
-Zero exceptions. We don't monetize this directory.
+Zero exceptions. I don't monetize this directory.
 
 ---
 
 ## Coverage by County
 
-Our focus is the Greater Seattle metropolitan area—what locals call the Puget Sound region.
+The focus is the Greater Seattle metropolitan area—what locals call the Puget Sound region.
 
 | County | Major Cities | Resources |
 |--------|--------------|-----------|
@@ -66,7 +58,7 @@ Our focus is the Greater Seattle metropolitan area—what locals call the Puget 
 | **Thurston** | Olympia, Lacey, Tumwater | 14+ |
 | **Kitsap** | Bremerton, Silverdale, Poulsbo | 10+ |
 
-Resource counts change as we verify new listings and retire inactive ones.
+Resource counts change as I verify new listings and retire inactive ones.
 
 ---
 
@@ -74,20 +66,20 @@ Resource counts change as we verify new listings and retire inactive ones.
 
 This is an open-source project. The more eyes on it, the better it gets.
 
-**Found a resource we're missing?**
-→ [Submit an issue on GitHub](https://github.com/adambkovacs/seattlestartups.info/issues/new)
+**Found a resource I'm missing?**
+→ [Submit a new resource](https://github.com/adambkovacs/seattlestartups.info/issues/new?template=new-resource.md&title=%5BResource%5D+)
 
 **Want to help maintain listings?**
-→ [Read our contribution guidelines](https://github.com/adambkovacs/seattlestartups.info/blob/main/CONTRIBUTING.md)
+→ [Read the contribution guidelines](https://github.com/adambkovacs/seattlestartups.info/blob/main/CONTRIBUTING.md)
 
 **Spotted outdated information?**
-→ Open a PR or drop a comment. We respond within 48 hours.
+→ Open a PR or drop a comment. I respond within 48 hours.
 
 ---
 
-## About the Maintainer
+## About Me
 
-This project is built and maintained by **Adam Kovacs**, a Seattle-based technologist who got tired of answering "where do I find X?" for every founder friend who moved here.
+I'm **Adam Kovacs**, based in Seattle. I got tired of answering "where do I find X?" for every founder friend who moved here, so I built this.
 
 I also run the [AI Enablement Academy](https://aienablementacademy.com), help organize [OPEN Talent Society](https://opentalentsociety.org), and occasionally post useful things on [LinkedIn](https://www.linkedin.com/in/adambkovacs/).
 

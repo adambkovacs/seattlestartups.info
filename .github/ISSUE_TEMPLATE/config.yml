@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "General Questions"
+    url: "https://www.linkedin.com/in/adambkovacs/"
+    about: "Have a question? Reach out on LinkedIn"
+  - name: "View Documentation"
+    url: "https://github.com/adambkovacs/seattlestartups.info/blob/main/CONTRIBUTING.md"
+    about: "Read the contribution guidelines before submitting"

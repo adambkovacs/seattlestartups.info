@@ -31,6 +31,7 @@ build/
 /public/
 /resources/_gen/
 .hugo_build.lock
+hugo_stats.json
 
 # IDE
 .idea/
@@ -48,6 +49,11 @@ pnpm-debug.log*
 # Testing
 coverage/
 .nyc_output/
+playwright-report/
+test-results/
+screenshots/
+*.test.mjs
+axe-*.mjs
 
 # Temporary
 tmp/

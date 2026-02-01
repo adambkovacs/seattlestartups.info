@@ -25,23 +25,25 @@
           {{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}
         </p>
 
-        <!-- Live Stats Bar -->
-        <div class="flex flex-wrap items-center gap-6 text-sm font-mono text-overcast-500 dark:text-overcast-400">
-          <div class="flex items-center gap-2">
-            <span class="inline-block w-2 h-2 rounded-full bg-fir-500 animate-pulse"></span>
-            <span id="resource-count" class="font-bold text-overcast-900 dark:text-white">0</span>
-            <span>resources</span>
+        <!-- Live Stats Bar - Enhanced -->
+        <div class="flex flex-wrap items-center gap-4 md:gap-6">
+          <!-- Primary stat: Showing count (most prominent) -->
+          <div class="flex items-center gap-3 px-4 py-2.5 bg-fir-500/10 dark:bg-fir-500/20 rounded-xl border border-fir-200 dark:border-fir-800">
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-fir-500 animate-pulse"></span>
+            <span class="text-2xl md:text-3xl font-display font-bold text-fir-700 dark:text-fir-300" id="filtered-count">0</span>
+            <span class="text-sm font-medium text-fir-600 dark:text-fir-400">showing</span>
           </div>
-          <div class="flex items-center gap-2">
-            <span class="text-overcast-300 dark:text-overcast-600">|</span>
-            <span id="filtered-count" class="font-bold text-overcast-900 dark:text-white">0</span>
-            <span>showing</span>
+          <!-- Secondary stat: Total count -->
+          <div class="flex items-center gap-2 text-sm font-mono text-overcast-500 dark:text-overcast-400">
+            <span>of</span>
+            <span id="resource-count" class="font-bold text-overcast-700 dark:text-overcast-200">0</span>
+            <span>total</span>
           </div>
-          <div class="flex items-center gap-2">
-            <span class="text-overcast-300 dark:text-overcast-600">|</span>
-            <button id="sort-toggle" class="flex items-center gap-1 hover:text-sound-600 dark:hover:text-sound-400 transition-colors cursor-pointer">
+          <!-- Sort toggle -->
+          <div class="flex items-center gap-2 ml-auto">
+            <button id="sort-toggle" class="flex items-center gap-2 px-3 py-1.5 rounded-lg border border-overcast-200 dark:border-overcast-600 hover:border-sound-300 dark:hover:border-sound-600 text-sm font-medium text-overcast-600 dark:text-overcast-300 hover:text-sound-600 dark:hover:text-sound-400 transition-colors cursor-pointer">
               <span id="sort-label">A → Z</span>
-              <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"/>
               </svg>
             </button>
@@ -307,6 +309,27 @@
 
   <!-- Resources Grid -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Results Summary Banner (visible when filters active) -->
+    <div id="results-banner" class="hidden mb-8 p-4 bg-gradient-to-r from-sound-50 to-fir-50 dark:from-sound-900/20 dark:to-fir-900/20 rounded-2xl border border-sound-200/50 dark:border-sound-800/50">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-4">
+          <div class="flex items-center gap-2">
+            <span class="text-3xl md:text-4xl font-display font-black text-sound-600 dark:text-sound-400" id="banner-count">0</span>
+            <div class="flex flex-col">
+              <span class="text-sm font-semibold text-overcast-700 dark:text-overcast-200">resources found</span>
+              <span class="text-xs text-overcast-500 dark:text-overcast-400">matching your filters</span>
+            </div>
+          </div>
+        </div>
+        <button onclick="clearAllFilters()" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-sound-600 dark:text-sound-400 hover:text-sound-700 dark:hover:text-sound-300 border border-sound-300 dark:border-sound-700 rounded-lg hover:bg-sound-50 dark:hover:bg-sound-900/30 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+          Clear filters
+        </button>
+      </div>
+    </div>
+
     {{/* Collect all resources from YAML data files and sort alphabetically */}}
     {{ $allResources := slice }}
     {{ with $.Site.Data.resources }}
@@ -391,6 +414,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const cards = resourcesGrid ? resourcesGrid.querySelectorAll('[data-resource-card]') : [];
   const resourceCount = document.getElementById('resource-count');
   const filteredCount = document.getElementById('filtered-count');
+  const bannerCount = document.getElementById('banner-count');
+  const resultsBanner = document.getElementById('results-banner');
   const noResults = document.getElementById('no-results');
   const filterPanel = document.getElementById('filter-panel');
   const filterToggle = document.getElementById('filter-toggle');
@@ -568,8 +593,9 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    // Update count
+    // Update counts (both hero and banner)
     if (filteredCount) filteredCount.textContent = visibleCount;
+    if (bannerCount) bannerCount.textContent = visibleCount;
 
     // Show/hide no results
     if (noResults && resourcesGrid) {
@@ -577,7 +603,7 @@ document.addEventListener('DOMContentLoaded', function() {
       resourcesGrid.classList.toggle('hidden', visibleCount === 0);
     }
 
-    // Show/hide clear button
+    // Show/hide clear button and results banner
     const hasActiveFilters = filters.search ||
       filters.categories.length > 0 ||
       filters.counties.length > 0 ||
@@ -590,6 +616,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (clearFiltersBtn) {
       clearFiltersBtn.classList.toggle('hidden', !hasActiveFilters);
       clearFiltersBtn.classList.toggle('flex', hasActiveFilters);
+    }
+
+    // Show results banner when filters are active
+    if (resultsBanner) {
+      resultsBanner.classList.toggle('hidden', !hasActiveFilters);
     }
   }
 
