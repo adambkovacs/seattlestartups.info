@@ -403,3 +403,399 @@ div[class*="prose"] em {
 .dark div[class*="prose"] em {
   color: #67e8f9 !important;
 }
+
+/* ============================================
+   ELASTIC & BOUNCY ANIMATIONS
+   Spring physics for delightful interactions
+   ============================================ */
+
+/* Spring Timing Functions */
+:root {
+  /* Gentle spring - slight overshoot */
+  --spring-gentle: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Medium spring - noticeable bounce */
+  --spring-medium: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* Snappy spring - quick with snap-back */
+  --spring-snappy: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  /* Elastic - multiple oscillations */
+  --spring-elastic: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+  /* Soft landing - gentle deceleration */
+  --spring-soft: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* ============================================
+   LINK HOVER EFFECTS - Elastic underline
+   ============================================ */
+
+/* Prose links get elastic underline animation */
+article .prose a,
+section .prose a,
+.prose-lg a,
+div[class*="prose"] a {
+  position: relative !important;
+  text-decoration: none !important;
+  transition: color 0.3s var(--spring-gentle) !important;
+}
+
+article .prose a::after,
+section .prose a::after,
+.prose-lg a::after,
+div[class*="prose"] a::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -2px !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 2px !important;
+  background: linear-gradient(90deg, #0891b2, #059669) !important;
+  transform: scaleX(0) !important;
+  transform-origin: right !important;
+  transition: transform 0.4s var(--spring-elastic) !important;
+}
+
+article .prose a:hover::after,
+section .prose a:hover::after,
+.prose-lg a:hover::after,
+div[class*="prose"] a:hover::after {
+  transform: scaleX(1) !important;
+  transform-origin: left !important;
+}
+
+/* ============================================
+   BUTTON BOUNCE EFFECTS
+   ============================================ */
+
+/* All buttons get spring hover */
+button,
+[role="button"],
+a[class*="btn"],
+a[class*="button"],
+.btn,
+.button {
+  transition:
+    transform 0.3s var(--spring-medium),
+    box-shadow 0.3s var(--spring-gentle),
+    background-color 0.2s ease !important;
+}
+
+button:hover,
+[role="button"]:hover,
+a[class*="btn"]:hover,
+a[class*="button"]:hover,
+.btn:hover,
+.button:hover {
+  transform: translateY(-2px) scale(1.02) !important;
+}
+
+button:active,
+[role="button"]:active,
+a[class*="btn"]:active,
+a[class*="button"]:active,
+.btn:active,
+.button:active {
+  transform: translateY(1px) scale(0.98) !important;
+  transition-duration: 0.1s !important;
+}
+
+/* ============================================
+   CARD HOVER EFFECTS - Enhanced bouncy
+   ============================================ */
+
+/* Cards get lift + subtle rotation */
+article[data-resource-card],
+[class*="card"],
+.card {
+  transition:
+    transform 0.4s var(--spring-medium),
+    box-shadow 0.4s var(--spring-gentle) !important;
+}
+
+article[data-resource-card]:hover,
+[class*="card"]:hover,
+.card:hover {
+  transform: translateY(-8px) rotate(0.5deg) !important;
+  box-shadow:
+    0 20px 40px -15px rgba(0, 0, 0, 0.15),
+    0 0 0 1px rgba(8, 145, 178, 0.1) !important;
+}
+
+.dark article[data-resource-card]:hover,
+.dark [class*="card"]:hover,
+.dark .card:hover {
+  box-shadow:
+    0 20px 40px -15px rgba(0, 0, 0, 0.4),
+    0 0 0 1px rgba(13, 148, 136, 0.2) !important;
+}
+
+/* ============================================
+   NAVIGATION LINK BOUNCES
+   ============================================ */
+
+nav a,
+header a,
+footer a {
+  transition:
+    color 0.2s ease,
+    transform 0.3s var(--spring-snappy) !important;
+  display: inline-block !important;
+}
+
+nav a:hover,
+header a:hover {
+  transform: translateY(-1px) !important;
+}
+
+footer a:hover {
+  transform: translateX(3px) !important;
+}
+
+/* ============================================
+   ICON BOUNCE ON HOVER
+   ============================================ */
+
+svg,
+[class*="icon"],
+.icon {
+  transition: transform 0.3s var(--spring-elastic) !important;
+}
+
+a:hover svg,
+button:hover svg,
+a:hover [class*="icon"],
+button:hover [class*="icon"] {
+  transform: scale(1.15) rotate(5deg) !important;
+}
+
+/* ============================================
+   BADGE/TAG PILL ANIMATIONS
+   ============================================ */
+
+[class*="badge"],
+[class*="tag"],
+[class*="pill"],
+span[class*="rounded-full"] {
+  transition:
+    transform 0.25s var(--spring-snappy),
+    background-color 0.2s ease,
+    box-shadow 0.25s ease !important;
+}
+
+[class*="badge"]:hover,
+[class*="tag"]:hover,
+[class*="pill"]:hover {
+  transform: scale(1.08) !important;
+}
+
+/* ============================================
+   TABLE ROW HOVER - Subtle bounce
+   ============================================ */
+
+article .prose tbody tr,
+section .prose tbody tr,
+.prose-lg tbody tr,
+div[class*="prose"] tbody tr {
+  transition:
+    background-color 0.2s ease,
+    transform 0.3s var(--spring-gentle) !important;
+}
+
+article .prose tbody tr:hover,
+section .prose tbody tr:hover,
+.prose-lg tbody tr:hover,
+div[class*="prose"] tbody tr:hover {
+  transform: scale(1.005) !important;
+}
+
+/* ============================================
+   LIST ITEM STAGGER ANIMATION
+   ============================================ */
+
+article .prose li,
+section .prose li,
+.prose-lg li,
+div[class*="prose"] li {
+  transition:
+    transform 0.3s var(--spring-medium),
+    opacity 0.3s ease !important;
+}
+
+article .prose li:hover,
+section .prose li:hover,
+.prose-lg li:hover,
+div[class*="prose"] li:hover {
+  transform: translateX(4px) !important;
+}
+
+/* Bullet/number bounce on list hover */
+article .prose li:hover::before,
+section .prose li:hover::before,
+.prose-lg li:hover::before,
+div[class*="prose"] li:hover::before {
+  transform: scale(1.2) !important;
+  transition: transform 0.3s var(--spring-elastic) !important;
+}
+
+/* ============================================
+   SCROLL-TRIGGERED ANIMATIONS
+   Uses Intersection Observer classes
+   ============================================ */
+
+/* Fade up with bounce */
+.animate-fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.8s var(--spring-medium) !important;
+}
+
+.animate-fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scale in with bounce */
+.animate-scale-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition:
+    opacity 0.5s ease,
+    transform 0.6s var(--spring-elastic) !important;
+}
+
+.animate-scale-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Slide in from left with spring */
+.animate-slide-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.7s var(--spring-medium) !important;
+}
+
+.animate-slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide in from right with spring */
+.animate-slide-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition:
+    opacity 0.5s ease,
+    transform 0.7s var(--spring-medium) !important;
+}
+
+.animate-slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* ============================================
+   STAGGER DELAY UTILITIES
+   For sequential element animations
+   ============================================ */
+
+.stagger-1 { transition-delay: 0.05s !important; }
+.stagger-2 { transition-delay: 0.1s !important; }
+.stagger-3 { transition-delay: 0.15s !important; }
+.stagger-4 { transition-delay: 0.2s !important; }
+.stagger-5 { transition-delay: 0.25s !important; }
+.stagger-6 { transition-delay: 0.3s !important; }
+.stagger-7 { transition-delay: 0.35s !important; }
+.stagger-8 { transition-delay: 0.4s !important; }
+
+/* ============================================
+   MICRO-INTERACTIONS - Jelly & Wiggle
+   ============================================ */
+
+/* Jelly effect on click */
+@keyframes jelly-click {
+  0% { transform: scale(1); }
+  25% { transform: scale(0.95, 1.05); }
+  50% { transform: scale(1.05, 0.95); }
+  75% { transform: scale(0.98, 1.02); }
+  100% { transform: scale(1); }
+}
+
+.jelly-click:active {
+  animation: jelly-click 0.5s ease !important;
+}
+
+/* Wiggle on attention */
+@keyframes wiggle-attention {
+  0%, 100% { transform: rotate(0deg); }
+  20% { transform: rotate(-3deg); }
+  40% { transform: rotate(3deg); }
+  60% { transform: rotate(-2deg); }
+  80% { transform: rotate(2deg); }
+}
+
+.wiggle:hover {
+  animation: wiggle-attention 0.6s ease-in-out !important;
+}
+
+/* Pulse glow effect */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(8, 145, 178, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 20px 5px rgba(8, 145, 178, 0.2);
+  }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite !important;
+}
+
+/* ============================================
+   FOCUS STATES - Accessible spring effects
+   ============================================ */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #0891b2 !important;
+  outline-offset: 3px !important;
+  transition: outline-offset 0.2s var(--spring-snappy) !important;
+}
+
+a:focus-visible:not(:active),
+button:focus-visible:not(:active) {
+  transform: scale(1.02) !important;
+}
+
+/* ============================================
+   REDUCED MOTION - Respect user preferences
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-fade-up,
+  .animate-scale-in,
+  .animate-slide-left,
+  .animate-slide-right {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
