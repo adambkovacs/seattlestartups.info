@@ -92,6 +92,22 @@
 
   {{ block "head" . }}{{ end }}
 
+  <!-- CRITICAL: Dark mode sun-break button fix - inline styles that CANNOT be overridden -->
+  <style>
+    .dark .sun-break,
+    .dark .sun-break *,
+    .dark .sun-break span,
+    .dark a.sun-break,
+    .dark a.sun-break * {
+      color: #ffffff !important;
+      -webkit-text-fill-color: #ffffff !important;
+    }
+    .dark .sun-break svg,
+    .dark a.sun-break svg {
+      stroke: #ffffff !important;
+    }
+  </style>
+
   <!-- GEO Meta Tags for AI Citation Optimization -->
   {{ partial "geo-meta.html" . }}
 

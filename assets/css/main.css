@@ -92,10 +92,36 @@
     background: linear-gradient(135deg, #0891b2 0%, #0d9488 50%, #059669 100%);
   }
 
-  /* Dark mode sun-break - deeper colors for white text readability (WCAG 4.5:1) */
+  /* Dark mode sun-break - deep rich colors for maximum white text contrast */
   .dark .sun-break {
-    background: linear-gradient(135deg, #0369a1 0%, #0f766e 50%, #047857 100%);
-    box-shadow: 0 4px 12px -2px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(135deg, #083344 0%, #134e4a 50%, #064e3b 100%);
+    box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    color: #ffffff !important;
+  }
+
+  .dark .sun-break:hover {
+    background: linear-gradient(135deg, #0c4a6e 0%, #115e59 50%, #065f46 100%);
+    box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  }
+
+  /* CRITICAL: Ensure ALL text/icons inside sun-break buttons stay white in dark mode */
+  .dark .sun-break,
+  .dark .sun-break *,
+  .dark .sun-break span,
+  .dark .sun-break svg,
+  .dark a.sun-break,
+  .dark a.sun-break * {
+    color: #ffffff !important;
+    stroke: #ffffff !important;
+    fill: none !important;
+  }
+
+  /* Force text-white to work on sun-break in dark mode */
+  .dark .sun-break.text-white,
+  .dark .text-white.sun-break,
+  .dark a.sun-break.text-white * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
   }
 
   .text-sun-break {
@@ -387,17 +413,17 @@
     line-height: 1;
   }
 
-  /* Stagger children animation */
+  /* Stagger children animation - smooth and elegant */
   .stagger-children > * {
-    animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+    animation: slideUpSmooth 0.6s cubic-bezier(0.22, 1, 0.36, 1) backwards;
   }
 
-  .stagger-children > *:nth-child(1) { animation-delay: 0.1s; }
-  .stagger-children > *:nth-child(2) { animation-delay: 0.2s; }
-  .stagger-children > *:nth-child(3) { animation-delay: 0.3s; }
-  .stagger-children > *:nth-child(4) { animation-delay: 0.4s; }
-  .stagger-children > *:nth-child(5) { animation-delay: 0.5s; }
-  .stagger-children > *:nth-child(6) { animation-delay: 0.6s; }
+  .stagger-children > *:nth-child(1) { animation-delay: 0.05s; }
+  .stagger-children > *:nth-child(2) { animation-delay: 0.1s; }
+  .stagger-children > *:nth-child(3) { animation-delay: 0.15s; }
+  .stagger-children > *:nth-child(4) { animation-delay: 0.2s; }
+  .stagger-children > *:nth-child(5) { animation-delay: 0.25s; }
+  .stagger-children > *:nth-child(6) { animation-delay: 0.3s; }
 
   /* ============================================
      PROSE STYLES - Exceptional Reading Experience
@@ -903,6 +929,11 @@
 
 @keyframes slideUp {
   0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes slideUpSmooth {
+  0% { transform: translateY(12px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
 }
 
@@ -1789,3 +1820,55 @@ div[class*="prose"] em {
 }
 
 } /* End @layer utilities for editorial styles */
+
+/* ============================================
+   CRITICAL: Dark Mode Sun-Break Button Fix
+   ============================================
+   This MUST be outside of any @layer block to ensure
+   it takes precedence over Tailwind's utility classes.
+   CSS outside layers wins over layered CSS in the cascade.
+   ============================================ */
+
+/* Force white text on ALL sun-break buttons in dark mode */
+.dark .sun-break {
+  color: #ffffff !important;
+}
+
+.dark .sun-break * {
+  color: #ffffff !important;
+}
+
+.dark .sun-break span {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.dark .sun-break svg {
+  color: #ffffff !important;
+  stroke: #ffffff !important;
+}
+
+.dark a.sun-break {
+  color: #ffffff !important;
+}
+
+.dark a.sun-break * {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* Override Tailwind's text-white specifically for sun-break in dark mode */
+.dark .sun-break.text-white {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.dark .text-white.sun-break {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.dark a.sun-break.text-white span {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
