@@ -35,11 +35,11 @@ Seattle's accelerator scene goes beyond typical tech programs. You'll find speci
 
 | Program | Duration | What You Get | Best For |
 |---------|----------|--------------|----------|
-| WTIA Founder Cohort | 6 months | Curriculum, mentors, investor intros | Seed-stage tech (<$1M revenue) |
-| Foundations Seattle | Ongoing | Office space, pitch clinics, founder circles | Early-stage (invite-only) |
-| SEA619 | 12 months | Multi-stage pathway, BIPOC focus | Black founders |
-| CoMotion Labs | Varies | Lab space, lectures, advisor network | Pre-Series A life science, hardware |
-| AI House Seattle | Ongoing | 108K sq ft hub, events, coworking | AI/ML practitioners |
+| [WTIA Founder Cohort](/resources/wtia-founder-cohort/) | 6 months | Curriculum, mentors, investor intros | Seed-stage tech (<$1M revenue) |
+| [Foundations Seattle](/resources/foundations-seattle/) | Ongoing | Office space, pitch clinics, founder circles | Early-stage (invite-only) |
+| [SEA619](/resources/sea619/) | 12 months | Multi-stage pathway, BIPOC focus | Black founders |
+| [CoMotion Labs](/resources/comotion-labs/) | Varies | Lab space, lectures, advisor network | Pre-Series A life science, hardware |
+| [AI House Seattle](/resources/ai-house-seattle/) | Ongoing | 108K sq ft hub, events, coworking | AI/ML practitioners |
 | Seattle Climate Innovation Hub | 8 months | Climate tech incubation, investor network | Clean energy startups |
 
 ### How to Apply to Seattle Accelerators
@@ -54,13 +54,13 @@ Seattle's accelerator scene goes beyond typical tech programs. You'll find speci
 
 Seattle's mentorship programs provide 1:1 access to experienced founders and operators. The quality of advice often exceeds what you'd pay $500/hour for elsewhere.
 
-**SCORE Greater Seattle** stands out with 160+ volunteer mentors across 62 industries. You can request a mentor at score.org/seattle and typically get matched within 2 weeks.
+**[SCORE Greater Seattle](/resources/score-greater-seattle/)** stands out with 160+ volunteer mentors across 62 industries. You can request a mentor at score.org/seattle and typically get matched within 2 weeks.
 
 Other mentorship options include:
 
-- **Washington SBDC Seattle** - No-cost business advising at the Auburn, Bellevue, or Des Moines offices
+- **[Washington SBDC Seattle](/resources/seattle-sbdc/)** - No-cost business advising at the Auburn, Bellevue, or Des Moines offices
 - **Seattle OED Consulting** - Up to 10 free hours of professional consulting (accounting, legal, permits)
-- **CoMotion Advisory Network** - Access UW's mentor community as an incubator member
+- **[CoMotion Advisory Network](/resources/comotion-advisory-network/)** - Access UW's mentor community as an incubator member
 - **WE Lead Mentoring** - 1:1 mentoring for women entrepreneurs (apply each November)
 
 ### Funding Resources Based in Seattle
@@ -69,10 +69,10 @@ Seattle offers multiple non-dilutive funding paths before you need VC capital.
 
 | Program | Amount | Type | Eligibility |
 |---------|--------|------|-------------|
-| Seattle Capital Access Program | Up to $30K | Loan subsidy (pays down 20%) | For-profit, 12+ months operation |
-| Dempsey Startup Competition | Up to $25K | Prize | UW-affiliated students |
-| Hollomon Health Innovation Challenge | $15K+ | Prize | Health prototypes |
-| Alaska Airlines Environmental Challenge | Varies | Prize | Environmental innovation |
+| [Seattle Capital Access Program](/resources/capital-access-program/) | Up to $30K | Loan subsidy (pays down 20%) | For-profit, 12+ months operation |
+| [Dempsey Startup Competition](/resources/dempsey-startup-competition/) | Up to $25K | Prize | UW-affiliated students |
+| [Hollomon Health Innovation Challenge](/resources/hollomon-health-innovation-challenge/) | $15K+ | Prize | Health prototypes |
+| [Alaska Airlines Environmental Challenge](/resources/alaska-airlines-environmental-challenge/) | Varies | Prize | Environmental innovation |
 | Seattle Restored | $2,500 stipend | Grant + free lease | Retail/pop-up concepts |
 
 ### Coworking and Makerspaces in Seattle
@@ -82,13 +82,13 @@ Seattle's physical spaces range from traditional coworking to specialized fabric
 **Free and Low-Cost Options:**
 
 - **Seattle Public Library meeting rooms** - Free reservable spaces at 27 branches
-- **Capitol Hill Tool Library** - Borrow tools, attend skill workshops
+- **[Capitol Hill Tool Library](/resources/capitol-hill-tool-library/)** - Borrow tools, attend skill workshops
 - **West Seattle Tool Library** - Free tool access plus Fix-It Nights
 - **Seattle Makers** - Scholarship program for underrepresented makers
 
 **Incubator Spaces:**
 
-- **Foundations Seattle** - Office space for early-stage founders (invite-only)
+- **[Foundations Seattle](/resources/foundations-seattle/)** - Office space for early-stage founders (invite-only)
 - **SURF Incubator Free Wednesdays** - Drop in to work and network at no cost
 - **Spice Bridge / FIN Kitchen** - Commercial kitchen space in Tukwila for food entrepreneurs
 
@@ -104,8 +104,8 @@ Startup425 is the primary coordinator for Eastside entrepreneurship. The allianc
 
 **Key Startup425 Programs:**
 
-1. **Startup425 Accelerator** - 15-week program with mentorship, no equity taken, 39 graduates to date
-2. **Bellevue College Innovation Lab** - Business-ready and banking-ready prep targeting $300K revenue
+1. **[Startup425 Accelerator](/resources/startup425-accelerator/)** - 15-week program with mentorship, no equity taken, 39 graduates to date
+2. **[Bellevue College Innovation Lab](/resources/bellevue-college-innovation-lab/)** - Business-ready and banking-ready prep targeting $300K revenue
 3. **Eastside Entrepreneurs meetups** - Regular networking events across Eastside cities
 4. **City-specific liaisons** - Direct connections to Bellevue, Redmond, Kirkland, Issaquah, Renton economic development
 
@@ -113,22 +113,22 @@ Startup425 is the primary coordinator for Eastside entrepreneurship. The allianc
 
 | Program | Location | Focus | Key Benefit |
 |---------|----------|-------|-------------|
-| Startup425 Accelerator | Bellevue | General tech + Main Street | No equity, dual-track format |
-| Bellevue College Innovation Lab | Bellevue | Underserved entrepreneurs | Banking-ready preparation |
+| [Startup425 Accelerator](/resources/startup425-accelerator/) | Bellevue | General tech + Main Street | No equity, dual-track format |
+| [Bellevue College Innovation Lab](/resources/bellevue-college-innovation-lab/) | Bellevue | Underserved entrepreneurs | Banking-ready preparation |
 | Plug and Play Seattle | Everett | Enterprise, energy, health, cloud | Free office space included |
-| Global Innovation Exchange (GIX) | Bellevue | UW/Tsinghua partnership | Cross-cultural tech development |
+| [Global Innovation Exchange (GIX)](/resources/global-innovation-exchange-gix/) | Bellevue | UW/Tsinghua partnership | Cross-cultural tech development |
 
 ### Eastside Mentorship Options
 
 The Eastside offers specialized mentorship that differs from Seattle's programs:
 
-- **Bellevue SBDC** - Walk-in advising at Bellevue College
+- **[Bellevue SBDC](/resources/bellevue-sbdc/)** - Walk-in advising at Bellevue College
 - **SCORE Eastside chapters** - Local mentors familiar with Eastside business environment
-- **Microsoft for Startups** - Technical and go-to-market mentorship for B2B startups
+- **[Microsoft for Startups](/resources/microsoft-for-startups-founders-hub/)** - Technical and go-to-market mentorship for B2B startups
 
 ### Library Resources on the Eastside
 
-King County Library System (KCLS) provides business resources that would cost $10,000+ annually if purchased directly:
+[King County Library System (KCLS)](/resources/kcls-small-business-resources/) provides business resources that would cost $10,000+ annually if purchased directly:
 
 | Database | What It Does | Location |
 |----------|--------------|----------|
@@ -148,14 +148,14 @@ South King County cities (Renton, Kent, Federal Way, Auburn, Des Moines) often h
 Each city maintains an economic development office that can connect you to local resources:
 
 1. **Renton Economic Development** - Focus on aerospace and manufacturing startups
-2. **Kent Economic Development** - Logistics and distribution hub connections
-3. **Federal Way Economic Development** - Retail and service business support
-4. **Auburn SBDC** - Green River College partnership for advising
+2. **[Kent Economic Development](/resources/kent-economic-development/)** - Logistics and distribution hub connections
+3. **[Federal Way Economic Development](/resources/federal-way-economic-development/)** - Retail and service business support
+4. **[Auburn SBDC](/resources/auburn-sbdc/)** - Green River College partnership for advising
 
 ### South King County Funding
 
 - **Rainier Valley Community Development Fund** - Microloans for underserved communities
-- **Business Impact NW** - Small business loans with flexible terms
+- **[Business Impact NW](/resources/business-impact-nw/)** - Small business loans with flexible terms
 - **Craft3** - Community development loans for mission-driven businesses
 
 ---
@@ -166,24 +166,24 @@ With 142+ programs, prioritization matters. Here's how to approach the ecosystem
 
 ### If You're Validating an Idea
 
-1. Start with free training at **MyStartup365** (online) or **Seattle Public Library** workshops
-2. Schedule a **SCORE mentor** appointment to validate your concept
-3. Join **1 Million Cups Seattle** (Wednesday mornings) to practice your pitch
-4. Use **Seattle Public Library L2B** for market research databases
+1. Start with free training at **[MyStartup365](/resources/mystartup365/)** (online) or **Seattle Public Library** workshops
+2. Schedule a **[SCORE mentor](/resources/score-greater-seattle/)** appointment to validate your concept
+3. Join **[1 Million Cups Seattle](/resources/1-million-cups-seattle/)** (Wednesday mornings) to practice your pitch
+4. Use **[Seattle Public Library L2B](/resources/library-to-business-l2b-program/)** for market research databases
 
 ### If You're Building a Prototype
 
 1. Access **makerspaces** at KCLS, Seattle Makers, or tool libraries
-2. Apply to **CoMotion Labs** if building hardware or life science products
+2. Apply to **[CoMotion Labs](/resources/comotion-labs/)** if building hardware or life science products
 3. Enter early pitch competitions to refine your messaging
 4. Connect with **UW CoMotion Fundamentals for Startups** (free Friday lectures)
 
 ### If You're Raising Capital
 
-1. Apply to **WTIA Founder Cohort** or **Startup425 Accelerator** for investor intros
-2. Use **Seattle Public Library PitchBook access** to research investors
+1. Apply to **[WTIA Founder Cohort](/resources/wtia-founder-cohort/)** or **[Startup425 Accelerator](/resources/startup425-accelerator/)** for investor intros
+2. Use **[Seattle Public Library PitchBook access](/resources/spl-pitchbook-access/)** to research investors
 3. Enter **Seattle Angel Conference** (SAC 25 active now, $150-200K to winner)
-4. Connect with **Graham & Walker Catalyst** if you're a female founder (638 founders served)
+4. Connect with **[Graham & Walker Catalyst](/resources/graham-walker-catalyst/)** if you're a female founder (638 founders served)
 
 ### If You're Scaling Operations
 

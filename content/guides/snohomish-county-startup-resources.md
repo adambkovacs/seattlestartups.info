@@ -35,7 +35,7 @@ Snohomish County offers unique advantages:
 
 ## Accelerators and Incubators
 
-### Northwest Innovation Resource Center (NWIRC)
+### [Northwest Innovation Resource Center (NWIRC)](/resources/nw-innovation-resource-center/)
 
 Serving Whatcom, Skagit, Snohomish, Island, and San Juan counties since 2011.
 
@@ -54,7 +54,7 @@ Serving Whatcom, Skagit, Snohomish, Island, and San Juan counties since 2011.
 | Hours | 9:30am-4:30pm, Monday-Friday |
 | Phone | 360-255-7870 |
 
-### Everett Community College Small Business Accelerator
+### [Everett Community College Small Business Accelerator](/resources/everett-sbdc/)
 
 A 9-month comprehensive business development program.
 

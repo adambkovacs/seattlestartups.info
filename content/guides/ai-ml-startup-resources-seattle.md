@@ -35,7 +35,7 @@ Seattle's AI advantages are significant:
 
 ## Accelerators and Incubators
 
-### AI2 Incubator
+### [AI2 Incubator](/resources/ai2-incubator/)
 
 Born from the Allen Institute for AI (founded by Paul Allen), this is Seattle's premier AI incubator.
 
@@ -59,7 +59,7 @@ Born from the Allen Institute for AI (founded by Paul Allen), this is Seattle's 
 - WellSaid Labs ($10M+ raised)
 - KITT.AI (acquired by Baidu)
 
-### AWS Generative AI Accelerator
+### [AWS Generative AI Accelerator](/resources/aws-activate/)
 
 Amazon's flagship AI accelerator based in Seattle.
 
@@ -146,7 +146,7 @@ Seattle has multiple VCs actively investing in AI:
 
 | Provider | Program | Amount |
 |----------|---------|--------|
-| AWS Activate | General | Up to $100K |
+| [AWS Activate](/resources/aws-activate/) | General | Up to $100K |
 | AWS GenAI Accelerator | AI-specific | Up to $1M |
 | AI2 Incubator | Included | Up to $1M |
 
@@ -154,7 +154,7 @@ Seattle has multiple VCs actively investing in AI:
 
 ## Physical Hubs
 
-### AI House Seattle (Pier 70)
+### [AI House Seattle](/resources/ai-house-seattle/) (Pier 70)
 
 The largest dedicated AI workspace in Seattle.
 

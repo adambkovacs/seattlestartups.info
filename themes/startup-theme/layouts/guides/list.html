@@ -161,7 +161,7 @@
       </div>
       <h3 class="font-display font-bold text-xl text-overcast-700 dark:text-overcast-200 mb-2">No guides match this filter</h3>
       <p class="text-overcast-500 dark:text-overcast-400 mb-4">Try selecting a different category or browse all guides.</p>
-      <button onclick="document.querySelector('[data-filter=all]').click()" class="text-sound-600 dark:text-sound-400 font-medium hover:underline">
+      <button id="show-all-guides" class="text-sound-600 dark:text-sound-400 font-medium hover:underline">
         Show all guides →
       </button>
     </div>
@@ -244,6 +244,14 @@
       }
     });
   });
+
+  // Show all guides button (CSP-compliant, no inline onclick)
+  const showAllBtn = document.getElementById('show-all-guides');
+  if (showAllBtn) {
+    showAllBtn.addEventListener('click', function() {
+      document.querySelector('[data-filter=all]').click();
+    });
+  }
 })();
 </script>
 {{ end }}

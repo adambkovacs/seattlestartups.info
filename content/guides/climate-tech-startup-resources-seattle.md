@@ -50,7 +50,7 @@ Launched January 2025 by Mayor Bruce Harrell, SCIH is the first downtown Seattle
 - Access to partner programs
 - Investor and mentor network
 
-### CoMotion Labs Climate Tech Incubator
+### [CoMotion Labs](/resources/comotion-labs/) Climate Tech Incubator
 
 University of Washington's dedicated climate incubator operating from the Seattle Climate Innovation Hub.
 
@@ -68,7 +68,7 @@ University of Washington's dedicated climate incubator operating from the Seattl
 - Mentorship from industry experts
 - Sustainability-based pricing model
 
-### Cascadia CleanTech Accelerator
+### [Cascadia CleanTech Accelerator](/resources/cascadia-cleantech-accelerator/)
 
 A joint program from CleanTech Alliance and VertueLab running since 2016.
 

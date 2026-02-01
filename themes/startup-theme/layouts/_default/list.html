@@ -321,8 +321,8 @@
             </div>
           </div>
         </div>
-        <button onclick="clearAllFilters()" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-sound-600 dark:text-sound-400 hover:text-sound-700 dark:hover:text-sound-300 border border-sound-300 dark:border-sound-700 rounded-lg hover:bg-sound-50 dark:hover:bg-sound-900/30 transition-colors">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <button id="clear-filters-banner" class="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-sound-600 dark:text-sound-400 hover:text-sound-700 dark:hover:text-sound-300 border border-sound-300 dark:border-sound-700 rounded-lg hover:bg-sound-50 dark:hover:bg-sound-900/30 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
           </svg>
           Clear filters
@@ -362,7 +362,7 @@
       </div>
       <h3 class="font-display font-bold text-xl text-overcast-700 dark:text-overcast-200 mb-2">No resources found</h3>
       <p class="text-overcast-500 dark:text-overcast-400 mb-6">Try adjusting your filters or search terms</p>
-      <button onclick="clearAllFilters()" class="inline-flex items-center px-6 py-3 sun-break text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
+      <button id="clear-filters-noresults" class="inline-flex items-center px-6 py-3 sun-break text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
         Clear all filters
       </button>
     </div>
@@ -408,6 +408,14 @@
 <!-- Advanced Filter & Search Script -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+  // Security: HTML escape helper to prevent XSS
+  function escapeHtml(str) {
+    if (!str) return '';
+    const div = document.createElement('div');
+    div.textContent = str;
+    return div.innerHTML;
+  }
+
   // Elements
   const searchInput = document.getElementById('resource-search');
   const resourcesGrid = document.getElementById('resources-grid');
@@ -644,16 +652,26 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     activeFiltersDisplay.classList.remove('hidden');
+    // Security: Use escapeHtml to prevent XSS from URL parameters
     activeFiltersDisplay.innerHTML = tags.map(tag => `
-      <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium bg-sound-100 text-sound-700">
-        ${tag.label}
-        <button onclick="removeFilter('${tag.type}', '${tag.value}')" class="ml-1 hover:text-sound-900">
-          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full text-sm font-medium bg-sound-100 text-sound-700 dark:bg-sound-900/50 dark:text-sound-300">
+        ${escapeHtml(tag.label)}
+        <button data-remove-filter data-type="${escapeHtml(tag.type)}" data-value="${escapeHtml(tag.value)}"
+                class="ml-1 hover:text-sound-900 dark:hover:text-sound-100"
+                aria-label="Remove ${escapeHtml(tag.label)} filter">
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
           </svg>
         </button>
       </span>
     `).join('');
+
+    // Attach event listeners to remove buttons (event delegation)
+    activeFiltersDisplay.querySelectorAll('[data-remove-filter]').forEach(btn => {
+      btn.addEventListener('click', function() {
+        window.removeFilter(this.dataset.type, this.dataset.value);
+      });
+    });
   }
 
   // Update URL with filter state
@@ -776,9 +794,17 @@ document.addEventListener('DOMContentLoaded', function() {
     input.addEventListener('change', handleFilterChange);
   });
 
-  // Clear filters button
+  // Clear filters buttons (no inline onclick for CSP compliance)
   if (clearFiltersBtn) {
     clearFiltersBtn.addEventListener('click', clearAllFilters);
+  }
+  const clearFiltersBanner = document.getElementById('clear-filters-banner');
+  if (clearFiltersBanner) {
+    clearFiltersBanner.addEventListener('click', clearAllFilters);
+  }
+  const clearFiltersNoresults = document.getElementById('clear-filters-noresults');
+  if (clearFiltersNoresults) {
+    clearFiltersNoresults.addEventListener('click', clearAllFilters);
   }
 
   // Sort toggle
