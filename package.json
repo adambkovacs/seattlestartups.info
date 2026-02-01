@@ -10,9 +10,11 @@
     "prebuild": "npm run build:css"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.0",
     "@playwright/test": "^1.58.1",
     "autoprefixer": "^10.4.16",
     "js-yaml": "^4.1.1",
+    "playwright": "^1.58.1",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.4.0"
   },
