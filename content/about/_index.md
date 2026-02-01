@@ -1,72 +1,98 @@
 ---
 title: "About Seattle Startups"
-description: "Learn about our mission and methodology"
+description: "The story behind Greater Seattle's community-maintained startup resource directory"
 ---
 
-# About This Project
+## Our Origin Story
 
-## The Problem
+I spent six weeks hunting for startup resources when I first landed in Seattle. Six. Weeks.
 
-Early-stage founders in the Greater Seattle area lack a single, reliable place to discover the full set of startup-relevant support resources. Information is fragmented across:
+The information existed—scattered across city economic development pages, buried in university PDFs, hidden in LinkedIn groups, and locked behind email newsletters nobody actually reads.
 
-- Municipal economic development offices
-- County and state agencies
-- Nonprofit organizations
-- Universities and community colleges
-- Community groups and event platforms
-
-## The Solution
-
-**seattlestartups.info** provides a comprehensive, verified inventory of **170+ free resources** that can be published and maintained by the community.
-
-## Methodology
-
-### Verification Standards
-
-Every published record includes:
-- Official URL (resource owner or authoritative host)
-- Identifiable owner organization
-- Clear offer description
-- Clear access path
-- Geography evidence
-- Last verified date
-- Proof-of-life category
-
-### Proof-of-Life Categories
-
-- **Government Evergreen** — Stable public services with persistent funding
-- **Current Dates Present** — Active cohort deadlines or scheduled events
-- **Recent Update** — Official site updated within 12 months
-
-### Exclusions
-
-We do NOT include:
-- Paid programs (fees, tuition, equity requirements)
-- Unverified listings
-- Pay-to-play directories
-- Affiliate/referral content
-
-## Coverage
-
-| County | Resources |
-|--------|-----------|
-| King (Seattle, Eastside) | 80+ |
-| Snohomish | 16+ |
-| Pierce (Tacoma) | 24+ |
-| Kitsap | 10+ |
-| Thurston (Olympia) | 14+ |
-
-## Contribute
-
-This is an open-source project. Found a resource we're missing?
-
-- [Submit an issue on GitHub](https://github.com/adambkovacs/seattlestartups.info/issues/new)
-- [Read our contribution guidelines](https://github.com/adambkovacs/seattlestartups.info/blob/main/CONTRIBUTING.md)
-
-## Maintainer
-
-Built and maintained by [Adam Kovacs](https://github.com/adambkovacs) and the Seattle startup community.
+So I built what I needed: **one place with everything**.
 
 ---
 
-*Data last verified: January 2026*
+## What We Actually Do
+
+We maintain a verified directory of **248+ free resources** across the Greater Seattle metro area. Every listing meets strict criteria before publication.
+
+### Our Verification Standards
+
+| Requirement | What We Check |
+|-------------|---------------|
+| **Official URL** | Links to resource owner or authoritative host |
+| **Clear Owner** | Identifiable organization stands behind the offer |
+| **Specific Offer** | Concrete description—not vague "support for founders" language |
+| **Access Path** | Clear next step: apply, register, attend, or contact |
+| **Geographic Proof** | Confirmed service area within Greater Seattle |
+| **Active Status** | Verified within the last 12 months |
+
+### How We Classify Resources
+
+Resources get one of three proof-of-life ratings:
+
+1. **Government Evergreen** — Stable public services with persistent budget allocations (SBDC offices, library programs, state agencies)
+2. **Active Program** — Current cohort deadlines, scheduled events, or open applications visible on the site
+3. **Recent Activity** — Official site shows updates within the past 12 months
+
+---
+
+## What We Won't List
+
+We have a simple filter: **if founders have to pay, it's not here**.
+
+This means we exclude:
+
+- Programs with tuition, fees, or subscription costs
+- Accelerators that take equity (that's payment)
+- Pay-to-play directories and sponsored listings
+- Affiliate or referral-driven content
+- Anything we can't independently verify
+
+Zero exceptions. We don't monetize this directory.
+
+---
+
+## Coverage by County
+
+Our focus is the Greater Seattle metropolitan area—what locals call the Puget Sound region.
+
+| County | Major Cities | Resources |
+|--------|--------------|-----------|
+| **King** | Seattle, Bellevue, Redmond, Kirkland | 80+ |
+| **Pierce** | Tacoma, Lakewood, Puyallup | 24+ |
+| **Snohomish** | Everett, Lynnwood, Edmonds | 16+ |
+| **Thurston** | Olympia, Lacey, Tumwater | 14+ |
+| **Kitsap** | Bremerton, Silverdale, Poulsbo | 10+ |
+
+Resource counts change as we verify new listings and retire inactive ones.
+
+---
+
+## How to Contribute
+
+This is an open-source project. The more eyes on it, the better it gets.
+
+**Found a resource we're missing?**
+→ [Submit an issue on GitHub](https://github.com/adambkovacs/seattlestartups.info/issues/new)
+
+**Want to help maintain listings?**
+→ [Read our contribution guidelines](https://github.com/adambkovacs/seattlestartups.info/blob/main/CONTRIBUTING.md)
+
+**Spotted outdated information?**
+→ Open a PR or drop a comment. We respond within 48 hours.
+
+---
+
+## About the Maintainer
+
+This project is built and maintained by **Adam Kovacs**, a Seattle-based technologist who got tired of answering "where do I find X?" for every founder friend who moved here.
+
+I also run the [AI Enablement Academy](https://aienablementacademy.com), help organize [OPEN Talent Society](https://opentalentsociety.org), and occasionally post useful things on [LinkedIn](https://www.linkedin.com/in/adambkovacs/).
+
+The code lives on [GitHub](https://github.com/adambkovacs/seattlestartups.info). Feel free to fork it, improve it, or tell me what's broken.
+
+---
+
+*Directory last verified: January 2026*
