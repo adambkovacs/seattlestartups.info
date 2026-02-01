@@ -1,38 +1,63 @@
-<!-- Header Navigation - Fixed spacing, accessible, with dark mode support -->
+<!-- Header Navigation - Clean, accessible, with dropdown menus and dark mode -->
 <header class="sticky top-0 z-50 fog dark:bg-overcast-900/95 border-b border-overcast-200 dark:border-overcast-700 transition-colors duration-300">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
       <a href="{{ .Site.BaseURL }}" class="flex items-center gap-3 group" aria-label="{{ .Site.Title }} - Home">
-        <!-- Seattle Skyline Icon -->
         <div class="relative flex-shrink-0">
           <div class="w-10 h-10 sun-break rounded-xl flex items-center justify-center transform group-hover:scale-105 group-hover:rotate-3 transition-all duration-300 shadow-lg shadow-sound-500/25">
             <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <!-- Space Needle inspired icon -->
               <path d="M12 2L12 6M12 6L8 8L16 8L12 6" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M10 8L10 12L14 12L14 8" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M11 12L11 20M13 12L13 20" stroke-linecap="round" stroke-linejoin="round"/>
               <path d="M8 20L16 20" stroke-linecap="round" stroke-linejoin="round"/>
-              <!-- Mountain backdrop -->
               <path d="M2 22L6 16L10 19L14 14L18 18L22 22" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
             </svg>
           </div>
         </div>
         <div class="hidden sm:block">
           <span class="font-display font-bold text-lg lg:text-xl gradient-text dark:text-white">Seattle Startups</span>
-          <span class="hidden lg:block text-xs text-overcast-500 dark:text-overcast-400 font-medium">{{ .Site.Params.tagline }}</span>
+          <span class="hidden xl:block text-xs text-overcast-500 dark:text-overcast-400 font-medium">{{ .Site.Params.tagline }}</span>
         </div>
       </a>
 
-      <!-- Desktop Navigation -->
+      <!-- Desktop Navigation - Simplified with Dropdowns -->
       <div class="hidden lg:flex items-center gap-1" role="menubar">
-        {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}"
-           role="menuitem"
-           class="relative px-4 py-2 text-sm font-medium text-overcast-600 dark:text-overcast-300 hover:text-sound-600 dark:hover:text-sound-400 transition-colors duration-200 rounded-lg hover:bg-sound-50 dark:hover:bg-sound-900/30">
-          {{ .Name }}
+        <!-- Browse Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 px-3 py-2 text-sm font-medium text-overcast-600 dark:text-overcast-300 hover:text-sound-600 dark:hover:text-sound-400 transition-colors duration-200 rounded-lg hover:bg-sound-50 dark:hover:bg-sound-900/30">
+            Browse
+            <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </button>
+          <div class="absolute left-0 mt-1 w-48 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+            <div class="py-2 bg-white dark:bg-overcast-800 rounded-xl shadow-xl border border-overcast-200 dark:border-overcast-700">
+              <a href="/resources/" class="block px-4 py-2 text-sm text-overcast-600 dark:text-overcast-300 hover:bg-sound-50 dark:hover:bg-sound-900/30 hover:text-sound-600 dark:hover:text-sound-400">
+                All Resources
+              </a>
+              <a href="/guides/" class="block px-4 py-2 text-sm text-overcast-600 dark:text-overcast-300 hover:bg-sound-50 dark:hover:bg-sound-900/30 hover:text-sound-600 dark:hover:text-sound-400">
+                Startup Guides
+              </a>
+              <a href="/cities/" class="block px-4 py-2 text-sm text-overcast-600 dark:text-overcast-300 hover:bg-sound-50 dark:hover:bg-sound-900/30 hover:text-sound-600 dark:hover:text-sound-400">
+                By City
+              </a>
+              <a href="/audiences/" class="block px-4 py-2 text-sm text-overcast-600 dark:text-overcast-300 hover:bg-sound-50 dark:hover:bg-sound-900/30 hover:text-sound-600 dark:hover:text-sound-400">
+                For Founders
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guides Link (Direct) -->
+        <a href="/guides/" class="px-3 py-2 text-sm font-medium text-overcast-600 dark:text-overcast-300 hover:text-sound-600 dark:hover:text-sound-400 transition-colors duration-200 rounded-lg hover:bg-sound-50 dark:hover:bg-sound-900/30">
+          Guides
         </a>
-        {{ end }}
+
+        <!-- About Link -->
+        <a href="/about/" class="px-3 py-2 text-sm font-medium text-overcast-600 dark:text-overcast-300 hover:text-sound-600 dark:hover:text-sound-400 transition-colors duration-200 rounded-lg hover:bg-sound-50 dark:hover:bg-sound-900/30">
+          About
+        </a>
       </div>
 
       <!-- Right Side Actions -->
@@ -41,39 +66,30 @@
         <button id="dark-mode-toggle"
                 class="p-2 rounded-lg text-overcast-500 hover:text-overcast-700 dark:text-overcast-400 dark:hover:text-overcast-200 hover:bg-overcast-100 dark:hover:bg-overcast-800 transition-colors duration-200"
                 aria-label="Toggle dark mode">
-          <!-- Sun icon (shown in dark mode) -->
           <svg id="sun-icon" class="w-5 h-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
           </svg>
-          <!-- Moon icon (shown in light mode) -->
           <svg id="moon-icon" class="w-5 h-5 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
           </svg>
         </button>
 
-        <!-- GitHub Button (Desktop) -->
-        <a href="{{ .Site.Params.github }}"
+        <!-- AI Assistant Button - Links to NotebookLM -->
+        <a href="https://notebooklm.google.com/notebook/593f591c-c144-4337-a47e-d8ea6c0e2556"
            target="_blank"
            rel="noopener noreferrer"
-           class="hidden md:flex items-center gap-2 px-3 py-2 rounded-lg border border-overcast-200 dark:border-overcast-600 text-overcast-600 dark:text-overcast-300 hover:text-sound-600 dark:hover:text-sound-400 hover:border-sound-300 dark:hover:border-sound-600 hover:bg-sound-50 dark:hover:bg-sound-900/30 transition-all duration-200 text-sm font-medium"
-           aria-label="View source on GitHub">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/>
-          </svg>
-          <span class="hidden lg:inline">GitHub</span>
-        </a>
-
-        <!-- AI Assistant Button -->
-        <a href="/ai-assistant/"
-           class="hidden md:flex items-center gap-2 px-3 py-2 rounded-lg border border-sound-300 dark:border-sound-600 text-sound-600 dark:text-sound-400 hover:text-white hover:bg-sound-500 dark:hover:bg-sound-600 hover:border-sound-500 transition-all duration-200 text-sm font-medium"
+           class="hidden md:flex items-center gap-2 px-3 py-2 rounded-lg bg-sound-50 dark:bg-sound-900/30 border border-sound-200 dark:border-sound-700 text-sound-700 dark:text-sound-300 hover:bg-sound-100 dark:hover:bg-sound-800/50 transition-all duration-200 text-sm font-medium"
            aria-label="Chat with AI Assistant">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
           </svg>
           <span class="hidden lg:inline">Ask AI</span>
+          <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+          </svg>
         </a>
 
-        <!-- Submit Resource CTA -->
+        <!-- Submit CTA -->
         <a href="/submit/"
            class="hidden sm:flex items-center gap-2 px-4 py-2 sun-break text-white rounded-lg font-semibold text-sm shadow-lg shadow-sound-500/25 hover:shadow-xl hover:shadow-sound-500/30 transform hover:-translate-y-0.5 transition-all duration-200">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -101,33 +117,50 @@
     <!-- Mobile Menu -->
     <div id="mobile-menu" class="hidden lg:hidden pb-4" role="menu">
       <div class="space-y-1 pt-4 border-t border-overcast-200 dark:border-overcast-700">
-        {{ range .Site.Menus.main }}
-        <a href="{{ .URL }}"
-           role="menuitem"
-           class="block px-4 py-3 text-base font-medium text-overcast-600 dark:text-overcast-300 hover:text-sound-600 dark:hover:text-sound-400 hover:bg-sound-50 dark:hover:bg-sound-900/30 rounded-lg transition-colors duration-200">
-          {{ .Name }}
+        <!-- Browse Section -->
+        <div class="px-4 py-2 text-xs font-semibold text-overcast-400 dark:text-overcast-500 uppercase tracking-wider">Browse</div>
+        <a href="/resources/" class="block px-4 py-3 text-base font-medium text-overcast-600 dark:text-overcast-300 hover:text-sound-600 dark:hover:text-sound-400 hover:bg-sound-50 dark:hover:bg-sound-900/30 rounded-lg">
+          All Resources
         </a>
-        {{ end }}
+        <a href="/guides/" class="block px-4 py-3 text-base font-medium text-overcast-600 dark:text-overcast-300 hover:text-sound-600 dark:hover:text-sound-400 hover:bg-sound-50 dark:hover:bg-sound-900/30 rounded-lg">
+          Startup Guides
+        </a>
+        <a href="/cities/" class="block px-4 py-3 text-base font-medium text-overcast-600 dark:text-overcast-300 hover:text-sound-600 dark:hover:text-sound-400 hover:bg-sound-50 dark:hover:bg-sound-900/30 rounded-lg">
+          By City
+        </a>
+        <a href="/audiences/" class="block px-4 py-3 text-base font-medium text-overcast-600 dark:text-overcast-300 hover:text-sound-600 dark:hover:text-sound-400 hover:bg-sound-50 dark:hover:bg-sound-900/30 rounded-lg">
+          For Founders
+        </a>
+        <a href="/about/" class="block px-4 py-3 text-base font-medium text-overcast-600 dark:text-overcast-300 hover:text-sound-600 dark:hover:text-sound-400 hover:bg-sound-50 dark:hover:bg-sound-900/30 rounded-lg">
+          About
+        </a>
+
+        <!-- Actions -->
         <div class="pt-4 flex flex-col gap-2">
-          <a href="/ai-assistant/"
-             class="flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-sound-300 dark:border-sound-600 text-sound-600 dark:text-sound-400 hover:bg-sound-50 dark:hover:bg-sound-900/30 transition-colors duration-200">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+          <a href="https://notebooklm.google.com/notebook/593f591c-c144-4337-a47e-d8ea6c0e2556"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="flex items-center justify-center gap-2 px-4 py-3 rounded-lg bg-sound-50 dark:bg-sound-900/30 border border-sound-200 dark:border-sound-700 text-sound-700 dark:text-sound-300">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
             </svg>
             <span>Ask AI Assistant</span>
+            <svg class="w-3 h-3 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
           </a>
           <a href="{{ $.Site.Params.github }}"
              target="_blank"
              rel="noopener noreferrer"
              class="flex items-center justify-center gap-2 px-4 py-3 rounded-lg border border-overcast-200 dark:border-overcast-600 text-overcast-600 dark:text-overcast-300 hover:text-sound-600 transition-colors duration-200">
-            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/>
             </svg>
             <span>Star on GitHub</span>
           </a>
           <a href="/submit/"
              class="flex items-center justify-center gap-2 px-4 py-3 sun-break text-white rounded-lg font-semibold shadow-lg shadow-sound-500/25">
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
             </svg>
             <span>Submit Resource</span>
@@ -144,7 +177,6 @@
   const toggle = document.getElementById('dark-mode-toggle');
   const html = document.documentElement;
 
-  // Check for saved preference or system preference
   const savedTheme = localStorage.getItem('theme');
   const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -159,7 +191,6 @@
     });
   }
 
-  // Listen for system theme changes
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
     if (!localStorage.getItem('theme')) {
       html.classList.toggle('dark', e.matches);
