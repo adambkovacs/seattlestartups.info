@@ -528,3 +528,36 @@
   0% { transform: translateY(20px); opacity: 0; }
   100% { transform: translateY(0); opacity: 1; }
 }
+
+/* Fix Hugo syntax highlighting contrast for WCAG compliance */
+.highlight pre,
+.prose pre,
+pre[tabindex] {
+  background-color: #18181b !important; /* overcast-900 */
+  color: #e4e4e7 !important; /* overcast-200 - 12.6:1 contrast */
+}
+
+.highlight pre code,
+.prose pre code,
+pre code {
+  color: inherit !important;
+  background: transparent !important;
+}
+
+/* Override ALL inline-styled spans in code blocks for WCAG contrast */
+.highlight span[style],
+.prose pre span[style],
+pre code span[style],
+code.language-yaml span[style],
+code.language-yaml span span[style],
+code.language-yaml span span span[style] {
+  color: #e4e4e7 !important; /* Force high contrast text */
+}
+
+/* Syntax highlighting token colors with proper contrast */
+.highlight .c, .highlight .c1, .highlight .cm { color: #a1a1aa !important; } /* comments */
+.highlight .s, .highlight .s1, .highlight .s2 { color: #86efac !important; } /* strings */
+.highlight .k, .highlight .kd, .highlight .kn { color: #7cc8fb !important; } /* keywords */
+.highlight .n, .highlight .na, .highlight .nb { color: #e4e4e7 !important; } /* names */
+.highlight .o, .highlight .p { color: #d4d4d8 !important; } /* operators, punctuation */
+.highlight .m, .highlight .mi, .highlight .mf { color: #fcd34d !important; } /* numbers */
