@@ -3,21 +3,17 @@
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
-      <a href="{{ .Site.BaseURL }}" class="flex items-center gap-3 group flex-shrink-0" aria-label="{{ .Site.Title }} - Home">
-        <div class="relative flex-shrink-0">
-          <div class="w-10 h-10 sun-break rounded-xl flex items-center justify-center transform group-hover:scale-105 group-hover:rotate-3 transition-all duration-300 shadow-lg shadow-sound-500/25">
-            <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
-              <path d="M12 2L12 6M12 6L8 8L16 8L12 6" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M10 8L10 12L14 12L14 8" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M11 12L11 20M13 12L13 20" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M8 20L16 20" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M2 22L6 16L10 19L14 14L18 18L22 22" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
-            </svg>
-          </div>
+      <a href="{{ .Site.BaseURL }}" class="flex flex-row items-center gap-3 group" aria-label="{{ .Site.Title }} - Home">
+        <div class="w-10 h-10 sun-break rounded-xl flex items-center justify-center transform group-hover:scale-105 group-hover:rotate-3 transition-all duration-300 shadow-lg shadow-sound-500/25">
+          <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+            <path d="M12 2L12 6M12 6L8 8L16 8L12 6" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M10 8L10 12L14 12L14 8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M11 12L11 20M13 12L13 20" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8 20L16 20" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 22L6 16L10 19L14 14L18 18L22 22" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+          </svg>
         </div>
-        <div class="hidden sm:flex flex-shrink-0">
-          <span class="font-display font-bold text-lg lg:text-xl gradient-text dark:text-white whitespace-nowrap">Seattle Startups</span>
-        </div>
+        <span class="hidden sm:inline font-display font-bold text-lg lg:text-xl gradient-text dark:text-white whitespace-nowrap">Seattle Startups</span>
       </a>
 
       <!-- Desktop Navigation - Simplified with Dropdowns -->
@@ -81,11 +77,11 @@
           </svg>
         </button>
 
-        <!-- AI Assistant Button - Links to NotebookLM (Fixed dark mode colors) -->
+        <!-- AI Assistant Button - Links to NotebookLM -->
         <a href="https://notebooklm.google.com/notebook/593f591c-c144-4337-a47e-d8ea6c0e2556"
            target="_blank"
            rel="noopener noreferrer"
-           class="hidden md:flex items-center gap-2 px-3 py-2 rounded-lg bg-emerald-50 dark:bg-emerald-900/40 border border-emerald-200 dark:border-emerald-700 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-100 dark:hover:bg-emerald-800/60 transition-all duration-200 text-sm font-medium"
+           class="hidden md:flex items-center gap-2 px-3 py-2 rounded-lg bg-emerald-500/10 dark:bg-emerald-500/20 border border-emerald-500/30 dark:border-emerald-400/30 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-500/20 dark:hover:bg-emerald-500/30 hover:border-emerald-500/50 dark:hover:border-emerald-400/50 hover:shadow-md hover:shadow-emerald-500/20 transform hover:-translate-y-0.5 transition-all duration-200 text-sm font-medium backdrop-blur-sm"
            aria-label="Chat with AI Assistant">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
@@ -98,7 +94,7 @@
 
         <!-- Submit CTA -->
         <a href="/submit/"
-           class="hidden sm:flex items-center gap-2 px-4 py-2 sun-break text-white rounded-lg font-semibold text-sm shadow-lg shadow-sound-500/25 hover:shadow-xl hover:shadow-sound-500/30 transform hover:-translate-y-0.5 transition-all duration-200">
+           class="hidden sm:flex items-center gap-2 px-4 py-2 sun-break text-white rounded-lg font-semibold text-sm shadow-lg shadow-sound-500/30 hover:shadow-xl hover:shadow-sound-500/40 transform hover:-translate-y-0.5 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200">
           <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
           </svg>
