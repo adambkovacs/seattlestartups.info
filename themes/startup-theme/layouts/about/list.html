@@ -1,0 +1,138 @@
+{{ define "main" }}
+<article class="relative">
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden py-12 lg:py-20 border-b border-overcast-200 dark:border-overcast-700">
+    <div class="absolute inset-0 dots-pattern opacity-30 dark:opacity-10"></div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="flex mb-6" aria-label="Breadcrumb">
+        <ol class="flex items-center space-x-2 text-sm font-mono">
+          <li><a href="{{ .Site.BaseURL }}" class="text-overcast-500 dark:text-overcast-400 hover:text-sound-600 dark:hover:text-sound-400 transition-colors">Home</a></li>
+          <li class="text-overcast-300 dark:text-overcast-600">/</li>
+          <li class="text-sound-600 dark:text-sound-400 font-medium">{{ .Title }}</li>
+        </ol>
+      </nav>
+
+      <h1 class="font-display font-black text-4xl md:text-5xl lg:text-6xl text-overcast-900 dark:text-white mb-6 tracking-tight leading-tight">
+        {{ .Title }}
+      </h1>
+
+      {{ with .Description }}
+      <p class="text-lg md:text-xl text-overcast-600 dark:text-overcast-300 leading-relaxed mb-8">
+        {{ . }}
+      </p>
+      {{ end }}
+    </div>
+  </section>
+
+  <!-- Founder Story Section -->
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="bg-gradient-to-br from-sound-50 to-fir-50 dark:from-sound-900/20 dark:to-fir-900/20 rounded-3xl p-8 md:p-12 border border-sound-200/50 dark:border-sound-800/50 mb-12">
+      <div class="flex flex-col md:flex-row gap-8 items-start">
+        <!-- Avatar/Icon -->
+        <div class="flex-shrink-0">
+          <div class="w-24 h-24 rounded-2xl bg-gradient-to-br from-sound-500 to-fir-500 flex items-center justify-center">
+            <svg class="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="font-display font-bold text-2xl text-overcast-900 dark:text-white mb-4">
+            Why I Built This
+          </h2>
+          <div class="prose prose-lg dark:prose-invert max-w-none prose-p:text-overcast-600 dark:prose-p:text-overcast-300">
+            <p>
+              This project was born from frustration. As a founder in Seattle, I spent weeks hunting down resources scattered across city websites, university portals, and buried LinkedIn posts. Every founder I talked to had the same problem: <em>"Where do I even start?"</em>
+            </p>
+            <p>
+              So I built what I needed: a single, verified, community-maintained directory of every free resource that actually helps early-stage founders. No pay-to-play listings, no affiliate links, just honest information.
+            </p>
+            <p>
+              This is a living project. If you find a resource I've missed or spot outdated information, please submit an issue or PR on GitHub. Together, we can make Seattle's startup ecosystem more accessible to everyone.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content from Markdown -->
+    <div class="prose prose-lg dark:prose-invert max-w-none
+                prose-headings:font-display prose-headings:font-bold prose-headings:tracking-tight
+                prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-b prose-h2:border-overcast-200 dark:prose-h2:border-overcast-700 prose-h2:pb-3
+                prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4
+                prose-p:text-overcast-600 dark:prose-p:text-overcast-300 prose-p:leading-relaxed
+                prose-a:text-sound-600 dark:prose-a:text-sound-400 prose-a:no-underline hover:prose-a:underline prose-a:transition-colors
+                prose-strong:text-overcast-900 dark:prose-strong:text-white prose-strong:font-semibold
+                prose-ul:my-6 prose-ol:my-6 prose-ul:space-y-2 prose-ol:space-y-2
+                prose-li:text-overcast-600 dark:prose-li:text-overcast-300 prose-li:leading-relaxed
+                prose-table:my-8 prose-table:border-collapse prose-table:w-full prose-table:border prose-table:border-overcast-200 dark:prose-table:border-overcast-700 prose-table:rounded-lg prose-table:overflow-hidden
+                prose-thead:bg-overcast-100 dark:prose-thead:bg-overcast-800
+                prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold prose-th:text-overcast-900 dark:prose-th:text-white
+                prose-td:px-4 prose-td:py-3 prose-td:border-t prose-td:border-overcast-200 dark:prose-td:border-overcast-700
+                prose-code:bg-overcast-100 dark:prose-code:bg-overcast-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono
+                prose-hr:border-overcast-200 dark:prose-hr:border-overcast-700 prose-hr:my-12">
+      {{ .Content }}
+    </div>
+  </section>
+
+  <!-- Built in Seattle Footer -->
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+    <div class="bg-overcast-900 dark:bg-overcast-950 rounded-3xl p-8 md:p-12 text-center">
+      <p class="text-4xl mb-4">❤️</p>
+      <h2 class="font-display font-bold text-2xl text-white mb-2">
+        Built in Seattle with love
+      </h2>
+      <p class="text-overcast-400 mb-6">
+        By <a href="https://github.com/adambkovacs" target="_blank" rel="noopener noreferrer" class="text-sound-400 hover:text-sound-300 transition-colors">Adam Kovacs</a> and the Seattle startup community
+      </p>
+
+      <!-- Social Links -->
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="https://github.com/adambkovacs/seattlestartups.info"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="View Seattle Startups on GitHub"
+           class="inline-flex items-center px-4 py-2 bg-overcast-800 hover:bg-overcast-700 text-white rounded-lg text-sm font-medium transition-colors">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/>
+          </svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/adambkovacs/"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Connect with Adam Kovacs on LinkedIn"
+           class="inline-flex items-center px-4 py-2 bg-overcast-800 hover:bg-overcast-700 text-white rounded-lg text-sm font-medium transition-colors">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://aienablementacademy.com"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Visit AI Enablement Academy"
+           class="inline-flex items-center px-4 py-2 bg-overcast-800 hover:bg-overcast-700 text-white rounded-lg text-sm font-medium transition-colors">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+          </svg>
+          AI Enablement Academy
+        </a>
+        <a href="https://opentalentsociety.org"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Visit OPEN Talent Society"
+           class="inline-flex items-center px-4 py-2 bg-overcast-800 hover:bg-overcast-700 text-white rounded-lg text-sm font-medium transition-colors">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+          </svg>
+          OPEN Talent Society
+        </a>
+      </div>
+    </div>
+  </section>
+</article>
+{{ end }}

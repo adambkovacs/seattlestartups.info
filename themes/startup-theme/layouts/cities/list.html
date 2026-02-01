@@ -40,20 +40,72 @@
     </div>
   </section>
 
-  <!-- Major Cities Grid -->
+  <!-- Featured City: Seattle -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    {{/* Count Seattle resources */}}
+    {{ $seattleResources := 0 }}
+    {{ with $.Site.Data.resources }}
+      {{ range $filename, $data := . }}
+        {{ with $data.resources }}
+          {{ range . }}
+            {{ if .city }}
+              {{ if eq (.city | lower) "seattle" }}
+                {{ $seattleResources = add $seattleResources 1 }}
+              {{ end }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    <a href="/resources/?city=seattle"
+       class="group block relative bg-gradient-to-br from-sound-500 to-sound-600 rounded-3xl p-8 lg:p-12 hover:shadow-2xl hover:shadow-sound-500/30 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden mb-12">
+      <!-- Shimmer effect -->
+      <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent pointer-events-none"></div>
+
+      <div class="flex flex-col lg:flex-row items-start gap-6">
+        <!-- Space Needle Icon -->
+        <div class="w-20 h-20 rounded-2xl bg-white/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2L12 6M9 6L15 6M8 6L12 4L16 6M7 10L12 6L17 10M7 10L17 10M9 10L9 20M15 10L15 20M7 20L17 20M12 10L12 20"/>
+          </svg>
+        </div>
+
+        <div class="flex-1">
+          <span class="inline-block px-3 py-1 bg-white/20 rounded-full text-xs font-mono text-white/90 mb-3">🚀 STARTUP HUB</span>
+          <h2 class="font-display font-black text-3xl lg:text-4xl text-white mb-2 group-hover:translate-x-1 transition-transform">
+            Seattle
+          </h2>
+          <p class="text-white/90 text-lg mb-4 max-w-xl">
+            The heart of the Pacific Northwest startup ecosystem. Home to Amazon, Microsoft alumni startups, and 100+ free founder resources.
+          </p>
+          <div class="flex flex-wrap items-center gap-4">
+            <span class="text-white/80 font-mono text-sm">{{ $seattleResources }}+ resources</span>
+            <span class="text-white/60">•</span>
+            <span class="text-white/80 font-mono text-sm">King County</span>
+            <span class="inline-flex items-center text-white font-semibold group-hover:translate-x-2 transition-transform">
+              Explore Seattle
+              <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </a>
+
+    <!-- Other Major Cities Grid -->
     <h2 class="font-display font-bold text-2xl text-overcast-900 dark:text-white mb-8">
-      Major Cities
+      More Cities
     </h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {{ $cities := dict
-        "seattle" (dict "name" "Seattle" "county" "King County" "desc" "The heart of the PNW startup ecosystem with 100+ resources" "gradient" "from-sound-500 to-sound-600")
-        "tacoma" (dict "name" "Tacoma" "county" "Pierce County" "desc" "South Sound's growing startup hub with co-working and accelerators" "gradient" "from-fir-500 to-fir-600")
-        "bellevue" (dict "name" "Bellevue" "county" "King County" "desc" "Eastside tech corridor with major corporate partnerships" "gradient" "from-cyan-500 to-cyan-600")
-        "everett" (dict "name" "Everett" "county" "Snohomish County" "desc" "North Sound innovation center with aerospace focus" "gradient" "from-indigo-500 to-indigo-600")
-        "olympia" (dict "name" "Olympia" "county" "Thurston County" "desc" "State capital with government and policy resources" "gradient" "from-emerald-500 to-emerald-600")
-        "bremerton" (dict "name" "Bremerton" "county" "Kitsap County" "desc" "Maritime and defense tech hub across the Sound" "gradient" "from-blue-500 to-blue-600")
+        "bellevue" (dict "name" "Bellevue" "county" "King County" "desc" "Eastside tech corridor with major corporate partnerships" "gradient" "from-cyan-500 to-cyan-600" "icon" "skyscrapers")
+        "tacoma" (dict "name" "Tacoma" "county" "Pierce County" "desc" "South Sound's growing startup hub with co-working and accelerators" "gradient" "from-fir-500 to-fir-600" "icon" "port")
+        "everett" (dict "name" "Everett" "county" "Snohomish County" "desc" "North Sound innovation center with aerospace focus" "gradient" "from-indigo-500 to-indigo-600" "icon" "airplane")
+        "olympia" (dict "name" "Olympia" "county" "Thurston County" "desc" "State capital with government and policy resources" "gradient" "from-emerald-500 to-emerald-600" "icon" "capitol")
+        "bremerton" (dict "name" "Bremerton" "county" "Kitsap County" "desc" "Maritime and defense tech hub across the Sound" "gradient" "from-blue-500 to-blue-600" "icon" "anchor")
       }}
 
       {{ range $key, $city := $cities }}
@@ -74,13 +126,43 @@
       {{ end }}
 
       <a href="/resources/?city={{ $key }}"
-         class="group relative bg-white dark:bg-overcast-800 rounded-2xl border border-overcast-200 dark:border-overcast-700 p-8 hover:shadow-xl hover:border-sound-300 dark:hover:border-sound-600 transition-all duration-300 transform hover:-translate-y-1">
+         class="group relative bg-white dark:bg-overcast-800 rounded-2xl border border-overcast-200 dark:border-overcast-700 p-8 hover:shadow-xl hover:shadow-sound-500/10 dark:hover:shadow-sound-500/20 hover:border-sound-400 dark:hover:border-sound-500 transition-all duration-300 transform hover:-translate-y-1 overflow-hidden">
+        <!-- Shimmer effect -->
+        <div class="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 dark:via-white/5 to-transparent pointer-events-none"></div>
 
-        <!-- Icon with gradient -->
-        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br {{ $city.gradient }} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+        <!-- Custom Icon with gradient -->
+        <div class="w-16 h-16 rounded-2xl bg-gradient-to-br {{ $city.gradient }} flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-3 transition-transform">
+          {{ if eq $city.icon "skyscrapers" }}
+          <!-- Bellevue: Modern Skyscrapers -->
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V8a2 2 0 00-2-2h-3V4a1 1 0 00-1-1h-2a1 1 0 00-1 1v2H7a2 2 0 00-2 2v13m14 0h2m-2 0h-4m-10 0H3m2 0h4M10 11h4M10 15h4"/>
+          </svg>
+          {{ else if eq $city.icon "port" }}
+          <!-- Tacoma: Port/Container -->
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 17h18M3 17l3-5h12l3 5M6 12V8h12v4M9 8V5h6v3"/>
+          </svg>
+          {{ else if eq $city.icon "airplane" }}
+          <!-- Everett: Airplane/Aerospace -->
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l-7-7 1.5-1.5L12 16l5.5-5.5L19 12l-7 7zm0-14l-3 3h6l-3-3zm-3 3v5m6-5v5"/>
+          </svg>
+          {{ else if eq $city.icon "capitol" }}
+          <!-- Olympia: Capitol Building -->
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21h18M12 3l9 7H3l9-7zm-6 7v11m4-11v11m4-11v11m4-11v11M6 14h12"/>
+          </svg>
+          {{ else if eq $city.icon "anchor" }}
+          <!-- Bremerton: Anchor/Naval -->
+          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2a2 2 0 100 4 2 2 0 000-4zm0 4v14m0 0c-4 0-7-3-7-7h2m5 7c4 0 7-3 7-7h-2m-5-7H9m6 0h-3"/>
+          </svg>
+          {{ else }}
+          <!-- Default: Building -->
           <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
           </svg>
+          {{ end }}
         </div>
 
         <!-- City Name -->
@@ -179,19 +261,39 @@
     </div>
   </section>
 
-  <!-- Quick Links to Counties -->
+  <!-- Browse by County - Fancy Cards -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12">
-    <div class="flex flex-wrap items-center justify-center gap-4 text-sm">
-      <span class="text-overcast-500 dark:text-overcast-400">Or browse by county:</span>
-      <a href="/counties/" class="text-sound-600 dark:text-sound-400 hover:underline">King</a>
-      <span class="text-overcast-300 dark:text-overcast-600">|</span>
-      <a href="/resources/?county=pierce" class="text-sound-600 dark:text-sound-400 hover:underline">Pierce</a>
-      <span class="text-overcast-300 dark:text-overcast-600">|</span>
-      <a href="/resources/?county=snohomish" class="text-sound-600 dark:text-sound-400 hover:underline">Snohomish</a>
-      <span class="text-overcast-300 dark:text-overcast-600">|</span>
-      <a href="/resources/?county=kitsap" class="text-sound-600 dark:text-sound-400 hover:underline">Kitsap</a>
-      <span class="text-overcast-300 dark:text-overcast-600">|</span>
-      <a href="/resources/?county=thurston" class="text-sound-600 dark:text-sound-400 hover:underline">Thurston</a>
+    <div class="bg-gradient-to-br from-fir-50 to-sound-50 dark:from-fir-900/20 dark:to-sound-900/20 rounded-3xl p-8 border border-fir-200/50 dark:border-fir-800/50">
+      <div class="text-center mb-8">
+        <span class="inline-block px-4 py-1.5 bg-fir-500/10 text-fir-600 dark:text-fir-400 rounded-full text-xs font-mono mb-3">🌲 PACIFIC NORTHWEST</span>
+        <h2 class="font-display font-bold text-2xl text-overcast-900 dark:text-white mb-2">
+          Browse by County
+        </h2>
+        <p class="text-overcast-500 dark:text-overcast-400 text-sm">Five counties. One connected ecosystem.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        {{ $counties := dict
+          "king" (dict "name" "King County" "subtitle" "Seattle & Eastside" "icon" "🏙️")
+          "pierce" (dict "name" "Pierce County" "subtitle" "Tacoma Area" "icon" "⚓")
+          "snohomish" (dict "name" "Snohomish County" "subtitle" "North Sound" "icon" "✈️")
+          "kitsap" (dict "name" "Kitsap County" "subtitle" "West Sound" "icon" "🚢")
+          "thurston" (dict "name" "Thurston County" "subtitle" "Capital Region" "icon" "🏛️")
+        }}
+
+        {{ range $key, $county := $counties }}
+        <a href="/resources/?county={{ $key }}"
+           class="group bg-white dark:bg-overcast-800 rounded-xl p-5 text-center border border-overcast-200 dark:border-overcast-700 hover:border-sound-400 dark:hover:border-sound-500 hover:shadow-lg hover:shadow-sound-500/10 transition-all duration-300 transform hover:-translate-y-1">
+          <span class="text-2xl mb-2 block group-hover:scale-110 transition-transform">{{ $county.icon }}</span>
+          <h3 class="font-display font-bold text-sm text-overcast-900 dark:text-white mb-1 group-hover:text-sound-600 dark:group-hover:text-sound-400 transition-colors">
+            {{ $county.name }}
+          </h3>
+          <p class="text-xs text-overcast-500 dark:text-overcast-400">
+            {{ $county.subtitle }}
+          </p>
+        </a>
+        {{ end }}
+      </div>
     </div>
   </section>
 </div>
