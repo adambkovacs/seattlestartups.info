@@ -86,25 +86,25 @@
       </div>
 
       <!-- Filter Pills -->
-      <div id="filter-panel" class="hidden lg:flex flex-wrap gap-3 mt-4 pt-4 border-t border-overcast-100">
+      <div id="filter-panel" class="hidden lg:flex flex-wrap gap-3 mt-4 pt-4 border-t border-overcast-100 dark:border-overcast-700">
         <!-- Category Filter -->
         <div class="relative" data-filter-group="category">
-          <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 bg-white hover:border-sound-300 text-sm font-medium transition-colors">
+          <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 dark:border-overcast-600 bg-white dark:bg-overcast-800 hover:border-sound-300 dark:hover:border-sound-600 text-sm font-medium transition-colors dark:text-overcast-200">
             <span>Category</span>
             <svg class="w-4 h-4 text-overcast-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </button>
-          <div class="filter-dropdown hidden absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-overcast-200 p-3 z-50">
+          <div class="filter-dropdown hidden absolute top-full left-0 mt-2 w-64 bg-white dark:bg-overcast-800 rounded-xl shadow-xl border border-overcast-200 dark:border-overcast-700 p-3 z-50">
             <div class="space-y-1 max-h-64 overflow-y-auto">
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
                 <input type="checkbox" value="all" class="category-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500" checked>
-                <span class="text-sm">All Categories</span>
+                <span class="text-sm dark:text-overcast-200">All Categories</span>
               </label>
               {{ range .Site.Taxonomies.categories }}
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
                 <input type="checkbox" value="{{ .Page.Title | urlize }}" class="category-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500">
-                <span class="text-sm">{{ .Page.Title }}</span>
+                <span class="text-sm dark:text-overcast-200">{{ .Page.Title }}</span>
                 <span class="ml-auto text-xs text-overcast-400">({{ len .Pages }})</span>
               </label>
               {{ end }}
@@ -114,22 +114,22 @@
 
         <!-- City Filter (Primary - City-focused navigation) -->
         <div class="relative" data-filter-group="city">
-          <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 bg-white hover:border-sound-300 text-sm font-medium transition-colors">
+          <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 dark:border-overcast-600 bg-white dark:bg-overcast-800 hover:border-sound-300 dark:hover:border-sound-600 text-sm font-medium transition-colors dark:text-overcast-200">
             <span>City</span>
             <svg class="w-4 h-4 text-overcast-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </button>
-          <div class="filter-dropdown hidden absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-overcast-200 p-3 z-50">
+          <div class="filter-dropdown hidden absolute top-full left-0 mt-2 w-64 bg-white dark:bg-overcast-800 rounded-xl shadow-xl border border-overcast-200 dark:border-overcast-700 p-3 z-50">
             <div class="space-y-1 max-h-64 overflow-y-auto" id="city-filter-list">
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
                 <input type="checkbox" value="all" class="city-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500" checked>
-                <span class="text-sm">All Cities</span>
+                <span class="text-sm dark:text-overcast-200">All Cities</span>
               </label>
               {{ range $key, $value := .Site.Params.cities }}
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
                 <input type="checkbox" value="{{ $key }}" class="city-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500">
-                <span class="text-sm">{{ $value }}</span>
+                <span class="text-sm dark:text-overcast-200">{{ $value }}</span>
               </label>
               {{ end }}
             </div>
@@ -138,22 +138,22 @@
 
         <!-- County Filter (Secondary) -->
         <div class="relative" data-filter-group="county">
-          <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 bg-white hover:border-sound-300 text-sm font-medium transition-colors">
+          <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 dark:border-overcast-600 bg-white dark:bg-overcast-800 hover:border-sound-300 dark:hover:border-sound-600 text-sm font-medium transition-colors dark:text-overcast-200">
             <span>County</span>
             <svg class="w-4 h-4 text-overcast-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </button>
-          <div class="filter-dropdown hidden absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-overcast-200 p-3 z-50">
+          <div class="filter-dropdown hidden absolute top-full left-0 mt-2 w-64 bg-white dark:bg-overcast-800 rounded-xl shadow-xl border border-overcast-200 dark:border-overcast-700 p-3 z-50">
             <div class="space-y-1">
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
                 <input type="checkbox" value="all" class="county-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500" checked>
-                <span class="text-sm">All Counties</span>
+                <span class="text-sm dark:text-overcast-200">All Counties</span>
               </label>
               {{ range $key, $value := .Site.Params.counties }}
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
                 <input type="checkbox" value="{{ $key }}" class="county-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500">
-                <span class="text-sm">{{ $value }}</span>
+                <span class="text-sm dark:text-overcast-200">{{ $value }}</span>
               </label>
               {{ end }}
             </div>
@@ -162,37 +162,37 @@
 
         <!-- Audience Filter (For Founders) -->
         <div class="relative" data-filter-group="audience">
-          <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 bg-white hover:border-sound-300 text-sm font-medium transition-colors">
+          <button class="filter-dropdown-btn flex items-center gap-2 px-4 py-2 rounded-lg border border-overcast-200 dark:border-overcast-600 bg-white dark:bg-overcast-800 hover:border-sound-300 dark:hover:border-sound-600 text-sm font-medium transition-colors dark:text-overcast-200">
             <span>For Founders</span>
             <svg class="w-4 h-4 text-overcast-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
             </svg>
           </button>
-          <div class="filter-dropdown hidden absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-xl border border-overcast-200 p-3 z-50">
+          <div class="filter-dropdown hidden absolute top-full left-0 mt-2 w-64 bg-white dark:bg-overcast-800 rounded-xl shadow-xl border border-overcast-200 dark:border-overcast-700 p-3 z-50">
             <div class="space-y-1">
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
                 <input type="checkbox" value="all" class="audience-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500" checked>
-                <span class="text-sm">All Founders</span>
+                <span class="text-sm dark:text-overcast-200">All Founders</span>
               </label>
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
                 <input type="checkbox" value="bipoc" class="audience-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500">
-                <span class="text-sm">BIPOC Founders</span>
+                <span class="text-sm dark:text-overcast-200">BIPOC Founders</span>
               </label>
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
                 <input type="checkbox" value="women" class="audience-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500">
-                <span class="text-sm">Women Founders</span>
+                <span class="text-sm dark:text-overcast-200">Women Founders</span>
               </label>
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
                 <input type="checkbox" value="veterans" class="audience-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500">
-                <span class="text-sm">Veteran Founders</span>
+                <span class="text-sm dark:text-overcast-200">Veteran Founders</span>
               </label>
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
                 <input type="checkbox" value="lgbtq" class="audience-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500">
-                <span class="text-sm">LGBTQ+ Founders</span>
+                <span class="text-sm dark:text-overcast-200">LGBTQ+ Founders</span>
               </label>
-              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 cursor-pointer transition-colors">
+              <label class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-overcast-50 dark:hover:bg-overcast-700 cursor-pointer transition-colors">
                 <input type="checkbox" value="immigrant" class="audience-filter w-4 h-4 rounded border-overcast-300 text-sound-600 focus:ring-sound-500">
-                <span class="text-sm">Immigrant Founders</span>
+                <span class="text-sm dark:text-overcast-200">Immigrant Founders</span>
               </label>
             </div>
           </div>
@@ -331,13 +331,13 @@
 
     <!-- No Results State -->
     <div id="no-results" class="hidden text-center py-20">
-      <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-overcast-100 flex items-center justify-center">
+      <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-overcast-100 dark:bg-overcast-800 flex items-center justify-center">
         <svg class="w-10 h-10 text-overcast-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
         </svg>
       </div>
-      <h3 class="font-display font-bold text-xl text-overcast-700 mb-2">No resources found</h3>
-      <p class="text-overcast-500 mb-6">Try adjusting your filters or search terms</p>
+      <h3 class="font-display font-bold text-xl text-overcast-700 dark:text-overcast-200 mb-2">No resources found</h3>
+      <p class="text-overcast-500 dark:text-overcast-400 mb-6">Try adjusting your filters or search terms</p>
       <button onclick="clearAllFilters()" class="inline-flex items-center px-6 py-3 sun-break text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
         Clear all filters
       </button>
@@ -345,13 +345,13 @@
     {{ else }}
     <!-- Empty State -->
     <div class="text-center py-20">
-      <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-overcast-100 flex items-center justify-center">
+      <div class="w-20 h-20 mx-auto mb-6 rounded-2xl bg-overcast-100 dark:bg-overcast-800 flex items-center justify-center">
         <svg class="w-10 h-10 text-overcast-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
         </svg>
       </div>
-      <h3 class="font-display font-bold text-xl text-overcast-700 mb-2">No resources yet</h3>
-      <p class="text-overcast-500 mb-6">Be the first to contribute!</p>
+      <h3 class="font-display font-bold text-xl text-overcast-700 dark:text-overcast-200 mb-2">No resources yet</h3>
+      <p class="text-overcast-500 dark:text-overcast-400 mb-6">Be the first to contribute!</p>
       <a href="/submit/" class="inline-flex items-center px-6 py-3 sun-break text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
         <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
@@ -511,15 +511,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
       let visible = true;
 
-      // Search filter
+      // Search filter - substring matching
       if (filters.search) {
-        const searchTerms = filters.search.split(' ');
-        visible = searchTerms.every(term =>
-          title.includes(term) ||
-          description.includes(term) ||
-          category.includes(term) ||
-          organization.includes(term)
-        );
+        const searchTerms = filters.search.toLowerCase().split(' ').filter(t => t.length > 0);
+        const searchableText = [title, description, category, organization].join(' ');
+
+        visible = searchTerms.every(term => {
+          // Direct substring match
+          return searchableText.includes(term);
+        });
       }
 
       // Category filter
@@ -559,8 +559,12 @@ document.addEventListener('DOMContentLoaded', function() {
         visible = cost.includes('free');
       }
 
-      card.style.display = visible ? '' : 'none';
-      if (visible) visibleCount++;
+      if (visible) {
+        card.classList.remove('filtered-out');
+        visibleCount++;
+      } else {
+        card.classList.add('filtered-out');
+      }
     });
 
     // Update count
@@ -652,7 +656,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     if (params.get('q')) {
-      filters.search = params.get('q');
+      filters.search = params.get('q').toLowerCase().trim();
       if (searchInput) searchInput.value = filters.search;
     }
 

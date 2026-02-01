@@ -1,0 +1,113 @@
+{{ define "main" }}
+<div class="relative">
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden py-12 lg:py-20 border-b border-overcast-200 dark:border-overcast-700">
+    <div class="absolute inset-0 dots-pattern opacity-30 dark:opacity-10"></div>
+
+    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="flex mb-6" aria-label="Breadcrumb">
+        <ol class="flex items-center space-x-2 text-sm font-mono">
+          <li><a href="{{ .Site.BaseURL }}" class="text-overcast-500 dark:text-overcast-400 hover:text-sound-600 dark:hover:text-sound-400 transition-colors">Home</a></li>
+          <li class="text-overcast-300 dark:text-overcast-600">/</li>
+          <li class="text-sound-600 dark:text-sound-400 font-medium">{{ .Title }}</li>
+        </ol>
+      </nav>
+
+      <h1 class="font-display font-black text-4xl md:text-5xl lg:text-6xl text-overcast-900 dark:text-white mb-4 tracking-tight">
+        {{ .Title }}
+      </h1>
+
+      <p class="text-lg md:text-xl text-overcast-600 dark:text-overcast-300 leading-relaxed mb-8 max-w-2xl">
+        {{ with .Description }}{{ . }}{{ else }}Help fellow founders discover free resources in Greater Seattle.{{ end }}
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <!-- Quick Options Cards -->
+    <div class="grid md:grid-cols-2 gap-6 mb-12">
+      <!-- GitHub PR Option -->
+      <a href="https://github.com/adambkovacs/seattlestartups.info/fork"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="group relative bg-white dark:bg-overcast-800 rounded-2xl border-2 border-overcast-200 dark:border-overcast-700 p-8 hover:border-sound-400 dark:hover:border-sound-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-overcast-800 to-overcast-900 dark:from-overcast-700 dark:to-overcast-800 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <h2 class="font-display font-bold text-xl text-overcast-900 dark:text-white mb-2 group-hover:text-sound-600 dark:group-hover:text-sound-400 transition-colors">
+          Submit via GitHub PR
+        </h2>
+        <p class="text-overcast-600 dark:text-overcast-400 text-sm mb-4">
+          Fork the repo, add your resource to the YAML files, and submit a pull request. Best for developers.
+        </p>
+        <span class="inline-flex items-center text-sound-600 dark:text-sound-400 font-medium text-sm group-hover:translate-x-1 transition-transform">
+          Fork Repository
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+          </svg>
+        </span>
+      </a>
+
+      <!-- GitHub Issue Option -->
+      <a href="https://github.com/adambkovacs/seattlestartups.info/issues/new?template=resource_suggestion.md&title=New+Resource:+[Resource+Name]"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="group relative bg-white dark:bg-overcast-800 rounded-2xl border-2 border-overcast-200 dark:border-overcast-700 p-8 hover:border-fir-400 dark:hover:border-fir-500 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+        <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-fir-500 to-fir-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+          <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/>
+          </svg>
+        </div>
+        <h2 class="font-display font-bold text-xl text-overcast-900 dark:text-white mb-2 group-hover:text-fir-600 dark:group-hover:text-fir-400 transition-colors">
+          Submit via GitHub Issue
+        </h2>
+        <p class="text-overcast-600 dark:text-overcast-400 text-sm mb-4">
+          Open an issue with the resource details. We'll add it for you. No coding required.
+        </p>
+        <span class="inline-flex items-center text-fir-600 dark:text-fir-400 font-medium text-sm group-hover:translate-x-1 transition-transform">
+          Open Issue
+          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+
+    <!-- Detailed Instructions from Markdown -->
+    {{ with .Content }}
+    <div class="bg-overcast-50 dark:bg-overcast-800/50 rounded-2xl border border-overcast-200 dark:border-overcast-700 p-8">
+      <div class="prose prose-lg dark:prose-invert max-w-none
+                  prose-headings:font-display prose-headings:text-overcast-900 dark:prose-headings:text-white
+                  prose-p:text-overcast-600 dark:prose-p:text-overcast-300
+                  prose-a:text-sound-600 dark:prose-a:text-sound-400 prose-a:no-underline hover:prose-a:underline
+                  prose-code:bg-overcast-100 dark:prose-code:bg-overcast-700 prose-code:px-1 prose-code:py-0.5 prose-code:rounded
+                  prose-pre:bg-overcast-900 dark:prose-pre:bg-overcast-950
+                  prose-strong:text-overcast-900 dark:prose-strong:text-white
+                  prose-ul:text-overcast-600 dark:prose-ul:text-overcast-300
+                  prose-table:text-overcast-600 dark:prose-table:text-overcast-300
+                  prose-th:text-overcast-900 dark:prose-th:text-white prose-th:font-display">
+        {{ . }}
+      </div>
+    </div>
+    {{ end }}
+
+    <!-- CTA -->
+    <div class="mt-12 text-center">
+      <p class="text-overcast-500 dark:text-overcast-400 mb-4">Questions about contributing?</p>
+      <a href="https://github.com/adambkovacs/seattlestartups.info/issues"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="inline-flex items-center text-sound-600 dark:text-sound-400 hover:text-sound-700 dark:hover:text-sound-300 font-medium">
+        Open an issue on GitHub
+        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+</div>
+{{ end }}
