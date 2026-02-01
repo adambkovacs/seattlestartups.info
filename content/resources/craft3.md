@@ -8,7 +8,7 @@ eligibility: "Tribal nations, BIPOC, women, veterans, immigrants"
 city: "Seattle"
 counties: ["King","Snohomish","Pierce","Kitsap","Thurston"]
 categories: ["Funding"]
-audiences: ["bipoc","women","veterans"]
+audiences: ["bipoc","women","veterans","immigrants"]
 featured: true
 date: 2026-01-31
 type: resources

@@ -115,7 +115,8 @@ resources:
       - "Snohomish"
     categories:
       - "Spaces"
-    audiences: []
+    audiences:
+      - "immigrants"
     featured: false
     industries:
       - "aerospace"
@@ -403,6 +404,7 @@ resources:
     audiences:
       - "bipoc"
       - "women"
+      - "immigrants"
     featured: true
     industries:
       - "food"

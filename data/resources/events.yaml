@@ -208,7 +208,8 @@ resources:
       - "King"
     categories:
       - "Events"
-    audiences: []
+    audiences:
+      - "bipoc"
     featured: false
     industries:
       - "general"
@@ -223,7 +224,8 @@ resources:
       - "King"
     categories:
       - "Events"
-    audiences: []
+    audiences:
+      - "bipoc"
     featured: false
     industries:
       - "general"

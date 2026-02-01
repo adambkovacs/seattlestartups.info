@@ -8,7 +8,7 @@ eligibility: "South King BIPOC/immigrant/women"
 city: "Tukwila"
 counties: ["King"]
 categories: ["Spaces"]
-audiences: ["bipoc","women"]
+audiences: ["bipoc","women","immigrants"]
 featured: true
 date: 2026-01-31
 type: resources

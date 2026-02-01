@@ -8,7 +8,7 @@ eligibility: "International SMBs"
 city: "Everett"
 counties: ["Snohomish"]
 categories: ["Spaces"]
-audiences: []
+audiences: ["immigrants"]
 featured: false
 date: 2026-01-31
 type: resources

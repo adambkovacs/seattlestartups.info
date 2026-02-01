@@ -8,7 +8,7 @@ eligibility: "Filipino founders"
 city: "Seattle"
 counties: ["King"]
 categories: ["Events"]
-audiences: []
+audiences: ["bipoc"]
 featured: false
 date: 2026-01-31
 type: resources
