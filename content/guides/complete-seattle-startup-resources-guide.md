@@ -357,6 +357,16 @@ These resources fly under most founders' radar:
 
 ---
 
+## Related Guides
+
+Looking for more specific resources? Check out these focused guides:
+
+- **[King County Startup Resources](/guides/king-county-startup-resources/)** — Deep dive into Seattle, Bellevue, Redmond, and surrounding areas
+- **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** — Complete comparison of 28 programs with eligibility, costs, and outcomes
+- **[BIPOC Founder Resources](/guides/bipoc-founder-resources-seattle/)** — Programs specifically supporting Black, Indigenous, and founders of color
+
+---
+
 ## Next Steps
 
 1. **Find your county resources** - Browse by your location
