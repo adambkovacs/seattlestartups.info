@@ -65,9 +65,13 @@ theme = 'startup-theme'
     url = "/audiences/"
     weight = 3
   [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 4
+  [[menu.main]]
     name = "Submit"
     url = "/submit/"
-    weight = 4
+    weight = 5
 
 # Build optimization for Tailwind CSS (Hugo best practice)
 [build]
