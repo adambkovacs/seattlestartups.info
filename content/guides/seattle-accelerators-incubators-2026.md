@@ -365,8 +365,12 @@ What should you do once a program ends?
 Explore more Seattle startup resources:
 
 - **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** — All 248+ free resources across Greater Seattle
-- **[BIPOC Founder Resources](/guides/bipoc-founder-resources-seattle/)** — Programs specifically supporting underrepresented founders including SEA619, AWS Impact, and Spaceworks
-- **[King County Startup Resources](/guides/king-county-startup-resources/)** — Deep dive into Seattle, Bellevue, and surrounding areas
+- **[AI & ML Startup Resources](/guides/ai-ml-startup-resources-seattle/)** — AI2 Incubator, AWS GenAI Accelerator, and 35 AI programs
+- **[Climate Tech Resources](/guides/climate-tech-startup-resources-seattle/)** — 42 cleantech accelerators and funding programs
+- **[Women Founder Resources](/guides/women-founder-resources-seattle/)** — 47 programs for women entrepreneurs
+- **[Veteran Founder Resources](/guides/veteran-founder-resources-seattle/)** — 38 programs for military veterans
+- **[BIPOC Founder Resources](/guides/bipoc-founder-resources-seattle/)** — SEA619, AWS Impact, and underrepresented founder programs
+- **[King County Startup Resources](/guides/king-county-startup-resources/)** — Seattle, Bellevue, and Eastside resources
 
 ---
 

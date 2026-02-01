@@ -308,8 +308,11 @@ These Greater Seattle BIPOC founders have used local resources:
 Explore more Seattle startup resources:
 
 - **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** — All 248+ free resources across Greater Seattle
-- **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** — Compare 28 programs including BIPOC-focused accelerators like SEA619 and AWS Impact
-- **[King County Startup Resources](/guides/king-county-startup-resources/)** — Deep dive into Seattle, Bellevue, and surrounding areas
+- **[Women Founder Resources](/guides/women-founder-resources-seattle/)** — 47 programs for women entrepreneurs
+- **[Veteran Founder Resources](/guides/veteran-founder-resources-seattle/)** — 38 programs for military veterans
+- **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** — Compare 28 programs
+- **[Pierce County Startup Resources](/guides/pierce-county-startup-resources/)** — Tacoma and South Sound (includes Spaceworks)
+- **[King County Startup Resources](/guides/king-county-startup-resources/)** — Seattle, Bellevue, and Eastside resources
 
 ---
 
