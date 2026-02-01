@@ -124,4 +124,20 @@ module.exports = {
     },
   },
   plugins: [],
+  // Safelist dynamically generated gradient classes for cities page
+  safelist: [
+    // Sound gradients (Seattle)
+    'from-sound-500', 'to-sound-600', 'from-sound-600', 'to-sound-700',
+    // Fir gradients (Tacoma)
+    'from-fir-500', 'to-fir-600', 'from-fir-600', 'to-fir-700',
+    // Standard Tailwind gradients for cities
+    'from-cyan-500', 'to-cyan-600',
+    'from-indigo-500', 'to-indigo-600',
+    'from-emerald-500', 'to-emerald-600',
+    'from-blue-500', 'to-blue-600',
+    'from-purple-500', 'to-purple-600',
+    'from-teal-500', 'to-teal-600',
+    'from-rose-500', 'to-rose-600',
+    'from-amber-500', 'to-amber-600',
+  ],
 }

@@ -16,18 +16,50 @@
         </nav>
 
         <h1 class="font-display font-black text-4xl md:text-5xl lg:text-6xl text-overcast-900 dark:text-white mb-4 tracking-tight">
-          Resources for Diverse Founders
+          Resources for Founders
         </h1>
 
         <p class="text-lg md:text-xl text-overcast-600 dark:text-overcast-300 leading-relaxed mb-8 max-w-2xl">
-          {{ with .Description }}{{ . }}{{ else }}Seattle's startup ecosystem includes programs specifically designed to support underrepresented founders.{{ end }}
+          {{ with .Description }}{{ . }}{{ else }}248+ free resources for every founder in Greater Seattle. From accelerators to funding, mentorship to workspaces.{{ end }}
         </p>
       </div>
     </div>
   </section>
 
-  <!-- Audience Category Cards -->
+  <!-- All Founders Section -->
   <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <a href="/resources/"
+       class="group block relative bg-gradient-to-br from-sound-500 to-sound-600 rounded-2xl p-8 md:p-12 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 text-white mb-8">
+      <div class="flex flex-col md:flex-row items-start md:items-center gap-6">
+        <div class="w-20 h-20 rounded-2xl bg-white/20 flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform">
+          <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+          </svg>
+        </div>
+        <div class="flex-grow">
+          <h2 class="font-display font-bold text-3xl md:text-4xl mb-3">
+            All Founders
+          </h2>
+          <p class="text-white/80 text-lg mb-4 max-w-2xl">
+            Browse all 248+ free resources. Accelerators, funding, mentorship, coworking spaces, events, and government programs. Filter by city, category, or startup stage.
+          </p>
+          <span class="inline-flex items-center font-semibold text-lg group-hover:translate-x-2 transition-transform">
+            Browse All Resources
+            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+            </svg>
+          </span>
+        </div>
+      </div>
+    </a>
+
+    <h2 class="font-display font-bold text-2xl text-overcast-900 dark:text-white mb-6">
+      Programs for Specific Founder Communities
+    </h2>
+    <p class="text-overcast-600 dark:text-overcast-400 mb-8 max-w-3xl">
+      Seattle's startup ecosystem includes programs specifically designed to support underrepresented founders.
+    </p>
+
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
       <!-- BIPOC Founders -->
@@ -159,28 +191,6 @@
         </ul>
         <span class="inline-flex items-center text-sound-600 dark:text-sound-400 font-medium text-sm group-hover:translate-x-1 transition-transform">
           View Resources
-          <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-          </svg>
-        </span>
-      </a>
-
-      <!-- All Founders (CTA) -->
-      <a href="/resources/"
-         class="group relative bg-gradient-to-br from-sound-500 to-sound-600 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-white">
-        <div class="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-          <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
-          </svg>
-        </div>
-        <h2 class="font-display font-bold text-2xl mb-2">
-          Browse All Resources
-        </h2>
-        <p class="text-white/80 mb-4">
-          See all 248+ free resources with full filtering options.
-        </p>
-        <span class="inline-flex items-center font-medium text-sm group-hover:translate-x-1 transition-transform">
-          View All
           <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
           </svg>

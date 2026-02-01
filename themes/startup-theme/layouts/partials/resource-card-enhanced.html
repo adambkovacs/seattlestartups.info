@@ -7,7 +7,7 @@
 {{ $audiences := delimit $resource.audiences "," }}
 {{ $industries := delimit $resource.industries "," }}
 
-<article class="resource-card group relative bg-white rounded-2xl border border-overcast-200 overflow-hidden transition-all duration-300 hover:border-sound-400 hover:shadow-xl hover:shadow-sound-500/10 hover:-translate-y-1"
+<article class="resource-card group relative bg-white dark:bg-overcast-800 rounded-2xl border border-overcast-200 dark:border-overcast-700 overflow-hidden transition-all duration-300 hover:border-sound-400 dark:hover:border-sound-500 hover:shadow-xl hover:shadow-sound-500/10 dark:hover:shadow-sound-900/20 hover:-translate-y-1"
          style="animation-delay: {{ mul $index 50 }}ms"
          data-resource-card
          data-title="{{ $resource.name }}"
@@ -22,7 +22,7 @@
 
   <!-- Animated gradient border on hover -->
   <div class="absolute inset-0 rounded-2xl bg-gradient-to-r from-sound-500 via-fir-500 to-sound-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500" style="padding: 2px; background-size: 200% 100%; animation: gradientMove 3s linear infinite;">
-    <div class="h-full w-full bg-white rounded-2xl"></div>
+    <div class="h-full w-full bg-white dark:bg-overcast-800 rounded-2xl"></div>
   </div>
 
   <!-- Card Content -->
@@ -55,13 +55,13 @@
     </div>
 
     <!-- Title -->
-    <h3 class="font-display font-bold text-lg text-overcast-900 mb-2 group-hover:text-sound-600 transition-colors duration-200 line-clamp-2 leading-tight">
+    <h3 class="font-display font-bold text-lg text-overcast-900 dark:text-white mb-2 group-hover:text-sound-600 dark:group-hover:text-sound-400 transition-colors duration-200 line-clamp-2 leading-tight">
       {{ $resource.name }}
     </h3>
 
     <!-- Organization -->
     {{ with $resource.organization }}
-    <p class="text-sm text-overcast-500 mb-3 flex items-center">
+    <p class="text-sm text-overcast-500 dark:text-overcast-400 mb-3 flex items-center">
       <svg class="w-4 h-4 mr-1.5 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
       </svg>
@@ -70,14 +70,14 @@
     {{ end }}
 
     <!-- Description -->
-    <p class="text-overcast-600 text-sm leading-relaxed mb-4 line-clamp-3">
+    <p class="text-overcast-600 dark:text-overcast-300 text-sm leading-relaxed mb-4 line-clamp-3">
       {{ $resource.description }}
     </p>
 
     <!-- Tags Row -->
     <div class="flex flex-wrap items-center gap-2 mb-4">
       {{ with $resource.cost }}
-      <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold {{ if eq . "Free" }}bg-fir-100 text-fir-700{{ else }}bg-overcast-100 text-overcast-600{{ end }}">
+      <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold {{ if eq . "Free" }}bg-fir-100 dark:bg-fir-900/50 text-fir-700 dark:text-fir-300{{ else }}bg-overcast-100 dark:bg-overcast-700 text-overcast-600 dark:text-overcast-300{{ end }}">
         {{ if eq . "Free" }}
         <svg class="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
@@ -87,12 +87,12 @@
       </span>
       {{ end }}
 
-      <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-medium bg-overcast-100 text-overcast-600">
+      <span class="inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-medium bg-overcast-100 dark:bg-overcast-700 text-overcast-600 dark:text-overcast-300">
         {{ $category }}
       </span>
 
       {{ range $resource.audiences }}
-      <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-sound-50 text-sound-700">
+      <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-sound-50 dark:bg-sound-900/50 text-sound-700 dark:text-sound-300">
         {{ . | humanize }}
       </span>
       {{ end }}
@@ -102,7 +102,7 @@
     <a href="{{ $resource.website }}"
        target="_blank"
        rel="noopener noreferrer"
-       class="resource-link inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-overcast-50 text-overcast-700 font-medium text-sm group-hover:bg-sound-50 group-hover:text-sound-700 transition-all duration-200"
+       class="resource-link inline-flex items-center justify-between w-full px-4 py-3 rounded-xl bg-overcast-50 dark:bg-overcast-700 text-overcast-700 dark:text-overcast-200 font-medium text-sm group-hover:bg-sound-50 dark:group-hover:bg-sound-900/50 group-hover:text-sound-700 dark:group-hover:text-sound-300 transition-all duration-200"
        data-track-click
        data-resource-name="{{ $resource.name }}"
        data-resource-url="{{ $resource.website }}">
@@ -124,7 +124,13 @@
 }
 
 .resource-card {
-  animation: fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) backwards;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.resource-card.filtered-out {
+  display: none !important;
 }
 
 @keyframes fadeInUp {
