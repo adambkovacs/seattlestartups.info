@@ -386,24 +386,25 @@
 
   /* ============================================
      PROSE STYLES - Exceptional Reading Experience
+     Prioritize readability, generous spacing, bold typography
      ============================================ */
   .prose {
-    max-width: 72ch;
-    line-height: 1.85;
-    font-size: 1.125rem;
+    max-width: 75ch;
+    line-height: 1.9;
+    font-size: 1.15rem;
     color: #3f3f46;
   }
   .dark .prose {
     color: #d4d4d8;
   }
 
-  /* Headings with elegant spacing */
+  /* Headings with bold, generous spacing */
   .prose h2 {
-    margin-top: 2.5em;
-    margin-bottom: 1em;
-    font-size: 1.75rem;
-    font-weight: 700;
-    letter-spacing: -0.025em;
+    margin-top: 3em;
+    margin-bottom: 1.25em;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
     color: #18181b;
     position: relative;
     padding-bottom: 0.75em;
@@ -416,28 +417,29 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 60px;
-    height: 3px;
+    width: 80px;
+    height: 4px;
     background: linear-gradient(90deg, #0891b2, #059669);
     border-radius: 2px;
   }
 
   .prose h3 {
-    margin-top: 2em;
-    margin-bottom: 0.75em;
-    font-size: 1.35rem;
-    font-weight: 600;
+    margin-top: 2.5em;
+    margin-bottom: 1em;
+    font-size: 1.5rem;
+    font-weight: 700;
     color: #27272a;
+    letter-spacing: -0.02em;
   }
   .dark .prose h3 {
     color: #e4e4e7;
   }
 
   .prose h4 {
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    font-size: 1.1rem;
-    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 0.75em;
+    font-size: 1.2rem;
+    font-weight: 700;
     color: #3f3f46;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -448,95 +450,138 @@
 
   /* Paragraphs with optimal reading spacing */
   .prose p {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.75em;
+    line-height: 1.9;
   }
   .prose p + p {
     margin-top: 0;
   }
 
-  /* Beautiful bullet lists */
+  /* Beautiful bullet lists - large visible bullets */
   .prose ul {
-    margin: 1.5em 0;
+    margin: 2em 0;
     padding-left: 0;
     list-style: none;
   }
   .prose ul li {
     position: relative;
-    padding-left: 1.75em;
-    margin-bottom: 0.75em;
-    line-height: 1.75;
+    padding-left: 2em;
+    margin-bottom: 1em;
+    line-height: 1.8;
+    font-size: 1.05rem;
   }
   .prose ul li::before {
     content: '';
     position: absolute;
     left: 0;
-    top: 0.6em;
-    width: 8px;
-    height: 8px;
+    top: 0.55em;
+    width: 10px;
+    height: 10px;
     background: linear-gradient(135deg, #0891b2, #059669);
     border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(8, 145, 178, 0.3);
+  }
+  .prose ul ul {
+    margin: 0.75em 0 0.75em 0.5em;
+  }
+  .prose ul ul li {
+    font-size: 1rem;
   }
   .prose ul ul li::before {
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
+    background: #0891b2;
+    box-shadow: none;
+  }
+  .prose ul ul ul li::before {
+    width: 5px;
+    height: 5px;
     background: #71717a;
+    border-radius: 0;
+    transform: rotate(45deg);
   }
 
-  /* Elegant numbered lists */
+  /* Elegant numbered lists - prominent numbers */
   .prose ol {
-    margin: 1.5em 0;
+    margin: 2em 0;
     padding-left: 0;
     list-style: none;
     counter-reset: list-counter;
   }
   .prose ol li {
     position: relative;
-    padding-left: 2.5em;
-    margin-bottom: 1em;
-    line-height: 1.75;
+    padding-left: 3em;
+    margin-bottom: 1.25em;
+    line-height: 1.8;
+    font-size: 1.05rem;
     counter-increment: list-counter;
   }
   .prose ol li::before {
     content: counter(list-counter);
     position: absolute;
     left: 0;
-    top: 0;
-    width: 1.75em;
-    height: 1.75em;
+    top: 0.1em;
+    width: 2em;
+    height: 2em;
     background: linear-gradient(135deg, #0891b2, #059669);
     color: white;
-    font-weight: 600;
-    font-size: 0.85em;
+    font-weight: 700;
+    font-size: 0.9em;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 2px 4px rgba(8, 145, 178, 0.3);
+  }
+  .prose ol ol {
+    margin: 0.75em 0 0.75em 0.5em;
+    counter-reset: nested-counter;
+  }
+  .prose ol ol li {
+    counter-increment: nested-counter;
+    font-size: 1rem;
+    padding-left: 2.5em;
+  }
+  .prose ol ol li::before {
+    content: counter(nested-counter, lower-alpha);
+    width: 1.5em;
+    height: 1.5em;
+    background: #0891b2;
+    font-size: 0.8em;
+    box-shadow: none;
   }
 
-  /* Beautiful tables */
+  /* Beautiful tables with visible borders */
   .prose table {
     width: 100%;
-    margin: 2em 0;
+    margin: 2.5em 0;
     border-collapse: separate;
     border-spacing: 0;
     border-radius: 12px;
     overflow: hidden;
+    border: 2px solid #e4e4e7;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    font-size: 0.95rem;
   }
   .dark .prose table {
+    border-color: #3f3f46;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
   }
   .prose thead {
     background: linear-gradient(135deg, #0891b2, #0d9488);
   }
   .prose th {
-    padding: 1em 1.25em;
-    font-weight: 600;
+    padding: 1.25em 1.5em;
+    font-weight: 700;
     text-align: left;
     color: white;
     font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  }
+  .prose th:not(:last-child) {
+    border-right: 1px solid rgba(255, 255, 255, 0.15);
   }
   .prose tbody tr {
     background: white;
@@ -546,7 +591,7 @@
     background: #27272a;
   }
   .prose tbody tr:nth-child(even) {
-    background: #f4f4f5;
+    background: #f8fafc;
   }
   .dark .prose tbody tr:nth-child(even) {
     background: #3f3f46;
@@ -558,20 +603,28 @@
     background: #164e63;
   }
   .prose td {
-    padding: 1em 1.25em;
+    padding: 1.125em 1.5em;
     border-top: 1px solid #e4e4e7;
+    border-right: 1px solid #e4e4e7;
     color: #3f3f46;
+    line-height: 1.6;
+  }
+  .prose td:last-child {
+    border-right: none;
   }
   .dark .prose td {
     border-top-color: #52525b;
+    border-right-color: #52525b;
     color: #d4d4d8;
   }
   .prose td:first-child {
-    font-weight: 500;
+    font-weight: 600;
     color: #18181b;
+    background: rgba(8, 145, 178, 0.05);
   }
   .dark .prose td:first-child {
     color: #fafafa;
+    background: rgba(8, 145, 178, 0.1);
   }
 
   /* Blockquotes - elegant callouts */
