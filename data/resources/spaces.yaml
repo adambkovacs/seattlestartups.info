@@ -390,7 +390,7 @@ resources:
     featured: false
     industries:
       - "general"
-  - name: "Spice Bridge/FIN Kitchen"
+  - name: "Spice Bridge-FIN Kitchen"
     description: "Commercial kitchen, coaching, permits/licensing, marketing for food entrepreneurs"
     organization: "Food Innovation Network"
     website: "https://spicebridge.org"
@@ -458,7 +458,7 @@ resources:
       - "aerospace"
       - "creative"
       - "hardware"
-  - name: "TheLab@Everett"
+  - name: "TheLab Everett"
     description: "FREE advisory services, 3D printers, and workspaces for inventors"
     organization: "NWIRC (nonprofit)"
     website: "https://nwirc.com"

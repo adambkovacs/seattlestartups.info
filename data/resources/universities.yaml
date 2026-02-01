@@ -302,7 +302,7 @@ resources:
       - "ai"
       - "maritime"
       - "creative"
-  - name: "Business.wa.gov"
+  - name: "Business WA Gov"
     description: "Free workshops, Small Business Guide (10 languages), Information Center (M-F 8am-4:30pm)"
     organization: "Governor's Office (ORIA)"
     website: "https://business.wa.gov"

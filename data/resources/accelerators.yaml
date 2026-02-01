@@ -425,7 +425,7 @@ resources:
     featured: false
     industries:
       - "food"
-  - name: "TheLab@Everett"
+  - name: "TheLab Everett"
     description: "FREE advisory services, 3D printers, and workspaces for inventors and entrepreneurs"
     organization: "NWIRC (nonprofit)"
     website: "https://nwirc.com"

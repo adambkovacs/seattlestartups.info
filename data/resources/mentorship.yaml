@@ -127,7 +127,7 @@ resources:
     featured: false
     industries:
       - "tech"
-  - name: "Lacey/Olympia SBDC"
+  - name: "Lacey-Olympia SBDC"
     description: "Business counseling and video series at Thurston EDC"
     organization: "WA SBDC/Thurston EDC"
     website: "https://businessresources.thurstonedc.com"

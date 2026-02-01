@@ -167,7 +167,7 @@ resources:
     industries:
       - "tech"
       - "creative"
-  - name: "Pierce County Library Job+Business Center"
+  - name: "Pierce County Library Job-Business Center"
     description: "Technology skills, certifications (MS/Adobe/QuickBooks), and databases"
     organization: "Pierce County Library System"
     website: "https://mypcls.org/learn-explore/job-business"
