@@ -1,11 +1,11 @@
 ---
 title: "Seattle Startups"
-description: "170+ verified free resources for early-stage founders in Greater Seattle"
+description: "248+ verified free resources for early-stage founders in Greater Seattle"
 ---
 
 # Your Launchpad to the Seattle Startup Ecosystem
 
-Discover **170+ verified free resources** for founders across King, Snohomish, Pierce, Kitsap, and Thurston counties. From accelerators to makerspaces, mentorship to funding—all in one place.
+Discover **248+ verified free resources** for founders across King, Snohomish, Pierce, Kitsap, and Thurston counties. From accelerators to makerspaces, mentorship to funding—all in one place.
 
 ## Why This Exists
 
