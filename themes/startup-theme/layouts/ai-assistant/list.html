@@ -1,0 +1,138 @@
+{{ define "main" }}
+<div class="min-h-screen bg-gradient-to-b from-overcast-50 to-white dark:from-overcast-900 dark:to-overcast-800">
+  <!-- Hero Section -->
+  <section class="relative py-16 lg:py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <!-- AI Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sound-100 dark:bg-sound-900/50 text-sound-700 dark:text-sound-300 text-sm font-medium mb-6">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+          </svg>
+          <span>Powered by Google NotebookLM</span>
+        </div>
+
+        <h1 class="font-display text-4xl lg:text-5xl font-bold text-overcast-900 dark:text-white mb-6">
+          Chat with the <span class="gradient-text">Seattle Startup Ecosystem</span>
+        </h1>
+
+        <p class="text-lg text-overcast-600 dark:text-overcast-300 mb-8">
+          Ask questions about 248+ free resources, accelerators, funding opportunities, and mentorship programs across Greater Seattle. Our AI assistant is trained on comprehensive market research data.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI Chat Embed Section -->
+  <section class="pb-16 lg:pb-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Chat Container -->
+      <div class="bg-white dark:bg-overcast-800 rounded-2xl shadow-2xl shadow-overcast-900/10 dark:shadow-black/30 overflow-hidden border border-overcast-200 dark:border-overcast-700">
+        <!-- Chat Header -->
+        <div class="px-6 py-4 border-b border-overcast-200 dark:border-overcast-700 bg-overcast-50 dark:bg-overcast-800/50">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 sun-break rounded-xl flex items-center justify-center">
+              <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+              </svg>
+            </div>
+            <div>
+              <h2 class="font-semibold text-overcast-900 dark:text-white">Seattle Startups AI Assistant</h2>
+              <p class="text-sm text-overcast-500 dark:text-overcast-400">Trained on 248+ verified resources</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- NotebookLM Embed -->
+        <div class="aspect-[4/3] lg:aspect-[16/9] w-full">
+          <iframe
+            src="https://notebooklm.google.com/notebook/593f591c-c144-4337-a47e-d8ea6c0e2556/audio"
+            class="w-full h-full border-0"
+            title="Seattle Startups AI Assistant"
+            allow="microphone"
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <!-- Alternative Link -->
+        <div class="px-6 py-4 border-t border-overcast-200 dark:border-overcast-700 bg-overcast-50 dark:bg-overcast-800/50">
+          <p class="text-sm text-overcast-600 dark:text-overcast-400 text-center">
+            Having trouble?
+            <a href="https://notebooklm.google.com/notebook/593f591c-c144-4337-a47e-d8ea6c0e2556"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="text-sound-600 dark:text-sound-400 hover:underline font-medium">
+              Open in new tab
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Section -->
+  <section class="pb-16 lg:pb-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="prose prose-lg dark:prose-invert max-w-none">
+        {{ .Content }}
+      </div>
+    </div>
+  </section>
+
+  <!-- Example Questions -->
+  <section class="pb-16 lg:pb-24">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-2xl font-bold text-overcast-900 dark:text-white text-center mb-8">
+        Example Questions to Ask
+      </h2>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {{ $questions := slice
+          "What accelerators are available for AI startups in Seattle?"
+          "I'm a veteran. What resources are specifically for me?"
+          "How do I get free access to PitchBook?"
+          "What's the difference between SCORE and SBDC?"
+          "Which programs don't take any equity?"
+          "What funding is available in Pierce County?"
+        }}
+
+        {{ range $questions }}
+        <div class="p-4 rounded-xl bg-overcast-50 dark:bg-overcast-800/50 border border-overcast-200 dark:border-overcast-700 hover:border-sound-300 dark:hover:border-sound-600 transition-colors cursor-pointer group">
+          <div class="flex items-start gap-3">
+            <svg class="w-5 h-5 text-sound-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <p class="text-sm text-overcast-700 dark:text-overcast-300 group-hover:text-sound-600 dark:group-hover:text-sound-400 transition-colors">
+              "{{ . }}"
+            </p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="pb-16 lg:pb-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-overcast-600 dark:text-overcast-400 mb-6">
+        Prefer to browse manually? Explore our comprehensive resource directory.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href="/resources/" class="inline-flex items-center gap-2 px-6 py-3 sun-break text-white rounded-xl font-semibold shadow-lg shadow-sound-500/25 hover:shadow-xl transform hover:-translate-y-0.5 transition-all">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+          </svg>
+          Browse Resources
+        </a>
+        <a href="/guides/" class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-semibold border-2 border-overcast-300 dark:border-overcast-600 text-overcast-700 dark:text-overcast-300 hover:border-sound-500 hover:text-sound-600 dark:hover:border-sound-500 dark:hover:text-sound-400 transition-all">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+          </svg>
+          Read Guides
+        </a>
+      </div>
+    </div>
+  </section>
+</div>
+{{ end }}
