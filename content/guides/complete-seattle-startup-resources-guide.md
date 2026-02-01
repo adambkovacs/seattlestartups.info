@@ -361,9 +361,25 @@ These resources fly under most founders' radar:
 
 Looking for more specific resources? Check out these focused guides:
 
-- **[King County Startup Resources](/guides/king-county-startup-resources/)** — Deep dive into Seattle, Bellevue, Redmond, and surrounding areas
-- **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** — Complete comparison of 28 programs with eligibility, costs, and outcomes
-- **[BIPOC Founder Resources](/guides/bipoc-founder-resources-seattle/)** — Programs specifically supporting Black, Indigenous, and founders of color
+**By Location:**
+- **[King County Startup Resources](/guides/king-county-startup-resources/)** — Seattle, Bellevue, Redmond, and surrounding areas
+- **[Pierce County Startup Resources](/guides/pierce-county-startup-resources/)** — Tacoma and South Sound resources
+- **[Snohomish County Startup Resources](/guides/snohomish-county-startup-resources/)** — Everett, aerospace, and manufacturing focus
+
+**By Founder Background:**
+- **[Women Founder Resources](/guides/women-founder-resources-seattle/)** — 47 programs for women entrepreneurs
+- **[Veteran Founder Resources](/guides/veteran-founder-resources-seattle/)** — 38 programs for military veterans
+- **[BIPOC Founder Resources](/guides/bipoc-founder-resources-seattle/)** — Programs for underrepresented founders
+
+**By Industry:**
+- **[AI & ML Startup Resources](/guides/ai-ml-startup-resources-seattle/)** — AI2 Incubator, AWS GenAI, and 35 AI programs
+- **[Climate Tech Resources](/guides/climate-tech-startup-resources-seattle/)** — 42 cleantech and sustainability programs
+
+**Quick Start Guides:**
+- **[First 5 Things for Seattle Startups](/guides/first-5-things-seattle-startup/)** — Essential first steps
+- **[Top 3 Startup Enablers](/guides/top-3-startup-enablers-seattle/)** — SCORE, WTIA, and Library resources
+- **[Top 10 Funding Opportunities](/guides/top-10-funding-seattle-startups/)** — Non-dilutive funding options
+- **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** — Compare 28 programs
 
 ---
 

@@ -236,9 +236,22 @@ The resources exist. The hard part is showing up consistently.
 
 Explore more Seattle startup resources:
 
-- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** — All 248+ free resources across Greater Seattle including Pierce, Snohomish, Kitsap, and Thurston counties
-- **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** — Compare 28 programs with eligibility, costs, and outcomes
-- **[BIPOC Founder Resources](/guides/bipoc-founder-resources-seattle/)** — Programs specifically supporting underrepresented founders
+**Other Counties:**
+- **[Pierce County Startup Resources](/guides/pierce-county-startup-resources/)** — Tacoma and South Sound resources
+- **[Snohomish County Startup Resources](/guides/snohomish-county-startup-resources/)** — Everett, aerospace, and manufacturing
+- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** — All 248+ resources across 5 counties
+
+**By Founder Background:**
+- **[Women Founder Resources](/guides/women-founder-resources-seattle/)** — 47 programs for women entrepreneurs
+- **[Veteran Founder Resources](/guides/veteran-founder-resources-seattle/)** — 38 programs for military veterans
+- **[BIPOC Founder Resources](/guides/bipoc-founder-resources-seattle/)** — Programs for underrepresented founders
+
+**By Industry:**
+- **[AI & ML Startup Resources](/guides/ai-ml-startup-resources-seattle/)** — AI2 Incubator, AWS GenAI, and 35 programs
+- **[Climate Tech Resources](/guides/climate-tech-startup-resources-seattle/)** — 42 cleantech programs
+
+**Quick Start:**
+- **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** — Compare 28 programs
 
 ---
 
