@@ -123,7 +123,9 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
   // Safelist dynamically generated gradient classes for cities page
   safelist: [
     // Sound gradients (Seattle)
@@ -139,5 +141,10 @@ module.exports = {
     'from-teal-500', 'to-teal-600',
     'from-rose-500', 'to-rose-600',
     'from-amber-500', 'to-amber-600',
+    // Custom shadow colors for hover effects
+    'hover:shadow-sound-500/10', 'hover:shadow-sound-500/20',
+    'dark:hover:shadow-sound-500/20', 'dark:hover:shadow-sound-500/30',
+    'hover:shadow-fir-500/10', 'hover:shadow-fir-500/20',
+    'dark:hover:shadow-fir-500/20',
   ],
 }
