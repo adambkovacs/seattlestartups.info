@@ -3,7 +3,7 @@
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
     <div class="flex items-center justify-between h-16">
       <!-- Logo -->
-      <a href="{{ .Site.BaseURL }}" class="flex items-center gap-3 group" aria-label="{{ .Site.Title }} - Home">
+      <a href="{{ .Site.BaseURL }}" class="flex items-center gap-3 group flex-shrink-0" aria-label="{{ .Site.Title }} - Home">
         <div class="relative flex-shrink-0">
           <div class="w-10 h-10 sun-break rounded-xl flex items-center justify-center transform group-hover:scale-105 group-hover:rotate-3 transition-all duration-300 shadow-lg shadow-sound-500/25">
             <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
@@ -15,8 +15,8 @@
             </svg>
           </div>
         </div>
-        <div class="hidden sm:block">
-          <span class="font-display font-bold text-lg lg:text-xl gradient-text dark:text-white">Seattle Startups</span>
+        <div class="hidden sm:flex sm:flex-col flex-shrink-0">
+          <span class="font-display font-bold text-lg lg:text-xl gradient-text dark:text-white whitespace-nowrap">Seattle Startups</span>
           <span class="hidden xl:block text-xs text-overcast-500 dark:text-overcast-400 font-medium">{{ .Site.Params.tagline }}</span>
         </div>
       </a>
@@ -58,7 +58,7 @@
       </div>
 
       <!-- Right Side Actions -->
-      <div class="flex items-center gap-2">
+      <div class="flex items-center gap-2 flex-shrink-0 flex-nowrap">
         <!-- GitHub Link -->
         <a href="{{ $.Site.Params.github }}"
            target="_blank"
