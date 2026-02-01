@@ -1,0 +1,36 @@
+{{/*
+  GEO Meta Tags Partial
+  Enhanced meta tags for Generative Engine Optimization (AI citation)
+
+  These additional meta tags help AI systems understand and cite content properly.
+*/}}
+
+<!-- GEO: Enhanced Meta Tags for AI Systems -->
+<!-- Content freshness signals -->
+<meta name="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
+<meta name="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+
+<!-- Content categorization for AI -->
+{{ with .Section }}<meta name="article:section" content="{{ . | title }}">{{ end }}
+{{ range .Params.tags }}<meta name="article:tag" content="{{ . }}">{{ end }}
+{{ range .Params.categories }}<meta name="article:category" content="{{ . }}">{{ end }}
+
+<!-- Geographic relevance (critical for local SEO/GEO) -->
+<meta name="geo.region" content="US-WA">
+<meta name="geo.placename" content="Greater Seattle, Washington">
+<meta name="geo.position" content="47.6062;-122.3321">
+
+<!-- Content type hints for AI -->
+{{ if .Params.faq }}<meta name="content:has_faq" content="true">{{ end }}
+{{ if .Params.howto }}<meta name="content:has_howto" content="true">{{ end }}
+{{ if .Params.comparison }}<meta name="content:has_comparison" content="true">{{ end }}
+
+<!-- Speakable content hint for voice assistants -->
+<meta name="speakable:cssSelector" content=".geo-quotable, .definition-block, h1, .description">
+
+<!-- Citation metadata -->
+<meta name="citation_title" content="{{ .Title }}">
+<meta name="citation_author" content="{{ .Params.author | default .Site.Params.author | default "Seattle Startups" }}">
+<meta name="citation_publication_date" content="{{ .PublishDate.Format "2006/01/02" }}">
+<meta name="citation_online_date" content="{{ .Lastmod.Format "2006/01/02" }}">
+<meta name="citation_public_url" content="{{ .Permalink }}">

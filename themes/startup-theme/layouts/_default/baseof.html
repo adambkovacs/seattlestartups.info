@@ -91,6 +91,15 @@
 
   {{ block "head" . }}{{ end }}
 
+  <!-- GEO Meta Tags for AI Citation Optimization -->
+  {{ partial "geo-meta.html" . }}
+
+  <!-- FAQ Schema (if page has FAQ data) -->
+  {{ partial "schema-faq.html" . }}
+
+  <!-- HowTo Schema (if page has HowTo data) -->
+  {{ partial "schema-howto.html" . }}
+
   <!-- Structured Data: WebSite Schema with SearchAction (for Google Sitelinks Search Box) -->
   <script type="application/ld+json">
   {
@@ -238,18 +247,28 @@
   {{ end }}
 </head>
 <body class="font-body antialiased seattle-sky dark:bg-overcast-900 rain-pattern min-h-screen text-overcast-800 dark:text-overcast-200 transition-colors duration-300">
+  <!-- BOT_HINT: PAGE_START url="{{ .Permalink }}" type="{{ if .IsHome }}homepage{{ else if .IsSection }}section{{ else }}page{{ end }}" -->
+  <!-- BOT_HINT: SITE_NAME="Seattle Startups" TOPIC="startup resources seattle" GEOGRAPHIC_FOCUS="Greater Seattle, Washington" -->
+
   <!-- Skip to content link -->
   <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-sound-500 text-white px-4 py-2 rounded-lg z-50">
     Skip to content
   </a>
 
+  <!-- BOT_HINT: NAVIGATION_START -->
   {{ partial "header.html" . }}
+  <!-- BOT_HINT: NAVIGATION_END -->
 
-  <main id="main-content" class="min-h-screen">
+  <!-- BOT_HINT: MAIN_CONTENT_START title="{{ .Title }}" section="{{ .Section }}" -->
+  <main id="main-content" class="min-h-screen" role="main">
     {{ block "main" . }}{{ end }}
   </main>
+  <!-- BOT_HINT: MAIN_CONTENT_END -->
 
+  <!-- BOT_HINT: FOOTER_START -->
   {{ partial "footer.html" . }}
+  <!-- BOT_HINT: FOOTER_END -->
+  <!-- BOT_HINT: PAGE_END -->
 
   <!-- Mobile menu toggle script -->
   <script>

@@ -1,0 +1,34 @@
+{{/*
+  FAQ Schema Partial for GEO Optimization
+
+  Usage: Add faq parameter to front matter:
+  faq:
+    - question: "What is a startup accelerator?"
+      answer: "A startup accelerator is a fixed-term program providing mentorship and funding."
+    - question: "Are Seattle startup resources really free?"
+      answer: "Yes, all 248+ resources listed on SeattleStartups.info are verified free."
+*/}}
+
+{{ if .Params.faq }}
+<!-- GEO_CONTENT: FAQ Schema for AI citation optimization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "{{ .Permalink }}#faq",
+  "mainEntity": [
+    {{ range $index, $item := .Params.faq }}
+    {{ if $index }},{{ end }}
+    {
+      "@type": "Question",
+      "name": {{ $item.question | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ $item.answer | plainify | jsonify }}
+      }
+    }
+    {{ end }}
+  ]
+}
+</script>
+{{ end }}

@@ -1085,3 +1085,141 @@ code.language-yaml span span span[style] {
     border-radius: 0 0 12px 0;
   }
 }
+
+
+/* ============================================
+   GEO (Generative Engine Optimization) Styles
+   Optimized for AI citation and voice search
+   ============================================ */
+
+/* Definition blocks - styled for AI quotability */
+.definition-block {
+  position: relative;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.definition-block::before {
+  content: '📖';
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-size: 1.25rem;
+  opacity: 0.3;
+}
+
+/* Quotable statistics - easy to cite */
+.quotable-stat {
+  position: relative;
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+.quotable-stat::before {
+  content: '📊';
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  font-size: 1.25rem;
+  opacity: 0.3;
+}
+
+/* FAQ items - Q&A format for AI */
+.faq-item {
+  transition: all 0.2s ease;
+}
+
+.faq-item:hover {
+  border-color: #0891b2;
+  transform: translateX(4px);
+}
+
+.dark .faq-item:hover {
+  border-color: #36aaf5;
+}
+
+/* GEO quotable content - highlighted for AI systems */
+.geo-quotable {
+  /* Subtle visual distinction */
+  position: relative;
+}
+
+/* Speakable content for voice assistants */
+.speakable {
+  /* Ensure content is optimized for text-to-speech */
+  word-spacing: 0.05em;
+  letter-spacing: 0.01em;
+}
+
+/* Content type indicators for bots */
+[data-geo-type="definition"] {
+  --geo-indicator-color: #0c8ce6; /* sound-500 */
+}
+
+[data-geo-type="statistic"] {
+  --geo-indicator-color: #22543d; /* fir-500 */
+}
+
+[data-geo-type="faq"] {
+  --geo-indicator-color: #71717a; /* overcast-500 */
+}
+
+[data-geo-type="comparison"] {
+  --geo-indicator-color: #6366f1; /* indigo-500 */
+}
+
+/* Ensure bot hints don't display but are readable by crawlers */
+/* HTML comments are already invisible, this is for any data attributes */
+[data-geo-content="true"] {
+  /* marker for main content area */
+}
+
+/* Print styles for citations */
+@media print {
+  .geo-quotable {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem 0;
+    page-break-inside: avoid;
+  }
+  
+  .definition-block::before,
+  .quotable-stat::before {
+    display: none;
+  }
+}
+
+/* ============================================
+   SEO Enhancement Styles
+   ============================================ */
+
+/* Breadcrumb styling enhancements */
+nav[aria-label="Breadcrumb"] {
+  font-family: 'JetBrains Mono', 'Consolas', monospace;
+}
+
+/* Schema microdata visibility (hidden but crawlable) */
+[itemprop] {
+  /* microdata attributes don't need special styles */
+}
+
+/* Internal link styling for SEO */
+.internal-link {
+  color: #0c8ce6;
+  text-decoration: none;
+  border-bottom: 1px dotted currentColor;
+  transition: all 0.2s ease;
+}
+
+.internal-link:hover {
+  border-bottom-style: solid;
+  color: #006fc4;
+}
+
+.dark .internal-link {
+  color: #36aaf5;
+}
+
+.dark .internal-link:hover {
+  color: #7cc8fb;
+}
