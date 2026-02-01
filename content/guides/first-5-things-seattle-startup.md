@@ -36,7 +36,7 @@ You have a startup idea in Seattle. Now what? This guide covers the **five essen
 
 **Time required:** 15 minutes to request, 2 weeks to match
 
-Your first move should be free expert guidance. SCORE Greater Seattle has 160+ volunteer mentors across 62 industries ready to help.
+Your first move should be free expert guidance. [SCORE Greater Seattle](/resources/score-greater-seattle/) has 160+ volunteer mentors across 62 industries ready to help.
 
 **Why do this first:**
 - Avoid expensive early mistakes
@@ -58,13 +58,13 @@ Your first move should be free expert guidance. SCORE Greater Seattle has 160+ v
 
 **Time required:** 20 minutes at any branch
 
-A library card unlocks research tools worth $20,000+ per year.
+A library card unlocks [research tools worth $20,000+ per year](/resources/spl-business-databases/).
 
 **What you get for free:**
 
 | Database | What It Does | Retail Value |
 |----------|--------------|--------------|
-| PitchBook | VC deal flow, valuations, investor profiles | $20,000+/year |
+| [PitchBook](/resources/spl-pitchbook-access/) | VC deal flow, valuations, investor profiles | $20,000+/year |
 | Data Axle | Business leads, company data | $3,000+/year |
 | SimplyAnalytics | Demographic and market analysis | $5,000+/year |
 | LinkedIn Learning | 16,000+ business courses | $360/year |
@@ -75,7 +75,7 @@ A library card unlocks research tools worth $20,000+ per year.
 3. Get your card on the spot
 4. Access databases from home
 
-**Pro tip:** Use the L2B (Library to Business) program to schedule 1:1 appointments with business librarians who can help you with research.
+**Pro tip:** Use the [L2B (Library to Business) program](/resources/library-to-business-l2b-program/) to schedule 1:1 appointments with business librarians who can help you with research.
 
 ---
 
@@ -83,7 +83,7 @@ A library card unlocks research tools worth $20,000+ per year.
 
 **Time required:** 2 hours (every Wednesday at 9am)
 
-1 Million Cups is the easiest way to practice your pitch and meet other founders. No registration required.
+[1 Million Cups Seattle](/resources/1-million-cups-seattle/) is the easiest way to practice your pitch and meet other founders. No registration required.
 
 **Why attend:**
 - Practice your 6-minute pitch
@@ -116,11 +116,11 @@ Apply to an accelerator before you think you're ready. Most founders wait too lo
 
 | Your Stage | Apply To | Why |
 |------------|----------|-----|
-| Idea only | WTIA Founder Cohort | Free, 6 months, no equity |
-| Working prototype | Startup425 | Free, 15 weeks, no equity |
+| Idea only | [WTIA Founder Cohort](/resources/wtia-founder-cohort/) | Free, 6 months, no equity |
+| Working prototype | [Startup425](/resources/startup425-accelerator/) | Free, 15 weeks, no equity |
 | Early revenue | Techstars Seattle | $220K investment |
-| Black founder | SEA619 | Free first year, 0-2% equity cap |
-| Climate tech | Cascadia CleanTech | $500 fee, no equity |
+| Black founder | [SEA619](/resources/sea619/) | Free first year, 0-2% equity cap |
+| Climate tech | [Cascadia CleanTech](/resources/cascadia-cleantech-accelerator/) | $500 fee, no equity |
 
 **WTIA Founder Cohort details:**
 - 6-month program
@@ -199,11 +199,11 @@ Don't register until you've validated your idea. Once ready, here's the process.
 
 | Resource | What You Get | How to Access |
 |----------|--------------|---------------|
-| SCORE mentorship | 1:1 business advising | score.org/seattle |
-| Library databases | $25K+ in research tools | Any SPL branch |
-| 1 Million Cups | Pitch practice, networking | Wednesdays 9am |
-| Washington SBDC | Business advising | wsbdc.org |
-| MyStartup365 | Free online business courses | mystartup365.com |
+| [SCORE mentorship](/resources/score-greater-seattle/) | 1:1 business advising | score.org/seattle |
+| [Library databases](/resources/spl-business-databases/) | $25K+ in research tools | Any SPL branch |
+| [1 Million Cups](/resources/1-million-cups-seattle/) | Pitch practice, networking | Wednesdays 9am |
+| [Washington SBDC](/resources/washington-sbdc-network/) | Business advising | wsbdc.org |
+| [MyStartup365](/resources/mystartup365/) | Free online business courses | mystartup365.com |
 
 ---
 
