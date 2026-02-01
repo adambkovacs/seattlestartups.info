@@ -31,55 +31,6 @@ Or jump straight to [browsing all 248+ resources](/resources/).
 
 ---
 
-## What This Directory Does
-
-I maintain a verified directory of **248+ free resources** across the Greater Seattle metro area.
-
-### How Resources Get Listed
-
-| Requirement | What I Check |
-|-------------|--------------|
-| **Official URL** | Links to resource owner or authoritative host |
-| **Clear Owner** | Identifiable organization stands behind the offer |
-| **Specific Offer** | Concrete description—not vague "support for founders" language |
-| **Access Path** | Clear next step: apply, register, attend, or contact |
-| **Geographic Proof** | Confirmed service area within Greater Seattle |
-| **Active Status** | Verified within the last 12 months |
-
----
-
-## What's Not Listed
-
-Simple filter: **if founders have to pay, it's not here**.
-
-This means I exclude:
-
-- Programs with tuition, fees, or subscription costs
-- Accelerators that take equity (that's payment)
-- Pay-to-play directories and sponsored listings
-- Affiliate or referral-driven content
-- Anything I can't independently verify
-
-Zero exceptions. I don't monetize this directory.
-
----
-
-## Coverage by County
-
-The focus is the Greater Seattle metropolitan area—what locals call the Puget Sound region.
-
-| County | Major Cities | Resources |
-|--------|--------------|-----------|
-| **King** | Seattle, Bellevue, Redmond, Kirkland | 80+ |
-| **Pierce** | Tacoma, Lakewood, Puyallup | 24+ |
-| **Snohomish** | Everett, Lynnwood, Edmonds | 16+ |
-| **Thurston** | Olympia, Lacey, Tumwater | 14+ |
-| **Kitsap** | Bremerton, Silverdale, Poulsbo | 10+ |
-
-Resource counts change as I verify new listings and retire inactive ones.
-
----
-
 ## About Me
 
 I'm **Adam Kovacs**, based in Seattle. I got tired of searching for answers to "where do I find X in the Greater Seattle Area?" questions.
