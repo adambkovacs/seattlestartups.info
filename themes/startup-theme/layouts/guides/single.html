@@ -1,5 +1,6 @@
 {{ define "main" }}
-<article class="relative">
+<!-- BOT_HINT: GUIDE_ARTICLE_START title="{{ .Title }}" category="startup-resources" geographic_focus="seattle" -->
+<article class="relative" itemscope itemtype="https://schema.org/Article">
   <!-- Hero Section -->
   <section class="relative overflow-hidden py-12 lg:py-16 border-b border-overcast-200 dark:border-overcast-700">
     <div class="absolute inset-0 dots-pattern opacity-30 dark:opacity-10"></div>
@@ -27,16 +28,20 @@
       </div>
       {{ end }}
 
-      <!-- Title -->
-      <h1 class="font-display font-black text-3xl md:text-4xl lg:text-5xl text-overcast-900 dark:text-white mb-6 tracking-tight leading-tight">
+      <!-- Title - GEO optimized with speakable class -->
+      <!-- BOT_HINT: TITLE_START primary_keyword="seattle startup resources" -->
+      <h1 class="font-display font-black text-3xl md:text-4xl lg:text-5xl text-overcast-900 dark:text-white mb-6 tracking-tight leading-tight speakable" itemprop="headline">
         {{ .Title }}
       </h1>
+      <!-- BOT_HINT: TITLE_END -->
 
-      <!-- Description -->
+      <!-- Description - GEO optimized for AI citation -->
       {{ with .Description }}
-      <p class="text-lg md:text-xl text-overcast-600 dark:text-overcast-300 leading-relaxed mb-6">
+      <!-- BOT_HINT: DESCRIPTION_START type="summary" quotable="true" -->
+      <p class="text-lg md:text-xl text-overcast-600 dark:text-overcast-300 leading-relaxed mb-6 geo-quotable description" itemprop="description">
         {{ . }}
       </p>
+      <!-- BOT_HINT: DESCRIPTION_END -->
       {{ end }}
 
       <!-- Meta -->
@@ -77,11 +82,12 @@
   </aside>
   {{ end }}
 
-  <!-- Content -->
+  <!-- Content - Main article body with GEO optimization -->
+  <!-- BOT_HINT: ARTICLE_BODY_START word_count="{{ .WordCount }}" reading_time="{{ .ReadingTime }}min" -->
   <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
     <div class="prose prose-lg dark:prose-invert max-w-none
                 prose-headings:font-display prose-headings:font-bold prose-headings:tracking-tight
-                prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-b prose-h2:border-overcast-200 prose-h2:pb-3
+                prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-b prose-h2:border-overcast-200 dark:prose-h2:border-overcast-700 prose-h2:pb-3
                 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4
                 prose-p:text-overcast-600 dark:prose-p:text-overcast-300
                 prose-a:text-sound-600 dark:prose-a:text-sound-400 prose-a:no-underline hover:prose-a:underline
@@ -92,10 +98,14 @@
                 prose-th:bg-overcast-100 dark:prose-th:bg-overcast-800 prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold
                 prose-td:px-4 prose-td:py-3 prose-td:border-t prose-td:border-overcast-200 dark:prose-td:border-overcast-700
                 prose-code:bg-overcast-100 dark:prose-code:bg-overcast-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono
-                prose-hr:border-overcast-200 dark:prose-hr:border-overcast-700">
+                prose-hr:border-overcast-200 dark:prose-hr:border-overcast-700"
+         itemprop="articleBody"
+         data-geo-content="true"
+         data-topic="seattle startup resources">
       {{ .Content }}
     </div>
   </section>
+  <!-- BOT_HINT: ARTICLE_BODY_END -->
 
   <!-- Related Guides -->
   {{ $related := .Site.RegularPages.Related . | first 3 }}
@@ -137,21 +147,25 @@
   </section>
 </article>
 
-<!-- Structured Data for Article -->
+<!-- Structured Data for Article (Enhanced for GEO) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
+  "@id": "{{ .Permalink }}#article",
   "headline": "{{ .Title }}",
   "description": "{{ .Description }}",
   "datePublished": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
   "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+  "wordCount": {{ .WordCount }},
   "author": {
     "@type": "Organization",
+    "@id": "{{ .Site.BaseURL }}#organization",
     "name": "Seattle Startups"
   },
   "publisher": {
     "@type": "Organization",
+    "@id": "{{ .Site.BaseURL }}#organization",
     "name": "Seattle Startups",
     "logo": {
       "@type": "ImageObject",
@@ -161,9 +175,24 @@
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "{{ .Permalink }}"
-  }
+  },
+  "about": {
+    "@type": "Thing",
+    "name": "Startup Resources in Seattle",
+    "description": "Free startup resources, accelerators, mentorship, and funding programs in the Greater Seattle area"
+  },
+  "locationCreated": {
+    "@type": "Place",
+    "name": "Seattle, Washington"
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".speakable", ".description", ".geo-quotable", "h1"]
+  },
+  "keywords": [{{ range $i, $tag := .Params.tags }}{{ if $i }}, {{ end }}"{{ $tag }}"{{ end }}]
 }
 </script>
+<!-- BOT_HINT: GUIDE_ARTICLE_END -->
 
 <style>
 /* TOC styles */

@@ -12,6 +12,7 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.11.0",
     "@playwright/test": "^1.58.1",
+    "@tailwindcss/typography": "^0.5.19",
     "autoprefixer": "^10.4.16",
     "js-yaml": "^4.1.1",
     "playwright": "^1.58.1",

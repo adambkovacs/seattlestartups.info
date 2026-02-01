@@ -44,7 +44,7 @@
     {{ if .Pages }}
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {{ range .Pages.ByDate.Reverse }}
-      <article class="group bg-white dark:bg-overcast-800 rounded-2xl border border-overcast-200 dark:border-overcast-700 overflow-hidden transition-all duration-300 hover:border-sound-400 hover:shadow-xl hover:shadow-sound-500/10 hover:-translate-y-1">
+      <article class="group bg-white dark:bg-overcast-800 rounded-2xl border border-overcast-200 dark:border-overcast-700 overflow-hidden transition-all duration-300 hover:border-sound-400 dark:hover:border-sound-500 hover:shadow-xl hover:shadow-sound-500/10 dark:hover:shadow-sound-500/20 hover:-translate-y-1">
         <a href="{{ .Permalink }}" class="block p-6">
           <!-- Category Tag -->
           {{ with .Params.tags }}
@@ -72,7 +72,7 @@
             <span>{{ .Date.Format "Jan 2, 2006" }}</span>
             <span class="flex items-center gap-1 group-hover:text-sound-600 dark:group-hover:text-sound-400 transition-colors">
               Read guide
-              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
               </svg>
             </span>

@@ -157,12 +157,12 @@
 </script>
 {{ end }}
 
-<div class="relative mountain-bg">
+<div class="relative mountain-bg bg-white dark:bg-overcast-900">
   <!-- Hero Section - Authentic Seattle -->
   <section class="relative min-h-[75vh] flex items-center">
     <!-- Rainier silhouette backdrop -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
-      <svg class="absolute bottom-0 w-full h-64 text-fir-500/5" viewBox="0 0 1440 320" preserveAspectRatio="none">
+      <svg class="absolute bottom-0 w-full h-64 text-fir-500/5 dark:text-fir-500/15" viewBox="0 0 1440 320" preserveAspectRatio="none">
         <path fill="currentColor" d="M0,320 L0,200 L200,160 L400,180 L600,120 L720,80 L840,100 L900,60 L960,90 L1100,70 L1200,100 L1300,80 L1440,120 L1440,320 Z"/>
       </svg>
     </div>
@@ -170,18 +170,18 @@
     <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
       <div class="max-w-4xl">
         <!-- No cute badges - straight to the point -->
-        <p class="font-mono text-sm text-overcast-500 mb-4 tracking-wide">
-          <span class="text-fir-500">$</span> 248+ free resources. 6 cities. Open source.
+        <p class="font-mono text-sm text-overcast-500 dark:text-overcast-400 mb-4 tracking-wide">
+          <span class="text-fir-500 dark:text-fir-400">$</span> 248+ free resources. 6 cities. Open source.
         </p>
 
         <!-- Bold, honest headline -->
-        <h1 class="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-overcast-900 mb-6 leading-[1.1] tracking-tight">
+        <h1 class="font-display font-bold text-4xl sm:text-5xl lg:text-6xl text-overcast-900 dark:text-white mb-6 leading-[1.1] tracking-tight">
           Build something<br/>
           <span class="text-sun-break">in Seattle.</span>
         </h1>
 
         <!-- Real talk, not marketing fluff -->
-        <p class="text-lg sm:text-xl text-overcast-600 leading-relaxed mb-8 max-w-2xl">
+        <p class="text-lg sm:text-xl text-overcast-600 dark:text-overcast-300 leading-relaxed mb-8 max-w-2xl">
           The Pacific Northwest startup ecosystem, mapped. Accelerators, funding, workspaces, mentorship—every free resource founders actually use.
         </p>
 
@@ -197,7 +197,7 @@
           <a href="{{ .Site.Params.github }}"
              target="_blank"
              rel="noopener noreferrer"
-             class="inline-flex items-center px-6 py-3 bg-overcast-100 text-overcast-700 rounded-lg font-medium text-sm hover:bg-overcast-200 transition-colors">
+             class="inline-flex items-center px-6 py-3 bg-overcast-100 dark:bg-overcast-800 text-overcast-700 dark:text-overcast-200 rounded-lg font-medium text-sm hover:bg-overcast-200 dark:hover:bg-overcast-700 transition-colors">
             <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z"/>
             </svg>
@@ -206,21 +206,21 @@
         </div>
 
         <!-- Stats - Minimal, data-forward -->
-        <div class="flex flex-wrap gap-8 text-sm font-mono text-overcast-500 border-t border-overcast-200 pt-8">
+        <div class="flex flex-wrap gap-8 text-sm font-mono text-overcast-500 dark:text-overcast-400 border-t border-overcast-200 dark:border-overcast-700 pt-8">
           <div>
-            <span class="text-2xl font-display font-bold text-overcast-900 block">248+</span>
+            <span class="text-2xl font-display font-bold text-overcast-900 dark:text-white block">248+</span>
             resources
           </div>
           <div>
-            <span class="text-2xl font-display font-bold text-overcast-900 block">6</span>
+            <span class="text-2xl font-display font-bold text-overcast-900 dark:text-white block">6</span>
             cities
           </div>
           <div>
-            <span class="text-2xl font-display font-bold text-fir-500 block">$0</span>
+            <span class="text-2xl font-display font-bold text-fir-500 dark:text-fir-400 block">$0</span>
             cost to access
           </div>
           <div>
-            <span class="text-2xl font-display font-bold text-overcast-900 block">MIT</span>
+            <span class="text-2xl font-display font-bold text-overcast-900 dark:text-white block">MIT</span>
             license
           </div>
         </div>
@@ -229,14 +229,14 @@
   </section>
 
   <!-- Categories Section -->
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-white dark:bg-overcast-900">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-12">
-        <span class="badge-fun bg-sound-100 text-sound-700 mb-4 inline-block">Categories</span>
-        <h2 class="font-display text-3xl md:text-4xl text-overcast-900 mb-3">
+        <span class="badge-fun bg-sound-100 dark:bg-sound-900/30 text-sound-700 dark:text-sound-400 mb-4 inline-block">Categories</span>
+        <h2 class="font-display text-3xl md:text-4xl text-overcast-900 dark:text-white mb-3">
           What do you need?
         </h2>
-        <p class="text-lg text-overcast-500 max-w-xl">
+        <p class="text-lg text-overcast-500 dark:text-overcast-400 max-w-xl">
           248+ resources sorted by what they actually help with.
         </p>
       </div>
@@ -248,10 +248,10 @@
           <div class="w-11 h-11 rounded-xl sun-break flex items-center justify-center mb-3 group-hover:animate-wiggle">
             {{ partial "category-icon.html" $name }}
           </div>
-          <h3 class="font-display font-bold text-base text-overcast-900 mb-1 group-hover:text-sound-600 transition-colors">
+          <h3 class="font-display font-bold text-base text-overcast-900 dark:text-white mb-1 group-hover:text-sound-600 dark:group-hover:text-sound-400 transition-colors">
             {{ $name | title }}
           </h3>
-          <p class="text-sm text-overcast-400 font-mono">{{ len $taxonomy.Pages }} resources</p>
+          <p class="text-sm text-overcast-400 dark:text-overcast-500 font-mono">{{ len $taxonomy.Pages }} resources</p>
         </a>
         {{ end }}
       </div>
@@ -259,29 +259,67 @@
   </section>
 
   <!-- Cities Section - City-focused navigation -->
-  <section class="py-20 dots-pattern">
+  <section class="py-20 dots-pattern dark:bg-overcast-900/50">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="mb-12">
-        <span class="badge-fun bg-fir-500/10 text-fir-500 mb-4 inline-block">Locations</span>
-        <h2 class="font-display text-3xl md:text-4xl text-overcast-900 mb-3">
+        <span class="badge-fun bg-fir-500/10 text-fir-500 dark:text-fir-400 mb-4 inline-block">Locations</span>
+        <h2 class="font-display text-3xl md:text-4xl text-overcast-900 dark:text-white mb-3">
           Six cities. One ecosystem.
         </h2>
-        <p class="text-lg text-overcast-500 max-w-xl">
+        <p class="text-lg text-overcast-500 dark:text-overcast-400 max-w-xl">
           From Olympia to Everett: local programs, regional networks.
         </p>
       </div>
 
+      {{/* Define cities in specific order with Seattle first */}}
+      {{ $cityOrder := slice "seattle" "bellevue" "tacoma" "everett" "olympia" "bremerton" }}
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        {{ range $key, $value := .Site.Params.cities }}
-        {{ if ne $key "online" }}
+        {{ range $cityOrder }}
+        {{ $key := . }}
+        {{ $value := index $.Site.Params.cities $key }}
+        {{ if $value }}
         <a href="/resources/?city={{ $key }}"
            class="card-bouncy p-5 group text-center">
-          <div class="w-14 h-14 mx-auto rounded-2xl bg-fir-500/10 flex items-center justify-center mb-3 group-hover:bg-fir-500 group-hover:animate-pop transition-colors">
-            <svg class="w-7 h-7 text-fir-500 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div class="w-14 h-14 mx-auto rounded-2xl bg-fir-500/10 dark:bg-fir-500/20 flex items-center justify-center mb-3 group-hover:bg-fir-500 group-hover:animate-pop transition-colors">
+            {{/* City-specific descriptive icons */}}
+            {{ if eq $key "seattle" }}
+            {{/* Space Needle - Seattle's iconic landmark */}}
+            <svg class="w-7 h-7 text-fir-500 dark:text-fir-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2L9 8h6l-3-6zM8 8v2a4 4 0 008 0V8M11 14v8M13 14v8M9 22h6"/>
+            </svg>
+            {{ else if eq $key "bellevue" }}
+            {{/* Modern skyscrapers - Bellevue's downtown skyline */}}
+            <svg class="w-7 h-7 text-fir-500 dark:text-fir-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21h18M5 21V7l4-4v18M13 21V5l4 4v12M9 9h.01M9 13h.01M9 17h.01M17 13h.01M17 17h.01"/>
+            </svg>
+            {{ else if eq $key "tacoma" }}
+            {{/* Port with container crane - Tacoma's maritime identity */}}
+            <svg class="w-7 h-7 text-fir-500 dark:text-fir-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 21h16M6 21V11h4v10M14 21V7l4-2v16M8 11V7l2-1M8 14h.01M8 17h.01M16 11h.01M16 14h.01M16 17h.01"/>
+            </svg>
+            {{ else if eq $key "everett" }}
+            {{/* Airplane - Boeing's aerospace manufacturing */}}
+            <svg class="w-7 h-7 text-fir-500 dark:text-fir-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l-2 3h4l-2-3zM3.5 11L12 5l8.5 6M5 11v2l7 4 7-4v-2M12 9v8"/>
+            </svg>
+            {{ else if eq $key "olympia" }}
+            {{/* Capitol building dome - State capital */}}
+            <svg class="w-7 h-7 text-fir-500 dark:text-fir-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2l-1 4h2l-1-4zM8 6h8l1 2H7l1-2zM6 8h12v2H6zM7 10v8M11 10v8M13 10v8M17 10v8M5 18h14v2H5z"/>
+            </svg>
+            {{ else if eq $key "bremerton" }}
+            {{/* Anchor - Naval shipyard heritage */}}
+            <svg class="w-7 h-7 text-fir-500 dark:text-fir-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2v2m0 0a2 2 0 100 4 2 2 0 000-4zm0 4v12m0 0a8 8 0 01-8-8h2a6 6 0 006 6 6 6 0 006-6h2a8 8 0 01-8 8zM9 5h6"/>
+            </svg>
+            {{ else }}
+            {{/* Default building icon */}}
+            <svg class="w-7 h-7 text-fir-500 dark:text-fir-400 group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
             </svg>
+            {{ end }}
           </div>
-          <h3 class="font-display font-bold text-lg text-overcast-900 group-hover:text-fir-600 transition-colors">
+          <h3 class="font-display font-bold text-lg text-overcast-900 dark:text-white group-hover:text-fir-600 dark:group-hover:text-fir-400 transition-colors">
             {{ $value }}
           </h3>
         </a>
@@ -305,13 +343,13 @@
   {{ end }}
   {{ $featured := where $allResources "featured" true | first 6 }}
   {{ with $featured }}
-  <section class="py-20 bg-white">
+  <section class="py-20 bg-white dark:bg-overcast-900">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
-        <h2 class="font-display font-bold text-3xl md:text-4xl text-overcast-900 mb-4">
+        <h2 class="font-display font-bold text-3xl md:text-4xl text-overcast-900 dark:text-white mb-4">
           Featured Resources
         </h2>
-        <p class="text-lg text-overcast-600 max-w-2xl mx-auto">
+        <p class="text-lg text-overcast-600 dark:text-overcast-300 max-w-2xl mx-auto">
           Hand-picked resources to kickstart your journey
         </p>
       </div>
