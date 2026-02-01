@@ -1,16 +1,4 @@
-{{/*
-  FAQ Item Shortcode for inline FAQ sections
-
-  Creates FAQ items that can be rendered inline with Q&A format.
-  Use this in content for GEO optimization.
-
-  Usage:
-  {{</* faq-item question="What is a startup accelerator?" */>}}
-  A startup accelerator is a fixed-term program that provides early-stage companies
-  with mentorship, education, and funding, typically in exchange for equity.
-  {{</* /faq-item */>}}
-*/}}
-
+{{- /* FAQ Item Shortcode - Creates inline FAQ items for GEO optimization */ -}}
 <div class="faq-item geo-quotable my-6 p-5 bg-overcast-50 dark:bg-overcast-800/50 rounded-xl border border-overcast-200 dark:border-overcast-700"
      data-geo-type="faq"
      itemscope
@@ -18,7 +6,7 @@
      itemtype="https://schema.org/Question">
   <!-- BOT_HINT: FAQ_ITEM_START question="{{ .Get "question" }}" -->
   <h4 class="font-display font-semibold text-overcast-900 dark:text-white mb-3 flex items-start" itemprop="name">
-    <span class="flex-shrink-0 w-6 h-6 mr-3 rounded-full bg-sound-100 dark:bg-sound-900 text-sound-600 dark:text-sound-400 flex items-center justify-center text-sm font-bold">Q</span>
+    <span class="flex-shrink-0 w-6 h-6 mr-3 rounded-full bg-sound-100 dark:bg-sound-900 text-sound-600 dark:text-sound-400 flex items-center justify-center text-sm font-bold" aria-hidden="true">Q</span>
     {{ .Get "question" }}
   </h4>
   <div class="ml-9 text-overcast-600 dark:text-overcast-300 leading-relaxed"

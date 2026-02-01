@@ -1,16 +1,4 @@
-{{/*
-  GEO-Optimized Definition Block Shortcode
-
-  Creates quotable definitions that AI systems can easily cite.
-  Optimal definition length: 25-50 words for AI citation.
-
-  Usage:
-  {{</* definition term="Startup accelerator" */>}}
-  A startup accelerator is a fixed-term program (typically 3-6 months) that provides
-  early-stage companies with mentorship, education, and funding in exchange for equity.
-  {{</* /definition */>}}
-*/}}
-
+{{- /* GEO-Optimized Definition Block Shortcode - Creates quotable definitions for AI citation */ -}}
 <div class="definition-block geo-quotable my-6 p-5 bg-gradient-to-r from-sound-50 to-transparent dark:from-sound-900/30 dark:to-transparent border-l-4 border-sound-500 rounded-r-lg"
      data-geo-type="definition"
      data-term="{{ .Get "term" }}"

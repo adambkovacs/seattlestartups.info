@@ -1,16 +1,4 @@
-{{/*
-  Quotable Statistic Block Shortcode
-
-  Creates statistics that AI systems can easily cite with source attribution.
-
-  Usage:
-  {{</* quotable-stat
-    source="Washington State Employment Security Department"
-    date="2026-01"
-    stat="Seattle added 12,500 tech jobs in 2025, representing a 15% increase year-over-year."
-  */>}}
-*/}}
-
+{{- /* Quotable Statistic Block - Creates statistics for AI citation with source attribution */ -}}
 <blockquote class="quotable-stat geo-quotable my-6 p-5 bg-gradient-to-r from-fir-50 to-transparent dark:from-fir-900/30 dark:to-transparent border-l-4 border-fir-500 rounded-r-lg not-prose"
             data-geo-type="statistic"
             data-source="{{ .Get "source" }}"
@@ -22,7 +10,7 @@
     {{ .Get "stat" }}
   </p>
   <cite class="text-sm text-overcast-500 dark:text-overcast-400 not-italic flex items-center">
-    <svg class="w-4 h-4 mr-1.5 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <svg class="w-4 h-4 mr-1.5 opacity-60" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
     </svg>
     <span itemprop="author" itemscope itemtype="https://schema.org/Organization">

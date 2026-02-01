@@ -85,11 +85,9 @@
   <!-- Content - Main article body with GEO optimization -->
   <!-- BOT_HINT: ARTICLE_BODY_START word_count="{{ .WordCount }}" reading_time="{{ .ReadingTime }}min" -->
   <section class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-    <div class="prose prose-lg dark:prose-invert max-w-none" itemprop="articleBody"
-         data-geo-content="true"
-         data-topic="seattle startup resources"
+    <div class="prose prose-lg dark:prose-invert max-w-none
                 prose-headings:font-display prose-headings:font-bold prose-headings:tracking-tight
-                prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-b prose-h2:border-overcast-200 prose-h2:pb-3
+                prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:border-b prose-h2:border-overcast-200 dark:prose-h2:border-overcast-700 prose-h2:pb-3
                 prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-4
                 prose-p:text-overcast-600 dark:prose-p:text-overcast-300
                 prose-a:text-sound-600 dark:prose-a:text-sound-400 prose-a:no-underline hover:prose-a:underline
@@ -100,7 +98,10 @@
                 prose-th:bg-overcast-100 dark:prose-th:bg-overcast-800 prose-th:px-4 prose-th:py-3 prose-th:text-left prose-th:font-semibold
                 prose-td:px-4 prose-td:py-3 prose-td:border-t prose-td:border-overcast-200 dark:prose-td:border-overcast-700
                 prose-code:bg-overcast-100 dark:prose-code:bg-overcast-800 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:font-mono
-                prose-hr:border-overcast-200 dark:prose-hr:border-overcast-700">
+                prose-hr:border-overcast-200 dark:prose-hr:border-overcast-700"
+         itemprop="articleBody"
+         data-geo-content="true"
+         data-topic="seattle startup resources">
       {{ .Content }}
     </div>
   </section>
