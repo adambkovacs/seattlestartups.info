@@ -15,18 +15,18 @@ Greater Seattle hosts **28 accelerators and incubators** accepting applications 
 
 | Program | Duration | Cost | Equity | Focus Area |
 |---------|----------|------|--------|------------|
-| WTIA Founder Cohort | 6 months | Free | 0% | Seed-stage WA tech |
-| Foundations Seattle | Ongoing | Free | 0% | Early-stage (invite) |
-| SEA619 | 12 months | Free | 0% | Black founders |
-| Startup425 Accelerator | 15 weeks | Free | 0% | Eastside general |
-| Seattle Angel Conference | 12 weeks | Symbolic | 0%* | Pre-seed to seed |
-| CoMotion Labs | Varies | Space fees | 0% | Life science, hardware |
-| AI House Seattle | Ongoing | Free events | 0% | AI/ML |
-| Cascadia CleanTech | 18 weeks | $500 app | 0% | PNW cleantech |
-| Maritime Blue Accelerator | 4 months | Free | 0% | Maritime startups |
-| Plug and Play Seattle | 12 weeks | Free | 0% | Enterprise tech |
-| Graham & Walker Catalyst | Varies | Free | 0% | Female founders |
-| AWS Impact Accelerator | 8 weeks | Free | 0% | Underrepresented |
+| [WTIA Founder Cohort](/resources/wtia-founder-cohort/) | 6 months | Free | 0% | Seed-stage WA tech |
+| [Foundations Seattle](/resources/foundations-seattle/) | Ongoing | Free | 0% | Early-stage (invite) |
+| [SEA619](/resources/sea619/) | 12 months | Free | 0% | Black founders |
+| [Startup425 Accelerator](/resources/startup425-accelerator/) | 15 weeks | Free | 0% | Eastside general |
+| [Seattle Angel Conference](/resources/seattle-angel-conference/) | 12 weeks | Symbolic | 0%* | Pre-seed to seed |
+| [CoMotion Labs](/resources/comotion-labs/) | Varies | Space fees | 0% | Life science, hardware |
+| [AI House Seattle](/resources/ai-house-seattle/) | Ongoing | Free events | 0% | AI/ML |
+| [Cascadia CleanTech](/resources/cascadia-cleantech-accelerator/) | 18 weeks | $500 app | 0% | PNW cleantech |
+| [Maritime Blue Accelerator](/resources/washington-maritime-blue-accelerator/) | 4 months | Free | 0% | Maritime startups |
+| [Plug and Play Seattle](/resources/plug-and-play-seattle/) | 12 weeks | Free | 0% | Enterprise tech |
+| [Graham & Walker Catalyst](/resources/graham-walker-catalyst/) | Varies | Free | 0% | Female founders |
+| [AWS Impact Accelerator](/resources/aws-impact-accelerator/) | 8 weeks | Free | 0% | Underrepresented |
 | UW Climate Tech Incubator | 8 months | Free | 0% | Climate tech |
 | Seattle Climate Innovation Hub | Ongoing | Free | 0% | Clean energy |
 | Jones + Foster Accelerator | 6 months | Free | 0% | WA students** |

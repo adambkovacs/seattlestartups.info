@@ -142,9 +142,9 @@ Warrior Rising provides grants up to $20,000 after completing their business dev
 
 ## Mentorship and Support
 
-### Veterans Business Outreach Center (VBOC)
+### [Veterans Business Outreach Center (VBOC)](/resources/business-impact-nw/)
 
-The VBOC at Business Impact NW covers Washington, Oregon, and Idaho.
+The VBOC at [Business Impact NW](/resources/business-impact-nw/) covers Washington, Oregon, and Idaho.
 
 **Services:**
 - One-on-one coaching
@@ -164,9 +164,9 @@ The VBOC at Business Impact NW covers Washington, Oregon, and Idaho.
 - Email: vboc@businessimpactnw.org
 - Phone: 206.324.4330
 
-### SCORE Veteran Mentors
+### [SCORE Veteran Mentors](/resources/score-greater-seattle/)
 
-SCORE Greater Seattle has veteran mentors who understand military-to-civilian transition.
+[SCORE Greater Seattle](/resources/score-greater-seattle/) has veteran mentors who understand military-to-civilian transition.
 
 **How to Request:**
 1. Visit score.org/seattle
@@ -194,9 +194,9 @@ A veteran-led or veteran-focused VC firm supporting military entrepreneurs.
 
 | Program | What It Provides |
 |---------|------------------|
-| Washington APEX Accelerator | Government contracting counseling |
+| [Washington APEX Accelerator](/resources/washington-apex-accelerator/) | Government contracting counseling |
 | Washington SBDC | Free business advising statewide |
-| Choose Washington | Business relocation assistance |
+| [Choose Washington](/resources/choose-washington/) | Business relocation assistance |
 
 ### Certification Benefits
 

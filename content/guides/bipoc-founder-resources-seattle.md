@@ -31,9 +31,9 @@ The gap is closing, but dedicated programs accelerate the change.
 
 These accelerators specifically recruit and support BIPOC entrepreneurs.
 
-### SEA619 (Seattle)
+### [SEA619](/resources/sea619/) (Seattle)
 
-SEA619 offers a multi-stage pathway from Association to Incubator to Accelerator. Run by PACE, the program has graduated 40+ Black founders since 2021.
+[SEA619](/resources/sea619/) offers a multi-stage pathway from Association to Incubator to Accelerator. Run by PACE, the program has graduated 40+ Black founders since 2021.
 
 **Program Details:**
 
@@ -52,7 +52,7 @@ SEA619 offers a multi-stage pathway from Association to Incubator to Accelerator
 4. Interview with program leads
 5. Join the next cohort (starts quarterly)
 
-### AWS Impact Accelerator
+### [AWS Impact Accelerator](/resources/aws-impact-accelerator/)
 
 Amazon's 8-week virtual program provides up to $225,000 in total value for underrepresented founders.
 
@@ -69,9 +69,9 @@ Amazon's 8-week virtual program provides up to $225,000 in total value for under
 - Demo day with investors
 - AWS partner network access
 
-### Spaceworks Black Business Accelerator (Tacoma)
+### [Spaceworks Black Business Accelerator](/resources/spaceworks-black-business-accelerator/) (Tacoma)
 
-Tacoma's Spaceworks runs a dedicated accelerator for Black-owned businesses in Pierce County.
+Tacoma's [Spaceworks](/resources/spaceworks-black-business-accelerator/) runs a dedicated accelerator for Black-owned businesses in Pierce County.
 
 | Component | Details |
 |-----------|---------|
@@ -81,9 +81,9 @@ Tacoma's Spaceworks runs a dedicated accelerator for Black-owned businesses in P
 | Cost | Free |
 | Output | Investment-ready pitch deck |
 
-### Port of Seattle Port Gen Accelerator
+### [Port of Seattle Port Gen Accelerator](/resources/port-of-seattle-port-gen-accelerator/)
 
-The Port Gen program specifically recruits minority and women-owned businesses for procurement and innovation opportunities.
+The [Port Gen program](/resources/port-of-seattle-port-gen-accelerator/) specifically recruits minority and women-owned businesses for procurement and innovation opportunities.
 
 **Best For:**
 - Established WMBE businesses (1+ years)
@@ -106,18 +106,18 @@ These funding sources prioritize or exclusively serve BIPOC entrepreneurs.
 
 ### Loan Programs with BIPOC Focus
 
-1. **Business Impact NW** - CDFIs specifically lending to underserved communities
-2. **Craft3** - Mission-driven lender with flexible terms for diverse founders
-3. **Rainier Valley Community Development Fund** - South Seattle focused
-4. **Ventures Microloans** - Small loans for early-stage diverse businesses
+1. **[Business Impact NW](/resources/business-impact-nw/)** - CDFIs specifically lending to underserved communities
+2. **[Craft3](/resources/craft3/)** - Mission-driven lender with flexible terms for diverse founders
+3. **[Rainier Valley Community Development Fund](/resources/rainier-valley-community-development-fund/)** - South Seattle focused
+4. **[Ventures Microloans](/resources/ventures-microloans/)** - Small loans for early-stage diverse businesses
 
 ### Pitch Competitions Open to All (BIPOC-Friendly)
 
 These competitions don't require BIPOC identity but have historically supported diverse founders:
 
-- **SCORE Women's Pitch Contest** - Open to all women including WOC
-- **Dempsey Startup Competition** - UW-affiliated, diverse judging panels
-- **Seattle Angel Conference** - Active DEI recruiting for participants
+- **[SCORE Women's Pitch Contest](/resources/score-women-s-pitch-contest/)** - Open to all women including WOC
+- **[Dempsey Startup Competition](/resources/dempsey-startup-competition/)** - UW-affiliated, diverse judging panels
+- **[Seattle Angel Conference](/resources/seattle-angel-conference/)** - Active DEI recruiting for participants
 
 ---
 
@@ -125,7 +125,7 @@ These competitions don't require BIPOC identity but have historically supported 
 
 Quality mentorship often determines startup success. These programs connect BIPOC founders with experienced operators.
 
-### Black Founders Funders
+### [Black Founders Funders](/resources/black-founders-funders/)
 
 A community-driven network specifically connecting Black founders with mentors, advisors, and potential investors.
 
@@ -145,9 +145,9 @@ Kitsap County runs regular BIPOC business forums featuring:
 - Peer networking sessions
 - Access to county resources
 
-### Urban League of Metropolitan Seattle
+### [Urban League of Metropolitan Seattle](/resources/urban-league-of-metropolitan-seattle-entrepreneurship/)
 
-The Urban League's entrepreneurship program provides:
+The [Urban League's entrepreneurship program](/resources/urban-league-of-metropolitan-seattle-entrepreneurship/) provides:
 
 | Service | What You Get |
 |---------|--------------|

@@ -67,6 +67,33 @@
           {{ .ReadingTime }} min read
         </span>
       </div>
+
+      <!-- Author Attribution -->
+      <div class="mt-6 pt-6 border-t border-overcast-200 dark:border-overcast-700">
+        <div class="flex items-center gap-4">
+          <div class="flex -space-x-2">
+            <!-- Adam's avatar placeholder -->
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-sound-400 to-sound-600 flex items-center justify-center text-white font-bold text-sm ring-2 ring-white dark:ring-overcast-800">
+              AK
+            </div>
+            <!-- Claude/Opus avatar -->
+            <div class="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 to-orange-500 flex items-center justify-center text-white ring-2 ring-white dark:ring-overcast-800">
+              <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="text-sm">
+            <span class="text-overcast-500 dark:text-overcast-400">Written by </span>
+            <a href="https://www.linkedin.com/in/adambkovacs/" target="_blank" rel="noopener noreferrer" class="font-medium text-overcast-700 dark:text-overcast-200 hover:text-sound-600 dark:hover:text-sound-400 transition-colors">
+              Adam Kovacs
+            </a>
+            <span class="text-overcast-500 dark:text-overcast-400"> & </span>
+            <span class="font-medium text-overcast-700 dark:text-overcast-200">Opus 4.5</span>
+            <span class="text-overcast-400 dark:text-overcast-500 text-xs ml-1">using Claude Code</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 

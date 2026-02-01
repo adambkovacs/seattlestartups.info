@@ -57,9 +57,9 @@ Ready Set Raise is a 4-week pitching and fundraising program designed by female 
 - Networking with investors
 - Live pitching opportunities
 
-### Graham & Walker Catalyst
+### [Graham & Walker Catalyst](/resources/graham-walker-catalyst/)
 
-Graham & Walker runs a 3-week fundraising-readiness program that has supported 638 founders since 2018.
+[Graham & Walker](/resources/graham-walker-catalyst/) runs a 3-week fundraising-readiness program that has supported 638 founders since 2018.
 
 | Component | Details |
 |-----------|---------|
@@ -94,9 +94,9 @@ Google's 10-week accelerator for Seed to Series A tech startups based in the U.S
 - Based in U.S. or Canada
 - Building technology-focused products
 
-### AWS Impact Accelerator
+### [AWS Impact Accelerator](/resources/aws-impact-accelerator/)
 
-Amazon's 8-week virtual program provides up to $225,000 total value for underrepresented founders.
+[Amazon's 8-week virtual program](/resources/aws-impact-accelerator/) provides up to $225,000 total value for underrepresented founders.
 
 **What You Get:**
 - $125,000 cash
@@ -150,9 +150,9 @@ The Pacific Northwest's premier impact VC with a focus on local deployment.
 
 | Program | Amount | Type |
 |---------|--------|------|
-| Seattle Capital Access Program | Up to $30K | Loan subsidy |
-| SCORE Women's Pitch Contest | Varies | Prize |
-| AWS Impact Accelerator | $125K cash | Grant |
+| [Seattle Capital Access Program](/resources/capital-access-program/) | Up to $30K | Loan subsidy |
+| [SCORE Women's Pitch Contest](/resources/score-greater-seattle/) | Varies | Prize |
+| [AWS Impact Accelerator](/resources/aws-impact-accelerator/) | $125K cash | Grant |
 
 ---
 
@@ -210,7 +210,7 @@ Consistent attendance builds relationships. Prioritize 2-3 events monthly.
 | Event | Format | Focus |
 |-------|--------|-------|
 | Women in Business Leadership Conference | One-day conference | Inspiration, collaboration, mentorship |
-| Celebrating Dreams (Business Impact NW) | Showcase | Woman-owned business showcase |
+| Celebrating Dreams ([Business Impact NW](/resources/business-impact-nw/)) | Showcase | Woman-owned business showcase |
 | Aurora Gala | Black-tie celebration | Women entrepreneurs |
 | Seattle Tech Week (July 27-31, 2026) | Week-long | Tech community |
 

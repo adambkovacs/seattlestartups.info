@@ -22,13 +22,13 @@ Seattle has 248+ startup resources, but three organizations deliver outsized val
 
 | Enabler | What They Offer | Cost |
 |---------|-----------------|------|
-| **SCORE Greater Seattle** | 1:1 mentorship from 160+ experts | Free |
-| **WTIA Founder Cohort** | 6-month accelerator, zero equity | Free |
-| **Seattle Public Library** | $25K+ in databases and tools | Free |
+| **[SCORE Greater Seattle](/resources/score-greater-seattle/)** | 1:1 mentorship from 160+ experts | Free |
+| **[WTIA Founder Cohort](/resources/wtia-founder-cohort/)** | 6-month accelerator, zero equity | Free |
+| **[Seattle Public Library](/resources/spl-business-databases/)** | $25K+ in databases and tools | Free |
 
 ---
 
-## #1: SCORE Greater Seattle
+## #1: [SCORE Greater Seattle](/resources/score-greater-seattle/)
 
 SCORE is the single most underutilized resource in Seattle's startup ecosystem.
 
@@ -84,7 +84,7 @@ SCORE mentors have helped Seattle founders raise millions in funding, avoid cost
 
 ---
 
-## #2: WTIA Founder Cohort
+## #2: [WTIA Founder Cohort](/resources/wtia-founder-cohort/)
 
 The Washington Technology Industry Association runs Seattle's most founder-friendly accelerator.
 
@@ -149,7 +149,7 @@ Most accelerators take 5-10% equity. WTIA takes zero. This means you keep full o
 
 ---
 
-## #3: Seattle Public Library
+## #3: [Seattle Public Library](/resources/spl-business-databases/)
 
 The library system is Seattle's secret weapon for startup research.
 
@@ -157,7 +157,7 @@ The library system is Seattle's secret weapon for startup research.
 
 | Database | What It Does | Normal Cost |
 |----------|--------------|-------------|
-| PitchBook | VC deals, valuations, investor profiles | $20,000+/year |
+| [PitchBook](/resources/spl-pitchbook-access/) | VC deals, valuations, investor profiles | $20,000+/year |
 | Data Axle | Business leads, company data | $3,000+/year |
 | SimplyAnalytics | Demographic and market analysis | $5,000+/year |
 | LinkedIn Learning | 16,000+ business courses | $360/year |
@@ -186,7 +186,7 @@ The library system is Seattle's secret weapon for startup research.
 - Market potential analysis
 - Site selection data
 
-**L2B (Library to Business) Program:**
+**[L2B (Library to Business) Program](/resources/library-to-business-l2b-program/):**
 - 1:1 appointments with business librarians
 - Help navigating databases
 - Research assistance
@@ -204,9 +204,9 @@ The library system is Seattle's secret weapon for startup research.
 
 **Pro tip:** Schedule an L2B appointment. Business librarians can show you exactly how to use these tools for your specific research needs.
 
-### King County Library System
+### [King County Library System](/resources/kcls-small-business-resources/)
 
-If you're in the Eastside (Bellevue, Redmond, Kirkland), King County Library System (KCLS) offers similar resources:
+If you're in the Eastside (Bellevue, Redmond, Kirkland), [King County Library System (KCLS)](/resources/kcls-small-business-resources/) offers similar resources:
 
 | Database | Available |
 |----------|-----------|
