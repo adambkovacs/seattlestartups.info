@@ -202,18 +202,15 @@
       </footer>
     </article>
 
-    <!-- Related Resources -->
+    <!-- Related Resources - Query actual Hugo pages by category -->
     {{ $category := index (default (slice "resources") .Params.categories) 0 }}
-    {{ $currentSlug := .File.BaseFileName }}
+    {{ $currentPage := . }}
     {{ $related := slice }}
-    {{ range $file := readDir "data/resources" }}
-      {{ $data := index $.Site.Data.resources (replace $file.Name ".yaml" "") }}
-      {{ with $data.resources }}
-        {{ range . }}
-          {{ $slug := .name | urlize }}
-          {{ if and (ne $slug $currentSlug) (in .categories $category) }}
-            {{ $related = $related | append . }}
-          {{ end }}
+    {{ range where .Site.RegularPages "Section" "resources" }}
+      {{ if and (ne .Permalink $currentPage.Permalink) }}
+        {{ $pageCategories := .Params.categories | default slice }}
+        {{ if in $pageCategories $category }}
+          {{ $related = $related | append . }}
         {{ end }}
       {{ end }}
     {{ end }}
