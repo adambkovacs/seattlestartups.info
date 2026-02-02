@@ -16,7 +16,7 @@ faq:
     answer: "Yes. Seattle Public Library provides free access to PitchBook (normally $20,000+/year), Data Axle, SimplyAnalytics, and LinkedIn Learning. Get a free library card at any SPL branch, then access databases from home. Use the L2B program for 1:1 appointments with business librarians."
 ---
 
-Seattle has 248+ startup resources, but three organizations deliver outsized value. Master these three, and you'll have an unfair advantage over founders who don't know they exist.
+Seattle has 230+ startup resources, but three organizations deliver outsized value. Master these three, and you'll have an unfair advantage over founders who don't know they exist.
 
 ## The Big Three
 
@@ -317,7 +317,7 @@ If you're in the Eastside (Bellevue, Redmond, Kirkland), [King County Library Sy
 Ready for more? Check out these resources:
 
 - **[First 5 Things to Do When Starting a Startup](/guides/first-5-things-seattle-startup/)** - Your week-one checklist
-- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 248+ free resources
+- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 230+ free resources
 - **[Top 10 Funding Opportunities](/guides/top-10-funding-seattle-startups/)** - Non-dilutive funding sources
 - **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** - Compare 28 programs
 

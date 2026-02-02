@@ -1,6 +1,6 @@
 ---
 title: "All Resources"
-description: "Browse 248+ verified free startup resources in Greater Seattle"
+description: "Browse 230+ verified free startup resources in Greater Seattle"
 layout: "resources"
 ---
 

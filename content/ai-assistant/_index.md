@@ -1,6 +1,6 @@
 ---
 title: "AI Assistant - Chat with Seattle Startup Ecosystem Data"
-description: "Get instant answers about Seattle startup resources. Our AI assistant is trained on comprehensive market research covering 248+ programs across 5 counties."
+description: "Get instant answers about Seattle startup resources. Our AI assistant is trained on comprehensive market research covering 230+ programs across 5 counties."
 date: 2026-01-31
 layout: ai-assistant
 ---
@@ -21,7 +21,7 @@ The assistant has access to detailed information about:
 
 | Category | Coverage |
 |----------|----------|
-| Free resources | 248+ verified programs |
+| Free resources | 230+ verified programs |
 | Counties covered | King, Pierce, Snohomish, Kitsap, Thurston |
 | Accelerators | 28 programs with eligibility details |
 | Funding sources | 27 non-dilutive options |

@@ -1,6 +1,6 @@
 # Greater Seattle Startup Support Ecosystem: Complete Resource Map
 
-Early-stage founders in Greater Seattle have access to **248+ verified free resources** spanning all five target counties, with particularly strong government-backed advising networks, library systems providing premium business databases at no cost, and emerging programs specifically targeting underrepresented founders. The ecosystem's greatest strengths lie in its county-level SBDC coverage, free university programming open to community members, and a robust network of tool libraries and makerspaces offering free or pay-what-you-can access.
+Early-stage founders in Greater Seattle have access to **230+ verified free resources** spanning all five target counties, with particularly strong government-backed advising networks, library systems providing premium business databases at no cost, and emerging programs specifically targeting underrepresented founders. The ecosystem's greatest strengths lie in its county-level SBDC coverage, free university programming open to community members, and a robust network of tool libraries and makerspaces offering free or pay-what-you-can access.
 
 **Impact Hub Seattle permanently closed in mid-2020** due to COVID-19—a frequently cited resource that no longer exists. The newest additions include AI House Seattle (March 2025), Seattle Climate Innovation Hub (January 2025), and the SEA619 Black founder accelerator (August 2025).
 

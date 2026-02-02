@@ -1,6 +1,6 @@
 ---
 title: "Resources by City"
-description: "Find startup resources in your city across the Greater Seattle region. 8 cities, 248+ free resources."
+description: "Find startup resources in your city across the Greater Seattle region. 8 cities, 230+ free resources."
 ---
 
 # Resources by City

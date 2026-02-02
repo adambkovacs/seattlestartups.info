@@ -156,6 +156,7 @@ resources:
       - "Thurston"
     categories:
       - "Funding"
+      - "Government"
     audiences: []
     featured: false
     industries:
@@ -200,25 +201,6 @@ resources:
     industries:
       - "ai"
       - "creative"
-  - name: "Seattle Angel Conference"
-    description: "12-week competition with $150-200K investment to winner"
-    organization: "Mossy Ventures"
-    website: "https://seattleangelconference.com"
-    cost: "Symbolic fee"
-    eligibility: "Concept to pre-seed"
-    city: "Seattle"
-    counties:
-      - "King"
-      - "Snohomish"
-      - "Pierce"
-      - "Kitsap"
-      - "Thurston"
-    categories:
-      - "Funding"
-    audiences: []
-    featured: true
-    industries:
-      - "general"
   - name: "Dempsey Startup Competition"
     description: "Multi-stage competition with up to $25K prize, 28th year in 2025"
     organization: "UW Buerk Center"
@@ -331,22 +313,6 @@ resources:
     featured: false
     industries:
       - "general"
-  - name: "Founders Live Seattle"
-    description: "99-second pitches with audience vote and Prime Time advancement"
-    organization: "Founders Live (HQ Seattle)"
-    website: "https://founderslive.com"
-    cost: "Free"
-    eligibility: "Early-stage startups"
-    city: "Seattle"
-    counties:
-      - "King"
-    categories:
-      - "Funding"
-      - "Events"
-    audiences: []
-    featured: true
-    industries:
-      - "general"
   - name: "Startup World Cup Seattle Regional"
     description: "Regional competition where winner advances to global finals for $1M"
     organization: "Founders Live + WTIA"
@@ -377,22 +343,6 @@ resources:
     featured: false
     industries:
       - "general"
-  - name: "BEST Scholarships Lacey-Olympia-Tumwater"
-    description: "Full scholarships ($399 value) for startup training"
-    organization: "Cities + Thurston EDC"
-    website: "https://businessresources.thurstonedc.com"
-    cost: "Free"
-    eligibility: "Local startups in Lacey/Olympia/Tumwater"
-    city: "Olympia"
-    counties:
-      - "Thurston"
-    categories:
-      - "Funding"
-    audiences: []
-    featured: false
-    industries:
-      - "ai"
-      - "creative"
   - name: "TiE Seattle Z5 Catalyst"
     description: "Access to Z5 Catalyst funding through TiE network"
     organization: "TiE Seattle"

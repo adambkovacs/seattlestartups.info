@@ -308,7 +308,7 @@ These Greater Seattle BIPOC founders have used local resources:
 
 Explore more Seattle startup resources:
 
-- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** — All 248+ free resources across Greater Seattle
+- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** — All 230+ free resources across Greater Seattle
 - **[Women Founder Resources](/guides/women-founder-resources-seattle/)** — 47 programs for women entrepreneurs
 - **[Veteran Founder Resources](/guides/veteran-founder-resources-seattle/)** — 38 programs for military veterans
 - **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** — Compare 28 programs

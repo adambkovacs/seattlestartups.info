@@ -29,9 +29,9 @@
       {{ end }}
     </div>
 
-    <!-- Title -->
+    <!-- Title - Links to internal resource page -->
     <h3 class="font-display font-semibold text-lg text-overcast-900 dark:text-white mb-2 group-hover:text-sound-600 dark:group-hover:text-sound-400 transition-colors duration-200 line-clamp-2">
-      <a href="{{ .website }}" target="_blank" rel="noopener noreferrer" class="after:absolute after:inset-0">
+      <a href="/resources/{{ .name | urlize }}/" class="after:absolute after:inset-0">
         {{ .name }}
       </a>
     </h3>
@@ -62,18 +62,23 @@
       {{ end }}
     </div>
 
-    <!-- Category badge -->
+    <!-- Category badge and Visit link -->
     <div class="flex items-center justify-between">
       <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-overcast-100 dark:bg-overcast-700 text-overcast-600 dark:text-overcast-300">
         {{ $category }}
       </span>
 
-      <!-- Arrow indicator -->
-      <span class="text-sound-500 dark:text-sound-400 opacity-0 group-hover:opacity-100 transform translate-x-0 group-hover:translate-x-1 transition-all duration-200">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+      <!-- Visit external site link (prevents card click-through) -->
+      <a href="{{ .website }}"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="relative z-10 inline-flex items-center text-xs font-medium text-sound-600 dark:text-sound-400 hover:text-sound-700 dark:hover:text-sound-300 transition-colors"
+         onclick="event.stopPropagation();">
+        Visit
+        <svg class="w-3.5 h-3.5 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
         </svg>
-      </span>
+      </a>
     </div>
   </div>
 

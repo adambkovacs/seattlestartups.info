@@ -281,7 +281,7 @@ Explore specific regions:
 - **[King County Startup Resources](/guides/king-county-startup-resources/)** - Seattle, Bellevue, and Eastside
 - **[Pierce County Startup Resources](/guides/pierce-county-startup-resources/)** - Tacoma and South Sound
 - **[Snohomish County Startup Resources](/guides/snohomish-county-startup-resources/)** - Everett and aerospace
-- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 248+ resources
+- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 230+ resources
 - **[Seattle Startup Ecosystem Briefing](/guides/seattle-startup-ecosystem-briefing/)** - How the system works
 
 ---

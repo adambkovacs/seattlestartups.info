@@ -360,7 +360,7 @@ Seattle's talent advantages:
 
 Explore more Seattle startup resources:
 
-- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 248+ free resources across Greater Seattle
+- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 230+ free resources across Greater Seattle
 - **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** - Compare 28 programs with eligibility and outcomes
 - **[Climate Tech Startup Resources](/guides/climate-tech-startup-resources-seattle/)** - AI for climate applications
 - **[King County Startup Resources](/guides/king-county-startup-resources/)** - Seattle, Bellevue, and Eastside resources

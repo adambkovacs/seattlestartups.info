@@ -29,21 +29,6 @@ resources:
     featured: true
     industries:
       - "general"
-  - name: "AI House Seattle"
-    description: "108K sq ft AI community hub at Pier 70 with coworking and events for 400+"
-    organization: "AI2 Incubator + City of Seattle"
-    website: "https://ai2incubator.com"
-    cost: "Events free"
-    eligibility: "AI founders/practitioners"
-    city: "Seattle"
-    counties:
-      - "King"
-    categories:
-      - "Spaces"
-    audiences: []
-    featured: true
-    industries:
-      - "ai"
   - name: "Hing Hay Coworks"
     description: "Conference rooms, fiber internet, and print center in the ID"
     organization: "SCIDpda (nonprofit)"
@@ -439,38 +424,3 @@ resources:
     industries:
       - "lifesciences"
       - "food"
-  - name: "CoMotion Labs"
-    description: "Life sciences, hardware, and tech lab space hosting 60-90 startups"
-    organization: "University of Washington"
-    website: "https://comotion.uw.edu"
-    cost: "Membership by application"
-    eligibility: "Pre-Series A startups"
-    city: "Seattle"
-    counties:
-      - "King"
-    categories:
-      - "Spaces"
-    audiences: []
-    featured: true
-    industries:
-      - "tech"
-      - "lifesciences"
-      - "aerospace"
-      - "creative"
-      - "hardware"
-  - name: "TheLab Everett"
-    description: "FREE advisory services, 3D printers, and workspaces for inventors"
-    organization: "NWIRC (nonprofit)"
-    website: "https://nwirc.com"
-    cost: "Free"
-    eligibility: "Entrepreneurs/inventors"
-    city: "Everett"
-    counties:
-      - "Snohomish"
-    categories:
-      - "Spaces"
-    audiences: []
-    featured: false
-    industries:
-      - "aerospace"
-      - "hardware"

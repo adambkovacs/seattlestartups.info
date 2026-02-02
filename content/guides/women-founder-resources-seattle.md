@@ -322,7 +322,7 @@ Consistent attendance builds relationships. Prioritize 2-3 events monthly.
 
 Explore more Seattle startup resources:
 
-- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 248+ free resources across Greater Seattle
+- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 230+ free resources across Greater Seattle
 - **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** - Compare 28 programs with eligibility and outcomes
 - **[BIPOC Founder Resources](/guides/bipoc-founder-resources-seattle/)** - Programs for underrepresented founders
 - **[King County Startup Resources](/guides/king-county-startup-resources/)** - Deep dive into Seattle, Bellevue, and Eastside

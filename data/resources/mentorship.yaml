@@ -283,22 +283,6 @@ resources:
     featured: true
     industries:
       - "general"
-  - name: "Sno-Isle SCORE Partnership"
-    description: "1-hour free counseling appointments at Lynnwood Library"
-    organization: "Sno-Isle Libraries"
-    website: "https://sno-isle.org"
-    cost: "Free"
-    eligibility: "Community"
-    city: "Lynnwood"
-    counties:
-      - "Snohomish"
-    categories:
-      - "Mentorship"
-    audiences: []
-    featured: false
-    industries:
-      - "tech"
-      - "creative"
   - name: "Contractor Coffee Hour"
     description: "Drop-in Zoom help with government contracting"
     organization: "KEDA"
@@ -308,95 +292,6 @@ resources:
     city: "Bremerton"
     counties:
       - "Kitsap"
-    categories:
-      - "Mentorship"
-    audiences: []
-    featured: false
-    industries:
-      - "general"
-  - name: "Green River College SBDC"
-    description: "No-cost 1:1 counseling and market research in Auburn/Enumclaw"
-    organization: "Green River College"
-    website: "https://greenriver.edu"
-    cost: "Free"
-    eligibility: "Community"
-    city: "Auburn"
-    counties:
-      - "King"
-    categories:
-      - "Mentorship"
-    audiences: []
-    featured: false
-    industries:
-      - "cleantech"
-  - name: "Edmonds College SBDC Partnership"
-    description: "On-site no-cost advising in Lynnwood"
-    organization: "Edmonds College"
-    website: "https://edmonds.edu"
-    cost: "Free"
-    eligibility: "Community"
-    city: "Lynnwood"
-    counties:
-      - "Snohomish"
-    categories:
-      - "Mentorship"
-    audiences: []
-    featured: false
-    industries:
-      - "creative"
-  - name: "Washington APEX Accelerator"
-    description: "Free counseling for government contracts and certifications statewide"
-    organization: "Thurston EDC (statewide)"
-    website: "https://washingtonapex.org"
-    cost: "Free"
-    eligibility: "All WA businesses"
-    city: "Olympia"
-    counties:
-      - "King"
-      - "Snohomish"
-      - "Pierce"
-      - "Kitsap"
-      - "Thurston"
-    categories:
-      - "Mentorship"
-      - "Funding"
-    audiences: []
-    featured: true
-    industries:
-      - "general"
-  - name: "SBA Seattle District Office"
-    description: "Funding guidance, counseling, federal contracting certifications (8(a), HUBZone)"
-    organization: "U.S. SBA"
-    website: "https://sba.gov/district/seattle"
-    cost: "Free"
-    eligibility: "Small businesses"
-    city: "Seattle"
-    counties:
-      - "King"
-      - "Snohomish"
-      - "Pierce"
-      - "Kitsap"
-      - "Thurston"
-    categories:
-      - "Mentorship"
-      - "Funding"
-    audiences: []
-    featured: true
-    industries:
-      - "general"
-  - name: "SBA THRIVE Program"
-    description: "Free executive-level strategic growth planning for established small businesses"
-    organization: "U.S. SBA"
-    website: "https://sba.gov/district/seattle"
-    cost: "Free"
-    eligibility: "Established small businesses"
-    city: "Online"
-    counties:
-      - "King"
-      - "Snohomish"
-      - "Pierce"
-      - "Kitsap"
-      - "Thurston"
     categories:
       - "Mentorship"
     audiences: []
@@ -511,39 +406,6 @@ resources:
     featured: false
     industries:
       - "maritime"
-  - name: "Pierce County Economic Development"
-    description: "Site planning, financing guidance, and permit assistance"
-    organization: "Pierce County Government"
-    website: "https://piercecountywa.gov"
-    cost: "Free"
-    eligibility: "Businesses outside Tacoma"
-    city: "Tacoma"
-    counties:
-      - "Pierce"
-    categories:
-      - "Mentorship"
-    audiences: []
-    featured: false
-    industries:
-      - "general"
-  - name: "Economic Alliance Snohomish County"
-    description: "Business attraction, retention, minority/women/veteran support, and export assistance"
-    organization: "EASC (nonprofit ADO)"
-    website: "https://economicalliancesc.org"
-    cost: "Free"
-    eligibility: "All businesses"
-    city: "Everett"
-    counties:
-      - "Snohomish"
-    categories:
-      - "Mentorship"
-    audiences:
-      - "bipoc"
-      - "women"
-      - "veterans"
-    featured: false
-    industries:
-      - "maritime"
   - name: "Thurston EDC"
     description: "Business retention, expansion, startup programs, and regional data"
     organization: "Thurston EDC (nonprofit)"
@@ -574,18 +436,3 @@ resources:
     featured: false
     industries:
       - "creative"
-  - name: "WorkSource Seattle-King County"
-    description: "Small business resource directory and SEAP program"
-    organization: "WorkSource"
-    website: "https://worksourceskc.org"
-    cost: "Free"
-    eligibility: "Community"
-    city: "Seattle"
-    counties:
-      - "King"
-    categories:
-      - "Mentorship"
-    audiences: []
-    featured: false
-    industries:
-      - "general"

@@ -315,6 +315,7 @@ resources:
       - "King"
     categories:
       - "Accelerators"
+      - "Spaces"
     audiences: []
     featured: true
     industries:

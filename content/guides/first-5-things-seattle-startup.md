@@ -233,7 +233,7 @@ Once you've completed these 5 steps, you're ready for:
 
 Ready for more? Check out these resources:
 
-- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 248+ free resources
+- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 230+ free resources
 - **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** - Compare 28 programs
 - **[Top 10 Funding Opportunities](/guides/top-10-funding-seattle-startups/)** - Non-dilutive funding sources
 - **[King County Startup Resources](/guides/king-county-startup-resources/)** - Seattle and Eastside programs

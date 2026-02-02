@@ -258,6 +258,7 @@ resources:
       - "Snohomish"
     categories:
       - "Education"
+      - "Mentorship"
     audiences: []
     featured: false
     industries:
@@ -321,25 +322,6 @@ resources:
     featured: true
     industries:
       - "general"
-  - name: "MyStartup365"
-    description: "Online business school alternative with tools, resources, and the Entrepreneur Academy"
-    organization: "WA Dept. of Commerce"
-    website: "https://mystartup365.com"
-    cost: "Free"
-    eligibility: "WA entrepreneurs"
-    city: "Online"
-    counties:
-      - "King"
-      - "Snohomish"
-      - "Pierce"
-      - "Kitsap"
-      - "Thurston"
-    categories:
-      - "Education"
-    audiences: []
-    featured: true
-    industries:
-      - "creative"
   - name: "Creatives Academy"
     description: "12 free online lessons for creative professionals on IP, negotiation, and global expansion"
     organization: "WA Dept. of Commerce"

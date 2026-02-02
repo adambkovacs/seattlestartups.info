@@ -497,7 +497,7 @@ Ready for more? Check out these resources:
 
 - **[First 5 Things to Do When Starting a Startup](/guides/first-5-things-seattle-startup/)** - Your week-one checklist
 - **[Top 3 Startup Enablers](/guides/top-3-startup-enablers-seattle/)** - SCORE, WTIA, and library resources
-- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 248+ free resources
+- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 230+ free resources
 - **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** - Compare 28 programs
 
 ---

@@ -239,7 +239,7 @@ Explore more Seattle startup resources:
 **Other Counties:**
 - **[Pierce County Startup Resources](/guides/pierce-county-startup-resources/)** — Tacoma and South Sound resources
 - **[Snohomish County Startup Resources](/guides/snohomish-county-startup-resources/)** — Everett, aerospace, and manufacturing
-- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** — All 248+ resources across 5 counties
+- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** — All 230+ resources across 5 counties
 
 **By Founder Background:**
 - **[Women Founder Resources](/guides/women-founder-resources-seattle/)** — 47 programs for women entrepreneurs

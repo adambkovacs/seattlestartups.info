@@ -363,7 +363,7 @@ What should you do once a program ends?
 
 Explore more Seattle startup resources:
 
-- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** — All 248+ free resources across Greater Seattle
+- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** — All 230+ free resources across Greater Seattle
 - **[AI & ML Startup Resources](/guides/ai-ml-startup-resources-seattle/)** — AI2 Incubator, AWS GenAI Accelerator, and 35 AI programs
 - **[Climate Tech Resources](/guides/climate-tech-startup-resources-seattle/)** — 42 cleantech accelerators and funding programs
 - **[Women Founder Resources](/guides/women-founder-resources-seattle/)** — 47 programs for women entrepreneurs

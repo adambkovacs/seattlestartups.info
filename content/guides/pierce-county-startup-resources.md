@@ -361,7 +361,7 @@ Regular updates on funding opportunities and business resources.
 
 Explore more Seattle-area startup resources:
 
-- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 248+ free resources across Greater Seattle
+- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** - All 230+ free resources across Greater Seattle
 - **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** - Compare 28 programs with eligibility and outcomes
 - **[BIPOC Founder Resources](/guides/bipoc-founder-resources-seattle/)** - Programs for underrepresented founders
 - **[Veteran Founder Resources](/guides/veteran-founder-resources-seattle/)** - Military entrepreneur support

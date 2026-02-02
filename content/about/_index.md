@@ -22,12 +22,12 @@ This is an open-source project. The more eyes on it, the better it gets.
 
 Start your founder journey with these comprehensive resources:
 
-- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** — 248+ resources across all categories
+- **[Complete Seattle Startup Resources Guide](/guides/complete-seattle-startup-resources-guide/)** — 230+ resources across all categories
 - **[King County Startup Resources](/guides/king-county-startup-resources/)** — Deep dive into Seattle, Bellevue, and surrounding areas
 - **[Seattle Accelerators & Incubators 2026](/guides/seattle-accelerators-incubators-2026/)** — 28 programs compared with eligibility, costs, and outcomes
 - **[BIPOC Founder Resources](/guides/bipoc-founder-resources-seattle/)** — Programs specifically supporting underrepresented founders
 
-Or jump straight to [browsing all 248+ resources](/resources/).
+Or jump straight to [browsing all 230+ resources](/resources/).
 
 ---
 
